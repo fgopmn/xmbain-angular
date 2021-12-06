@@ -1,0 +1,53 @@
+b{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+}
+p{
+  margin-top: 30px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+}
+.industrial{
+  width: 83%;
+  margin: auto;
+
+}
+.industrial-block{
+  display: flex;
+  justify-content: space-between
+}
+
+.industrial-text{
+  width: 50%;
+  margin-top: 70px;
+}
+.industrial button{
+  background: #009FE3;
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: none;
+
+}
+.child1{
+  width: 160px;
+  height: 84px;
+  border-bottom:1px solid #009FE3;;
+
+}
+
