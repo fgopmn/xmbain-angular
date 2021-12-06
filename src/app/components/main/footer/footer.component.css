@@ -1,0 +1,29 @@
+.footer{
+  background: #021C27;
+}
+.footer-flex{
+  display: flex;
+  justify-content: space-between;
+  width:83%;
+  margin:auto;
+  padding:70px 0 44px;
+}
+a{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 21px;
+  letter-spacing: 0.2px;
+  color: #C0C6C9;
+  opacity: 0.6;
+  text-decoration: none;
+}
+ul{
+}
+.uls{
+  display:flex;
+}
+li{
+  list-style-type: none;
+}
