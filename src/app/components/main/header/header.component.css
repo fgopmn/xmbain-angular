@@ -16,7 +16,6 @@
   border: 1px solid #021C27;
   border-radius: 4px;
   padding:10px 14px 11px 15px;
-  font-family: Manrope;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -48,14 +47,13 @@ a{
   list-style-type: none;
   text-decoration: none;
   color:#021C27;
-  font-family: Manrope;
+
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 120%;
 }
 p{
-  font-family: Manrope;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
