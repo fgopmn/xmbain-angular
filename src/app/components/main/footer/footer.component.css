@@ -3,10 +3,10 @@
 }
 .footer-flex{
   display: flex;
-  justify-content: space-between;
   width:83%;
   margin:auto;
-  padding:70px 0 44px;
+  padding:67px 0 56px;
+  justify-content: space-between;
 }
 a{
   font-family: Manrope;
@@ -19,11 +19,81 @@ a{
   opacity: 0.6;
   text-decoration: none;
 }
-ul{
-}
 .uls{
   display:flex;
 }
 li{
   list-style-type: none;
+  /*padding: 8px 16px;*/
 }
+.about-company li{
+  padding-bottom: 11px;
+  padding-right: 92px;
+}
+.about-product li {
+  padding-bottom: 12px;
+  padding-right: 55px;
+}
+.about-document{
+  margin-right:20px;
+}
+.about-document li{
+  padding-bottom: 12px;
+  padding-right: 55px;
+}
+ul{
+  margin-right:20px
+}
+.contact{
+}
+button{
+  border: 1px solid #009FE3;
+  border-radius: 5px;
+  background: #021C27;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  color: #009FE3;
+  opacity: 0.6;
+  padding:10px 19px 11px 20px;
+}
+.footer-logo{
+  margin-left: 121px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.footer-logo p{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 130%;
+  text-align: right;
+  letter-spacing: 0.2px;
+  color: #C0C6C9;
+  opacity: 0.3;
+  padding-left: 111px;
+  margin-top:15px;
+}
+.phone-number{
+  padding-bottom: 12px;
+}
+.phone-number, .mail{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #EFF3F5;
+  opacity: 0.5;
+}
+.number-mail{
+  margin-bottom: 27px;
+}
+
