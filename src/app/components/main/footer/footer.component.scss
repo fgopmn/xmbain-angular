@@ -1,5 +1,33 @@
 .footer{
   background: #021C27;
+  &__image {
+    background: url("../../../../assets/img/footer-img.png")  0 0/100% auto no-repeat;
+    width: 100%;
+    padding: 44px 0 52px 120px;
+    &-title {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 42px;
+      line-height: 120%;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+      text-shadow: 0 2px 20px rgba(67, 94, 106, 0.5);
+    }
+    &-text {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 120%;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+    }
+    &_disable {
+      display: none;
+    }
+    &_active {
+      display: block;
+    }
+  }
 }
 .footer-flex{
   display: flex;
@@ -26,20 +54,22 @@ li{
   list-style-type: none;
   /*padding: 8px 16px;*/
 }
-.about-company li{
-  padding-bottom: 11px;
-  padding-right: 92px;
-}
-.about-product li {
-  padding-bottom: 12px;
-  padding-right: 55px;
-}
-.about-document{
-  margin-right:20px;
-}
-.about-document li{
-  padding-bottom: 12px;
-  padding-right: 55px;
+.about {
+  &-company li{
+    padding-bottom: 11px;
+    padding-right: 92px;
+  }
+  &-product li {
+    padding-bottom: 12px;
+    padding-right: 55px;
+  }
+  &-document{
+    margin-right:20px;
+    li {
+      padding-bottom: 12px;
+      padding-right: 55px;
+    }
+  }
 }
 ul{
   margin-right:20px

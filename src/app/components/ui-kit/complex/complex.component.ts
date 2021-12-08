@@ -5,7 +5,7 @@ import {environment} from "../../../../environments/environment.prod";
 @Component({
   selector: 'app-complex',
   templateUrl: './complex.component.html',
-  styleUrls: ['./complex.component.css']
+  styleUrls: ['./complex.component.scss']
 })
 export class ComplexComponent implements OnInit {
   getList: any[] = [];
