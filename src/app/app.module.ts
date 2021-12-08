@@ -5,6 +5,8 @@ import {RouterModule, Routes} from "@angular/router";
 import {HomeComponent} from "./components/home/home.component";
 import {HeaderComponent} from "./components/main/header/header.component";
 import {FooterComponent} from "./components/main/footer/footer.component";
+import {HttpClientModule} from "@angular/common/http";
+import {ComplexComponent } from './components/ui-kit/complex/complex.component';
 
 const routes: Routes = [
   {path:"",
@@ -16,12 +18,14 @@ const routes: Routes = [
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ComplexComponent
   ],
   imports: [
     BrowserModule,
     RouterModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

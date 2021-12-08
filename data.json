@@ -1,0 +1,44 @@
+{
+  "complex":[
+    {
+      "id": 1,
+      "icon": "../../../assets/icons/Group 182.png",
+      "title": "Автосалоны"
+    },
+    {
+      "id": 2,
+      "icon": "../../../assets/icons/Group 186.png",
+      "title": "Ангары"
+    },
+    {
+      "id": 3,
+      "icon": "../../../assets/icons/Group 189.png",
+      "title": "Депо"
+    },
+    {
+      "id": 4,
+      "icon": "../../../assets/icons/animals 1.png",
+      "title": "Сельское хозяйство"
+    },
+    {
+      "id": 5,
+      "icon": "../../../assets/icons/",
+      "title": "Школы и спорт центры"
+    },
+    {
+      "id": 6,
+      "icon": "../../../assets/icons/",
+      "title": "Строительство"
+    },
+    {
+      "id": 7,
+      "icon": "../../../assets/icons/",
+      "title": "Логистические центры"
+    },
+    {
+      "id": 8,
+      "icon": "../../../assets/icons/",
+      "title": "Офисные и торговые центры"
+    }
+  ]
+}
