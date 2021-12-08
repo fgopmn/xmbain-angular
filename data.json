@@ -1,0 +1,65 @@
+{
+  "complex":[
+    {
+      "id": 1,
+      "icon": "../../../../assets/icons/Group 182.png",
+      "title": "Автосалоны"
+    },
+    {
+      "id": 2,
+      "icon": "../../../assets/icons/Group 186.png",
+      "title": "Ангары"
+    },
+    {
+      "id": 3,
+      "icon": "../../../assets/icons/Group 189.png",
+      "title": "Депо"
+    },
+    {
+      "id": 4,
+      "icon": "../../../assets/icons/animals 1.png",
+      "title": "Сельское хозяйство"
+    },
+    {
+      "id": 5,
+      "icon": "../../../assets/icons/Group 318.png",
+      "title": "Школы и спорт центры"
+    },
+    {
+      "id": 6,
+      "icon": "../../../assets/icons/Group.png",
+      "title": "Строительство"
+    },
+    {
+      "id": 7,
+      "icon": "../../../assets/icons/Group 195.png",
+      "title": "Логистические центры"
+    },
+    {
+      "id": 8,
+      "icon": "../../../assets/icons/Group 190.png",
+      "title": "Офисные и торговые центры"
+    },
+    {
+      "id": 9,
+      "icon": "../../../assets/icons/Vector.png",
+      "title": "Школы и спорт центры"
+    },
+    {
+      "id":10,
+      "icon": "../../../assets/icons/Group 192.png",
+      "title": "Строительство"
+    },
+    {
+      "id": 11,
+      "icon": "../../../assets/icons/Group 193.png",
+      "title": "Церкви"
+    },
+    {
+      "id": 12,
+      "icon": "../../../assets/icons/Group 194.png",
+      "title": "Шахты"
+    }
+
+  ]
+}
