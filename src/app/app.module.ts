@@ -10,16 +10,12 @@ import {ComplexComponent } from './components/ui-kit/complex/complex.component';
 
 const routes: Routes = [
   {path:"",
-   component:HomeComponent
+   loadChildren: () => import('./components/home/home/home.module').then(m => m.HomeModule)
   }
 ];
 @NgModule({
   declarations: [
-    AppComponent,
-    HomeComponent,
-    HeaderComponent,
-    FooterComponent,
-    ComplexComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,

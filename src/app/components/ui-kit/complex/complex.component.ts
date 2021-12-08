@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import{RequestService} from "../../../service/request.service";
-import {environment} from "../../../../environments/environment";
+import {environment} from "../../../../environments/environment.prod";
 
 @Component({
   selector: 'app-complex',
@@ -16,7 +16,7 @@ export class ComplexComponent implements OnInit {
   }
   getRequest(){
 
-    this.requestService.getData(`${environment.url}/complex`).subscribe((items:any) => {
+    this.requestService.getData(`${environment.url}${environment.complex.get}`).subscribe((items:any) => {
       this.getList = items
     })
 }}
