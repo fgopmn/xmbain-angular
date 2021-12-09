@@ -1,0 +1,83 @@
+<app-header> </app-header>
+<div class="pressGlobal">
+  <div class="press">
+    <p class="title">Пресс-центр</p>
+    <ul class="press-menu">
+      <li><a href="">Все</a></li>
+      <li><a href="">Блог</a></li>
+      <li><a href="">События</a></li>
+      <li><a href="">Выставки</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+<div class="blogGlobal">
+  <div class="blog">
+    <div class="line">
+      <p class="blog-title">Блог</p>
+      <ul class="menu-italy">
+        <li><a href="">Все<</a></li>
+        <li><a href="">Отопление</a></li>
+        <li><a href="">Охлаждение</a></li>
+        <li><a href="">Вентиляция</a></li>
+        <li><a href="">Эксплуатация</a></li>
+        <li><a href="">Экономика</a></li>
+        <li><a href="">Италия</a></li>
+      </ul>
+    </div>
+    <div class="heating-global">
+
+      <div *ngFor="let item of getList" class="system">
+        <div class="system-container">
+          <button class="system-click">{{item.button}}</button>
+          <p class="system-title">{{item.title}}</p>
+          <p class="system-text">{{item.text}}</p>
+          <div class="person-data">
+            <img src="{{item.img}}" alt="" class="system-person">
+            <p class="system-info">{{item.info}}</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <button class="blog-click"><span>В блог</span></button>
+  </div>
+
+</div>
+
+<div class="events.global">
+  <div class="events-container">
+    <div class="enents-flex">
+      <div class="days">
+        <img src="" alt="">
+        <div class="month">
+          <p></p>
+        </div>
+        <p class="day-description"></p>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+<!--<div *ngFor="let item2 of getList" class="system">
+  <div class="system-container">
+    <button class="system-click">{{item2.button}}</button>
+    <p class="system-title">{{item2.title}}</p>
+    <p class="system-text">{{item2.text}}</p>
+    <div class="person-data">
+      <img src="{{item2.img}}" alt="" class="system-person">
+      <p class="system-info">{{item2.info}}</p>
+    </div>
+  </div>
+</div>
+
+<button class="blog-click"><span>В блог</span></button>-->
+
+
+
+
+

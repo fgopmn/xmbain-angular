@@ -6,5 +6,8 @@ export const environment = {
   },
   complex: {
     get: '/complex'
+  },
+ heating: {
+    get: '/heating'
   }
 };
