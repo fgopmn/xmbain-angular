@@ -5,6 +5,8 @@ import {RouterModule, Routes} from "@angular/router";
 import {HttpClientModule} from "@angular/common/http";
 import {PressComponent } from './components/press/press.component';
 import {MainModule} from "./components/main/main.module";
+import { ServicesComponent } from './components/services/services.component';
+
 
 
 const routes: Routes = [
@@ -14,12 +16,17 @@ const routes: Routes = [
   {
     path:"press",
     component:PressComponent
+  },
+  {
+    path:"services",
+    component:ServicesComponent
   }
 ];
 @NgModule({
   declarations: [
     AppComponent,
     PressComponent,
+    ServicesComponent,
   ],
   imports: [
     BrowserModule,

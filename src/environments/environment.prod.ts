@@ -15,5 +15,8 @@ export const environment = {
   },
   show:{
     get: '/show'
+  },
+  services:{
+    get:'/services'
   }
 };
