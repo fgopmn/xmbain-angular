@@ -80,6 +80,7 @@ b{
   font-size: 34px;
   line-height: 120%;
   padding: 56px 85px;
+  color: black;
 }
 .p1 span {
   opacity: 0.5;
@@ -140,16 +141,7 @@ b{
   letter-spacing: 0.2px;
   color: #021C27;
 }
-.calk{
-  display: flex;
 
-  margin-left: 78px;
-  margin-top: 55px;
-
-}
-.child4 h6::before{
-  content:url("../../../assets/icons/icon1.svg")
-}
 .flag{
   width:83%;
   margin: auto;
@@ -219,7 +211,8 @@ b{
 .complex-block{
   display: flex;
   width: 83%;
-  margin:120px auto;
+  margin: auto;
+  padding: 120px 0;
 }
 .complex-child p{
   font-family: Manrope;
@@ -256,4 +249,220 @@ b{
   flex-wrap: wrap;
   justify-content: flex-end;
 }
+.complex{
+  background: linear-gradient(359.7deg, #EAF5FA 0.32%, rgba(240, 248, 252, 0) 46.83%);
+  mix-blend-mode: multiply;
 
+}
+.airHeaters p{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  opacity: 0.3;
+
+
+}
+.airHeaters-block{
+  display: flex;
+}
+.airHeaters p:nth-child(n+2){
+  padding-top: 44px;
+}
+.airHeaters h6{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+
+  margin-top: 44px;
+}
+.airHeaters{
+  width: 423px;
+  position: relative;
+
+}
+.scroll{
+  width: 5px;
+  height: 61px;
+  background: #E3061B;
+  position: absolute;
+  right: 0;
+  top: 294px;
+}
+.airHeaters-text{
+
+  padding-bottom: 123px;
+  padding-left: 120px;
+  padding-top: 120px;
+}
+.rectangle360{
+  background:url("../../../assets/img/image 104 (2).png") no-repeat;
+  background-size: cover;
+position: relative;
+}
+
+.rectangle360 img{
+  width: 520px;
+  height: 520px;
+  margin-top: 160px;
+  margin-left: 100px;
+
+}
+.fermax{
+  background-image: url("../../../assets/img/Mask Group (1).jpg");
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
+  height: 720px;
+}
+.fermax p{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  text-shadow: 0px 5px 50px rgba(83, 120, 149, 0.4);
+  position: absolute;
+  right: 323px;
+  bottom: 133px;
+}
+.full-title{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+
+}
+.fullRange{
+  width: 83%;
+  margin: auto;
+  padding-top: 80px;
+}
+.numbers-block{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 46px;
+  margin-bottom: 75px;
+}
+.numbers{
+  background: linear-gradient(90deg, #FBFEFF 0%, #F0F8FC 100%);
+  border-radius: 20px;
+  width: 15.6%;
+}
+.numbers-number{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 100%;
+  letter-spacing: -0.15em;
+  color: #009FE3;
+  opacity: 0.1;
+  border-bottom: 2px solid #009FE3;
+  display: inline-block;
+  padding-bottom: 13px;
+  margin-bottom:24px
+}
+.numbers-text{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+  padding-bottom: 46px;
+
+}
+.num-text{
+  margin-left:40px;
+  margin-top:40px;
+}
+.check-block1  ul li {
+  list-style-type: none;
+}
+.check-block2 ul li {
+  list-style-type: none;
+}
+.check-block3  ul li {
+  list-style-type: none;
+}
+.check-block2,  ul li label{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+}
+.check-block label{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  padding-left: 9px;
+}
+.check-block p{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+
+}
+.check-block input{
+  opacity: 0.2;
+  border: 1px solid #021C27;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 18px;
+  height: 18px;
+  margin-top: 14px;
+}
+.check{
+  margin-top:125px;
+  padding-left: 93px;
+}
+.check-block p{
+margin-bottom:18px
+}
+.check-block2{
+  padding-top: 40px;
+}
+.check-block3{
+  padding-top: 40px;
+}
+.check-click{
+  background: #021C27;
+  border-radius: 5px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: none;
+  padding: 12px 20px 13px 25px;
+  margin-top: 48px;
+}
