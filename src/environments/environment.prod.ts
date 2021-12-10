@@ -9,5 +9,11 @@ export const environment = {
   },
  heating: {
     get: '/heating'
+  },
+  events:{
+    get: '/events'
+  },
+  show:{
+    get: '/show'
   }
 };

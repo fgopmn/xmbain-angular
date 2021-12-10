@@ -49,33 +49,42 @@
 
 <div class="events.global">
   <div class="events-container">
+    <p class="event-title">События</p>
     <div class="enents-flex">
-      <div class="days">
-        <img src="" alt="">
-        <div class="month">
-          <p></p>
-        </div>
-        <p class="day-description"></p>
+        <div *ngFor="let i of days" class="event">
+          <div class="img-month">
+            <div class="days">
+                <img src="{{i.img}}" alt="">
+              <div class="month-block"> <p class="month-day">{{i.day}}</p> <p class="month">{{i.month}}</p></div>
+           </div>
+            <div class="day-description"><p>{{i.text}}</p></div>
+            </div>
 
       </div>
     </div>
-
+    <button class="event-click"><span>Все события</span></button>
   </div>
-
 </div>
-<!--<div *ngFor="let item2 of getList" class="system">
-  <div class="system-container">
-    <button class="system-click">{{item2.button}}</button>
-    <p class="system-title">{{item2.title}}</p>
-    <p class="system-text">{{item2.text}}</p>
-    <div class="person-data">
-      <img src="{{item2.img}}" alt="" class="system-person">
-      <p class="system-info">{{item2.info}}</p>
+
+  <div class="show">
+    <div class="show-container">
+
+        <div class="show-block" *ngFor="let j of show">
+          <div class="show-texts">
+            <p class="show-day">{{j.day}}  </p>
+            <p class="show-month">{{j.month}}</p>
+            <span class="line2">|</span>
+            <p class="show-day">{{j.day_2}}</p>
+            <p class="show-month">{{j.month}}</p>
+              <p class="show-title">{{j.text}}</p>
+        </div>
+      </div>
+
     </div>
-  </div>
-</div>
 
-<button class="blog-click"><span>В блог</span></button>-->
+  </div>
+
+
 
 
 

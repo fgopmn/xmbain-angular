@@ -173,19 +173,141 @@
 .events.global{
   background:#FFFFFF;
 }
-events-container{
+.events-container{
   width:83%;
-  margin:auto;
+  margin: 80px auto;
+}
+.event-title{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+  margin-bottom:20px;
 }
 .enents-flex{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-/*.days{
 
+.event{
+  background: #FFFFFF;
+  box-shadow: 0 5px 40px rgba(2, 26, 36, 0.04);
+  border-radius: 20px;
+  width: 32.3%;
+  padding:40px 40px 47px 40px;
+  margin-top:40px;
+}
+.days{
+  display: flex;
+  background: #FFFFFF;
+  border: 1px solid #C0C6C9;
+  box-sizing: border-box;
+  border-radius: 5px;    align-items: center;
+  justify-content: flex-start;
+}
+.month-block{
+  padding-left: 11px;
+}
+.month-day{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 130%;
+  text-align: center;
+  color: #021C27;
 }
 .month{
-
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  color: #021C27;
+  opacity: 0.4;
 }
 .day-description{
-  
-}*/
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  margin-top: 24px;
+}
+.event-click{
+  background-color: #009FE3;
+  opacity: 0.1;
+  border-radius: 5px;
+  padding:10px 20px;
+  margin-top:70.53px;
+  margin-bottom:80px;
+  border:none;
+}
+.event-click span{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  color: #009FE3;
+}
+.show{
+  background: #FFFFFF;
+}
+.show-container{
+  width:83%;
+  margin:auto;
+}
+.show-flex{
+}
+.show-block{
+background:url("../../../assets/press/show1.png") no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.show-texts{
+ padding:22px 0 29px 57px
+}
+.show-day{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 130%;
+  color: #FFFFFF;
+  padding-left: 17px;
+}
+.show-month{
+  font-size: 15px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 130%;
+  color: #FFFFFF;
+
+}
+.show-block:first-child{
+  margin-bottom:40px;
+}
+.show-title{
+  position:absolute;
+  top:73px;
+  left:203px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+.line2{
+  color:  #FFFFFF;
+}
