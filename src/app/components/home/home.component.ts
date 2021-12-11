@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit{
       this.getList = items
     })
   }
-  title = 'xmbain';
+
 
 
 }
