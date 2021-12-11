@@ -24,5 +24,14 @@ export const environment = {
   },
   complexService:{
     get:'/complexService'
+  },
+  processOne:{
+    get:'/processOne'
+  },
+  processTwo:{
+    get:'/processTwo'
+  },
+  processThree:{
+    get:'/processThree'
   }
 };
