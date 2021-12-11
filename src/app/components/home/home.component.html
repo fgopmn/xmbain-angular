@@ -9,7 +9,7 @@
       <div class = 'industrial-text'>
         <b>Отапливайте промышленные помещения</b>
         <p class="percent">C выгодой до 30% в год<br>  с помощью воздушных теплогенераторов</p>
-        <div style="margin-top:40px;">  <button>Оборудование</button></div>
+        <div style="margin-top:40px;">  <button class="industrial__button">Оборудование</button></div>
 
       </div>
       <div>
@@ -40,19 +40,13 @@
       <div class="child2"></div>
     </div>
 
-    <div class="calk" style="height: 50px">
-      <div class="child4">
-        <h6>Топливо</h6>
-      </div>
-      <div class="child4">
-        <h6>Назначение</h6>
-      </div>
-      <div class="child4">
-        <h6>Расположение</h6>
-      </div>
-    </div>
+    <app-equipment></app-equipment>
       <div class="line88"><img src=">../../../../assets/img/Line 88.png"></div>
-<!--      <div class="info-block">-->
+
+
+
+
+    <!--      <div class="info-block">-->
 <!--        <div class="child3">-->
 <!--          <img src="../../../../assets/icons/Group 178.png">-->
 <!--          <p>Вы можете скачать опросный лист в виде файла и отправить его по электронной почте info@tcgroupenergia.ru</p>-->
@@ -90,8 +84,99 @@
 <p>Греем<br> воздух <br>  в соборах <br> Европы</p>
 </div>
 
-<app-complex></app-complex>
+<div class="complex">
+  <div class="complex-block">
+    <div class="complex-child" >
+      <p>
+        Комплексные<br> решения<br> <span> по отоплению,<br> охлаждению,<br> вентиляции,<br> генерации <br> горячего воздуха</span>
+      </p>
+      <div><button>Оставить заявку</button></div>
+
+      <div><img src="../../../../assets/img/image 86.png" alt=""></div>
+
+    </div>
+    <app-complex class="appcomplex"></app-complex>
+
+  </div>
+</div>
+
+<div class="airHeaters-block">
+  <div class="airHeaters">
+    <div class="scroll"></div>
+    <div class="airHeaters-text">
+      <p class="ppp">Воздухонагреватели</p>
+      <p>Крышные <br> кондиционеры roof top</p>
+      <h6>Водяное тепловое оборудование</h6>
+      <p>Вентиляция и рекуперация тепла</p>
+      <p>Чилеры и тепловые насосы</p>
+      <p>Оборудование в специальном <br> исполнении</p>
+    </div>
+  </div>
+  <div class="rectangle360">
+  <img src="../../../../assets/img/Group 210.png" alt="">
+  </div>
+
+  <div class="check">
+    <div class="check-block">
+      <p class="check-title">Топливо</p>
+      <div class="check-block1">
+        <ul>
+          <li><input type="checkbox" id ="check-one">
+            <label for="check-one">Универсальное</label></li>
+          <li> <input type="checkbox" id ="check-two">
+          <label for="check-two">Газ</label></li>
+          <li><input type="checkbox" id ="check-three">
+            <label for="check-three">Жидкое</label></li>
+          <li><input type="checkbox" id ="check-four">
+          <label for="check-four">Вода</label></li>
+        </ul>
 
 
+      </div>
+      <div class="check-block2">
+        <p>Назначение</p>
+        <ul>
+          <li><input type="checkbox" id ="check-one1">
+            <label for="check-one">Отопление</label></li>
+          <li> <input type="checkbox" id ="check-two1">
+            <label for="check-two">Отопление и охлаждение</label></li>
+          <li><input type="checkbox" id ="check-three1">
+            <label for="check-three">Рекуперация тепла</label></li>
+
+        </ul>
+      </div>
+
+      <div class="check-block3">
+        <p>Расположение</p>
+        <ul>
+          <li><input type="checkbox" id ="check-one2">
+            <label for="check-one">Внутри помещения</label></li>
+          <li> <input type="checkbox" id ="check-two2">
+            <label for="check-two">Снаружи помещения</label></li>
+        </ul>
+      </div>
+
+      <button class="check-click">Показать</button>
+    </div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+
+<div class="fermax">
+  <p>Создаем <br> климат <br> для урожая <br> на фермах</p>
+</div>
+<div class="fullRange">
+  <p class="full-title">Полный комплекс услуг</p>
+  <div class="numbers-block">
+    <div class="numbers" *ngFor="let item of getList">
+      <div class="num-text">
+      <p class="numbers-number">{{item.day}}</p>
+      <p class="numbers-text">{{item.text}}</p>
+      </div>
+    </div>
+  </div>
+
+</div>
 <app-footer> </app-footer>
 

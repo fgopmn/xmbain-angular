@@ -1,0 +1,92 @@
+<app-header> </app-header>
+<div class="pressGlobal">
+  <div class="press">
+    <p class="title">Пресс-центр</p>
+    <ul class="press-menu">
+      <li><a href="">Все</a></li>
+      <li><a href="">Блог</a></li>
+      <li><a href="">События</a></li>
+      <li><a href="">Выставки</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+<div class="blogGlobal">
+  <div class="blog">
+    <div class="line">
+      <p class="blog-title">Блог</p>
+      <ul class="menu-italy">
+        <li><a href="">Все<</a></li>
+        <li><a href="">Отопление</a></li>
+        <li><a href="">Охлаждение</a></li>
+        <li><a href="">Вентиляция</a></li>
+        <li><a href="">Эксплуатация</a></li>
+        <li><a href="">Экономика</a></li>
+        <li><a href="">Италия</a></li>
+      </ul>
+    </div>
+    <div class="heating-global">
+
+      <div *ngFor="let item of getList" class="system">
+        <div class="system-container">
+          <button class="system-click">{{item.button}}</button>
+          <p class="system-title">{{item.title}}</p>
+          <p class="system-text">{{item.text}}</p>
+          <div class="person-data">
+            <img src="{{item.img}}" alt="" class="system-person">
+            <p class="system-info">{{item.info}}</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <button class="blog-click"><span>В блог</span></button>
+  </div>
+
+</div>
+
+<div class="events.global">
+  <div class="events-container">
+    <p class="event-title">События</p>
+    <div class="enents-flex">
+        <div *ngFor="let i of days" class="event">
+          <div class="img-month">
+            <div class="days">
+                <img src="{{i.img}}" alt="">
+              <div class="month-block"> <p class="month-day">{{i.day}}</p> <p class="month">{{i.month}}</p></div>
+           </div>
+            <div class="day-description"><p>{{i.text}}</p></div>
+            </div>
+
+      </div>
+    </div>
+    <button class="event-click"><span>Все события</span></button>
+  </div>
+</div>
+
+  <div class="show">
+    <div class="show-container">
+
+        <div class="show-block" *ngFor="let j of show">
+          <div class="show-texts">
+            <p class="show-day">{{j.day}}  </p>
+            <p class="show-month">{{j.month}}</p>
+            <span class="line2">|</span>
+            <p class="show-day">{{j.day_2}}</p>
+            <p class="show-month">{{j.month}}</p>
+              <p class="show-title">{{j.text}}</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+

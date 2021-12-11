@@ -1,0 +1,29 @@
+<app-header>
+</app-header>
+<div class = "services-block">
+    <div class="services-container">
+        <div class="servieces-line"> </div>
+         <h6>Услуги</h6>
+         <p> Главной задачей ООО ТС Груп Энергия» является повышение<br> качества
+             обслуживания клиентов на территории России и <br> стран СНГ. Наша компания оказывает
+             полный комплекс услуг<br> по поставке, монтажу и сервисному постпродажному <br> обслуживанию оборудования Tecnoclima.</p>
+    </div>
+</div>
+<div class="technical">
+    <div class="technical-container">
+        <div class="technical-flex">
+            <div *ngFor ="let item of getList" class="text-img-block">
+                <div class="technical-description">
+                    <p class="technical-title">{{item.title}}</p>
+                    <p class="technical-text">{{item.text}}</p>
+                    <button>{{item.button}}</button>
+                </div>
+                <img src="{{item.img}}" alt="">
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<app-footer></app-footer>

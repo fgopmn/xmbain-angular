@@ -6,5 +6,23 @@ export const environment = {
   },
   complex: {
     get: '/complex'
+  },
+  fuel: {
+    get: '/fuel'
+  },
+ heating: {
+    get: '/heating'
+  },
+  events:{
+    get: '/events'
+  },
+  show:{
+    get: '/show'
+  },
+  services:{
+    get:'/services'
+  },
+  complexService:{
+    get:'/complexService'
   }
 };
