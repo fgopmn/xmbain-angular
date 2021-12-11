@@ -1,19 +1,20 @@
-
-.child5{
+.complex-choose{
   background: #FFFFFF;
   box-shadow: 0 5px 40px rgba(2, 26, 36, 0.04);
   border-radius: 20px;
   width: 285px;
+  &__image {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  &__title {
+    padding: 20px 25px 32px 20px;
+  }
+  &:nth-child(odd){
+    margin-right: 20px;
+  }
 }
 
-.child5 img{
-
-  padding-left: 20px;
-  padding-top: 20px;
-}
-.child5 p{
-  padding: 20px 25px 32px 20px;
-}
 .child5-flex{
   display: flex;
   flex-direction: row;
@@ -21,8 +22,4 @@
   margin-top: 120px;
   justify-content: space-between;
 
-}
-
-.child5:nth-child(odd){
-  margin-right: 20px;
 }

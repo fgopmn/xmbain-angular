@@ -18,6 +18,20 @@ b{
 }
 .industrial{
   background-color: white;
+  &__button{
+    background: #009FE3;
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
+    cursor:pointer;
+  }
 }
 .industrial-flex{
   width: 83%;
@@ -34,20 +48,7 @@ b{
   width: 50%;
   margin-top: 70px;
 }
-.industrial button{
-  background: #009FE3;
-  border-radius: 5px;
-  padding: 15px 25px;
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 120%;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  border: none;
 
-}
 .child1{
   border-bottom:1px solid #009FE3;
   font-family: Manrope;
@@ -150,6 +151,7 @@ b{
 .video-button{
   border: none;
   background: none;
+  cursor: pointer;
 }
 .flag-block{
   background-color: #FFFFFF;
@@ -240,6 +242,7 @@ b{
   border: none;
   padding: 15px 25px;
   margin-top: 40px;
+  cursor: pointer;
 }
 .complex-child img{
   margin-top: 98px;
@@ -465,6 +468,9 @@ margin-bottom:18px
   border: none;
   padding: 12px 20px 13px 25px;
   margin-top: 48px;
+}
+:host::ng-deep .footer .footer__image{
+  display: block;
 }
 .recuperative-block{
   display: flex;
