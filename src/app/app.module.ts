@@ -6,6 +6,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {PressComponent } from './components/press/press.component';
 import {MainModule} from "./components/main/main.module";
 import { ServicesComponent } from './components/services/services.component';
+import { CompanyComponent } from './components/company/company.component';
 
 
 
@@ -27,6 +28,7 @@ const routes: Routes = [
     AppComponent,
     PressComponent,
     ServicesComponent,
+    CompanyComponent,
   ],
   imports: [
     BrowserModule,
