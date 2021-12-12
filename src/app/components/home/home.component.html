@@ -60,7 +60,7 @@
   </div>
     </div>
 
-<div flag-block>
+<div class=" flag-block">
   <div class="flag">
     <img class= "flag-img" src="../../../../assets/img/Group 383.png">
 
@@ -166,18 +166,21 @@
 <div class="fermax">
   <p>Создаем <br> климат <br> для урожая <br> на фермах</p>
 </div>
-<div class="fullRange">
-  <p class="full-title">Полный комплекс услуг</p>
-  <div class="numbers-block">
-    <div class="numbers" *ngFor="let item of getList">
-      <div class="num-text">
-      <p class="numbers-number">{{item.day}}</p>
-      <p class="numbers-text">{{item.text}}</p>
+<div class="global-fullRange">
+  <div class="fullRange">
+    <p class="full-title">Полный комплекс услуг</p>
+    <div class="numbers-block">
+      <div class="numbers" *ngFor="let item of getList">
+        <div class="num-text">
+          <p class="numbers-number">{{item.day}}</p>
+          <p class="numbers-text">{{item.text}}</p>
+        </div>
       </div>
     </div>
-  </div>
 
+  </div>
 </div>
+
 <div class="recuperative">
   <div class="recuperative-block">
     <div class="oem">
@@ -197,5 +200,18 @@
   </div>
 </div>
 <div class="technological"><app-technological></app-technological></div>
+
+<div class="clients">
+  <img class="blue-flag" src="../../../assets/img/image 125 (1).png" alt="">
+  <p>Клиенты</p>
+  <div class="logo-block">
+    <div id="logo-child-first"> <img src="../../../assets/img/Vector (1).png" alt=""></div>
+    <div class="logo-child"><img src="../../../assets/img/whirlpool.png" alt=""></div>
+    <div class="logo-child"><img src="../../../assets/img/mcdonalds.png" alt=""></div>
+    <div class="logo-child"><img src="../../../assets/img/siemens.png" alt=""></div>
+    <div class="logo-child"><img src="../../../assets/img/rosneft.png" alt=""></div>
+    <div id="logo-child-last"><img src="../../../assets/img/Алмазная шахта Мир.png" alt=""></div>
+  </div>
+</div>
 <app-footer> </app-footer>
 

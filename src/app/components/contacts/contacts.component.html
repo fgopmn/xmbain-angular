@@ -1,0 +1,42 @@
+<app-header></app-header>
+  <div class="global">
+    <div class="container">
+      <div class="navigation">
+        <ul>
+          <li>Главная</li>
+          <li> > </li>
+          <li>Контакты</li>
+        </ul>
+      </div>
+      <h1>Контакты</h1>
+      <div class="information">
+        <div class="address">
+          <h2>Москва</h2>
+          <div *ngFor="let item of getList">
+            <p>{{item.telephone}}</p>
+            <p>{{item.number}}</p>
+            <p>{{item.numberFax}}</p>
+            <button>{{item.click}}</button>
+
+          </div>
+          <div *ngFor="let item2 of getList2 ">
+            <p>{{item2.email}}</p>
+            <p>{{item2.address}}</p>
+          </div>
+
+          <div *ngFor="let item3 of getList3 ">
+            <p>{{item3.address}}</p>
+            <p>{{item3.text}}</p>
+          </div>
+
+
+        </div>
+        <div class="contact-us">
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<app-footer></app-footer>
