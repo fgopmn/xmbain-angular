@@ -1,3 +1,4 @@
+
 b{
   font-family: Manrope;
   font-style: normal;
@@ -64,7 +65,7 @@ b{
   padding-top:15px;
 }
 .equipment{
-  color: #FFFFFF;
+  background-color: #FFFFFF;
 }
 .equipment-flex{
   width: 87.5%;
@@ -169,6 +170,9 @@ b{
   color: #021C27;
   padding-bottom: 8px;
 }
+.flag-block{
+  background-color: #FFFFFF;
+}
 .flag-img{
   margin-right: 142px;
   margin-top: 82px;
@@ -254,7 +258,7 @@ b{
 }
 .complex{
   background: linear-gradient(359.7deg, #EAF5FA 0.32%, rgba(240, 248, 252, 0) 46.83%);
-  mix-blend-mode: multiply;
+  background-color: #FFFFFF;
 
 }
 .airHeaters p{
@@ -271,6 +275,7 @@ b{
 }
 .airHeaters-block{
   display: flex;
+  background-color: white;
 }
 .airHeaters p:nth-child(n+2){
   padding-top: 44px;
@@ -349,16 +354,20 @@ position: relative;
   color: #021C27;
 
 }
+.global-fullRange{
+  background-color: #FFFFFF;
+}
 .fullRange{
   width: 83%;
   margin: auto;
   padding-top: 80px;
+  background-color: white;
 }
 .numbers-block{
   display: flex;
   justify-content: space-between;
   padding-top: 46px;
-  margin-bottom: 75px;
+  padding-bottom: 75px;
 }
 .numbers{
   background: linear-gradient(90deg, #FBFEFF 0%, #F0F8FC 100%);
@@ -471,4 +480,108 @@ margin-bottom:18px
 }
 :host::ng-deep .footer .footer__image{
   display: block;
+
+}
+.recuperative-block{
+  display: flex;
+}
+.recuperative{
+  background-color: #FFFFFF;
+  padding: 5px 70px 79px 37px;
+}
+.oem{
+  background: #FFFFFF;
+  box-shadow: 0px 20px 60px rgba(2, 26, 36, 0.04);
+  border-radius: 40px;
+  display: inline-block;
+  margin-left: 82px;
+}
+.oem-flex{
+  padding-left: 70px;
+  padding-top: 59px;
+}
+.oem-flex h6{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+  padding-top: 15px;
+  padding-right: 150px;
+}
+.oem-p{
+  padding-top: 24px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  padding-bottom: 66px;
+  padding-right: 250px;
+}
+.oem-img p{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 21px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  position: relative;
+  bottom: 45px;
+}
+.oem-img{
+  display: inline-block;
+}
+.oem-child{
+  padding-top: 46px;
+}
+
+.technological{
+  background-color: #abd5e847;
+  display: inline-block;
+  padding-bottom: 60px;
+}
+.blue-flag {
+  padding-left: 138px;
+}
+.clients{
+  background-color: white;
+}
+.clients p{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+  padding-top: 28px;
+  padding-left: 120px;
+}
+.logo-block{
+  width: 80%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-left: 159px;
+  margin-right: 136px;
+  margin-top: 63px;
+}
+.logo-child{
+  width: 16.6%;
+
+}
+#logo-child-first{
+  width: 16.6%;
+  text-align: left;
+}
+#logo-child-last{
+  width: 16.6%;
+  text-align: right;
 }
