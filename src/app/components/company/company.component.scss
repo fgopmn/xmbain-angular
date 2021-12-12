@@ -1,0 +1,40 @@
+.product{
+
+}
+.product-container{
+  width:83%;
+  margin:auto;
+}
+.menu-list{
+  opacity: 0.3;
+  border-bottom: 1px solid #C0C6C9;
+}
+.menu{
+  display: flex;
+  margin-bottom: 16px;
+}
+.menu li{
+  list-style-type: none;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: #C0C6C9;
+  padding-right: 9px;
+}
+.product-title{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+padding-bottom: 86px;
+  padding-top:30px;
+}
+.thermal-power{
+  display: inline-block;
+}

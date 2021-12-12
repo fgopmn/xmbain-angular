@@ -13,9 +13,14 @@ import { ContactsComponent } from './components/contacts/contacts.component';
 
 
 
+
+
 const routes: Routes = [
   {path:"",
    loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule)
+  },
+  {path:"company",
+    loadChildren: () => import('./components/company/company.module').then(m => m.CompanyModule)
   },
   {
     path:"press",
@@ -33,10 +38,9 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-
+    ContactsComponent,
     PressComponent,
     ServicesComponent,
-    ContactsComponent,
   ],
   imports: [
     BrowserModule,
