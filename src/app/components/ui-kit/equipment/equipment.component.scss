@@ -9,34 +9,34 @@ b{
   margin-left: 17px;
 
 }
-p{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 120%;
-  letter-spacing: 0.2px;
-  color: #021C27;
-
-}
 .fuel{
   display: flex;
   margin-top: 55px;
   margin-left: 78px;
   background-color: #FFFFFF;
+  &:last-child {
+    margin-right: 0;
+  }
+  &__container {
+    margin-right: 100px;
+  }
+  &__title {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 120%;
+    letter-spacing: 0.2px;
+    color: #021C27;
+    margin-bottom: 17px;
+  }
+  &__block {
+    border: 1px solid #009FE3;
+    box-sizing: border-box;
+    border-radius: 5px;
+    overflow: hidden;
+  }
 }
 .fuel-flex:nth-child(n+2){
   padding-left: 297px;
-}
-.border{
-  border: 1px solid #009FE3;
-  box-sizing: border-box;
-  border-radius: 5px;
-}
-.border-child{
-// padding-top:17px;
-//padding-left: 35px;
-//  padding-bottom: 15px;
-//  padding-right: 60px;
-  border-bottom: 1px solid #009FE3;
 }

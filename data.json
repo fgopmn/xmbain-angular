@@ -160,26 +160,26 @@
       "id":1,
       "icon": "../../../assets/icons/Group.png",
       "title": "Топливо",
-      "meinText1": "Универсальное",
-      "meinText2": "Газ",
-      "meinText3": "Жидкое",
-      "meinText4": "Вода"
+      "mainText1": "Универсальное",
+      "mainText2": "Газ",
+      "mainText3": "Жидкое",
+      "mainText4": "Вода"
     },
     {
       "id":2,
       "icon": "../../../assets/icons/Group 225.png",
       "title": "Назначение",
-      "meinText1": "Отопление",
-      "meinText2": "Отопление и охлаждение",
-      "meinText3": "Рекуперация тепла",
-      "meinText4": "Другое"
+      "mainText1": "Отопление",
+      "mainText2": "Отопление и охлаждение",
+      "mainText3": "Рекуперация тепла",
+      "mainText4": "Другое"
     },
     {
       "id":3,
       "icon": "../../../assets/icons/Group 174.png",
       "title": "Расположение",
-      "meinText1": "Внутри помещения",
-      "meinText2": "Снаружи помещения"
+      "mainText1": "Внутри помещения",
+      "mainText2": "Снаружи помещения"
 
     }
 
