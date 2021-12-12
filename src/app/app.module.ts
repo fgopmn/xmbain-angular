@@ -6,7 +6,8 @@ import {HttpClientModule} from "@angular/common/http";
 import {PressComponent } from './components/press/press.component';
 import {MainModule} from "./components/main/main.module";
 import { ServicesComponent } from './components/services/services.component';
-import { CompanyComponent } from './components/company/company.component';
+import {UiKitModule} from "./components/ui-kit/ui-kit.module";
+
 
 
 
@@ -28,7 +29,6 @@ const routes: Routes = [
     AppComponent,
     PressComponent,
     ServicesComponent,
-    CompanyComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,6 +36,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     HttpClientModule,
     MainModule,
+    UiKitModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

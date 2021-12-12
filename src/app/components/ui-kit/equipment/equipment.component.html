@@ -1,1 +1,19 @@
 
+<div class="fuel">
+  <div *ngFor="let item of getList" class="fuel-flex">
+    <div class="child6">
+        <img src="{{item.icon}}" alt="">
+        <b>{{item.title}}</b>
+
+<div class="border">
+  <div class="bgBlue">
+    <div class="border-child"><p>{{item.meinText1}}</p></div>
+    <div class="border-child"><p>{{item.meinText2}}</p></div>
+  </div>
+
+  <div class="border-child"><p>{{item.meinText3}}</p></div>
+  <div class="border-child"> <p>{{item.meinText4}}</p></div>
+</div>
+    </div>
+  </div>
+</div>

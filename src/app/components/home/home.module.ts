@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { HomeRoutingModule } from './home-routing.module';
 import {HomeComponent} from "./home.component";
 import {MainModule} from "../main/main.module";
@@ -13,7 +12,8 @@ import {UiKitModule} from "../ui-kit/ui-kit.module";
     CommonModule,
     HomeRoutingModule,
     MainModule,
-    UiKitModule
+    UiKitModule,
+
   ]
 })
 export class HomeModule { }
