@@ -33,5 +33,14 @@ export const environment = {
   },
   processThree:{
     get:'/processThree'
+  },
+  contacts:{
+    get:'/contacts'
+  },
+  contacts2:{
+    get:'/contacts2'
+  },
+  contacts3:{
+    get:'/contacts3'
   }
 };
