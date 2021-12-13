@@ -38,7 +38,7 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-
+    ContactsComponent,
     PressComponent,
     ServicesComponent,
   ],
