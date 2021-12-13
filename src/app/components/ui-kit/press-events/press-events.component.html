@@ -1,0 +1,15 @@
+<div class="events-container">
+<p class="event-title">События</p>
+<div class="enents-flex">
+  <div *ngFor="let i of days" class="event">
+    <div class="img-month">
+      <div class="days">
+        <img src="{{i.img}}" alt="">
+        <div class="month-block"> <p class="month-day">{{i.day}}</p> <p class="month">{{i.month}}</p></div>
+      </div>
+      <div class="day-description"><p>{{i.text}}</p></div>
+    </div>
+
+  </div>
+</div>
+  </div>

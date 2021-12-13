@@ -8,12 +8,8 @@ import {PressComponent } from './components/press/press.component';
 import {MainModule} from "./components/main/main.module";
 import { ServicesComponent } from './components/services/services.component';
 import {UiKitModule} from "./components/ui-kit/ui-kit.module";
-import { ContactsComponent } from './components/contacts/contacts.component';
-
-
-
-
-
+import {ContactsComponent } from './components/contacts/contacts.component';
+import {ProductComponent} from "./components/product/product.component";
 
 const routes: Routes = [
   {path:"",
@@ -41,6 +37,8 @@ const routes: Routes = [
     ContactsComponent,
     PressComponent,
     ServicesComponent,
+    ProductComponent
+
   ],
   imports: [
     BrowserModule,

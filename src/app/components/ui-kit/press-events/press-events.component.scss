@@ -1,0 +1,68 @@
+.events-container{
+  width:83%;
+  margin:auto;
+  padding-top: 80px;
+}
+.event-title{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+  margin-bottom:20px;
+}
+.enents-flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.event{
+  background: #FFFFFF;
+  box-shadow: 0 5px 40px rgba(2, 26, 36, 0.04);
+  border-radius: 20px;
+  width: 32.3%;
+  padding:40px 40px 47px 40px;
+  margin-top:40px;
+}
+.days{
+  display: flex;
+  background: #FFFFFF;
+  border: 1px solid #C0C6C9;
+  box-sizing: border-box;
+  border-radius: 5px;    align-items: center;
+  justify-content: flex-start;
+}
+.month-block{
+  padding-left: 11px;
+}
+.month-day{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 130%;
+  text-align: center;
+  color: #021C27;
+}
+.month{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  color: #021C27;
+  opacity: 0.4;
+}
+.day-description{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  margin-top: 24px;
+}
