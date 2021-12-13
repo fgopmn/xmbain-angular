@@ -42,5 +42,8 @@ export const environment = {
   },
   contacts3:{
     get:'/contacts3'
+  },
+  slider:{
+    get:'/slider'
   }
 };
