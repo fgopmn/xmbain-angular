@@ -8,7 +8,8 @@ import{RouterModule} from "@angular/router";
 @NgModule({
   declarations: [
     HeaderComponent,
-    FooterComponent,],
+    FooterComponent,
+  ],
   exports: [
     HeaderComponent,
     FooterComponent,
