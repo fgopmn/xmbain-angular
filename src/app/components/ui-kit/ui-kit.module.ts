@@ -8,11 +8,14 @@ import { PressEventsComponent } from './press-events/press-events.component';
 import { SelectInputComponent } from './select-input/select-input.component';
 import { SliderComponent} from './slider/slider.component';
 
+import { ExhibitionsComponent } from './exhibitions/exhibitions.component';
 
 
 
 
 @NgModule({
+  declarations: [ComplexComponent, EquipmentComponent, TechnologicalComponent, SelectInputComponent, PressEventsComponent, PressBlogComponent, ExhibitionsComponent],
+  exports: [ComplexComponent, EquipmentComponent, TechnologicalComponent, PressEventsComponent, PressBlogComponent, ExhibitionsComponent],
   declarations: [ComplexComponent, EquipmentComponent, TechnologicalComponent, SelectInputComponent,
 
     PressEventsComponent, PressBlogComponent,SliderComponent],

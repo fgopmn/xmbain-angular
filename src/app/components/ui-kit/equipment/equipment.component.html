@@ -1,9 +1,17 @@
+<div class="equipment-flex">
+<p class="p1">Подберите свое оборудование<span> прямо сейчас</span></p>
+<div class="rectangle137">
+  <div class="child2"></div>
+  <div class="child2"></div>
+  <div class="child2"></div>
+</div>
 <div class="fuel">
   <div *ngFor="let item of getList" class="fuel__container">
     <div class="fuel__title">
       <img src="{{item.icon}}" alt="">
       <b>{{item.title}}</b>
     </div>
+
     <div class="fuel__block">
       <app-select-input
         [type]="selectInput.selected"
@@ -29,3 +37,17 @@
 
   </div>
 </div>
+  <button class="continue-click">Далее</button>
+
+  <div class="info-block">
+   <div class="child3">
+      <img src="../../../../assets/icons/Group 178.png" class="download-icon">
+         <p>Вы можете скачать опросный лист в виде <br> файла и отправить его по электронной <br> почте info@tcgroupenergia.ru</p>
+        </div>
+      <div class="child3-download">
+       <img src="../../../../assets/icons/Group 179.png" class="download-icon">
+       <p>Скачать <br> опросный лист</p>
+       </div>
+<img src="../../../../assets/img/techno.svg" alt="" class="techno-img">
+      </div>
+  </div>
