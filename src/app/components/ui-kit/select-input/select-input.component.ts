@@ -7,14 +7,8 @@ import {SelectInputEnum} from "../../constants/select-input-enum";
   templateUrl: './select-input.component.html',
   styleUrls: ['./select-input.component.scss']
 })
-export class SelectInputComponent implements OnInit {
+export class SelectInputComponent {
   public selectInput = SelectInputEnum
-  @Input('text') textProps?: string | number
+  @Input('text') textProps?: string
   @Input('type') typeProps?: SelectInputEnum = SelectInputEnum.default
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }

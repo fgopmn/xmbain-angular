@@ -15,11 +15,12 @@ export class EquipmentComponent implements OnInit {
   constructor(public requestService:RequestService) { }
   ngOnInit(): void {
     this.getRequest()
+
   }
   getRequest(){
-
     this.requestService.getData(`${environment.url}${environment.fuel.get}`).subscribe((items:any) => {
       this.getList = items
     })
   }
+
 }
