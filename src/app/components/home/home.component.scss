@@ -176,7 +176,8 @@ b{
   display: flex;
   width: 83%;
   margin: auto;
-  padding: 120px 0;
+  padding: 93px 0;
+
 }
 .complex-child p{
   font-family: Manrope;
@@ -283,7 +284,7 @@ position: relative;
 }
 .fermax{
   background-image: url("../../../assets/img/Mask Group (1).jpg");
-  background-size:contain;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: top center;
   position: relative;
@@ -503,7 +504,7 @@ margin-bottom:18px
 .technological{
   background-color: #abd5e81a;
   display: inline-block;
-  padding-bottom: 60px;
+  padding: 60px 0;
 }
 .blue-flag {
   padding-left: 138px;
@@ -531,8 +532,14 @@ margin-bottom:18px
   margin-right: 136px;
   margin-top: 63px;
 }
+.logo-border{
+  height: 50px;
+  border-left: 1px solid #C0C6C9;
+  opacity: 0.5;
+}
 .logo-child{
   width: 16.6%;
+
 
 }
 #logo-child-first{
@@ -543,11 +550,33 @@ margin-bottom:18px
   width: 16.6%;
   text-align: right;
 }
+.press-centre{
+  background: linear-gradient(180deg, #abd5e87a  0%, rgba(171, 213, 232, 0) 104.43%);
+}
+.press-centre h6{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+  padding-top: 100px;
+  padding-left: 120px;
+}
+.press-centre p{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+  padding-top: 70px;
+  padding-left: 120px;
+}
 .blog-event{
   background: linear-gradient(180deg, #abd5e838 0%, rgba(171, 213, 232, 0) 100.12%);
-
-
-
 }
 .blog-event h6{
   font-family: Manrope;
@@ -570,4 +599,29 @@ margin-bottom:18px
   color: #021C27;
   padding-top: 75px;
   padding-left: 120px;
+}
+.exhibitions-block p{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+  padding-left: 120px;
+  padding-bottom: 36px;
+  padding-top: 80px;
+}
+.logos{
+  background-color: white;
+}
+.logos-block{
+  width: 83%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  padding-top: 89px;
+  padding-bottom: 110px;
 }

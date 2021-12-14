@@ -1,13 +1,11 @@
-.show{
-  background: #FFFFFF;
-}
+
 .show-container{
   width:83%;
   margin:auto;
 }
 .show-block{
   background:url("../../../../assets/press/show1.png") no-repeat;
-  background-size:cont;
+  background-size:contain;
   position: relative;
 
 }
@@ -32,9 +30,7 @@
   color: #FFFFFF;
 
 }
-.show-block:first-child{
-  margin-bottom:40px;
-}
+
 .show-title{
   position:absolute;
   top:73px;

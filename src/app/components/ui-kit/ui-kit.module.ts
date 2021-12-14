@@ -14,13 +14,10 @@ import { ExhibitionsComponent } from './exhibitions/exhibitions.component';
 
 
 @NgModule({
-  declarations: [ComplexComponent, EquipmentComponent, TechnologicalComponent, SelectInputComponent, PressEventsComponent, PressBlogComponent, ExhibitionsComponent],
-  exports: [ComplexComponent, EquipmentComponent, TechnologicalComponent, PressEventsComponent, PressBlogComponent, ExhibitionsComponent],
-  declarations: [ComplexComponent, EquipmentComponent, TechnologicalComponent, SelectInputComponent,
+  declarations: [SliderComponent,ComplexComponent, EquipmentComponent, TechnologicalComponent, SelectInputComponent, PressEventsComponent, PressBlogComponent, ExhibitionsComponent],
+  exports: [SliderComponent,ComplexComponent, EquipmentComponent, TechnologicalComponent, PressEventsComponent, PressBlogComponent, ExhibitionsComponent],
 
-    PressEventsComponent, PressBlogComponent,SliderComponent],
-  exports: [ComplexComponent, EquipmentComponent, TechnologicalComponent, PressEventsComponent, PressBlogComponent,SliderComponent
-],
+
 
 
   imports: [
