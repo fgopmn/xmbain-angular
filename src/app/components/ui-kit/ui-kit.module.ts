@@ -7,19 +7,34 @@ import { PressBlogComponent } from './press-blog/press-blog.component';
 import { PressEventsComponent } from './press-events/press-events.component';
 import { SelectInputComponent } from './select-input/select-input.component';
 import { ExhibitionsComponent } from './exhibitions/exhibitions.component';
+import {SliderComponent} from "./slider/slider.component";
+import {ProductCheckComponent} from "./product-check/product-check.component";
 
 
 
 
 @NgModule({
-  declarations: [SliderComponent,ComplexComponent, EquipmentComponent, TechnologicalComponent, SelectInputComponent, PressEventsComponent, PressBlogComponent, ExhibitionsComponent],
-  exports: [SliderComponent,ComplexComponent, EquipmentComponent, TechnologicalComponent, PressEventsComponent, PressBlogComponent, ExhibitionsComponent],
+  declarations: [ComplexComponent,
+    EquipmentComponent,
+    TechnologicalComponent,
+    SelectInputComponent, PressEventsComponent,
+    PressBlogComponent,
+    ExhibitionsComponent,
+    SliderComponent,
+    ProductCheckComponent
+  ],
+  exports: [ComplexComponent,
+    EquipmentComponent,
+    TechnologicalComponent,
+    PressEventsComponent,
+    PressBlogComponent,
+    ExhibitionsComponent,
+    SliderComponent,
+    ProductCheckComponent
+  ],
 
 
 
-
-  declarations: [ComplexComponent, EquipmentComponent, TechnologicalComponent, SelectInputComponent, PressEventsComponent, PressBlogComponent, ExhibitionsComponent, ProductCheckComponent, SystemProductComponent],
-    exports: [ComplexComponent, EquipmentComponent, TechnologicalComponent, PressEventsComponent, PressBlogComponent, ExhibitionsComponent, ProductCheckComponent, SystemProductComponent],
   imports: [
     CommonModule
   ]
