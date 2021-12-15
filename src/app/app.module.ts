@@ -11,12 +11,17 @@ import {UiKitModule} from "./components/ui-kit/ui-kit.module";
 import {ContactsComponent } from './components/contacts/contacts.component';
 import {ProductComponent} from "./components/product/product.component";
 
+
+
 const routes: Routes = [
   {path:"",
    loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule)
   },
   {path:"company",
     loadChildren: () => import('./components/company/company.module').then(m => m.CompanyModule)
+  },
+  {path:"air-heaters",
+    loadChildren: () => import('./components/air-heaters/air-heaters.module').then(m => m.AirHeatersModule)
   },
   {
     path:"press",
@@ -37,7 +42,8 @@ const routes: Routes = [
     ContactsComponent,
     PressComponent,
     ServicesComponent,
-    ProductComponent
+    ProductComponent,
+
 
   ],
   imports: [

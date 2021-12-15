@@ -60,5 +60,8 @@ export const environment = {
   },
   systemFour:{
     get:"/systemThree"
+  },
+  slider:{
+    get:'/slider'
   }
 };
