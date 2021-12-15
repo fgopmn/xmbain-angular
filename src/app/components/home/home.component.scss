@@ -1,5 +1,5 @@
 
-b{
+.industrial-text b{
   font-family: Manrope;
   font-style: normal;
   font-weight: 800;
@@ -19,6 +19,7 @@ b{
 }
 .industrial{
   background-color: white;
+  padding-bottom: 80px;
   &__button{
     background: #009FE3;
     border-radius: 5px;
@@ -49,7 +50,10 @@ b{
   width: 50%;
   margin-top: 70px;
 }
-
+.childBlock{
+  display: flex;
+  justify-content: space-between
+}
 .child1{
   border-bottom:1px solid #009FE3;
   font-family: Manrope;
@@ -64,9 +68,20 @@ b{
   width: 160px;
   padding-top:15px;
 }
+.industrialImg{
+  position: relative;
+  margin-top: 15px;
+}
+.industrialImg1{
+  position: absolute;
+  right:45px;
+  top:40px
+}
+.industrialImg2{
+  border-radius: 40px;
+}
 .equipment{
   background-color: #FFFFFF;
-  margin: 80px 0;
 }
 .info-block{
   display: flex;
