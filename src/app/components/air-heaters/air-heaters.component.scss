@@ -20,3 +20,113 @@
   color: #C0C6C9;
   margin-right:10px;
 }
+.application{
+  background:white;
+}
+.application-container{
+  width:83%;
+  margin: auto;
+}
+.application-title{
+ padding-top:60px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+}
+.application-text{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  margin-top:34px;
+  margin-bottom: 20px;
+  max-width: 590px;
+}
+.app-flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.descripton-img-text{
+  width: 32.4%;
+}
+.descriptiom-img{
+  margin-bottom:24px;
+}
+.descriptiom-text{
+ padding-bottom: 60px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+}
+
+.air{
+
+}
+.air-container{
+width: 83%;
+  margin:auto;
+}
+.air-title-air{
+padding-bottom: 34px;
+}
+.air-litle-title{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  padding-bottom: 7px;
+}
+.air-title{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+}
+.tecnoclima-tc{
+
+  position: relative;
+  padding-bottom: 97px;
+}
+
+.tech-description-text{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  width: 49.4%;
+}
+.tech-description-text2{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+ position: absolute;
+  top:0;
+  right:0;
+  width: 32.30%;
+
+}

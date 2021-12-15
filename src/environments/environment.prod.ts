@@ -63,5 +63,9 @@ export const environment = {
   },
   slider:{
     get:'/slider'
+  },
+  airTC:{
+    get:'/airTC'
   }
+
 };
