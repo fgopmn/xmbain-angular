@@ -15,7 +15,6 @@ export class ComplexComponent implements OnInit {
     this.getRequest()
   }
   getRequest(){
-
     this.requestService.getData(`${environment.url}${environment.complex.get}`).subscribe((items:any) => {
       this.getList = items
     })
