@@ -45,5 +45,20 @@ export const environment = {
   },
   download:{
     get:'/download'
+  },
+  technoImg:{
+    get:"/technoImg"
+  },
+  system:{
+  get:"/system"
+  },
+  systemTwo:{
+    get:"/systemTwo"
+  },
+  systemThree:{
+    get:"/systemThree"
+  },
+  systemFour:{
+    get:"/systemThree"
   }
 };

@@ -1,0 +1,113 @@
+.blue-fon{
+  background: linear-gradient(275deg, #abd5e824 -0, rgba(255, 255, 255, 0.12) 100%);
+  padding-left:120px;
+  margin-top: 7px;
+}
+.product-description-power{
+  padding-top: 106px;
+  padding-right:45px;
+}
+.product-description-power2{
+  padding-top: 45px;
+  padding-right: 45px;
+}
+//background: linear-gradient(90deg, #ABD5E8 0%, rgba(255, 255, 255, 0.12) 100%);
+.power-title{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+}
+.power-flex{
+  display:flex;
+  margin-top:20px;
+}
+.power-number{
+  background: #FFFFFF;
+  opacity: 0.6;
+  border: 1px solid #C0C6C9;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 11px 72px 11px 12px;
+  width: 100px;
+}
+.power-number2{
+  background: #FFFFFF;
+  opacity: 0.6;
+  border: 1px solid #C0C6C9;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 11px 64px 11px 12px;
+  width: 100px;
+}
+.power-number2 +span{
+  padding:10px 5px;
+  opacity: 0.2;
+}
+.power-number +span{
+  padding:10px 5px;
+  opacity: 0.2;
+}
+
+.powerVt{
+  display: flex;
+  background: #FFFFFF;
+  opacity: 0.6;
+  border: 1px solid #C0C6C9;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding:11px;
+  width: 100px;
+}
+.powerVt p{
+  padding-right:10px;
+}
+.fuel ul li{
+  list-style-type: none;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  padding-top:14px;
+}
+.fuel-title{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  margin-bottom:7px;
+  margin-top: 45px;
+}
+.check{
+  width: 16px;
+  height:16px;
+  opacity: 0.2;
+  border: 1px solid #021C27;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-right: 9px;
+}
+.click-show{
+  background: #009FE3;
+  border-radius: 5px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding:11px 20px;
+  border: none;
+  margin-top:35px;
+}

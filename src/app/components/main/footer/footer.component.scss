@@ -55,19 +55,20 @@ li{
   /*padding: 8px 16px;*/
 }
 .about {
+  &-company{
+    padding-right:76px;
+  }
   &-company li{
     padding-bottom: 11px;
-    padding-right: 92px;
+
   }
   &-product li {
     padding-bottom: 12px;
-    padding-right: 55px;
   }
   &-document{
     margin-right:20px;
     li {
       padding-bottom: 12px;
-      padding-right: 55px;
     }
   }
 }

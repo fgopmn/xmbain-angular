@@ -8,7 +8,6 @@ const routes: Routes = [
     component:CompanyComponent
   }
 ];
-
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]

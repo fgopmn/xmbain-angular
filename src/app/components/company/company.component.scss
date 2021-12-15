@@ -1,5 +1,5 @@
 .product{
-
+background: #FFFFFF;
 }
 .product-container{
   width:83%;
@@ -32,9 +32,113 @@
   line-height: 100%;
   letter-spacing: -0.02em;
   color: #021C27;
-padding-bottom: 86px;
   padding-top:30px;
 }
-.thermal-power{
-  display: inline-block;
+.product-description{
+  background-color: #FFFFFF;
+  padding-bottom: 87px;
+}
+.product-description-container {
+  width:83%;
+  margin:auto;
+}
+.product-description-flex{
+  display:flex;
+}
+.techno-flex{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left:38px;
+}
+.techno-block{
+  padding:35px 15px 43px 15px;
+  margin-right:21px
+}
+.techno-img{
+margin:0 46px;
+}
+.techno-description{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  width:255px;
+  margin:auto;
+}
+.bbb{
+  width: 354px;
+  background-color: red;
+  display: flex;
+  margin-right:120px;
+}
+.p1{
+
+}
+.seria{
+  margin-right:20px;
+  line-height: 24px;
+
+}
+.seria p{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  opacity: 0.4;
+  line-height:14px;
+  padding-bottom: 26px;
+}
+.technological{
+  background: linear-gradient(90deg, #FBFEFF 0%, #F0F8FC 100%);
+  padding: 60px 0;
+}
+.blue-flag{
+  padding-left: 138px;
+}
+.showAll{
+  background-color: #FFFFFF;
+}
+.showAll-block{
+  width: 83%;
+  margin: auto;
+}
+.systemOne{
+  display: flex;
+}
+.system{
+  display: flex;
+}
+.system-description{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  opacity: 0.6;
+}
+.click-all{
+  background: rgba(0, 159, 227, 0.1);
+  border-radius: 5px;
+  border:none;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  color: #009FE3;
+  padding:11px 50px;
+  width: 100%;
+  margin:40px 0 60px 0;
+
 }
