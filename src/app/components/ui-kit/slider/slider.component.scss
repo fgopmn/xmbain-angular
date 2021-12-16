@@ -2,6 +2,7 @@
   background-color: #FFFFFF;
   padding-top: 52px;
   padding-bottom: 110px;
+  position: relative;
 }
 .slider-block{
   width: 83%;
@@ -36,4 +37,17 @@
   padding-top: 50px;
   padding-bottom: 46px;
   padding-left: 51px;
+}
+.airHeaters-slider{
+  position:relative;
+}
+.left-slide{
+  position: absolute;
+  top:240px;
+  left:42px;
+}
+.right-slide{
+  position: absolute;
+  top:240px;
+  right:42px
 }

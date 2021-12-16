@@ -9,6 +9,7 @@ import { SelectInputComponent } from './select-input/select-input.component';
 import { ExhibitionsComponent } from './exhibitions/exhibitions.component';
 import {SliderComponent} from "./slider/slider.component";
 import {ProductCheckComponent} from "./product-check/product-check.component";
+import { EquipmentSeriesComponent } from './equipment-series/equipment-series.component';
 
 
 
@@ -21,7 +22,8 @@ import {ProductCheckComponent} from "./product-check/product-check.component";
     PressBlogComponent,
     ExhibitionsComponent,
     SliderComponent,
-    ProductCheckComponent
+    ProductCheckComponent,
+    EquipmentSeriesComponent
   ],
   exports: [ComplexComponent,
     EquipmentComponent,
@@ -30,7 +32,8 @@ import {ProductCheckComponent} from "./product-check/product-check.component";
     PressBlogComponent,
     ExhibitionsComponent,
     SliderComponent,
-    ProductCheckComponent
+    ProductCheckComponent,
+    EquipmentSeriesComponent
   ],
 
 

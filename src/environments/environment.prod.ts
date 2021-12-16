@@ -66,6 +66,12 @@ export const environment = {
   },
   airTC:{
     get:'/airTC'
+  },
+  indoor:{
+    get:'/indoor'
+  },
+  related:{
+    get:'/related'
   }
 
 };
