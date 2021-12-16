@@ -265,5 +265,127 @@ padding-bottom: 34px;
   top:0;
   right:0;
   width: 32.30%;
+}
+.tecnologia{
+background:white;
+}
+.tecnologia-container{
+  width:83%;
+  margin:auto;
+}
+.tecnologia-flex{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 99px;
+}
+.air-dry{
+  margin-right:46px;
+}
+.green-ellipse{
+  width:60px;
+  height: 60px;
+  background-color: #43B77A;
+  border-radius: 50%;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 110%;
+  text-align: center;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-top: 12px;
+}
+.dry-system{
+  padding: 59px 45px 69px 70px;
+  margin-right: 75px;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 60px rgba(2, 26, 36, 0.04);
+  border-radius: 40px;
+}
+.dry-system-title{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+  padding-right: 153px;
+  margin-top:15px;
+}
+.dry-system-text{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  margin-top:24px;
+}
+.air-dry{
+  padding-top:25px;
+}
+.air-heater-greenHouse{
+  display: flex;
+}
+
+ol li {
+  padding-bottom: 15px;
+  padding-right: 126px;font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+}
+.airHeaters-slider-title-container{
+  width: 83%;
+  margin: auto;
 
 }
+.airHeaters-slider-title-container p{
+  padding-top: 80px;
+  padding-bottom: 45px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+}
+.airHeaters-slider-title{
+  background: linear-gradient(180deg, #abd5e836 4.17%, rgba(255, 255, 255, 0) 100%);
+}
+
+.green-num{
+  margin-right:100px;
+  padding-right:23px;
+  padding-left:24px;
+}
+.green-description{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  opacity: 0.4;
+}
+.green-ellipse span{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 10px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
