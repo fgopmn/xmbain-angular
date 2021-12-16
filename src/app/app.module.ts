@@ -13,6 +13,7 @@ import {ProductComponent} from "./components/product/product.component";
 
 
 
+
 const routes: Routes = [
   {path:"",
    loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule)
@@ -43,6 +44,7 @@ const routes: Routes = [
     PressComponent,
     ServicesComponent,
     ProductComponent,
+
 
 
   ],
