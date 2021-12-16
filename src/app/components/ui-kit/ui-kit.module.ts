@@ -10,6 +10,7 @@ import { ExhibitionsComponent } from './exhibitions/exhibitions.component';
 import {SliderComponent} from "./slider/slider.component";
 import {ProductCheckComponent} from "./product-check/product-check.component";
 import { EquipmentSeriesComponent } from './equipment-series/equipment-series.component';
+import {SystemProductComponent} from "./system-product/system-product.component";
 
 
 
@@ -23,6 +24,7 @@ import { EquipmentSeriesComponent } from './equipment-series/equipment-series.co
     ExhibitionsComponent,
     SliderComponent,
     ProductCheckComponent,
+    SystemProductComponent,
     EquipmentSeriesComponent
   ],
   exports: [ComplexComponent,
