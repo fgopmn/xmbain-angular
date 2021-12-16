@@ -8,35 +8,99 @@
           <li>Контакты</li>
         </ul>
       </div>
-      <h1>Контакты</h1>
+
       <div class="information">
         <div class="address">
-          <h2>Москва</h2>
-          <div *ngFor="let item of getList">
-            <p>{{item.telephone}}</p>
-            <p>{{item.number}}</p>
-            <p>{{item.numberFax}}</p>
-            <button>{{item.click}}</button>
+          <h1>Контакты</h1>
+          <h2>Москва</h2><br>
+          <div class="address-telephone" *ngFor="let item of getList">
+            <p class="telephone-fax">{{item.telephone}}</p>
+
+            <div class="numbers">
+              <p class="numbers-text">{{item.number}}</p>
+              <p class="numbers-text">{{item.numberFax}}</p>
+            </div>
+
+
+              <button class="button-fax">{{item.click}}</button>
+
 
           </div>
-          <div *ngFor="let item2 of getList2 ">
-            <p>{{item2.email}}</p>
-            <p>{{item2.address}}</p>
+          <div class="email-service" *ngFor="let item2 of getList2 ">
+            <p class="email-text">{{item2.email}}</p>
+            <p class="email-addresses">{{item2.address}}</p>
           </div>
 
-          <div *ngFor="let item3 of getList3 ">
-            <p>{{item3.address}}</p>
-            <p>{{item3.text}}</p>
+          <div class="address-service" *ngFor="let item3 of getList3 ">
+            <p class="address-text">{{item3.address}}</p>
+            <p class="addresses-organization" [innerHTML]="item3.text"></p>
           </div>
 
 
         </div>
         <div class="contact-us">
-
+          <div class="contact-us-block">
+          <h3 class="title1">Напишите нам</h3>
+          <p class="main-text">Ответим на вопросы, проконсультируем<br>по вашей задаче. Неформальную заявку<br>тоже удобно отправить.</p>
+          <button class="message-button">Написать сообщение</button>
+          <h3 class="title2">Заказ</h3>
+          <button class="information-button">Подбор оборудования</button>
+          <div class="downloads-text">
+            <img src="../../../../assets/contacts/Group 179.png" alt="">
+          <p class="downloads-text2">Скачать опросный лист</p>
+          </div>
+          </div>
         </div>
 
       </div>
     </div>
   </div>
 
+<div class="maps-block">
+
+</div>
+<div class="information-cities">
+  <h4>Представительства</h4>
+  <div class="cities-block">
+  <ul>
+    <li>Барнаул</li>
+    <li>Белгород</li>
+    <li>Владивосток</li>
+    <li>Выборг</li>
+    <li>Грозный</li>
+  </ul>
+  <ul>
+    <li>Екатеринбург</li>
+    <li>Иркутск</li>
+    <li>Казань</li>
+    <li>Кемерово</li>
+    <li>Краснодар</li>
+  </ul>
+  <ul>
+    <li>Кузнецк</li>
+    <li>Набережные</li>
+    <li>Челны</li>
+    <li>Новокузнецк</li>
+    <li>Новороссийск</li>
+  </ul>
+  <ul>
+    <li>Новосибирск</li>
+    <li>Новочеркасск</li>
+    <li>Норильск</li>
+    <li>Орел</li>
+    <li>Оренбург</li>
+  </ul>
+  <ul>
+    <li>Санкт-Петербург</li>
+    <li>Саранск</li>
+    <li>Ухта</li>
+    <li>Чебоксары</li>
+    <li>Челябинск</li>
+  </ul>
+  <ul>
+    <li>Южно-Сахалинск</li>
+    <li>Ярославль</li>
+  </ul>
+  </div>
+</div>
 <app-footer></app-footer>
