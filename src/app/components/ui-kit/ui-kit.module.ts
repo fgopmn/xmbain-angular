@@ -11,6 +11,7 @@ import {SliderComponent} from "./slider/slider.component";
 import {ProductCheckComponent} from "./product-check/product-check.component";
 import { EquipmentSeriesComponent } from './equipment-series/equipment-series.component';
 import {SystemProductComponent} from "./system-product/system-product.component";
+import { FullRangeComponent } from './full-range/full-range.component';
 
 
 
@@ -25,7 +26,8 @@ import {SystemProductComponent} from "./system-product/system-product.component"
     SliderComponent,
     ProductCheckComponent,
     SystemProductComponent,
-    EquipmentSeriesComponent
+    EquipmentSeriesComponent,
+    FullRangeComponent
   ],
   exports: [ComplexComponent,
     EquipmentComponent,
@@ -35,7 +37,7 @@ import {SystemProductComponent} from "./system-product/system-product.component"
     ExhibitionsComponent,
     SliderComponent,
     ProductCheckComponent,
-    EquipmentSeriesComponent
+    EquipmentSeriesComponent, FullRangeComponent
   ],
 
 
