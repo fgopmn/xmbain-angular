@@ -88,7 +88,10 @@
   margin-top:40px;
   margin-bottom:80px;
   border:none;
-  margin-left:120px
+}
+.click{
+  width: 83%;
+  margin: auto;
 }
 .blog-click span{
   color: #009FE3;
@@ -109,7 +112,7 @@
   opacity: 0.1;
   border-radius: 5px;
   padding:10px 20px;
-  margin:70.53px 0 80px 120px;
+  margin:70.53px 0 80px 0;
   border:none;
 }
 .event-click span{
@@ -125,7 +128,4 @@
 show__date-line{
   color:  #FFFFFF;
 }
-/*.hh event-title{
-  display:none;
-}
-*/
+

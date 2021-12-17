@@ -13,16 +13,21 @@ import {ProductComponent} from "./components/product/product.component";
 
 
 
-
 const routes: Routes = [
   {path:"",
    loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule)
   },
-  {path:"company",
+  {
+    path:"company",
     loadChildren: () => import('./components/company/company.module').then(m => m.CompanyModule)
   },
-  {path:"air-heaters",
+  {
+    path:"air-heaters",
     loadChildren: () => import('./components/air-heaters/air-heaters.module').then(m => m.AirHeatersModule)
+  },
+  {
+    path:"page-solution",
+    loadChildren: () => import('./components/page-solution/solution.module').then(m => m.SolutionModule)
   },
   {
     path:"press",
@@ -44,9 +49,6 @@ const routes: Routes = [
     PressComponent,
     ServicesComponent,
     ProductComponent,
-
-
-
   ],
   imports: [
     BrowserModule,
@@ -55,6 +57,7 @@ const routes: Routes = [
     HttpClientModule,
     MainModule,
     UiKitModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,13 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { SolutionRoutingModule } from './solution-routing.module';
-import {PageSolutionComponent} from "../page-solution.component";
+import {PageSolutionComponent} from "./page-solution.component";
+import{MainModule} from "../main/main.module"
 
 @NgModule({
   declarations: [PageSolutionComponent],
   imports: [
     CommonModule,
-    SolutionRoutingModule
+    SolutionRoutingModule,
+    MainModule
   ]
 })
 export class SolutionModule { }

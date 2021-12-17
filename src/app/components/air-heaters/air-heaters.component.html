@@ -79,6 +79,22 @@
   </div>
 </div>
 
+<div class="heat-section">
+  <div class="heat-container">
+    <div>
+      <p class="heat-title">Достоинства и преимущества оборудования Tecnoclima</p>
+     <p class="heat-little-title">Стационарные теплогенераторы TC и секции нагрева SR</p>
+    </div>
+    <div class="heat-flex">
+      <app-full-range *ngFor="let heat of heats"
+      [heatText]="heat.heatText"
+      [heatNumber]="heat.id"
+
+      ></app-full-range>
+    </div>
+  </div>
+</div>
+
 <div class="air">
   <div class="air-container">
     <div class="air-title-air">

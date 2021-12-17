@@ -345,7 +345,6 @@ ol li {
 .airHeaters-slider-title-container{
   width: 83%;
   margin: auto;
-
 }
 .airHeaters-slider-title-container p{
   padding-top: 80px;
@@ -387,4 +386,38 @@ ol li {
   color: #FFFFFF;
   opacity: 0.6;
 }
-
+.heat-section{
+  background: linear-gradient(90deg, #FBFEFF 0%, #F0F8FC 100%);
+}
+.heat-container{
+  width: 83%;
+  margin:auto;
+}
+.heat-title{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+  padding: 80px 100px 28px 0;
+  margin-right:92px;
+}
+.heat-little-title{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  opacity: 0.35;
+}
+.heat-flex{
+  display: flex;
+  margin-top:40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 80px;
+}

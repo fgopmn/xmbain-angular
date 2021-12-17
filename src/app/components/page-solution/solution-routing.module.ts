@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {PageSolutionComponent} from "../page-solution.component";
+import {PageSolutionComponent} from "./page-solution.component";
+
 
 const routes: Routes = [
   {
