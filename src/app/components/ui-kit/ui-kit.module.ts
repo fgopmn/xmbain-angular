@@ -15,6 +15,7 @@ import {HighlyEfficientComponent} from "./highly-efficient/highly-efficient.comp
 
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { FullRangeComponent } from './full-range/full-range.component';
+import { RelatedEquipmentComponent } from './related-equipment/related-equipment.component';
 
 
 
@@ -33,19 +34,9 @@ import { FullRangeComponent } from './full-range/full-range.component';
     EquipmentSeriesComponent,
 
     EquipmentSeriesComponent,
-    FullRangeComponent
+    FullRangeComponent,
+    RelatedEquipmentComponent
   ],
-    exports: [ComplexComponent,
-        EquipmentComponent,
-        TechnologicalComponent,
-        PressEventsComponent,
-        PressBlogComponent,
-        ExhibitionsComponent,
-        SliderComponent,
-        ProductCheckComponent,
-        HighlyEfficientComponent,
-        EquipmentSeriesComponent,
-    ],
   exports: [ComplexComponent,
     EquipmentComponent,
     TechnologicalComponent,
@@ -54,8 +45,10 @@ import { FullRangeComponent } from './full-range/full-range.component';
     ExhibitionsComponent,
     SliderComponent,
     ProductCheckComponent,
-    EquipmentSeriesComponent, FullRangeComponent
+    HighlyEfficientComponent,
+    EquipmentSeriesComponent, FullRangeComponent,
   ],
+
 
 
 

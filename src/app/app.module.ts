@@ -1,17 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
+import {AppComponent } from './app.component';
 import {RouterModule, Routes} from "@angular/router";
 import {HttpClientModule} from "@angular/common/http";
 import {PressComponent } from './components/press/press.component';
 import {MainModule} from "./components/main/main.module";
-import { ServicesComponent } from './components/services/services.component';
+import {ServicesComponent } from './components/services/services.component';
 import {UiKitModule} from "./components/ui-kit/ui-kit.module";
 import {ContactsComponent } from './components/contacts/contacts.component';
 import {ProductComponent} from "./components/product/product.component";
-import { SpecificationsComponent } from './components/specifications/specifications.component';
-import {SpecificationsModule} from "./components/specifications/specifications.module";
+import {SpecificationsComponent } from './components/specifications/specifications.component';
+import { DocumentsComponent } from './components/documents/documents.component';
+
 
 
 
@@ -30,6 +31,9 @@ const routes: Routes = [
   },
   {path:"specifications",
     loadChildren: () => import('./components/specifications/specifications.module').then(m => m.SpecificationsModule)
+  },
+  {path:"documents",
+    loadChildren: () => import('./components/documents/documents.module').then(m => m.DocumentsModule)
   },
   {
     path:"page-solution",
@@ -55,7 +59,8 @@ const routes: Routes = [
     PressComponent,
     ServicesComponent,
     ProductComponent,
-    SpecificationsComponent,
+
+
 
 
 

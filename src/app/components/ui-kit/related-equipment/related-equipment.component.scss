@@ -1,29 +1,42 @@
-.indoor{
-  width: 83%;
+.related-title{
+  background: linear-gradient(180deg, #abd5e836 4.17%, rgba(255, 255, 255, 0) 100%);
+
+}
+.related-title-container{
+  width:83%;
   margin: auto;
 }
-.indoor-title{
+.related-name{
+  padding-top:80px ;
+  padding-bottom: 45px;
   font-family: Manrope;
   font-style: normal;
   font-weight: 800;
   font-size: 46px;
   line-height: 120%;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
   color: #021C27;
 }
-.indoor-block{
+.related{
+  padding:0 37px;
+  //margin-right: 53px;
+}
+.related-block{
+  background-color: white;
+}
+.related-block-flex{
   display: flex;
-  padding-top: 40px;
-  padding-bottom: 60px;
+  padding-bottom:99px;
 }
-.indoor-block-child {
-  padding-right: 20px
+.related-block-flex:last-child{
+  margin:0;
+}
 
+.related-block-container{
+  width:83%;
+  margin:auto;
 }
-.indoor-block-child-img{
-  padding: 35px 60px 19px 61px;
-}
-.indoor-block-child-title{
+.related-seria{
   font-family: Manrope;
   font-style: normal;
   font-weight: 600;
@@ -32,19 +45,10 @@
   text-align: center;
   letter-spacing: 0.2px;
   color: #021C27;
+  margin-top:19px;
+  margin-bottom: 10px;
 }
-.indoor-block-child-titleAbout{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 120%;
-  letter-spacing: 0.2px;
-  color: #021C27;
-  padding-left: 40px;
-  padding-top: 10px;
-}
-.indoor-block-child-text{
+.related-text{
   font-family: Manrope;
   font-style: normal;
   font-weight: normal;
@@ -53,7 +57,15 @@
   letter-spacing: 0.2px;
   color: #021C27;
   opacity: 0.4;
-  padding-left: 40px;
-  padding-top: 38px;
-  padding-bottom: 36px;
+}
+.related-little-title{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  margin-bottom: 17px;
+
 }
