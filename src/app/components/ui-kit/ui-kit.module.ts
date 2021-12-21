@@ -11,6 +11,9 @@ import {SliderComponent} from "./slider/slider.component";
 import {ProductCheckComponent} from "./product-check/product-check.component";
 import { EquipmentSeriesComponent } from './equipment-series/equipment-series.component';
 import {SystemProductComponent} from "./system-product/system-product.component";
+import {HighlyEfficientComponent} from "./highly-efficient/highly-efficient.component";
+
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 
 
@@ -25,23 +28,28 @@ import {SystemProductComponent} from "./system-product/system-product.component"
     SliderComponent,
     ProductCheckComponent,
     SystemProductComponent,
-    EquipmentSeriesComponent
+    HighlyEfficientComponent,
+    EquipmentSeriesComponent,
+
   ],
-  exports: [ComplexComponent,
-    EquipmentComponent,
-    TechnologicalComponent,
-    PressEventsComponent,
-    PressBlogComponent,
-    ExhibitionsComponent,
-    SliderComponent,
-    ProductCheckComponent,
-    EquipmentSeriesComponent
-  ],
+    exports: [ComplexComponent,
+        EquipmentComponent,
+        TechnologicalComponent,
+        PressEventsComponent,
+        PressBlogComponent,
+        ExhibitionsComponent,
+        SliderComponent,
+        ProductCheckComponent,
+        HighlyEfficientComponent,
+        EquipmentSeriesComponent,
+    ],
 
 
 
   imports: [
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule,
+    FormsModule,
   ]
 })
 export class UiKitModule { }

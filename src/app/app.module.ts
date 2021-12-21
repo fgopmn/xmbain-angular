@@ -10,6 +10,9 @@ import { ServicesComponent } from './components/services/services.component';
 import {UiKitModule} from "./components/ui-kit/ui-kit.module";
 import {ContactsComponent } from './components/contacts/contacts.component';
 import {ProductComponent} from "./components/product/product.component";
+import { SpecificationsComponent } from './components/specifications/specifications.component';
+import {SpecificationsModule} from "./components/specifications/specifications.module";
+
 
 
 
@@ -23,6 +26,9 @@ const routes: Routes = [
   },
   {path:"air-heaters",
     loadChildren: () => import('./components/air-heaters/air-heaters.module').then(m => m.AirHeatersModule)
+  },
+  {path:"specifications",
+    loadChildren: () => import('./components/specifications/specifications.module').then(m => m.SpecificationsModule)
   },
   {
     path:"press",
@@ -44,6 +50,8 @@ const routes: Routes = [
     PressComponent,
     ServicesComponent,
     ProductComponent,
+    SpecificationsComponent,
+
 
 
 
