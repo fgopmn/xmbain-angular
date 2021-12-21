@@ -75,6 +75,9 @@ export const environment = {
   },
   newsChild:{
     get:'/newsChild'
+  },
+  heatGenerator:{
+    get:'/heatGenerator'
   }
 
 };

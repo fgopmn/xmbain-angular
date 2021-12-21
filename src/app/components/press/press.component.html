@@ -29,8 +29,8 @@
   <app-press-blog></app-press-blog>
   <app-press-blog></app-press-blog>
 
+<div class="click"><button class="blog-click"><span>В блог</span></button></div>
 
-  <button class="blog-click"><span>В блог</span></button>
 </div>
 
 
@@ -40,11 +40,20 @@
 
   <app-press-events> </app-press-events>
   <app-press-events> </app-press-events>
-    <button class="event-click"><span>Все события</span></button>
+    <div  class="click"><button class="event-click"><span>Все события</span></button></div>
 
 </div>
 
-<app-exhibitions></app-exhibitions>
+<app-exhibitions
+  *ngFor="let j of show"
+  [day]="j.day"
+ [month]="j.month"
+ [day2]="j.day2"
+ [text]="j.text"
+>
+</app-exhibitions>
+
+
 <app-footer></app-footer>
 
 

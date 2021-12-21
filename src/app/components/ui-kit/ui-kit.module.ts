@@ -12,6 +12,11 @@ import {ProductCheckComponent} from "./product-check/product-check.component";
 import { EquipmentSeriesComponent } from './equipment-series/equipment-series.component';
 import {SystemProductComponent} from "./system-product/system-product.component";
 import { NewsChildComponent } from './news-child/news-child.component';
+import {HighlyEfficientComponent} from "./highly-efficient/highly-efficient.component";
+
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { FullRangeComponent } from './full-range/full-range.component';
+import { RelatedEquipmentComponent } from './related-equipment/related-equipment.component';
 
 
 
@@ -26,6 +31,12 @@ import { NewsChildComponent } from './news-child/news-child.component';
     SliderComponent,
     ProductCheckComponent,
     SystemProductComponent,
+    HighlyEfficientComponent,
+    EquipmentSeriesComponent,
+
+    EquipmentSeriesComponent,
+    FullRangeComponent,
+    RelatedEquipmentComponent
     EquipmentSeriesComponent,
     NewsChildComponent
   ],
@@ -38,7 +49,10 @@ import { NewsChildComponent } from './news-child/news-child.component';
     SliderComponent,
     ProductCheckComponent,
     EquipmentSeriesComponent, NewsChildComponent
+    HighlyEfficientComponent,
+    EquipmentSeriesComponent, FullRangeComponent,
   ],
+
 
 
 

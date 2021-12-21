@@ -10,6 +10,9 @@ import { ServicesComponent } from './components/services/services.component';
 import {UiKitModule} from "./components/ui-kit/ui-kit.module";
 import {ContactsComponent } from './components/contacts/contacts.component';
 import {ProductComponent} from "./components/product/product.component";
+import {SpecificationsComponent } from './components/specifications/specifications.component';
+import { DocumentsComponent } from './components/documents/documents.component';
+
 
 
 
@@ -28,6 +31,16 @@ const routes: Routes = [
   },
   {path:"news",
     loadChildren: () => import('./components/news/news.module').then(m => m.NewsModule)
+  },
+  {path:"specifications",
+    loadChildren: () => import('./components/specifications/specifications.module').then(m => m.SpecificationsModule)
+  },
+  {path:"documents",
+    loadChildren: () => import('./components/documents/documents.module').then(m => m.DocumentsModule)
+  },
+  {
+    path:"page-solution",
+    loadChildren: () => import('./components/page-solution/solution.module').then(m => m.SolutionModule)
   },
   {
     path:"press",
@@ -53,6 +66,9 @@ const routes: Routes = [
 
 
 
+
+
+
   ],
   imports: [
     BrowserModule,
@@ -61,6 +77,7 @@ const routes: Routes = [
     HttpClientModule,
     MainModule,
     UiKitModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

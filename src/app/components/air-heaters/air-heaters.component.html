@@ -10,57 +10,7 @@
     </ul>
   </div>
 </div>
-<div>
-  <div class="highlyEfficient">
-      <div class="highlyEfficient-child1">
-          <h6>TC-DF</h6>
-          <div class="highlyEfficient-child1-imegis">
-            <div><img src="../../../../assets/img/image 11.png" alt=""></div>
-            <div><img src="../../../../assets/img/image 29.png" alt=""></div>
-            <div><img src="../../../../assets/img/image 30.png" alt=""></div>
-            <div><img src="../../../../assets/img/image 31.png" alt=""></div>
-            <div class="treeimg"><img  src="../../../../assets/img/+3.png" alt=""></div>
-          </div>
-        <img class="highlyEfficient-child1-img" src="../../../../assets/img/image 2.png" alt=""></div>
-
-    <div class="highlyEfficient-child2">
-        <p class="highlyEfficient-child2-text">Высокоэффективные вертикальные воздушные обогреватели
-          с выходом воздуха вниз (Down Flow) для специального применения.<br><br>
-          Высокоэффективный воздухонагреватель. Вертикальная версия серии TC
-          Down Flow с газовой или дизельной горелкой обеспечивает подачу теплого воздуха в основном в
-          тепличные конструкции, а также во всех случаях, когда требуется диффузия через
-          воздухораспределительное устройство.
-        </p>
-      <div class="highlyEfficient-child2-textBlock">
-        <div class="highlyEfficient-child2-textBlock-child1">
-          <p>Назначение</p>
-          <p>Топливо</p>
-          <p>Тепловая мощность</p>
-          <p>Воздушный поток</p>
-        </div>
-        <div class="highlyEfficient-child2-textBlock-child2">
-          <p>отопление</p>
-          <p>газ, дизель</p>
-          <p>160-770 кВт</p>
-          <p>10600-50000 м3/ч</p>
-        </div>
-
-      </div>
-      <button>Получить консультацию</button>
-    </div>
-
-  </div>
-  <div class="highlyEfficient-menu">
-    <div class="highlyEfficient-menu-child"><p>Описание</p></div>
-    <div class="highlyEfficient-menu-child"><p>Конструкция</p></div>
-    <div class="highlyEfficient-menu-child"><p>Технические характеристики</p></div>
-    <div class="highlyEfficient-menu-child"><p>Документы и файлы</p></div>
-    <div class="highlyEfficient-menu-child"><p>Аксессуары</p></div>
-  </div>
-</div>
-
-
-
+<app-highly-efficient></app-highly-efficient>
 <div class="application">
   <div class="application-container">
     <div>
@@ -75,6 +25,22 @@
         <img src="{{item.img}}" alt="" class="descriptiom-img">
         <p class="descriptiom-text">{{item.text}}</p>
       </div>
+    </div>
+  </div>
+</div>
+
+<div class="heat-section">
+  <div class="heat-container">
+    <div>
+      <p class="heat-title">Достоинства и преимущества оборудования Tecnoclima</p>
+     <p class="heat-little-title">Стационарные теплогенераторы TC и секции нагрева SR</p>
+    </div>
+    <div class="heat-flex">
+      <app-full-range *ngFor="let heat of heats"
+      [heatText]="heat.heatText"
+      [heatNumber]="heat.id"
+
+      ></app-full-range>
     </div>
   </div>
 </div>
@@ -173,6 +139,9 @@
   </div>
 
   <app-slider></app-slider>
+</div>
+<div class="technological">
+  <app-technological></app-technological>
 </div>
 
 <app-footer></app-footer>
