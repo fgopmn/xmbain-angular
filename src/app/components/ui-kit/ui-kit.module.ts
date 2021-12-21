@@ -14,6 +14,7 @@ import {SystemProductComponent} from "./system-product/system-product.component"
 import {HighlyEfficientComponent} from "./highly-efficient/highly-efficient.component";
 
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { FullRangeComponent } from './full-range/full-range.component';
 
 
 
@@ -31,6 +32,8 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     HighlyEfficientComponent,
     EquipmentSeriesComponent,
 
+    EquipmentSeriesComponent,
+    FullRangeComponent
   ],
     exports: [ComplexComponent,
         EquipmentComponent,
@@ -43,6 +46,16 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
         HighlyEfficientComponent,
         EquipmentSeriesComponent,
     ],
+  exports: [ComplexComponent,
+    EquipmentComponent,
+    TechnologicalComponent,
+    PressEventsComponent,
+    PressBlogComponent,
+    ExhibitionsComponent,
+    SliderComponent,
+    ProductCheckComponent,
+    EquipmentSeriesComponent, FullRangeComponent
+  ],
 
 
 
