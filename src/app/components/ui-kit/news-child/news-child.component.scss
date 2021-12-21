@@ -1,0 +1,55 @@
+.news {
+  background-color: white;
+}
+.news-contain {
+  max-width: 1200px;
+  margin: auto;
+  background-color: white;
+}
+.file-text {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 75px;
+  background-color: white;
+}
+.file-text-1 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  background-color: white;
+}
+.file-text-2 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  background-color: white;
+}
+.file-text-3 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  background-color: white;
+}
+.file-img {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 75px;
+  background-color: white;
+}
+

@@ -14,6 +14,8 @@ import {ProductComponent} from "./components/product/product.component";
 
 
 
+
+
 const routes: Routes = [
   {path:"",
    loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule)
@@ -23,6 +25,9 @@ const routes: Routes = [
   },
   {path:"air-heaters",
     loadChildren: () => import('./components/air-heaters/air-heaters.module').then(m => m.AirHeatersModule)
+  },
+  {path:"news",
+    loadChildren: () => import('./components/news/news.module').then(m => m.NewsModule)
   },
   {
     path:"press",
@@ -44,6 +49,7 @@ const routes: Routes = [
     PressComponent,
     ServicesComponent,
     ProductComponent,
+
 
 
 

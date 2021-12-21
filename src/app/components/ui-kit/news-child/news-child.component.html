@@ -1,0 +1,14 @@
+
+<div class="news">
+  <div *ngFor="let item of newsChild" class="news-contain">
+    <div class="file-text">
+     <p class="file-text-1" [innerHTML]="item.text1"></p>
+     <p class="file-text-2" [innerHTML]="item.text2"></p>
+    </div>
+    <div class="file-img">
+      <img src="{{item.img1}}" alt="">
+      <img src="{{item.img2}}" alt="">
+    </div>
+    <p class="file-text-3" [innerHTML]="item.text3"></p>
+  </div>
+</div>
