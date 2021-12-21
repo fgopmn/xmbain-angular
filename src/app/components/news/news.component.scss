@@ -30,10 +30,6 @@
   background-color: white;
   margin: auto;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-
 }
 .contain-button {
   font-family: Manrope;
@@ -55,6 +51,11 @@
 }
 .contain-dats {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  width: 50%;
+  background-color: white;
 }
 .contain-dats p {
   font-family: Manrope;
@@ -64,4 +65,36 @@
   line-height: 130%;
   color: #021C27;
   opacity: 0.3;
+  margin-top: 50px;
+  padding-left: 11px;
+  margin-bottom: 14px;
+}
+
+.contain-h {
+  background-color: white;
+  width: 50%;
+  margin-bottom: 100px;
+}
+.contain-h h6 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+  margin-bottom: 66px;
+}
+.contain-h p {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #000000;
+}
+.contain-account {
+  width: 490px;
+  background: linear-gradient(90deg,#abd5e840 0%, rgba(255, 255, 255, 0) 100%);
 }

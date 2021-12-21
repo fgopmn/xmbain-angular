@@ -36,7 +36,7 @@ import { RelatedEquipmentComponent } from './related-equipment/related-equipment
 
     EquipmentSeriesComponent,
     FullRangeComponent,
-    RelatedEquipmentComponent
+    RelatedEquipmentComponent,
     EquipmentSeriesComponent,
     NewsChildComponent
   ],
@@ -48,9 +48,9 @@ import { RelatedEquipmentComponent } from './related-equipment/related-equipment
     ExhibitionsComponent,
     SliderComponent,
     ProductCheckComponent,
-    EquipmentSeriesComponent, NewsChildComponent
+    EquipmentSeriesComponent, NewsChildComponent,
     HighlyEfficientComponent,
-    EquipmentSeriesComponent, FullRangeComponent,
+    EquipmentSeriesComponent, FullRangeComponent, RelatedEquipmentComponent,
   ],
 
 

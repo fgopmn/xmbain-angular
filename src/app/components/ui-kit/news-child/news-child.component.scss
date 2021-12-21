@@ -11,7 +11,6 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  margin-bottom: 75px;
   background-color: white;
 }
 .file-text-1 {
@@ -23,6 +22,12 @@
   letter-spacing: 0.2px;
   color: #021C27;
   background-color: white;
+  padding-bottom: 75px;
+}
+.text-fon {
+  width: 490px;
+  background: linear-gradient(90deg,#abd5e840 0%, rgba(255, 255, 255, 0) 100%);
+
 }
 .file-text-2 {
   font-family: Manrope;
@@ -32,7 +37,7 @@
   line-height: 160%;
   letter-spacing: 0.2px;
   color: #021C27;
-  background-color: white;
+  padding-left: 109px;
 }
 .file-text-3 {
   font-family: Manrope;
