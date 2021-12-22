@@ -19,7 +19,6 @@ import { RelatedEquipmentComponent } from './related-equipment/related-equipment
 
 
 
-
 @NgModule({
   declarations: [
     ComplexComponent,
@@ -40,22 +39,6 @@ import { RelatedEquipmentComponent } from './related-equipment/related-equipment
     RelatedEquipmentComponent,
     NewsChildComponent
   ],
-  exports: [
-    ComplexComponent,
-    EquipmentComponent,
-    TechnologicalComponent,
-    PressEventsComponent,
-    PressBlogComponent,
-    ExhibitionsComponent,
-    SliderComponent,
-    ProductCheckComponent,
-    EquipmentSeriesComponent,
-    NewsChildComponent,
-    HighlyEfficientComponent,
-    EquipmentSeriesComponent,
-    FullRangeComponent
-  ],
-
     exports: [
       ComplexComponent,
         EquipmentComponent,
