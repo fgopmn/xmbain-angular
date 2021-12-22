@@ -78,6 +78,8 @@ export const environment = {
   },
   heatGenerator:{
     get:'/heatGenerator'
+  },
+  airHeating:{
+    get:'/airHeating'
   }
-
 };

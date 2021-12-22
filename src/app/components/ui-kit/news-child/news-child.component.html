@@ -8,9 +8,22 @@
       </div>
     </div>
     <div class="file-img">
-      <img src="{{item.img1}}" alt="">
-      <img src="{{item.img2}}" alt="">
+      <img class="image-file" src="{{item.img1}}" alt="">
+      <img class="image-file2" src="{{item.img2}}" alt="">
     </div>
-    <p class="file-text-3" [innerHTML]="item.text3"></p>
+    <div style="background-color: white">
+      <div class="file-info-contain">
+        <div class="info-flex">
+        <div class="info-text">
+          <p class="file-text-3" [innerHTML]="item.text3"></p>
+        </div>
+        <div class="info-gradient">
+
+        </div>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 </div>

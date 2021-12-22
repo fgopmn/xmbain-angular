@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {environment} from "../../../../environments/environment.prod";
 import {RequestService} from "../../../service/request.service";
 
@@ -9,6 +9,7 @@ import {RequestService} from "../../../service/request.service";
 })
 export class RelatedEquipmentComponent implements OnInit {
  public related:any[] = [];
+ @Input("title")title:string=""
   constructor(public requestService:RequestService) { }
 
   ngOnInit(): void {
