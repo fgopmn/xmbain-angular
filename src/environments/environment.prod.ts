@@ -75,6 +75,17 @@ export const environment = {
   },
   heatGenerator:{
     get:'/heatGenerator'
+  },
+  task:{
+    get:'/task'
+  },
+  advantages:{
+    get:'/advantages'
+  },
+  solution:{
+    get:'/solution'
+  },
+  used:{
+    get:'/used'
   }
-
 };

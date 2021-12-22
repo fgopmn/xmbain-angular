@@ -9,8 +9,6 @@ const routes: Routes = [
     component:PageSolutionComponent
   }
 ];
-
-
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]

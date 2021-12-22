@@ -12,9 +12,7 @@ import {ProductCheckComponent} from "./product-check/product-check.component";
 import { EquipmentSeriesComponent } from './equipment-series/equipment-series.component';
 import {SystemProductComponent} from "./system-product/system-product.component";
 import { FullRangeComponent } from './full-range/full-range.component';
-
-
-
+import { UsedEquipmentComponent } from './used-equipment/used-equipment.component';
 
 @NgModule({
   declarations: [ComplexComponent,
@@ -27,19 +25,21 @@ import { FullRangeComponent } from './full-range/full-range.component';
     ProductCheckComponent,
     SystemProductComponent,
     EquipmentSeriesComponent,
-    FullRangeComponent
+    FullRangeComponent,
+    UsedEquipmentComponent
   ],
-  exports: [ComplexComponent,
-    EquipmentComponent,
-    TechnologicalComponent,
-    PressEventsComponent,
-    PressBlogComponent,
-    ExhibitionsComponent,
-    SliderComponent,
-    ProductCheckComponent,
-    EquipmentSeriesComponent, FullRangeComponent
-  ],
-
+    exports: [ComplexComponent,
+        EquipmentComponent,
+        TechnologicalComponent,
+        PressEventsComponent,
+        PressBlogComponent,
+        ExhibitionsComponent,
+        SliderComponent,
+        ProductCheckComponent,
+        EquipmentSeriesComponent,
+      FullRangeComponent,
+      UsedEquipmentComponent
+    ],
 
 
   imports: [
