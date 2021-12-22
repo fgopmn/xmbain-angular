@@ -1,0 +1,22 @@
+<div class="related-title">
+  <div class="related-title-container">
+    <p class="related-name"> Сопутствующее оборудование</p>
+  </div>
+
+</div>
+
+<div class="related-block">
+  <div class="related-block-container">
+    <div class="related-block-flex">
+      <div class="related" *ngFor="let item of related">
+        <img src="{{item.img}}" alt="">
+        <p class="related-seria">{{item.seria}}</p>
+        <p class="related-little-title">{{item.title}}</p>
+        <p class="related-text">{{item.text}}</p>
+      </div>
+
+
+    </div>
+
+  </div>
+</div>

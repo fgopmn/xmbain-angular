@@ -10,6 +10,12 @@ import { ServicesComponent } from './components/services/services.component';
 import {UiKitModule} from "./components/ui-kit/ui-kit.module";
 import {ContactsComponent } from './components/contacts/contacts.component';
 import {ProductComponent} from "./components/product/product.component";
+import {SpecificationsComponent } from './components/specifications/specifications.component';
+import { DocumentsComponent } from './components/documents/documents.component';
+
+
+
+
 
 
 
@@ -17,13 +23,20 @@ const routes: Routes = [
   {path:"",
    loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule)
   },
-  {
-    path:"company",
+  {path:"company",
     loadChildren: () => import('./components/company/company.module').then(m => m.CompanyModule)
   },
-  {
-    path:"air-heaters",
+  {path:"air-heaters",
     loadChildren: () => import('./components/air-heaters/air-heaters.module').then(m => m.AirHeatersModule)
+  },
+  {path:"news",
+    loadChildren: () => import('./components/news/news.module').then(m => m.NewsModule)
+  },
+  {path:"specifications",
+    loadChildren: () => import('./components/specifications/specifications.module').then(m => m.SpecificationsModule)
+  },
+  {path:"documents",
+    loadChildren: () => import('./components/documents/documents.module').then(m => m.DocumentsModule)
   },
   {
     path:"page-solution",
@@ -49,6 +62,13 @@ const routes: Routes = [
     PressComponent,
     ServicesComponent,
     ProductComponent,
+
+
+
+
+
+
+
   ],
   imports: [
     BrowserModule,

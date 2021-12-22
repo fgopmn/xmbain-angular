@@ -10,21 +10,17 @@ import {RequestService} from "../../../service/request.service";
 })
 export class EquipmentSeriesComponent implements OnInit {
   public getList: any[] = [];
-  public related:any[] = [];
+
   constructor(public requestService:RequestService) { }
 
   ngOnInit(): void {
     this.getRequest()
-    this.getRelated()
+
   }
   getRequest(){
     this.requestService.getData(`${environment.url}${environment.indoor.get}`).subscribe((items:any) => {
       this.getList = items
     })
   }
-  getRelated(){
-    this.requestService.getData(`${environment.url}${environment.related.get}`).subscribe((items:any) => {
-      this.related = items
-    })
-  }
+
 }
