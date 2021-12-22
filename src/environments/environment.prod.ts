@@ -81,5 +81,18 @@ export const environment = {
   },
   airHeating:{
     get:'/airHeating'
+  },
+  task:{
+    get:'/task'
+  },
+  advantages:{
+    get:'/advantages'
+  },
+  solution:{
+    get:'/solution'
+  },
+  used:{
+    get:'/used'
   }
+
 };

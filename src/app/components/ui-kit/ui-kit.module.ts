@@ -16,16 +16,19 @@ import {HighlyEfficientComponent} from "./highly-efficient/highly-efficient.comp
 
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { FullRangeComponent } from './full-range/full-range.component';
+import { UsedEquipmentComponent } from './used-equipment/used-equipment.component';
 import { RelatedEquipmentComponent } from './related-equipment/related-equipment.component';
 
 
 
 
 @NgModule({
-  declarations: [ComplexComponent,
+  declarations: [
+    ComplexComponent,
     EquipmentComponent,
     TechnologicalComponent,
-    SelectInputComponent, PressEventsComponent,
+    SelectInputComponent,
+    PressEventsComponent,
     PressBlogComponent,
     ExhibitionsComponent,
     SliderComponent,
@@ -36,6 +39,9 @@ import { RelatedEquipmentComponent } from './related-equipment/related-equipment
 
     EquipmentSeriesComponent,
     FullRangeComponent,
+    UsedEquipmentComponent,
+    FullRangeComponent,
+    RelatedEquipmentComponent,
     RelatedEquipmentComponent,
     EquipmentSeriesComponent,
     NewsChildComponent
@@ -54,6 +60,24 @@ import { RelatedEquipmentComponent } from './related-equipment/related-equipment
   ],
 
 
+    exports: [
+      ComplexComponent,
+        EquipmentComponent,
+        TechnologicalComponent,
+        PressEventsComponent,
+        PressBlogComponent,
+        ExhibitionsComponent,
+        SliderComponent,
+        ProductCheckComponent,
+        EquipmentSeriesComponent,
+      FullRangeComponent,
+      UsedEquipmentComponent,
+      NewsChildComponent,
+      RelatedEquipmentComponent,
+
+
+
+    ],
 
 
   imports: [
