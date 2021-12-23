@@ -47,6 +47,7 @@ import { AccessoriesChildComponent } from './accessories-child/accessories-child
     EquipmentSeriesComponent,
     NewsChildComponent
   ],
+
   exports: [
     ComplexComponent,
     EquipmentComponent,
@@ -62,7 +63,8 @@ import { AccessoriesChildComponent } from './accessories-child/accessories-child
     UsedEquipmentComponent,
     FullRangeComponent,
     RelatedEquipmentComponent,
-    NewsChildComponent
+    NewsChildComponent,
+    AccessoriesChildComponent
   ],
 
 

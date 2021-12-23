@@ -11,15 +11,6 @@ import {UiKitModule} from "./components/ui-kit/ui-kit.module";
 import {ContactsComponent } from './components/contacts/contacts.component';
 import {ProductComponent} from "./components/product/product.component";
 import {PartnersComponent} from "./components/partners/partners.component";
-import {SpecificationsComponent } from './components/specifications/specifications.component';
-import { DocumentsComponent } from './components/documents/documents.component';
-import { AccessoriesComponent } from './components/accessories/accessories.component';
-import {AccessoriesModule} from "./components/accessories/accessories.module";
-import { SeoComponent } from './components/seo/seo.component';
-
-
-
-
 
 
 
