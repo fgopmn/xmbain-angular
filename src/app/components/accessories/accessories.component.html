@@ -1,0 +1,36 @@
+<app-header></app-header>
+<div>
+  <div class="header-flex-ul">
+    <ul>
+      <li>Главная</li>
+      <li>></li>
+      <li>Продукция</li>
+      <li>></li>
+      <li>Воздухонагреватели</li>
+    </ul>
+  </div>
+</div>
+<app-highly-efficient></app-highly-efficient>
+<div>
+  <div class="accessories">
+    <p class="accessories-title">
+      Аксессуары
+    </p>
+    <div class="accessories-flex">
+      <app-accessories-child *ngFor="let item of accessories" [img]="item.img" [text]="item.text"></app-accessories-child>
+    </div>
+  </div>
+</div>
+<app-equipment></app-equipment>
+<app-equipment-series></app-equipment-series>
+<div class="airHeaters-slider-title">
+  <div class="airHeaters-slider-title-container">
+    <p>Примеры решений</p>
+  </div>
+</div>
+<app-slider></app-slider>
+<div class="technological">
+  <app-technological></app-technological>
+</div>
+
+<app-footer></app-footer>

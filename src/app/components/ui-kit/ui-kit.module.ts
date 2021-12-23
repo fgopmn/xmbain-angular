@@ -17,6 +17,8 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { FullRangeComponent } from './full-range/full-range.component';
 import { RelatedEquipmentComponent } from './related-equipment/related-equipment.component';
 
+import { AccessoriesChildComponent } from './accessories-child/accessories-child.component';
+
 
 
 
@@ -32,10 +34,9 @@ import { RelatedEquipmentComponent } from './related-equipment/related-equipment
     SystemProductComponent,
     HighlyEfficientComponent,
     EquipmentSeriesComponent,
-
-    EquipmentSeriesComponent,
     FullRangeComponent,
-    RelatedEquipmentComponent
+    RelatedEquipmentComponent,
+    AccessoriesChildComponent
   ],
   exports: [ComplexComponent,
     EquipmentComponent,
@@ -46,7 +47,8 @@ import { RelatedEquipmentComponent } from './related-equipment/related-equipment
     SliderComponent,
     ProductCheckComponent,
     HighlyEfficientComponent,
-    EquipmentSeriesComponent, FullRangeComponent,
+    EquipmentSeriesComponent,
+    FullRangeComponent, AccessoriesChildComponent,
   ],
 
 

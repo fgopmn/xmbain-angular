@@ -20,11 +20,12 @@
   color: #C0C6C9;
   margin-right:10px;
 }
-.document{
+.accessories{
   max-width: 1200px;
   margin: auto;
 }
-.document-title{
+.accessories-title{
+  padding-bottom: 60px;
   font-family: Manrope;
   font-style: normal;
   font-weight: 800;
@@ -32,56 +33,10 @@
   line-height: 120%;
   letter-spacing: -0.02em;
   color: #021C27;
-
 }
-.document-block {
-
-
-  margin-top: 42px;
-}
-.document-block-child{
+.accessories-flex{
   display: flex;
-  border-bottom: 1px solid #C0C6C9;
-  padding-top:38px ;
-  padding-bottom: 43px;
-  justify-content: space-between;
-}
-.document-block-child p{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 160%;
-  letter-spacing: 0.2px;
-  color: #021C27;
-  margin-left: 14px;
-  border-bottom: 1px solid #009fe35e;;
-}
-.document-block-child span{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 120%;
-  text-align: right;
-  letter-spacing: 0.2px;
-  color: #C0C6C9;
-   margin-right:50px;
-}
-.download{
-  opacity: 0.3;
-  border: 1px solid #009FE3;
-  box-sizing: border-box;
-  border-radius: 5px;
-  padding: 6px 14px;
-  font-size: 15px;
-  line-height: 120%;
-  letter-spacing: 0.2px;
-  color: #009FE3;
-}
-.document-section{
-  display: flex;
-  width: 56%;
+  flex-wrap: wrap;
 }
 .technological{
   background-color: #abd5e81a;
