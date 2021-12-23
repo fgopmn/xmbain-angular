@@ -10,14 +10,7 @@ import { ServicesComponent } from './components/services/services.component';
 import {UiKitModule} from "./components/ui-kit/ui-kit.module";
 import {ContactsComponent } from './components/contacts/contacts.component';
 import {ProductComponent} from "./components/product/product.component";
-import {SpecificationsComponent } from './components/specifications/specifications.component';
-import { DocumentsComponent } from './components/documents/documents.component';
-
-
-
-
-
-
+import {PartnersComponent} from "./components/partners/partners.component";
 
 const routes: Routes = [
   {path:"",
@@ -43,6 +36,10 @@ const routes: Routes = [
     loadChildren: () => import('./components/page-solution/solution.module').then(m => m.SolutionModule)
   },
   {
+    path:"partners",
+    loadChildren: () => import('./components/partners/partners.module').then(m => m.PartnersModule)
+  },
+  {
     path:"press",
     component:PressComponent
   },
@@ -62,13 +59,7 @@ const routes: Routes = [
     PressComponent,
     ServicesComponent,
     ProductComponent,
-
-
-
-
-
-
-
+    PartnersComponent
   ],
   imports: [
     BrowserModule,

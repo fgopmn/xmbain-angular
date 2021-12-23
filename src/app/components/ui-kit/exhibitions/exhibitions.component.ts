@@ -9,7 +9,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class ExhibitionsComponent implements OnInit {
   constructor() { }
   @Input("day")day?:any
-  @Input("month") month?:any
+  @Input("month") month?:string
   @Input("text") text?:any
   @Input("day2") day2?:any
 

@@ -10,6 +10,11 @@ import{RequestService} from "../../service/request.service";
 })
 export class HomeComponent implements OnInit{
   getList: any[] = [];
+  day:string="17"
+  day2:string="20"
+  month:string="сентября"
+  text:string="Mostra Convengo Expocomfort 2020"
+
   constructor(public requestService:RequestService) { }
   ngOnInit() {
     this.getRequest()

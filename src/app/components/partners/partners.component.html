@@ -1,0 +1,85 @@
+<app-header></app-header>
+<div class="partners-global">
+  <div class="partners-container">
+  <div class="partner-title-flex">
+    <div class="partner-group">
+    <div class="title-click">
+      <p class="partners-title">Партнерам</p>
+      <p class="partners-description">ООО «TC Груп Энергия» входит в группу
+        компаний Tecnoclima S.p.A. в качестве
+        коммерческого подразделения на рынках
+        России и Восточной Европы.</p>
+      <button class="send">Отправить запрос</button>
+    </div>
+
+    <div class="invite-group">
+      <p class="invite-title">Приглашаем</p>
+      <ul class="invite-numbers">
+        <li *ngFor="let item of inviteList">{{item.description}}</li>
+      </ul>
+    </div>
+      <div class="provide-group">
+        <p class="invite-title">Обеспечиваем</p><ul class="provide-numbers">
+        <li *ngFor="let item of provideList">{{item.description}}</li>
+      </ul>
+      </div>
+
+      <div class="proposal">
+        <p>Предлагаем взаимовыгодные условия и всестороннюю
+        поддержку нашим партнерам: консультации специалистов проектного и
+        монтажного отделов, поощрительные программы посещения завода-изготовителя
+        оборудования в Италии, бонусы и ценные подарки по итогам совместных реализаций
+        проектов</p>
+      </div>
+
+      <div class="experience">
+        <p class="invite-title">Наш опыт</p>
+        <div class="experience-description">
+          <p class="experience-text" *ngFor="let item of experienceList" >{{item.description}}</p>
+        </div>
+      </div>
+
+      <div class="education">
+        <p class="invite-title">Обучение</p>
+        <div class="experience-description">
+          <p class="experience-text" *ngFor="let item of educationList" >{{item.description}}</p>
+        </div>
+      </div>
+  </div>
+    <div class="suggestions">
+      <div class="suggestion-text">
+        <p class="suggestion-description">
+          Компания TC Груп Энергия разработала и
+          продвигает программу поощрения и поддержки
+          для специалистов, применяющих наше оборудование
+          в разрабатываемых проектах.</p>
+        <p class="suggestion-description">Закладывая в проект оборудование Tecnoclima,
+          вы сможете получить бонус от нашей компании и
+          поучаствовать в наших программах стимулирования
+          сотрудничества.</p>
+        <b class="suggestion-description">Вы можете применить наше оборудование
+          в следующих областях:</b>
+
+      <ul class="suggestion-types">
+        <li *ngFor="let item of suggestionList">{{item.description}}</li>
+      </ul>
+
+        <p class="end-description">В программу поддержки проектировщиков входит
+          предоставление всех необходимых расчетных данных,
+          технической документации, инструкций и технических паспортов на оборудование,
+          ознакомление с аналогичными проектами, уже реализованными нашей компанией,
+          консультации специалистов проектного и монтажного отделов.</p>
+
+      </div>
+
+      <div class="sketch">
+        <img src="../../../assets/partners/sketch.png"/></div>
+    </div>
+
+  </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
+
+

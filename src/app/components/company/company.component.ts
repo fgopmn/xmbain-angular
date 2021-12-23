@@ -8,7 +8,6 @@ import {environment} from "../../../environments/environment.prod";
   styleUrls: ['./company.component.scss']
 })
 export class CompanyComponent implements OnInit {
-//  @Input() textt:string = ''
   technoImg: any[] = []
   system:any[]=[]
   systemTwo:any[]=[]

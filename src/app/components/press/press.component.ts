@@ -22,7 +22,6 @@ export class PressComponent implements OnInit {
       this.days = items
     })
   }
-
   getShow(){
     this.requestService.getData(`${environment.url}${environment.show.get}`).subscribe((items:any)=>{
       this.show = items

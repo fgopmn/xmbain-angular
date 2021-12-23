@@ -192,7 +192,12 @@
   <app-press-events></app-press-events>
   <div class="exhibitions-block">
     <p>Выставки</p>
-    <app-exhibitions></app-exhibitions>
+    <app-exhibitions
+    [day]="day"
+    [text]="text"
+    [month]="month"
+    [day2]="day2"
+    ></app-exhibitions>
   </div>
 </div>
 <div class="logos">

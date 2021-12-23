@@ -93,6 +93,20 @@ export const environment = {
   },
   used:{
     get:'/used'
+  },
+  invite:{
+    get:'/invite'
+  },
+  provide:{
+    get:'/provide'
+  },
+  experience:{
+    get:'/experience'
+  },
+  education:{
+    get:'/education'
+  },
+ suggestion:{
+    get:'/suggestion'
   }
-
 };

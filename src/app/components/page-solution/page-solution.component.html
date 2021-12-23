@@ -37,12 +37,14 @@
 </div>
 <div class="slide-global">
 <div class="slide-container">
+  <button class="left-slide"><</button>
+  <button class="right-slide">> </button>
   <div class="slide-block">
     <img src="./assets/page-solution/building-one.png" alt="">
     <img src="./assets/page-solution/building-two.png" alt="">
     <img src="./assets/page-solution/building-one.png" alt="">
-    <div class="left-slide"><</div>
-    <div class="right-slide">> </div>
+    <button class="left-slide"><</button>
+    <button class="right-slide">> </button>
   </div>
 </div>
 </div>
@@ -84,7 +86,6 @@
 </div>
 </div>
 <div>
-
   <div class="used-global">
     <div class="used-title-global">
       <div class="used-title-container">
@@ -100,7 +101,6 @@
     </div>
 <div class="used-global">
     <div class="used-container">
-
       <div class="used-flex">
         <app-used-equipment *ngFor="let us of used"
                             [img]= "us.img"

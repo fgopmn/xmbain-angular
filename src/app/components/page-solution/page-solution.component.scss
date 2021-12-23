@@ -101,6 +101,7 @@ width: 83%;
   width: 91.63%;
   margin-left:120px;
   overflow:scroll;
+  position: relative;
 }
 .left-slide{
   width: 48px;
@@ -110,8 +111,9 @@ width: 83%;
   position:absolute;
   color:white;
   text-align:center;
-  top:100px;
-  left:20px
+  top:50%;
+  left:20px;
+  transform: translateY(-50%);
 }
 .right-slide{
   width: 48px;
@@ -120,8 +122,9 @@ width: 83%;
   border-radius: 50%;
   position: absolute;
   color:white;
-  top:100px;
-  right:20px
+  top:50%;
+  right:20px;
+  transform: translateY(-50%);
 }
 .task-global{
   background: white;
@@ -154,6 +157,7 @@ width: 83%;
 .task{
   padding-top: 57px;
   padding-bottom: 100px;
+  width: 60%;
 }
 .advantages-title{
   font-weight: bold;
@@ -183,6 +187,7 @@ width: 83%;
 .advantages{
   background: linear-gradient(90deg, #abd5e829 0%, rgba(255, 255, 255, 0.12) 100%);
   padding-top: 57px;
+  width: 40%;
 }
 .solution-text{
   font-size: 17px;
@@ -198,6 +203,9 @@ width: 83%;
   padding-left: 120px;
   padding-top:30px;
   padding-bottom: 132px;
+  img {
+    max-width: 285px;
+  }
 }
 .opinion-img{
     margin-left: 20px;

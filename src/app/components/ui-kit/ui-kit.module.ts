@@ -13,14 +13,9 @@ import { EquipmentSeriesComponent } from './equipment-series/equipment-series.co
 import {SystemProductComponent} from "./system-product/system-product.component";
 import { NewsChildComponent } from './news-child/news-child.component';
 import {HighlyEfficientComponent} from "./highly-efficient/highly-efficient.component";
-
-import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { FullRangeComponent } from './full-range/full-range.component';
 import { UsedEquipmentComponent } from './used-equipment/used-equipment.component';
 import { RelatedEquipmentComponent } from './related-equipment/related-equipment.component';
-
-
-
 
 @NgModule({
   declarations: [
@@ -36,17 +31,13 @@ import { RelatedEquipmentComponent } from './related-equipment/related-equipment
     SystemProductComponent,
     HighlyEfficientComponent,
     EquipmentSeriesComponent,
-
-    EquipmentSeriesComponent,
-    FullRangeComponent,
     UsedEquipmentComponent,
     FullRangeComponent,
     RelatedEquipmentComponent,
-    RelatedEquipmentComponent,
-    EquipmentSeriesComponent,
     NewsChildComponent
   ],
-  exports: [ComplexComponent,
+  exports: [
+    ComplexComponent,
     EquipmentComponent,
     TechnologicalComponent,
     PressEventsComponent,
@@ -54,31 +45,14 @@ import { RelatedEquipmentComponent } from './related-equipment/related-equipment
     ExhibitionsComponent,
     SliderComponent,
     ProductCheckComponent,
-    EquipmentSeriesComponent, NewsChildComponent,
+    SystemProductComponent,
     HighlyEfficientComponent,
-    EquipmentSeriesComponent, FullRangeComponent, RelatedEquipmentComponent,
+    EquipmentSeriesComponent,
+    UsedEquipmentComponent,
+    FullRangeComponent,
+    RelatedEquipmentComponent,
+    NewsChildComponent
   ],
-
-
-    exports: [
-      ComplexComponent,
-        EquipmentComponent,
-        TechnologicalComponent,
-        PressEventsComponent,
-        PressBlogComponent,
-        ExhibitionsComponent,
-        SliderComponent,
-        ProductCheckComponent,
-        EquipmentSeriesComponent,
-      FullRangeComponent,
-      UsedEquipmentComponent,
-      NewsChildComponent,
-      RelatedEquipmentComponent,
-
-
-
-    ],
-
 
   imports: [
     CommonModule
