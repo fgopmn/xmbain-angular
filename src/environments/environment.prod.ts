@@ -73,6 +73,9 @@ export const environment = {
   related:{
     get:'/related'
   },
+  newsChild:{
+    get:'/newsChild'
+  },
   heatGenerator:{
     get:'/heatGenerator'
   },
@@ -84,5 +87,20 @@ export const environment = {
   },
   seo2:{
     get:'/seo2'
+  },
+  airHeating:{
+    get:'/airHeating'
+  },
+  task:{
+    get:'/task'
+  },
+  advantages:{
+    get:'/advantages'
+  },
+  solution:{
+    get:'/solution'
+  },
+  used:{
+    get:'/used'
   }
 };

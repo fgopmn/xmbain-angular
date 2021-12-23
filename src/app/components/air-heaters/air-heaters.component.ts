@@ -8,10 +8,8 @@ import {RequestService} from "../../service/request.service";
   styleUrls: ['./air-heaters.component.scss']
 })
 export class AirHeatersComponent implements OnInit {
-
   constructor(public requestService:RequestService) { }
   @Input("heatNum") heatNum:any=0
-
   getair:any[] = [];
   heats:any[]=[]
 

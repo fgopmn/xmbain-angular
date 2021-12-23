@@ -11,10 +11,12 @@ import {SliderComponent} from "./slider/slider.component";
 import {ProductCheckComponent} from "./product-check/product-check.component";
 import { EquipmentSeriesComponent } from './equipment-series/equipment-series.component';
 import {SystemProductComponent} from "./system-product/system-product.component";
+import { NewsChildComponent } from './news-child/news-child.component';
 import {HighlyEfficientComponent} from "./highly-efficient/highly-efficient.component";
 
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { FullRangeComponent } from './full-range/full-range.component';
+import { UsedEquipmentComponent } from './used-equipment/used-equipment.component';
 import { RelatedEquipmentComponent } from './related-equipment/related-equipment.component';
 
 import { AccessoriesChildComponent } from './accessories-child/accessories-child.component';
@@ -23,10 +25,12 @@ import { AccessoriesChildComponent } from './accessories-child/accessories-child
 
 
 @NgModule({
-  declarations: [ComplexComponent,
+  declarations: [
+    ComplexComponent,
     EquipmentComponent,
     TechnologicalComponent,
-    SelectInputComponent, PressEventsComponent,
+    SelectInputComponent,
+    PressEventsComponent,
     PressBlogComponent,
     ExhibitionsComponent,
     SliderComponent,
@@ -34,9 +38,17 @@ import { AccessoriesChildComponent } from './accessories-child/accessories-child
     SystemProductComponent,
     HighlyEfficientComponent,
     EquipmentSeriesComponent,
+
+    EquipmentSeriesComponent,
     FullRangeComponent,
     RelatedEquipmentComponent,
     AccessoriesChildComponent
+    UsedEquipmentComponent,
+    FullRangeComponent,
+    RelatedEquipmentComponent,
+    RelatedEquipmentComponent,
+    EquipmentSeriesComponent,
+    NewsChildComponent
   ],
   exports: [ComplexComponent,
     EquipmentComponent,
@@ -46,18 +58,36 @@ import { AccessoriesChildComponent } from './accessories-child/accessories-child
     ExhibitionsComponent,
     SliderComponent,
     ProductCheckComponent,
+    EquipmentSeriesComponent, NewsChildComponent,
     HighlyEfficientComponent,
     EquipmentSeriesComponent,
     FullRangeComponent, AccessoriesChildComponent,
+    EquipmentSeriesComponent, FullRangeComponent, RelatedEquipmentComponent,
   ],
 
 
+    exports: [
+      ComplexComponent,
+        EquipmentComponent,
+        TechnologicalComponent,
+        PressEventsComponent,
+        PressBlogComponent,
+        ExhibitionsComponent,
+        SliderComponent,
+        ProductCheckComponent,
+        EquipmentSeriesComponent,
+      FullRangeComponent,
+      UsedEquipmentComponent,
+      NewsChildComponent,
+      RelatedEquipmentComponent,
+
+
+
+    ],
 
 
   imports: [
-    CommonModule,
-    ReactiveFormsModule,
-    FormsModule,
+    CommonModule
   ]
 })
 export class UiKitModule { }

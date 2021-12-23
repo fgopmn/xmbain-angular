@@ -1,0 +1,345 @@
+
+.container {
+  width: 1200px;
+  margin: auto;
+  padding-top: 54px;
+  background-color: white;
+}
+.navigation ul {
+    margin-bottom: 16px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.navigation li {
+  margin-right:5px;
+  list-style-type: none ;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: #C0C6C9;
+}
+.navigation {
+  border-bottom: 1px solid #C0C6C9;
+}
+.contain-info {
+  max-width: 1200px;
+  background-color: white;
+  margin: auto;
+  display: flex;
+  background-color: white;
+}
+.contain-button {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 11px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 4px 10px 5px 10px;
+  cursor: pointer;
+  background: #009FE3;
+  opacity: 0.45;
+  border-radius: 4px;
+  border: none;
+  margin-top: 48px;
+  margin-bottom: 10px;
+}
+.contain-dats {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  width: 50%;
+  background-color: white;
+}
+.contain-dats p {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 130%;
+  color: #021C27;
+  opacity: 0.3;
+  margin-top: 50px;
+  padding-left: 11px;
+  margin-bottom: 14px;
+}
+
+.contain-h h6 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+  margin-bottom: 66px;
+  width: 665px;
+}
+.contain-h p {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #000000;
+  width: 590px;
+}
+.contain-account {
+  width: 490px;
+  background: linear-gradient(90deg,#abd5e840 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.info-container{
+  width:83%;
+  margin:auto;
+  background-color: white;
+}
+.info-flex{
+  display:flex;
+  background-color: white;
+}
+.info{
+  padding-right: 43px;
+  padding-bottom: 100px;
+}
+.contain-account {
+  display: flex;
+  padding-top: 48px;
+  padding-left: 121px;
+}
+.contain-account img {
+  margin-right: 13px;
+}
+.contain-account p {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.2px;
+  color: #909DA3;
+}
+.contain-account p span {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.2px;
+  color: black;
+}
+
+.contain-information {
+  width: 1200px;
+  background-color: white;
+  margin: auto;
+}
+.information-flex {
+  display: flex;
+}
+
+.info-texts {
+  width: 570px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  margin-top: 20px;
+  margin-right: 135px;
+  margin-bottom: 80px;
+}
+.information-risks {
+  background: linear-gradient(90deg,#abd5e840 0%, rgba(255, 255, 255, 0) 100%);
+}
+.info-texts-h {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+  width: 619px;
+  margin-right: 73px;
+  margin-bottom: 34px;
+}
+.block-info-risks {
+  display: flex;
+  flex-direction: column;
+  padding-top: 274px;
+  margin-left: 121px;
+  width: 387px;
+}
+.information-risks-text {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+  padding-bottom: 30px;
+}
+.information-risks-text2  {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  padding-bottom: 25px;
+}
+.info-texts-p {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  margin-bottom: 24px;
+}
+.text-info-lies {
+  padding-bottom: 25px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 160%;
+  padding-left: 15px;
+}
+.information-risks-ul ul {
+  padding-left: 20px;
+}
+.information-risks-text2-1 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  padding-bottom: 60px;
+}
+.information-risks-texts3-1 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  padding-bottom: 25px;
+}
+.information-risks-texts3-2 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  padding-bottom: 24px;
+}
+.information-risks-texts4 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  padding-bottom: 25px;
+  padding-left: 15px;
+}
+.information-risks-texts4-1 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  padding-bottom: 80px;
+  padding-left: 15px;
+}
+.information-risks-texts3 ul {
+  padding-left: 20px;
+}
+
+.info-economy-h {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+  width: 590px;
+  padding-bottom: 34px;
+  background-color: white;
+}
+.info-economy-text1 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  width: 570px;
+  padding-bottom: 24px;
+}
+.info-economy ul {
+  padding-left: 20px;
+}
+.info-economy-texts {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  padding-left: 15px;
+}
+.info-economy-texts1-1 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: black;
+}
+.info-economy {
+  background-color: white;
+  padding-bottom: 100px;
+}
+.contain-title-press-blog {
+  margin: auto;
+  width: 1200px;
+  background: linear-gradient(90deg,#abd5e840 0%, rgba(255, 255, 255, 0) 100%);
+}
+.contain-title-press-blog p {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+
+}
