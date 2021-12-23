@@ -5,13 +5,13 @@
   position: relative;
 }
 .slider-block{
-  width: 83%;
+  max-width: 1200px;
   margin:auto;
   display: flex;
   justify-content: space-between;
 }
 .slider-child{
-  width: 49.16%;
+  max-width: 49.16%;
   background: linear-gradient(90deg, #FBFEFF 0%, #F0F8FC 100%);
   border-radius: 40px;
   display: flex;

@@ -79,6 +79,15 @@ export const environment = {
   heatGenerator:{
     get:'/heatGenerator'
   },
+  accessories:{
+    get:'/accessories'
+  },
+  seo1:{
+    get:'/seo1'
+  },
+  seo2:{
+    get:'/seo2'
+  },
   airHeating:{
     get:'/airHeating'
   },

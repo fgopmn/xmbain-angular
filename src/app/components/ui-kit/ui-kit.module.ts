@@ -17,6 +17,11 @@ import { FullRangeComponent } from './full-range/full-range.component';
 import { UsedEquipmentComponent } from './used-equipment/used-equipment.component';
 import { RelatedEquipmentComponent } from './related-equipment/related-equipment.component';
 
+import { AccessoriesChildComponent } from './accessories-child/accessories-child.component';
+
+
+
+
 @NgModule({
   declarations: [
     ComplexComponent,
@@ -31,9 +36,15 @@ import { RelatedEquipmentComponent } from './related-equipment/related-equipment
     SystemProductComponent,
     HighlyEfficientComponent,
     EquipmentSeriesComponent,
+    EquipmentSeriesComponent,
+    FullRangeComponent,
+    RelatedEquipmentComponent,
+    AccessoriesChildComponent,
     UsedEquipmentComponent,
     FullRangeComponent,
     RelatedEquipmentComponent,
+    RelatedEquipmentComponent,
+    EquipmentSeriesComponent,
     NewsChildComponent
   ],
   exports: [
@@ -53,6 +64,9 @@ import { RelatedEquipmentComponent } from './related-equipment/related-equipment
     RelatedEquipmentComponent,
     NewsChildComponent
   ],
+
+
+
 
   imports: [
     CommonModule

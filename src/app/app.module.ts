@@ -11,6 +11,17 @@ import {UiKitModule} from "./components/ui-kit/ui-kit.module";
 import {ContactsComponent } from './components/contacts/contacts.component';
 import {ProductComponent} from "./components/product/product.component";
 import {PartnersComponent} from "./components/partners/partners.component";
+import {SpecificationsComponent } from './components/specifications/specifications.component';
+import { DocumentsComponent } from './components/documents/documents.component';
+import { AccessoriesComponent } from './components/accessories/accessories.component';
+import {AccessoriesModule} from "./components/accessories/accessories.module";
+import { SeoComponent } from './components/seo/seo.component';
+
+
+
+
+
+
 
 const routes: Routes = [
   {path:"",
@@ -28,6 +39,9 @@ const routes: Routes = [
   {path:"specifications",
     loadChildren: () => import('./components/specifications/specifications.module').then(m => m.SpecificationsModule)
   },
+  {path:"accessories",
+    loadChildren: () => import('./components/accessories/accessories.module').then(m => m.AccessoriesModule)
+  },
   {path:"documents",
     loadChildren: () => import('./components/documents/documents.module').then(m => m.DocumentsModule)
   },
@@ -38,6 +52,10 @@ const routes: Routes = [
   {
     path:"partners",
     loadChildren: () => import('./components/partners/partners.module').then(m => m.PartnersModule)
+  },
+  {
+    path:"seo",
+    loadChildren: () => import('./components/seo/seo.module').then(m => m.SeoModule)
   },
   {
     path:"press",
@@ -67,8 +85,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     HttpClientModule,
     MainModule,
-    UiKitModule,
-
+    UiKitModule
   ],
   providers: [],
   bootstrap: [AppComponent]
