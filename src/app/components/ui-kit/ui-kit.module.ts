@@ -13,8 +13,6 @@ import { EquipmentSeriesComponent } from './equipment-series/equipment-series.co
 import {SystemProductComponent} from "./system-product/system-product.component";
 import { NewsChildComponent } from './news-child/news-child.component';
 import {HighlyEfficientComponent} from "./highly-efficient/highly-efficient.component";
-
-import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { FullRangeComponent } from './full-range/full-range.component';
 import { UsedEquipmentComponent } from './used-equipment/used-equipment.component';
 import { RelatedEquipmentComponent } from './related-equipment/related-equipment.component';
@@ -38,11 +36,10 @@ import { AccessoriesChildComponent } from './accessories-child/accessories-child
     SystemProductComponent,
     HighlyEfficientComponent,
     EquipmentSeriesComponent,
-
     EquipmentSeriesComponent,
     FullRangeComponent,
     RelatedEquipmentComponent,
-    AccessoriesChildComponent
+    AccessoriesChildComponent,
     UsedEquipmentComponent,
     FullRangeComponent,
     RelatedEquipmentComponent,
@@ -50,40 +47,33 @@ import { AccessoriesChildComponent } from './accessories-child/accessories-child
     EquipmentSeriesComponent,
     NewsChildComponent
   ],
-  exports: [ComplexComponent,
+  exports: [
+    ComplexComponent,
     EquipmentComponent,
     TechnologicalComponent,
+    SelectInputComponent,
     PressEventsComponent,
     PressBlogComponent,
     ExhibitionsComponent,
     SliderComponent,
     ProductCheckComponent,
-    EquipmentSeriesComponent, NewsChildComponent,
+    SystemProductComponent,
     HighlyEfficientComponent,
     EquipmentSeriesComponent,
-    FullRangeComponent, AccessoriesChildComponent,
-    EquipmentSeriesComponent, FullRangeComponent, RelatedEquipmentComponent,
+    EquipmentSeriesComponent,
+    FullRangeComponent,
+    RelatedEquipmentComponent,
+    AccessoriesChildComponent,
+    UsedEquipmentComponent,
+    FullRangeComponent,
+    RelatedEquipmentComponent,
+    RelatedEquipmentComponent,
+    EquipmentSeriesComponent,
+    NewsChildComponent
   ],
 
 
-    exports: [
-      ComplexComponent,
-        EquipmentComponent,
-        TechnologicalComponent,
-        PressEventsComponent,
-        PressBlogComponent,
-        ExhibitionsComponent,
-        SliderComponent,
-        ProductCheckComponent,
-        EquipmentSeriesComponent,
-      FullRangeComponent,
-      UsedEquipmentComponent,
-      NewsChildComponent,
-      RelatedEquipmentComponent,
 
-
-
-    ],
 
 
   imports: [
