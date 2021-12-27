@@ -10,7 +10,6 @@ import { ServicesComponent } from './components/services/services.component';
 import {UiKitModule} from "./components/ui-kit/ui-kit.module";
 import {ContactsComponent } from './components/contacts/contacts.component';
 import {ProductComponent} from "./components/product/product.component";
-import {PartnersComponent} from "./components/partners/partners.component";
 
 
 
@@ -45,9 +44,15 @@ const routes: Routes = [
     loadChildren: () => import('./components/partners/partners.module').then(m => m.PartnersModule)
   },
   {
+    path:"support",
+    loadChildren: () => import('./components/support/support.module').then(m => m.SupportModule)
+  },
+  {
     path:"seo",
     loadChildren: () => import('./components/seo/seo.module').then(m => m.SeoModule)
   },
+
+
   {
     path:"press",
     component:PressComponent
@@ -68,7 +73,7 @@ const routes: Routes = [
     PressComponent,
     ServicesComponent,
     ProductComponent,
-    PartnersComponent
+
   ],
   imports: [
     BrowserModule,
@@ -76,7 +81,8 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     HttpClientModule,
     MainModule,
-    UiKitModule
+    UiKitModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

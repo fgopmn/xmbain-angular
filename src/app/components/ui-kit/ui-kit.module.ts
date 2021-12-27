@@ -16,9 +16,12 @@ import {HighlyEfficientComponent} from "./highly-efficient/highly-efficient.comp
 import { FullRangeComponent } from './full-range/full-range.component';
 import { UsedEquipmentComponent } from './used-equipment/used-equipment.component';
 import { RelatedEquipmentComponent } from './related-equipment/related-equipment.component';
-
 import { AccessoriesChildComponent } from './accessories-child/accessories-child.component';
-
+import { ModalComponent } from './modal/modal.component';
+import {ClickOutsideModule} from "ng-click-outside";
+import {AccordionComponent} from './accordion/accordion.component';
+import {MatExpansionModule} from "@angular/material/expansion";
+import {CdkAccordionModule} from '@angular/cdk/accordion';
 
 
 
@@ -45,7 +48,11 @@ import { AccessoriesChildComponent } from './accessories-child/accessories-child
     RelatedEquipmentComponent,
     RelatedEquipmentComponent,
     EquipmentSeriesComponent,
-    NewsChildComponent
+    NewsChildComponent,
+    ModalComponent,
+    AccordionComponent,
+
+
   ],
 
   exports: [
@@ -64,14 +71,19 @@ import { AccessoriesChildComponent } from './accessories-child/accessories-child
     FullRangeComponent,
     RelatedEquipmentComponent,
     NewsChildComponent,
-    AccessoriesChildComponent
+    AccessoriesChildComponent,
+    ModalComponent,
+    AccordionComponent
+
   ],
 
 
-
-
   imports: [
-    CommonModule
+    CommonModule,
+    ClickOutsideModule,
+    MatExpansionModule,
+    CdkAccordionModule
+
   ]
 })
 export class UiKitModule { }
