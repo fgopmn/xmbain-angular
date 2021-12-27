@@ -13,6 +13,7 @@ import {ProductComponent} from "./components/product/product.component";
 import {PartnersComponent} from "./components/partners/partners.component";
 
 
+
 const routes: Routes = [
   {
     path:"",
@@ -46,6 +47,10 @@ const routes: Routes = [
     loadChildren: () => import('./components/partners/partners.module').then(m => m.PartnersModule)
   },
   {
+    path:"support",
+    loadChildren: () => import('./components/support/support.module').then(m => m.SupportModule)
+  },
+  {
     path:"calculator",
     loadChildren: () => import('./components/calculator/calculator.module').then(m => m.CalculatorModule)
   },
@@ -53,6 +58,8 @@ const routes: Routes = [
     path:"seo",
     loadChildren: () => import('./components/seo/seo.module').then(m => m.SeoModule)
   },
+
+
   {
     path:"press",
     component:PressComponent
@@ -74,6 +81,7 @@ const routes: Routes = [
     ServicesComponent,
     ProductComponent,
     PartnersComponent,
+
   ],
   imports: [
     BrowserModule,

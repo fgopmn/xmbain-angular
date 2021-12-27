@@ -1,0 +1,210 @@
+<app-header></app-header>
+
+<div class="menu-list" style="background-color: #FFFFFF">
+  <ul class="menu">
+    <li>Главная</li>
+    <li> ></li>
+    <li> Поддержка</li>
+  </ul>
+</div>
+<div style="background-color: #FFFFFF">
+  <div class="support-container">
+    <p class="support-container-title">Поддержка</p>
+    <div class="support-text">
+      <div class="support-child1">
+        <p class="support-child1-text1">По вопросам сервисного обслуживания и поддержки <br> обращайтесь в центральный
+          офис Tecnoclima в Москве. </p>
+        <img src="../../../assets/icons/Vectors.png">
+        <p class="support-child1-text2">ООО «TC Груп Энергия» <br> Варшавское шоссе, д. 17, стр. 5 <br> Москва, 117105
+          <br> Россия</p>
+      </div>
+      <div class="support-child2">
+        <h6 class="support-child2-text1">8 800 555-33-22</h6>
+        <p class="support-child2-text2">Время работы с 9:00 до 18:00</p>
+        <p class="support-child2-text3">+7 495 104-70-77 <br> +7 495 954-51-99 <br> info@tcgroupenergia.ru</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="documents">
+  <div class="documents-block">
+    <p class="documents-title">Документы и файлы</p>
+    <ul class="documents-ul">
+      <li>Руководства</li>
+      <li>Чертежи и модели</li>
+      <li>Промо-материалы</li>
+      <li> Юридические документы</li>
+      <li>Технико-экономические обоснования</li>
+    </ul>
+    <div class="choose-block">
+      <p class="documents-block-title">Руководства</p>
+      <button (click)="toggleModal()">Выберите серию
+        <span>
+           <img src="../../../assets/icons/Vector.png">
+         </span>
+      </button>
+
+
+    </div>
+    <div class="file-img">
+      <img src="../../../assets/icons/Group 512.png">
+    </div>
+  </div>
+</div>
+<div style="background-color: #FFFFFF">
+  <div class="questions">
+    <div class="questions1">
+      <p class="questions-title">Вопросы и ответы</p>
+      <div class="questions-block">
+        <ul>
+          <li><span>Особенность данной технологии состоит в прямой</span></li>
+          <li><span>Передаче энергии в помещение, что существенно повышает</span></li>
+          <li><span>Общую эффективность всей системы отопления в целом</span></li>
+          <li><span>Поскольку система не использует промежуточный теплоноситель</span></li>
+          <li><span>Особенность данной технологии состоит в прямой</span></li>
+          <li><span>Передаче энергии в помещение, что существенно повышает</span></li>
+          <li><span>Общую эффективность всей системы отопления в целом.</span></li>
+          <li><span>Поскольку система не использует промежуточный теплоноситель</span></li>
+          <li><span>Передаче энергии в помещение, что существенно повышает</span></li>
+          <li><span>Общую эффективность всей системы отопления в целом.</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="questions2">
+      <div><img src="../../../assets/img/question 1.png"></div>
+      <p class="questions2-title">Задать вопрос</p>
+      <p class="questions2-text">Не нашли нужный ответ? Задайте вопрос и наши специалисты вам оперативно ответят.</p>
+      <button>Задать вопрос</button>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
+<app-modal
+  [is-open]="!isModalOpen"
+  (whenModalOpen)="toggleModal($event)"
+>
+  <div class="modal__list-wrapper">
+    <ul class="modal__list">
+      <li>A</li>
+      <li>AGRI-C</li>
+      <li>AGRI-DF</li>
+      <li>AGRI-P</li>
+      <li>AQUACIKKI</li>
+      <li>AQUAPIGGY</li>
+      <li>AZN</li>
+      <li>AZN EC</li>
+      <li>AZN-X</li>
+    </ul>
+    <ul class="modal__list">
+
+      <li>B</li>
+      <li>BA PLUS</li>
+      <li>BOXY</li>
+    </ul>
+    <ul class="modal__list">
+      <li>C</li>
+      <li>CF-CM/P</li>
+      <li>CF-GAS</li>
+      <li>CF-GAS SP</li>
+      <li>CF-GAS/P</li>
+      <li>CF-XTRIM</li>
+      <li>CMX</li>
+    </ul>
+    <ul class="modal__list">
+      <li>D</li>
+      <li>DAE</li>
+      <li>DGK</li>
+      <li>DGP</li>
+      <li>DGS</li>
+      <li>DM</li>
+      <li>DM-SE</li>
+      <li>DST</li>
+      <li>DUO-MO</li>
+    </ul>
+    <ul class="modal__list">
+      <li>E</li>
+      <li>EKOCIKKI</li>
+      <li>EKOCIKKI 80</li>
+      <li>ENERGY</li>
+      <li>ENERGY-O</li>
+      <li> ENERGY-O/K</li>
+      <li>ENERGY/K</li>
+    </ul>
+    <ul class="modal__list">
+      <li>H</li>
+      <li>HB PLUS</li>
+    </ul>
+    <ul class="modal__list">
+      <li>K</li>
+      <li>KLIMAXS</li>
+      <li>KUBO-S</li>
+    </ul>
+    <ul class="modal__list">
+      <li>M</li>
+      <li>M-CF</li>
+      <li>MB UNIT</li>
+      <li>MINIJET</li>
+      <li>MIXI 80</li>
+      <li>MIXIJET</li>
+    </ul>
+    <ul class="modal__list">
+      <li>N</li>
+      <li>NTN</li>
+      <li>NTPM</li>
+    </ul>
+    <ul class="modal__list">
+      <li>P</li>
+      <li>PA</li>
+      <li>PCM</li>
+      <li>PMX</li>
+    </ul>
+    <ul class="modal__list">
+      <li>R</li>
+      <li>RCF</li>
+      <li>RCU</li>
+      <li>RCU-HE</li>
+    </ul>
+    <ul class="modal__list">
+      <li>S</li>
+      <li>SMARTBOXY</li>
+      <li>SMX</li>
+      <li>SR</li>
+      <li>SR-CM ÷ SR-CM/K</li>
+      <li>SR-UT ÷ SR-UT/K</li>
+      <li>SR/K</li>
+      <li>SUPERBESST</li>
+      <li>SUPERCIKKI 80</li>
+      <li>SUPERFRESH</li>
+    </ul>
+    <ul class="modal__list">
+      <li>T</li>
+      <li>TANDEM CM</li>
+      <li>TC-DF</li>
+      <li>TC-E</li>
+      <li>TC-E/K</li>
+      <li>TC-TEK</li>
+      <li>TCO-DF</li>
+      <li>TCO-E</li>
+      <li>TCO-E/K</li>
+      <li>TE</li>
+    </ul>
+    <ul class="modal__list">
+      <li>U</li>
+      <li>UT</li>
+      <li>UT/K</li>
+      <li>UTAK</li>
+      <li>UTC</li>
+      <li>UTC/K</li>
+    </ul>
+    <ul class="modal__list">
+      <li>V</li>
+      <li>VX</li>
+    </ul>
+    <ul class="modal__list">
+      <li>W</li>
+      <li>WIMBLEDON</li>
+    </ul>
+  </div>
+
+</app-modal>
+<app-accordion></app-accordion>

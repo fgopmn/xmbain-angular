@@ -1,0 +1,318 @@
+.menu-list{
+  padding-top: 20px;
+}
+.menu{
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  border-bottom: 1px solid #C0C6C9;
+  padding-bottom: 16px;
+}
+
+.menu li{
+  list-style-type: none;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: #C0C6C9;
+  padding-right: 9px;
+  opacity: 0.3;
+}
+.support-container{
+  width: 83%;
+  margin:auto;
+}
+.support-container-title{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+  padding-top: 30px;
+  padding-bottom: 66px;
+}
+.support-child1-text1{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+}
+.support-child1 img{
+  margin-top: 60px;
+}
+.support-child1-text2{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+}
+.support-child2-text1{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+
+}
+
+.support-child2-text2{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  padding-top: 6px;
+}
+.support-child2-text3{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  color: #021C27;
+padding-top: 79px;
+}
+.support-text{
+  display: flex;
+  padding-bottom: 80px;
+
+}
+.support-child2{
+  margin-left: 253px;
+}
+.documents{
+  background: linear-gradient(90deg, #FBFEFF 0%, #F0F8FC 100%);
+}
+.documents-block{
+  max-width: 1200px;
+  margin: auto;
+padding-bottom: 108px;
+}
+.documents-title{
+
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+  padding-top: 80px;
+}
+.documents-ul{
+  display: flex;
+  margin-top: 60px;
+
+}
+.documents-ul li{
+  list-style-type: none;
+}
+.documents-ul li:first-child{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  padding-bottom: 20px;
+  border-bottom:  5px solid #021C27;
+}
+.documents-ul li:nth-child(n+2){
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  opacity: 0.3;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #C0C6C9;
+}
+.documents-block-title{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+
+}
+.choose-block{
+  display: flex;
+  margin-top: 60px;
+}
+.choose-block button{
+  background: #021C27;
+  border: 1px solid #021C27;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+  margin-left: 20px;
+  padding: 11px 12px;
+}
+.choose-block button span{
+  padding-left: 20px;
+}
+.file-img{
+  margin-top: 86px;
+  text-align: center;
+}
+.questions{
+  max-width:1200px ;
+  margin:auto;
+  display: flex;
+  justify-content: space-between
+}
+.questions-title{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+  padding-top: 80px;
+}
+.questions-block ul{
+  margin-top: 60px;
+  padding-bottom: 90px;
+}
+.questions-block ul li{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  list-style-type: none;
+}
+.questions-block li span{
+  border-bottom: 1px dashed #009FE3;
+}
+.questions-block li::before{
+  content: '+';
+  padding-right: 16px;
+  color: #009FE3;
+  border-bottom: none;
+  cursor: pointer;
+}
+.questions-block ul li:nth-child(n+2){
+  margin-top: 37px;
+}
+.questions2{
+  width: 32%;
+  position: relative;
+  margin-top: 44px;
+}
+.questions2 div{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.questions2-title{
+  padding-top: 150px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+
+}
+.questions2-text{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  padding-top: 30px;
+}
+.questions2 button{
+  margin-top: 60px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #009FE3;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.modal {
+  &__list{
+    list-style-type: none;
+    margin-right: 16px;
+    width: 60px;
+    padding-top: 60px;
+
+    li {
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 100%;
+      letter-spacing: 0.2px;
+      color: #021C27;
+
+      &:first-child{
+        font-weight: bold;
+      }
+      &:nth-child(n+2){
+        padding-top: 10px;
+
+        &:hover{
+          background: #021C27;
+          border-radius: 5px;
+          cursor: pointer;
+          color: #FFFFFF;
+          padding: 5px 5px;
+          font-size: 12px;
+        }
+
+      }
+    }
+    &-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-around;
+
+    }
+  }
+
+}

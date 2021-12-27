@@ -1,0 +1,36 @@
+.overlay {
+  position: fixed;
+  height: 100vh;
+  z-index: 998;
+  background-color: rgba(0, 0, 0, .2);
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+
+  &_show {
+    display: block;
+  }
+}
+
+.modal {
+  position: fixed;
+  background-color: #FFFFFF;
+  z-index: 999;
+  box-shadow: 0 40px 80px rgba(2, 26, 36, 0.2);
+  border-radius: 40px;
+  min-width: 843px;
+  max-width: 1000px;
+  min-height:620px;
+  max-height: 700px;
+  padding: 60px 80px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+
+
+  &_show {
+    display: block;
+  }
+}

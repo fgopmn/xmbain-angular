@@ -4,10 +4,13 @@ import { CommonModule } from '@angular/common';
 import { PartnersRoutingModule } from './partners-routing.module';
 
 import {MainModule} from "../main/main.module";
+import {PartnersComponent} from "./partners.component";
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    PartnersComponent
+  ],
   imports: [
     CommonModule,
     PartnersRoutingModule,
