@@ -1,7 +1,8 @@
 <app-header></app-header>
 <div>
-  <div class="header-flex-ul">
-    <ul>
+  <div class="container">
+  <div>
+    <ul class="header-ul">
       <li>Главная</li>
       <li>></li>
       <li>Продукция</li>
@@ -9,17 +10,17 @@
       <li>Воздухонагреватели</li>
     </ul>
   </div>
+  </div>
 </div>
 <app-highly-efficient></app-highly-efficient>
 <div class="application">
-  <div class="application-container">
+  <div class="container">
     <div>
       <p class="application-title">Применение</p>
       <p class="application-text">Воздухонагреватели TC-DF являются универсальными и
         подходят для обогрева практически любых помещений, а также нагрева свежего
         наружного воздуха в системах приточной вентиляции.</p>
     </div>
-
     <div class="app-flex">
       <div *ngFor="let item of getair" class="descripton-img-text">
         <img src="{{item.img}}" alt="" class="descriptiom-img">
@@ -30,7 +31,7 @@
 </div>
 
 <div class="heat-section">
-  <div class="heat-container">
+  <div class="container">
     <div>
       <p class="heat-title">Достоинства и преимущества оборудования Tecnoclima</p>
      <p class="heat-little-title">Стационарные теплогенераторы TC и секции нагрева SR</p>
@@ -46,7 +47,7 @@
 </div>
 
 <div class="air">
-  <div class="air-container">
+  <div class="container">
     <div class="air-title-air">
       <p class="air-litle-title">Воздухонагреватель</p>
       <p class="air-title">Tecnoclima TC-DF</p>
@@ -79,7 +80,7 @@
 </div>
 
     <div class="tecnologia">
-      <div class="tecnologia-container">
+      <div class="container">
         <div class="tecnologia-flex">
           <div class="dry-system">
             <div class="green-ellipse">КПД <br> <span>до</span>
@@ -132,8 +133,8 @@
 <div class="airHeaters-slider">
 
   <div class="airHeaters-slider-title">
-    <div class="airHeaters-slider-title-container">
-      <p>Примеры решений</p>
+    <div class="container">
+      <p class="air-title">Примеры решений</p>
     </div>
 
   </div>

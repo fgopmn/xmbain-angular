@@ -1,3 +1,4 @@
+
 <div class="slider">
   <div class="left-slide">
     <img src="./../../../../assets/air-heaters/left.png" alt="">
@@ -5,6 +6,7 @@
   <div class="right-slide">
     <img src="./../../../../assets/air-heaters/right.png" alt="">
   </div>
+  <div class="container">
   <div class="slider-block">
     <div class="slider-child" *ngFor="let item of getList">
       <img src="{{item.img}}" alt="">
@@ -12,9 +14,7 @@
         <h6>{{item.title}}</h6>
         <p>{{item.text}}</p>
       </div>
-
     </div>
-
-
+  </div>
   </div>
 </div>

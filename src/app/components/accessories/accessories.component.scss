@@ -1,7 +1,4 @@
-.header-flex-ul{
-  width: 83%;
-  margin: auto;
-}
+
 .header-flex-ul ul{
   display: flex;
   border-bottom: 1px solid;
@@ -37,17 +34,19 @@
 .accessories-flex{
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 75px;
 }
 .technological{
   background-color: #abd5e81a;
   display: inline-block;
+  width: 100%;
   padding: 60px 0;
 }
 .airHeaters-slider-title-container{
   width: 83%;
   margin: auto;
 }
-.airHeaters-slider-title-container p{
+.airHeaters-title{
   padding-top: 80px;
   padding-bottom: 45px;
   font-family: Manrope;

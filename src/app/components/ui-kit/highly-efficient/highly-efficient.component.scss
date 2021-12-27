@@ -1,6 +1,4 @@
 .highlyEfficient{
-  width: 83%;
-  margin: auto;
   display: flex;
 }
 .highlyEfficient-child1{
@@ -61,7 +59,6 @@
   margin-left: 60px;
   margin-top: 50px;
   display: flex;
-
 }
 .highlyEfficient-child2-textBlock-child1{
   width: 50%;
@@ -107,17 +104,17 @@
   cursor: pointer;
   margin-bottom: 86px;
 }
-.highlyEfficient-menu{
-  width: 83%;
-  margin: auto;
+.highlyEfficient-flex-menu{
   display: flex;
   justify-content: space-between;
   background: #FFFFFF;
   box-shadow: 0px 20px 60px rgba(2, 26, 36, 0.1);
   border-radius: 40px;
-  margin-bottom: 60px;
 }
-.highlyEfficient-menu p{
+.highly-group{
+  padding-bottom: 60px;
+}
+.highlyEfficient-flex-menu p{
   font-family: Manrope;
   font-style: normal;
   font-weight: 600;
@@ -126,13 +123,11 @@
   text-align: center;
   letter-spacing: 0.2px;
   color: #021C27;
-
-
 }
-.highlyEfficient-menu div{
+.highlyEfficient-flex-menu div{
   border-right: 1px solid rgba(2, 28, 39, 0.1);
   padding: 20px 47px;
 }
-.highlyEfficient-menu div:last-child{
+.highlyEfficient-flex-menu div:last-child{
   border:none;
 }

@@ -1,12 +1,12 @@
 .equipment-flex{
-  max-width: 1260px;
-  margin: auto;
+  width: 87%;
+  max-width: 1440px;
+  margin:0 auto;
   background: #FFFFFF;
-  box-shadow: 0px 20px 60px rgba(2, 26, 36, 0.1);
+  box-shadow: 0 20px 60px rgba(2, 26, 36, 0.1);
   border-radius: 40px;
   position: relative;
-  margin-bottom: 80px;
-
+  padding-left:70px
 }
 .techno-img{
     position: absolute;
@@ -17,7 +17,6 @@
   width: 692px;
   height: 0.5px;
   border: 1px solid #ECEEEF;
-  margin-left: 82px;
   display: flex;
   justify-content: space-between
 }
@@ -32,14 +31,16 @@
   bottom: 9px;
   z-index: 1000;
 }
-
+.data-rules-flex{
+  display: flex;
+}
 .p1{
   font-family: Manrope;
   font-style: normal;
   font-weight: 800;
   font-size: 34px;
   line-height: 120%;
-  padding: 56px 85px;
+  padding: 56px 0;
   color: black;
 }
 .p1 span {
@@ -58,7 +59,7 @@ b{
 .fuel{
   display: flex;
   margin-top: 55px;
-  margin-left: 70px;
+
   background-color: #FFFFFF;
   &:last-child {
     margin-right: 0;
@@ -99,7 +100,6 @@ b{
   text-transform: uppercase;
   color: #FFFFFF;
   padding:12px 25px;
-  margin-left:70px;
   margin-top:28px;
   margin-bottom:46px;
 }
@@ -107,15 +107,13 @@ b{
 .download-block{
   display:flex;
   margin-top:33px;
-  margin-left: 70px;
 }
 .download{
   display: flex;
 }
 .info-block{
   display: flex;
-  margin-left: 70px;
-  margin-right: 120px;
+
   border-top: 1px dashed #009FE3;
   width: 57%;
 }
@@ -146,7 +144,6 @@ b{
   line-height: 120%;
   letter-spacing: 0.2px;
   color: #021C27;
-
 }
 .download-icon{
   margin-right:15px;

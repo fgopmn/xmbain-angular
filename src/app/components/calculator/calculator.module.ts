@@ -1,20 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DocumentsRoutingModule } from './documents-routing.module';
-import {DocumentsComponent} from "./documents.component";
+
+import { CalculatorRoutingModule } from './calculator-routing.module';
 import {MainModule} from "../main/main.module";
+import {CalculatorComponent} from "./calculator.component";
 import {UiKitModule} from "../ui-kit/ui-kit.module";
 
-
 @NgModule({
-  declarations: [
-    DocumentsComponent
-  ],
+  declarations: [CalculatorComponent],
   imports: [
     CommonModule,
-    DocumentsRoutingModule,
+    CalculatorRoutingModule,
     MainModule,
-    UiKitModule,
+    UiKitModule
   ]
 })
-export class DocumentsModule { }
+export class CalculatorModule { }

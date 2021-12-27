@@ -1,15 +1,12 @@
-.header-flex-ul{
-  width: 83%;
-  margin: auto;
-}
-.header-flex-ul ul{
+
+.header-ul {
   display: flex;
   border-bottom: 1px solid;
   padding-top: 40px;
   color: #C0C6C9;
   padding-bottom: 20px;
 }
-.header-flex-ul ul li{
+.header-ul li{
   list-style-type: none;
   font-family: Manrope;
   font-style: normal;
@@ -69,10 +66,7 @@
   line-height: 160%;
   letter-spacing: 0.2px;
   color: #021C27;
-}
-
-.air{
-
+  width: 344px;
 }
 .air-container{
 width: 83%;
@@ -204,7 +198,7 @@ ol li {
   width: 83%;
   margin: auto;
 }
-.airHeaters-slider-title-container p{
+.air-title{
   padding-top: 80px;
   padding-bottom: 45px;
   font-family: Manrope;
@@ -222,6 +216,7 @@ ol li {
   margin-right:100px;
   padding-right:23px;
   padding-left:24px;
+  padding-bottom: 65px;
 }
 .green-description{
   font-family: Manrope;
@@ -248,6 +243,7 @@ ol li {
   background-color: #abd5e81a;
   display: inline-block;
   padding: 60px 0;
+  width: 100%;
 }
 :host::ng-deep .footer .footer__image{
   display: block;

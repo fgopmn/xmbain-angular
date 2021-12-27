@@ -18,6 +18,8 @@ import { UsedEquipmentComponent } from './used-equipment/used-equipment.componen
 import { RelatedEquipmentComponent } from './related-equipment/related-equipment.component';
 
 import { AccessoriesChildComponent } from './accessories-child/accessories-child.component';
+import { ChooseComponent } from './choose/choose.component';
+import { FillComponent } from './fill/fill.component';
 
 
 
@@ -45,7 +47,9 @@ import { AccessoriesChildComponent } from './accessories-child/accessories-child
     RelatedEquipmentComponent,
     RelatedEquipmentComponent,
     EquipmentSeriesComponent,
-    NewsChildComponent
+    NewsChildComponent,
+    ChooseComponent,
+    FillComponent
   ],
 
   exports: [
@@ -64,7 +68,9 @@ import { AccessoriesChildComponent } from './accessories-child/accessories-child
     FullRangeComponent,
     RelatedEquipmentComponent,
     NewsChildComponent,
-    AccessoriesChildComponent
+    AccessoriesChildComponent,
+    ChooseComponent,
+    FillComponent
   ],
 
 
