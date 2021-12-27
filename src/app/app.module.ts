@@ -58,8 +58,6 @@ const routes: Routes = [
     path:"seo",
     loadChildren: () => import('./components/seo/seo.module').then(m => m.SeoModule)
   },
-
-
   {
     path:"press",
     component:PressComponent
@@ -80,8 +78,6 @@ const routes: Routes = [
     PressComponent,
     ServicesComponent,
     ProductComponent,
-    PartnersComponent,
-
   ],
   imports: [
     BrowserModule,

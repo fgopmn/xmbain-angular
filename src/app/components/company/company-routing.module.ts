@@ -4,7 +4,7 @@ import {CompanyComponent} from "./company.component";
 
 const routes: Routes = [
   {
-    "path":"",
+    path:"",
     component:CompanyComponent
   }
 ];

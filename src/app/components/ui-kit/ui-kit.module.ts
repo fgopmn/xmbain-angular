@@ -21,10 +21,10 @@ import { ChooseComponent } from './choose/choose.component';
 import { FillComponent } from './fill/fill.component';
 
 import { ModalComponent } from './modal/modal.component';
-// import {ClickOutsideModule} from "ng-click-outside";
-// import {AccordionComponent} from './accordion/accordion.component';
-// import {MatExpansionModule} from "@angular/material/expansion";
-// import {CdkAccordionModule} from '@angular/cdk/accordion';
+import {AccordionComponent} from "./accordion/accordion.component";
+import {MatExpansionModule} from "@angular/material/expansion";
+import {ClickOutsideModule} from "ng-click-outside";
+import {CdkAccordionModule} from '@angular/cdk/accordion';
 
 
 
@@ -53,7 +53,7 @@ import { ModalComponent } from './modal/modal.component';
     EquipmentSeriesComponent,
     NewsChildComponent,
     ModalComponent,
-   // AccordionComponent,
+    AccordionComponent,
     NewsChildComponent,
     ChooseComponent,
     FillComponent
@@ -77,19 +77,19 @@ import { ModalComponent } from './modal/modal.component';
     NewsChildComponent,
     AccessoriesChildComponent,
     ModalComponent,
-  //  AccordionComponent,
+    AccordionComponent,
     AccessoriesChildComponent,
     ChooseComponent,
     FillComponent
   ],
 
 
-
   imports: [
     CommonModule,
-    // ClickOutsideModule,
-    // MatExpansionModule,
-    // CdkAccordionModule
+    MatExpansionModule,
+    ClickOutsideModule,
+    MatExpansionModule,
+    CdkAccordionModule
 
   ]
 })

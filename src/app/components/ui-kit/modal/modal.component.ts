@@ -6,7 +6,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
   styleUrls: ['./modal.component.scss']
 })
 export class ModalComponent {
-  @Input('is-open') isOpenProps: boolean = false
+  @Input('is-open') isOpenProps: boolean = true
   @Output() whenModalOpen: EventEmitter<boolean> = new EventEmitter<boolean>()
 
   constructor() {

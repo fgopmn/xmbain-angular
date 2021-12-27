@@ -5,7 +5,7 @@ import {SeoComponent} from "./seo.component";
 
 const routes: Routes = [
   {
-    "path":"",
+    path:"",
     component:SeoComponent
   }
 ];
