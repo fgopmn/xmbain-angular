@@ -1,7 +1,8 @@
-.menu-list{
+.menu-list {
   padding-top: 20px;
 }
-.menu{
+
+.menu {
   display: flex;
   max-width: 1200px;
   margin: auto;
@@ -9,7 +10,7 @@
   padding-bottom: 16px;
 }
 
-.menu li{
+.menu li {
   list-style-type: none;
   font-weight: 500;
   font-size: 12px;
@@ -21,8 +22,12 @@
 }
 .support-container{
   width: 83%;
-  margin:auto;
+  margin: auto;
 }
+
+.support-container-title {
+  font-family: Manrope;
+  font-style: normal;
 .support-container-title{
   font-weight: 800;
   font-size: 64px;
@@ -32,6 +37,10 @@
   padding-top: 30px;
   padding-bottom: 66px;
 }
+
+.support-child1-text1 {
+  font-family: Manrope;
+  font-style: normal;
 .support-child1-text1{
   font-weight: normal;
   font-size: 19px;
@@ -39,9 +48,14 @@
   letter-spacing: 0.2px;
   color: #021C27;
 }
-.support-child1 img{
+
+.support-child1 img {
   margin-top: 60px;
 }
+
+.support-child1-text2 {
+  font-family: Manrope;
+  font-style: normal;
 .support-child1-text2{
   font-weight: normal;
   font-size: 15px;
@@ -49,6 +63,10 @@
   letter-spacing: 0.2px;
   color: #021C27;
 }
+
+.support-child2-text1 {
+  font-family: Manrope;
+  font-style: normal;
 .support-child2-text1{
   font-weight: bold;
   font-size: 24px;
@@ -58,6 +76,9 @@
 
 }
 
+.support-child2-text2 {
+  font-family: Manrope;
+  font-style: normal;
 .support-child2-text2{
   font-weight: normal;
   font-size: 15px;
@@ -66,6 +87,10 @@
   color: #021C27;
   padding-top: 6px;
 }
+
+.support-child2-text3 {
+  font-family: Manrope;
+  font-style: normal;
 .support-child2-text3{
   font-weight: normal;
   font-size: 15px;
@@ -73,14 +98,16 @@
   letter-spacing: 0.2px;
   text-transform: uppercase;
   color: #021C27;
-padding-top: 79px;
+  padding-top: 79px;
 }
-.support-text{
+
+.support-text {
   display: flex;
   padding-bottom: 80px;
 
 }
-.support-child2{
+
+.support-child2 {
   margin-left: 253px;
 }
 .documents{
@@ -113,7 +140,7 @@ padding-bottom: 108px;
   line-height: 120%;
   letter-spacing: 0.2px;
   padding-bottom: 20px;
-  border-bottom:  5px solid #021C27;
+  border-bottom: 5px solid #021C27;
 }
 .documents-ul li:nth-child(n+2){
   font-weight: 600;
@@ -176,27 +203,29 @@ padding-bottom: 108px;
   margin-top: 60px;
   padding-bottom: 90px;
 }
-//.questions-block ul li{
-//  font-weight: normal;
-//  font-size: 17px;
-//  line-height: 160%;
-//  letter-spacing: 0.2px;
-//  color: #021C27;
-//  list-style-type: none;
-//}
-//.questions-block li span{
-//  border-bottom: 1px dashed #009FE3;
-//}
-//.questions-block li::before{
-//  content: '+';
-//  padding-right: 16px;
-//  color: #009FE3;
-//  border-bottom: none;
-//  cursor: pointer;
-//}
-//.questions-block .example-accordion-item-header:nth-child(n+2){
-//  margin-top: 37px;
-//}
+.questions-block ul li{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  list-style-type: none;
+}
+.questions-block li span{
+  border-bottom: 1px dashed #009FE3;
+}
+.questions-block li::before{
+  content: '+';
+  padding-right: 16px;
+  color: #009FE3;
+  border-bottom: none;
+  cursor: pointer;
+}
+.questions-block ul li:nth-child(n+2){
+  margin-top: 37px;
+}
 .questions2{
   width: 32%;
   position: relative;
@@ -226,6 +255,8 @@ padding-bottom: 108px;
 }
 .questions2 button{
   margin-top: 60px;
+  font-family: Manrope;
+  font-style: normal;
   font-weight: bold;
   font-size: 15px;
   line-height: 120%;
@@ -246,6 +277,8 @@ padding-bottom: 108px;
     padding-top: 60px;
 
     li {
+      font-family: Manrope;
+      font-style: normal;
       font-weight: normal;
       font-size: 12px;
       line-height: 100%;

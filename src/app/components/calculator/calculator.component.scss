@@ -61,7 +61,6 @@ li {
   width: 403px;
   height: 0.5px;
   border: 1px solid red;
-  margin-left: 82px;
 }
 .rectangle13{
   width: 403px;
@@ -105,7 +104,6 @@ li {
     border-radius: 9px;
     position: relative;
     bottom: 9px;
-    z-index: 1000;
   }
 .data-entry{
   background: white;
@@ -113,10 +111,7 @@ li {
 .data-flex{
   display: flex;
   justify-content: space-between;
-
 }
-
-
 .data-select{
   background: white;
 }
@@ -155,7 +150,6 @@ li {
   border: 1px solid #009FE3;
   border-radius: 4px;
   margin-top: 17px;
-
 }
 .select-group{
   width: 310px;
@@ -187,7 +181,7 @@ li {
   display: flex;
 }
 .information-area{
-
+padding-bottom: 134px;
 }
 .submit-flex{
   display: flex;
@@ -232,6 +226,74 @@ li {
   border-radius: 5px;
   border:none;
   padding: 13px 23px;
+}
+.data-rules-flex2{
+  display: flex;
+}
+
+.dashed{
+  padding-bottom: 156px;
+}
+.dashed img{
+  width: 100%;
+}
+.rectangle15{
+  width: 403px;
+  height: 0.5px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+.red-rule4{
+  width: 18px;
+  height: 18px;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  border: 5px solid red;
+  border-radius: 9px;
+  position: relative;
+  bottom: 9px;
+}
+.contact{
+  display: flex;
+  padding-top: 52px;
+  align-items: center;
+}
+.yourContact {
+  margin-left: 13px;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+}
+.contact img{
+  width: 13px;
+  height: 15px;
+}
+.contacts{
+  opacity: 0.3;
+  border: 1px solid #009FE3;
+  border-radius: 4px;
+  margin-top: 17px;
+  width: 309px;
+}
+.check-group{
+  width: 309px;
+  display: flex;
+  padding-top: 23px;
+  margin-bottom: 29px;
+}
+.check-group p{
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+}
+.check-group input{
+  background: #021C27;
+  border-radius: 4px;
+  margin-right:8px
 }
 //::ng-deep .equipment__flex{
 //  box-shadow: none;

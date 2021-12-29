@@ -2,11 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import {environment} from "../../../environments/environment.prod";
 import{RequestService} from "../../service/request.service";
 import {TaskInterface} from "../../interfaces/task";
+import {CarouselConfig} from "ngx-bootstrap/carousel";
 
 
 @Component({
   selector: 'app-page-solution',
   templateUrl: './page-solution.component.html',
+  providers:[ { provide: CarouselConfig, useValue: { interval: 1500, noPause: false, showIndicators: true } }],
   styleUrls: ['./page-solution.component.scss']
 })
 export class PageSolutionComponent implements OnInit{
@@ -14,7 +16,11 @@ export class PageSolutionComponent implements OnInit{
   advantages:TaskInterface[]=[];
   solution:TaskInterface[]=[];
   used:any[]=[];
-  constructor(public requestService:RequestService) { }
+
+
+  constructor(public requestService:RequestService) {
+
+  }
   ngOnInit(): void {
     this.getTask()
     this.getAdvantages()
