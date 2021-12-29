@@ -12,7 +12,6 @@ import {ContactsComponent } from './components/contacts/contacts.component';
 import {ProductComponent} from "./components/product/product.component";
 
 
-
 const routes: Routes = [
   {
     path:"",
@@ -84,7 +83,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     HttpClientModule,
     MainModule,
-    UiKitModule
+    UiKitModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

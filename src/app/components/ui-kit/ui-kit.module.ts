@@ -19,8 +19,11 @@ import { RelatedEquipmentComponent } from './related-equipment/related-equipment
 import { AccessoriesChildComponent } from './accessories-child/accessories-child.component';
 import { ChooseComponent } from './choose/choose.component';
 import { FillComponent } from './fill/fill.component';
-
 import { ModalComponent } from './modal/modal.component';
+import {MatExpansionModule} from "@angular/material/expansion";
+import {ClickOutsideModule} from "ng-click-outside";
+import {CdkAccordionModule} from "@angular/cdk/accordion";
+import {AccordionComponent} from "./accordion/accordion.component";
 
 @NgModule({
   declarations: [
@@ -47,7 +50,7 @@ import { ModalComponent } from './modal/modal.component';
     EquipmentSeriesComponent,
     NewsChildComponent,
     ModalComponent,
-
+    AccordionComponent,
     NewsChildComponent,
     ChooseComponent,
     FillComponent
@@ -77,6 +80,7 @@ import { ModalComponent } from './modal/modal.component';
     EquipmentSeriesComponent,
     NewsChildComponent,
     ModalComponent,
+    AccordionComponent,
     NewsChildComponent,
     ChooseComponent,
     FillComponent
@@ -84,7 +88,10 @@ import { ModalComponent } from './modal/modal.component';
 
   imports: [
     CommonModule,
-
+    MatExpansionModule,
+    ClickOutsideModule,
+    MatExpansionModule,
+    CdkAccordionModule
   ]
 })
 export class UiKitModule { }
