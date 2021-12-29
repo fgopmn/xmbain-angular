@@ -117,5 +117,8 @@ export const environment = {
   },
  suggestion:{
     get:'/suggestion'
+  },
+  accordion:{
+    get:'/accordion'
   }
 };

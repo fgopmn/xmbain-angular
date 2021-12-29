@@ -1,6 +1,6 @@
 <cdk-accordion class="example-accordion">
   <cdk-accordion-item
-    *ngFor="let item of items; let index = index;"
+    *ngFor="let item of getList; let index = index;"
     #accordionItem="cdkAccordionItem"
     class="example-accordion-item"
     role="button"
@@ -9,10 +9,10 @@
     [attr.aria-expanded]="accordionItem.expanded"
     [attr.aria-controls]="'accordion-body-' + index">
     <div class="example-accordion-item-header" (click)="accordionItem.toggle()">
-      {{ item }}
       <span class="example-accordion-item-description">
-        Click to {{ accordionItem.expanded ? 'close' : 'open' }}
+      {{ accordionItem.expanded ? '-' : '+' }}
       </span>
+      <span class="example-accordion-title">{{item.text}}</span>
     </div>
     <div
       class="example-accordion-item-body"
@@ -20,9 +20,14 @@
       [style.display]="accordionItem.expanded ? '' : 'none'"
       [attr.id]="'accordion-body-' + index"
       [attr.aria-labelledby]="'accordion-header-' + index">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
-      excepturi incidunt ipsum deleniti labore, tempore non nam doloribus blanditiis
-      veritatis illo autem iure aliquid ullam rem tenetur deserunt velit culpa?
+<!--       <span class="example-accordion-item-description">-->
+<!--      {{ accordionItem.expanded ? '-' : '+' }}-->
+<!--      </span>-->
+<!--      <span class="example-accordion-title">{{item.text}}</span> <br>-->
+      Благодаря отсутствию тепловой инерции применяемая <br>
+      технология позволяет достичь требуемой температуры в<br>
+      помещении в кратчайшие сроки, значительно сокращая при этом<br>
+      расход топлива и объемы вредных выбросов в атмосферу.
     </div>
   </cdk-accordion-item>
 </cdk-accordion>

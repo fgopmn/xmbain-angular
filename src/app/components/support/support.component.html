@@ -43,6 +43,8 @@
            <img src="../../../assets/icons/Vector.png">
          </span>
       </button>
+
+
     </div>
     <div class="file-img">
       <img src="../../../assets/icons/Group 512.png">
@@ -54,18 +56,7 @@
     <div class="questions1">
       <p class="questions-title">Вопросы и ответы</p>
       <div class="questions-block">
-        <ul>
-          <li><span>Особенность данной технологии состоит в прямой</span></li>
-          <li><span>Передаче энергии в помещение, что существенно повышает</span></li>
-          <li><span>Общую эффективность всей системы отопления в целом</span></li>
-          <li><span>Поскольку система не использует промежуточный теплоноситель</span></li>
-          <li><span>Особенность данной технологии состоит в прямой</span></li>
-          <li><span>Передаче энергии в помещение, что существенно повышает</span></li>
-          <li><span>Общую эффективность всей системы отопления в целом.</span></li>
-          <li><span>Поскольку система не использует промежуточный теплоноситель</span></li>
-          <li><span>Передаче энергии в помещение, что существенно повышает</span></li>
-          <li><span>Общую эффективность всей системы отопления в целом.</span></li>
-        </ul>
+        <app-accordion></app-accordion>
       </div>
     </div>
     <div class="questions2">
@@ -76,14 +67,13 @@
     </div>
   </div>
 </div>
-<app-accordion></app-accordion>
 <app-footer></app-footer>
 <app-modal
   [is-open]="!isModalOpen"
   (whenModalOpen)="toggleModal($event)"
 >
-  <div class="modal__column-wrapper">
-    <ul class="modal__column">
+  <div class="modal__list-wrapper">
+    <ul class="modal__list">
       <li>A</li>
       <li>AGRI-C</li>
       <li>AGRI-DF</li>
@@ -94,13 +84,13 @@
       <li>AZN EC</li>
       <li>AZN-X</li>
     </ul>
-    <ul class="modal__column">
+    <ul class="modal__list">
 
       <li>B</li>
       <li>BA PLUS</li>
       <li>BOXY</li>
     </ul>
-    <ul class="modal__column">
+    <ul class="modal__list">
       <li>C</li>
       <li>CF-CM/P</li>
       <li>CF-GAS</li>
@@ -109,7 +99,7 @@
       <li>CF-XTRIM</li>
       <li>CMX</li>
     </ul>
-    <ul class="modal__column">
+    <ul class="modal__list">
       <li>D</li>
       <li>DAE</li>
       <li>DGK</li>
@@ -120,7 +110,7 @@
       <li>DST</li>
       <li>DUO-MO</li>
     </ul>
-    <ul class="modal__column">
+    <ul class="modal__list">
       <li>E</li>
       <li>EKOCIKKI</li>
       <li>EKOCIKKI 80</li>
@@ -129,16 +119,16 @@
       <li> ENERGY-O/K</li>
       <li>ENERGY/K</li>
     </ul>
-    <ul class="modal__column">
+    <ul class="modal__list">
       <li>H</li>
       <li>HB PLUS</li>
     </ul>
-    <ul class="modal__column">
+    <ul class="modal__list">
       <li>K</li>
       <li>KLIMAXS</li>
       <li>KUBO-S</li>
     </ul>
-    <ul class="modal__column">
+    <ul class="modal__list">
       <li>M</li>
       <li>M-CF</li>
       <li>MB UNIT</li>
@@ -146,24 +136,24 @@
       <li>MIXI 80</li>
       <li>MIXIJET</li>
     </ul>
-    <ul class="modal__column">
+    <ul class="modal__list">
       <li>N</li>
       <li>NTN</li>
       <li>NTPM</li>
     </ul>
-    <ul class="modal__column">
+    <ul class="modal__list">
       <li>P</li>
       <li>PA</li>
       <li>PCM</li>
       <li>PMX</li>
     </ul>
-    <ul class="modal__column">
+    <ul class="modal__list">
       <li>R</li>
       <li>RCF</li>
       <li>RCU</li>
       <li>RCU-HE</li>
     </ul>
-    <ul class="modal__column">
+    <ul class="modal__list">
       <li>S</li>
       <li>SMARTBOXY</li>
       <li>SMX</li>
@@ -175,7 +165,7 @@
       <li>SUPERCIKKI 80</li>
       <li>SUPERFRESH</li>
     </ul>
-    <ul class="modal__column">
+    <ul class="modal__list">
       <li>T</li>
       <li>TANDEM CM</li>
       <li>TC-DF</li>
@@ -187,7 +177,7 @@
       <li>TCO-E/K</li>
       <li>TE</li>
     </ul>
-    <ul class="modal__column">
+    <ul class="modal__list">
       <li>U</li>
       <li>UT</li>
       <li>UT/K</li>
@@ -195,15 +185,16 @@
       <li>UTC</li>
       <li>UTC/K</li>
     </ul>
-    <ul class="modal__column">
+    <ul class="modal__list">
       <li>V</li>
       <li>VX</li>
     </ul>
-    <ul class="modal__column">
+    <ul class="modal__list">
       <li>W</li>
       <li>WIMBLEDON</li>
     </ul>
   </div>
 
 </app-modal>
+
 

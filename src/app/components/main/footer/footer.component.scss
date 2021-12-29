@@ -130,6 +130,7 @@ button{
 }
 .flag{
   background: #021C27;
+  border-radius: 4px;
 }
 .flag-container{
   width: 83%;
@@ -144,6 +145,10 @@ button{
 .flag-russia{
   display: flex;
 
+}
+.flag-russia img{
+  border-radius: 4px;
+  height: 12px;
 }
 .language{
   font-weight: normal;
