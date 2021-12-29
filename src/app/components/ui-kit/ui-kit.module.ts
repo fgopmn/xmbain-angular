@@ -19,7 +19,6 @@ import { RelatedEquipmentComponent } from './related-equipment/related-equipment
 import { AccessoriesChildComponent } from './accessories-child/accessories-child.component';
 import { ChooseComponent } from './choose/choose.component';
 import { FillComponent } from './fill/fill.component';
-
 import { ModalComponent } from './modal/modal.component';
 import {AccordionComponent} from "./accordion/accordion.component";
 import {MatExpansionModule} from "@angular/material/expansion";
