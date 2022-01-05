@@ -35,12 +35,8 @@
     cursor:pointer;
   }
 }
-.industrial-flex{
-  width: 83%;
-  margin: auto;
-}
 
-.industrial-block{
+.industrial-flex{
   display: flex;
   justify-content: space-between;
 
@@ -118,8 +114,6 @@
 }
 
 .flag{
-  width:83%;
-  margin: auto;
   display: flex;
 }
 .video-button{
@@ -187,8 +181,6 @@
 }
 .complex-block{
   display: flex;
-  width: 83%;
-  margin: auto;
   padding: 93px 0;
 
 }
@@ -231,7 +223,6 @@
 .complex{
   background: linear-gradient(359.7deg, #EAF5FA 0.32%, rgba(240, 248, 252, 0) 46.83%);
   background-color: #FFFFFF;
-
 }
 .airHeaters p{
   font-family: Manrope;
@@ -242,8 +233,6 @@
   letter-spacing: 0.2px;
   color: #021C27;
   opacity: 0.3;
-
-
 }
 .airHeaters-block{
   display: flex;
@@ -260,13 +249,11 @@
   line-height: 120%;
   letter-spacing: 0.2px;
   color: #021C27;
-
   margin-top: 44px;
 }
 .airHeaters{
   width: 423px;
   position: relative;
-
 }
 .scroll{
   width: 5px;
@@ -277,9 +264,7 @@
   top: 294px;
 }
 .airHeaters-text{
-
   padding-bottom: 123px;
-  padding-left: 120px;
   padding-top: 120px;
 }
 .rectangle360{
@@ -330,10 +315,8 @@ position: relative;
   background-color: #FFFFFF;
 }
 .fullRange{
-  width: 83%;
-  margin: auto;
   padding-top: 80px;
-  background-color: white;
+
 }
 .numbers-block{
   display: flex;
@@ -368,8 +351,8 @@ position: relative;
   line-height: 130%;
   letter-spacing: -0.02em;
   color: #021C27;
-  padding-bottom: 46px;
-
+  padding-bottom:65px;
+  width: 130px;
 }
 .num-text{
   margin-left:40px;
@@ -456,23 +439,22 @@ margin-bottom:18px
 }
 .recuperative-block{
   display: flex;
+  justify-content: space-between;
 }
 .recuperative{
   background-color: #FFFFFF;
-  padding: 5px 70px 79px 37px;
+
 }
 .oem{
   background: #FFFFFF;
   box-shadow: 0px 20px 60px rgba(2, 26, 36, 0.04);
   border-radius: 40px;
   display: inline-block;
-  margin-left: 82px;
-}
-.oem-flex{
   padding-left: 70px;
   padding-top: 59px;
 }
-.oem-flex h6{
+
+.oem h6{
   font-family: Manrope;
   font-style: normal;
   font-weight: 800;
@@ -518,14 +500,15 @@ margin-bottom:18px
   background-color: #abd5e81a;
   display: inline-block;
   padding: 60px 0;
+  width: 100%;
 }
 .blue-flag {
-  padding-left: 138px;
+  width: 100%;
 }
 .clients{
   background-color: white;
 }
-.clients p{
+.clients-title{
   font-family: Manrope;
   font-style: normal;
   font-weight: 800;
@@ -534,15 +517,11 @@ margin-bottom:18px
   letter-spacing: -0.02em;
   color: #021C27;
   padding-top: 28px;
-  padding-left: 120px;
 }
 .logo-block{
-  width: 80%;
   text-align: center;
   display: flex;
   align-items: center;
-  margin-left: 159px;
-  margin-right: 136px;
   margin-top: 63px;
 }
 .logo-border{
@@ -551,22 +530,18 @@ margin-bottom:18px
   opacity: 0.5;
 }
 .logo-child{
-  width: 16.6%;
-
-
+  width: 204px;
 }
 #logo-child-first{
-  width: 16.6%;
-  text-align: left;
+  width: 204px;
 }
 #logo-child-last{
-  width: 16.6%;
-  text-align: right;
+  width: 204px;
 }
 .press-centre{
   background: linear-gradient(180deg, #abd5e836  0%, rgba(171, 213, 232, 0) 104.43%);
 }
-.press-centre h6{
+.press-title{
   font-family: Manrope;
   font-style: normal;
   font-weight: 800;
@@ -575,9 +550,8 @@ margin-bottom:18px
   letter-spacing: -0.02em;
   color: #021C27;
   padding-top: 100px;
-  padding-left: 120px;
 }
-.press-centre p{
+.press-text{
   font-family: Manrope;
   font-style: normal;
   font-weight: 800;
@@ -586,7 +560,6 @@ margin-bottom:18px
   letter-spacing: -0.02em;
   color: #021C27;
   padding-top: 70px;
-  padding-left: 120px;
 }
 .blog-event{
   background: linear-gradient(180deg, #abd5e838 0%, rgba(171, 213, 232, 0) 100.12%);
@@ -611,7 +584,6 @@ margin-bottom:18px
   letter-spacing: -0.02em;
   color: #021C27;
   padding-top: 75px;
-  padding-left: 120px;
 }
 .exhibitions-block p{
   font-family: Manrope;
@@ -621,7 +593,6 @@ margin-bottom:18px
   line-height: 100%;
   letter-spacing: -0.02em;
   color: #021C27;
-  padding-left: 120px;
   padding-bottom: 36px;
   padding-top: 80px;
 }
@@ -629,11 +600,8 @@ margin-bottom:18px
   background-color: white;
 }
 .logos-block{
-  width: 83%;
-  margin: auto;
   display: flex;
   justify-content: space-between;
-
   align-items: center;
   padding-top: 89px;
   padding-bottom: 110px;

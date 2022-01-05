@@ -20,12 +20,10 @@ import { AccessoriesChildComponent } from './accessories-child/accessories-child
 import { ChooseComponent } from './choose/choose.component';
 import { FillComponent } from './fill/fill.component';
 import { ModalComponent } from './modal/modal.component';
-import {AccordionComponent} from "./accordion/accordion.component";
 import {MatExpansionModule} from "@angular/material/expansion";
 import {ClickOutsideModule} from "ng-click-outside";
-import {CdkAccordionModule} from '@angular/cdk/accordion';
-
-
+import {CdkAccordionModule} from "@angular/cdk/accordion";
+import {AccordionComponent} from "./accordion/accordion.component";
 
 @NgModule({
   declarations: [
@@ -62,6 +60,7 @@ import {CdkAccordionModule} from '@angular/cdk/accordion';
     ComplexComponent,
     EquipmentComponent,
     TechnologicalComponent,
+    SelectInputComponent,
     PressEventsComponent,
     PressBlogComponent,
     ExhibitionsComponent,
@@ -70,18 +69,22 @@ import {CdkAccordionModule} from '@angular/cdk/accordion';
     SystemProductComponent,
     HighlyEfficientComponent,
     EquipmentSeriesComponent,
+    EquipmentSeriesComponent,
+    FullRangeComponent,
+    RelatedEquipmentComponent,
+    AccessoriesChildComponent,
     UsedEquipmentComponent,
     FullRangeComponent,
     RelatedEquipmentComponent,
+    RelatedEquipmentComponent,
+    EquipmentSeriesComponent,
     NewsChildComponent,
-    AccessoriesChildComponent,
     ModalComponent,
     AccordionComponent,
-    AccessoriesChildComponent,
+    NewsChildComponent,
     ChooseComponent,
     FillComponent
   ],
-
 
   imports: [
     CommonModule,
@@ -89,7 +92,6 @@ import {CdkAccordionModule} from '@angular/cdk/accordion';
     ClickOutsideModule,
     MatExpansionModule,
     CdkAccordionModule
-
   ]
 })
 export class UiKitModule { }

@@ -10,8 +10,6 @@ import { ServicesComponent } from './components/services/services.component';
 import {UiKitModule} from "./components/ui-kit/ui-kit.module";
 import {ContactsComponent } from './components/contacts/contacts.component';
 import {ProductComponent} from "./components/product/product.component";
-import {PartnersComponent} from "./components/partners/partners.component";
-
 
 
 const routes: Routes = [
@@ -85,7 +83,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     HttpClientModule,
     MainModule,
-    UiKitModule
+    UiKitModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

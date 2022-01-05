@@ -8,9 +8,7 @@ import {environment} from "../../../../environments/environment.prod";
   styleUrls: ['./accordion.component.scss']
 })
 export class AccordionComponent implements OnInit {
-
   expandedIndex = 0;
-
   getList: any[] = [];
 
   constructor(public requestService:RequestService) { }
@@ -20,7 +18,6 @@ export class AccordionComponent implements OnInit {
   }
 
   getRequest(){
-
     this.requestService.getData(`${environment.url}${environment.accordion.get}`).subscribe((items:any) => {
       this.getList = items
     })

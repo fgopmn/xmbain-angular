@@ -1,7 +1,8 @@
-.menu-list{
+.menu-list {
   padding-top: 20px;
 }
-.menu{
+
+.menu {
   display: flex;
   max-width: 1200px;
   margin: auto;
@@ -9,7 +10,7 @@
   padding-bottom: 16px;
 }
 
-.menu li{
+.menu li {
   list-style-type: none;
   font-weight: 500;
   font-size: 12px;
@@ -19,11 +20,16 @@
   padding-right: 9px;
   opacity: 0.3;
 }
-.support-container{
+
+.support-container {
   width: 83%;
-  margin:auto;
+  margin: auto;
 }
-.support-container-title{
+
+
+.support-container-title {
+  font-family: Manrope;
+  font-style: normal;
   font-weight: 800;
   font-size: 64px;
   line-height: 100%;
@@ -32,33 +38,44 @@
   padding-top: 30px;
   padding-bottom: 66px;
 }
-.support-child1-text1{
+
+.support-child1-text1 {
+  font-family: Manrope;
+  font-style: normal;
   font-weight: normal;
   font-size: 19px;
   line-height: 140%;
   letter-spacing: 0.2px;
   color: #021C27;
 }
-.support-child1 img{
+
+.support-child1 img {
   margin-top: 60px;
 }
-.support-child1-text2{
+
+.support-child1-text2 {
+  font-family: Manrope;
+  font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 160%;
   letter-spacing: 0.2px;
   color: #021C27;
 }
-.support-child2-text1{
+
+.support-child2-text1 {
+  font-family: Manrope;
+  font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 160%;
   letter-spacing: 0.2px;
   color: #021C27;
-
 }
 
-.support-child2-text2{
+.support-child2-text2 {
+  font-family: Manrope;
+  font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 160%;
@@ -66,32 +83,40 @@
   color: #021C27;
   padding-top: 6px;
 }
-.support-child2-text3{
+
+.support-child2-text3 {
+  font-family: Manrope;
+  font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 160%;
   letter-spacing: 0.2px;
   text-transform: uppercase;
   color: #021C27;
-padding-top: 79px;
+  padding-top: 79px;
 }
-.support-text{
+
+.support-text {
   display: flex;
   padding-bottom: 80px;
   justify-content: space-between;
 }
-.support-child2{
+
+.support-child2 {
   margin-left: 253px;
 }
-.documents{
+
+.documents {
   background: linear-gradient(90deg, #FBFEFF 0%, #F0F8FC 100%);
 }
-.documents-block{
+
+.documents-block {
   max-width: 1200px;
   margin: auto;
-padding-bottom: 108px;
+  padding-bottom: 108px;
 }
-.documents-title{
+
+.documents-title {
   font-weight: 800;
   font-size: 46px;
   line-height: 120%;
@@ -99,23 +124,26 @@ padding-bottom: 108px;
   color: #021C27;
   padding-top: 80px;
 }
-.documents-ul{
+
+.documents-ul {
   display: flex;
   margin-top: 60px;
-
 }
-.documents-ul li{
+
+.documents-ul li {
   list-style-type: none;
 }
-.documents-ul li:first-child{
+
+.documents-ul li:first-child {
   font-weight: 600;
   font-size: 15px;
   line-height: 120%;
   letter-spacing: 0.2px;
   padding-bottom: 20px;
-  border-bottom:  5px solid #021C27;
+  border-bottom: 5px solid #021C27;
 }
-.documents-ul li:nth-child(n+2){
+
+.documents-ul li:nth-child(n+2) {
   font-weight: 600;
   font-size: 15px;
   line-height: 120%;
@@ -126,19 +154,21 @@ padding-bottom: 108px;
   padding-bottom: 20px;
   border-bottom: 1px solid #C0C6C9;
 }
-.documents-block-title{
+
+.documents-block-title {
   font-weight: 800;
   font-size: 34px;
   line-height: 120%;
   letter-spacing: -0.02em;
   color: #021C27;
-
 }
-.choose-block{
+
+.choose-block {
   display: flex;
   margin-top: 60px;
 }
-.choose-block button{
+
+.choose-block button {
   background: #021C27;
   border: 1px solid #021C27;
   box-sizing: border-box;
@@ -151,20 +181,24 @@ padding-bottom: 108px;
   margin-left: 20px;
   padding: 11px 12px;
 }
-.choose-block button span{
+
+.choose-block button span {
   padding-left: 20px;
 }
-.file-img{
+
+.file-img {
   margin-top: 86px;
   text-align: center;
 }
-.questions{
-  max-width:1200px ;
-  margin:auto;
+
+.questions {
+  max-width: 1200px;
+  margin: auto;
   display: flex;
   justify-content: space-between
 }
-.questions-title{
+
+.questions-title {
   font-weight: 800;
   font-size: 46px;
   line-height: 120%;
@@ -172,42 +206,52 @@ padding-bottom: 108px;
   color: #021C27;
   padding-top: 80px;
 }
-.questions-block{
+
+.questions-block {
   margin-top: 60px;
   padding-bottom: 90px;
 }
-//.questions-block ul li{
-//  font-weight: normal;
-//  font-size: 17px;
-//  line-height: 160%;
-//  letter-spacing: 0.2px;
-//  color: #021C27;
-//  list-style-type: none;
-//}
-//.questions-block li span{
-//  border-bottom: 1px dashed #009FE3;
-//}
-//.questions-block li::before{
-//  content: '+';
-//  padding-right: 16px;
-//  color: #009FE3;
-//  border-bottom: none;
-//  cursor: pointer;
-//}
-//.questions-block .example-accordion-item-header:nth-child(n+2){
-//  margin-top: 37px;
-//}
-.questions2{
+
+.questions-block ul li {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  list-style-type: none;
+}
+
+.questions-block li span {
+  border-bottom: 1px dashed #009FE3;
+}
+
+.questions-block li::before {
+  content: '+';
+  padding-right: 16px;
+  color: #009FE3;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+.questions-block ul li:nth-child(n+2) {
+  margin-top: 37px;
+}
+
+.questions2 {
   width: 32%;
   position: relative;
   margin-top: 44px;
 }
-.questions2 div{
+
+.questions2 div {
   position: absolute;
   top: 0;
   right: 0;
 }
-.questions2-title{
+
+.questions2-title {
   padding-top: 150px;
   font-weight: bold;
   font-size: 24px;
@@ -216,7 +260,8 @@ padding-bottom: 108px;
   color: #021C27;
 
 }
-.questions2-text{
+
+.questions2-text {
   font-weight: normal;
   font-size: 15px;
   line-height: 160%;
@@ -224,8 +269,11 @@ padding-bottom: 108px;
   color: #021C27;
   padding-top: 30px;
 }
-.questions2 button{
+
+.questions2 button {
   margin-top: 60px;
+  font-family: Manrope;
+  font-style: normal;
   font-weight: bold;
   font-size: 15px;
   line-height: 120%;
@@ -238,27 +286,31 @@ padding-bottom: 108px;
   padding: 10px 20px;
   cursor: pointer;
 }
+
 .modal {
-  &__list{
+  &__list {
     list-style-type: none;
     margin-right: 16px;
     width: 60px;
     padding-top: 60px;
 
     li {
+      font-family: Manrope;
+      font-style: normal;
       font-weight: normal;
       font-size: 12px;
       line-height: 100%;
       letter-spacing: 0.2px;
       color: #021C27;
 
-      &:first-child{
+      &:first-child {
         font-weight: bold;
       }
-      &:nth-child(n+2){
+
+      &:nth-child(n+2) {
         padding-top: 10px;
 
-        &:hover{
+        &:hover {
           background: #021C27;
           border-radius: 5px;
           cursor: pointer;
@@ -269,6 +321,7 @@ padding-bottom: 108px;
 
       }
     }
+
     &-wrapper {
       display: flex;
       flex-wrap: wrap;
@@ -277,5 +330,4 @@ padding-bottom: 108px;
 
     }
   }
-
 }
