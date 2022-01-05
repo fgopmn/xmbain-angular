@@ -1,22 +1,8 @@
 
-.indoor-title{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 46px;
-  line-height: 120%;
-  letter-spacing: -0.03em;
-  color: #021C27;
-  padding-top: 80px;
-}
-.indoor-block{
-  display: flex;
-  padding-top: 40px;
-  padding-bottom: 60px;
-}
-.indoor-block-child {
-  padding-right: 20px
 
+.indoor-block-child {
+  padding-right: 20px;
+  width: 285px;
 }
 .indoor-block-child-img{
   padding: 35px 60px 19px 61px;
@@ -53,5 +39,5 @@
   opacity: 0.4;
   padding-left: 40px;
   padding-top: 38px;
-  padding-bottom: 36px;
+  padding-bottom: 96px;
 }

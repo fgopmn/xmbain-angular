@@ -1,15 +1,13 @@
-<div>
-  <div class="container">
-      <p class="indoor-title">Оборудование из серии</p>
+
+
     <div class="indoor-block">
-      <div class="indoor-block-child" *ngFor="let item of getList">
-        <img class="indoor-block-child-img" src="{{item.img}}" alt="">
-        <p class="indoor-block-child-title" >{{item.title}}</p>
-        <p class="indoor-block-child-titleAbout" [innerHTML]="item.titleAbout"></p>
-        <p  class="indoor-block-child-text" [innerHTML]="item.text"></p>
+      <div class="indoor-block-child">
+        <img class="indoor-block-child-img" src="{{img}}" alt="">
+        <p class="indoor-block-child-title" >{{title}}</p>
+        <p class="indoor-block-child-titleAbout">{{about}}</p>
+        <p  class="indoor-block-child-text" >{{text}}</p>
       </div>
     </div>
-  </div>
-</div>
 
-<app-related-equipment></app-related-equipment>
+
+

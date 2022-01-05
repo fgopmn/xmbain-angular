@@ -24,7 +24,26 @@
   </div>
 </div>
 <app-equipment></app-equipment>
-<app-equipment-series></app-equipment-series>
+<div>
+  <div>
+    <div class="container">
+      <p class="indoor-title">Оборудование из серии</p>
+      <div class="indoor-equipment">
+      <app-equipment-series *ngFor="let j of equipment"
+                            [title]="j.title"
+                            [img]="j.img"
+                            [about]="j.about"
+                            [text]="j.text"
+      >
+
+      </app-equipment-series>
+      </div>
+
+    </div>
+  </div>
+  <app-related-equipment></app-related-equipment>
+</div>
+
 <div class="airHeaters-slider-title">
   <div class="container">
     <p class="airHeaters-title">Примеры решений</p>

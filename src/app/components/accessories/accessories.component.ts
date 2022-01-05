@@ -8,16 +8,23 @@ import {RequestService} from "../../service/request.service";
 })
 export class AccessoriesComponent implements OnInit {
   accessories:any[] = [];
-
+  equipment: any[] = [];
   constructor(public requestService:RequestService) { }
 
   ngOnInit(): void {
     this.getAccesssories()
+    this.getEquipment()
   }
   getAccesssories() {
     this.requestService.getData(`${environment.url}${environment.accessories.get}`).subscribe((items:any)=>{
       this.accessories = items
     })
   }
+  getEquipment(){
+    this.requestService.getData(`${environment.url}${environment.indoor.get}`).subscribe((items:any) => {
+      this.equipment = items
+    })
+  }
+
 
 }

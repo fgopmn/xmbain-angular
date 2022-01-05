@@ -1,4 +1,10 @@
-
+.home {
+  &__complex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+}
 .industrial-text b{
   font-family: Manrope;
   font-style: normal;
@@ -237,6 +243,7 @@
 .airHeaters-block{
   display: flex;
   background-color: white;
+
 }
 .airHeaters p:nth-child(n+2){
   padding-top: 44px;
@@ -252,8 +259,9 @@
   margin-top: 44px;
 }
 .airHeaters{
-  width: 423px;
+  width: 303px;
   position: relative;
+  margin-left: 120px;
 }
 .scroll{
   width: 5px;
@@ -403,7 +411,6 @@ position: relative;
   border-radius: 4px;
   width: 18px;
   height: 18px;
-  margin-top: 14px;
 }
 .check{
   margin-top:125px;
@@ -443,7 +450,6 @@ margin-bottom:18px
 }
 .recuperative{
   background-color: #FFFFFF;
-
 }
 .oem{
   background: #FFFFFF;

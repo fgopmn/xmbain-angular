@@ -5,13 +5,7 @@ import {Component, Input, OnInit} from '@angular/core';
   templateUrl: './accessories-child.component.html',
   styleUrls: ['./accessories-child.component.scss']
 })
-export class AccessoriesChildComponent implements OnInit {
+export class AccessoriesChildComponent {
   @Input("img")img?:string
   @Input("text")text?:string
-  constructor() {}
-
-
-  ngOnInit(): void {
-  }
-
 }

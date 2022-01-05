@@ -1,27 +1,33 @@
-.select-type{
-  padding:14px 179px 13px 35px;
-  border: 1px solid #009FE3;
-  border-radius: 4px;
-  opacity: 0.3;
-  font-size: 17px;
-  line-height: 120%;
-  color: #009FE3;
-  margin-top:17px;
-}
-.select-group{
-  margin-top:40px;
+
+.select {
+  margin-top: 40px;
   width: 310px;
-}
-.choose-title{
-  font-weight: 600;
-  font-size: 19px;
-  line-height: 120%;
-  letter-spacing: 0.2px;
-  color: #021C27;
-}
-.choose-title img{
-  width: 15px;
-  height: 15px;
-  margin-right:15px
+
+  &__type {
+    padding: 14px 179px 13px 35px;
+    border: 1px solid #009FE3;
+    border-radius: 4px;
+    opacity: 0.3;
+    font-size: 17px;
+    line-height: 120%;
+    color: #009FE3;
+    margin-top: 17px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 120%;
+    letter-spacing: 0.2px;
+    color: #021C27;
+
+    &-image {
+      width: 15px;
+      height: 15px;
+      margin-right: 15px
+    }
+  }
+
 
 }
+

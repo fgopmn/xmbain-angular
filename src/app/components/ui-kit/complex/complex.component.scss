@@ -3,6 +3,7 @@
   box-shadow: 0 5px 40px rgba(2, 26, 36, 0.04);
   border-radius: 20px;
   width: 285px;
+  height: auto;
   &__image {
     padding-left: 20px;
     padding-top: 20px;
@@ -14,12 +15,10 @@
     margin-right: 20px;
   }
 }
-
 .child5-flex{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 120px;
   justify-content: space-between;
-
 }
