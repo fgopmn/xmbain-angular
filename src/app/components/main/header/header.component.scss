@@ -1,63 +1,67 @@
 @import "src/assets/scss/mixins/container.scss";
 
-.header{
+.header {
   @include container;
   display: flex;
   padding: 40px 0 21px;
   justify-content: space-between;
-  &__logo{
+
+  &__logo {
     padding-right: 43px;
   }
-}
 
-.button2{
-  background: #FFFFFF;
-  box-shadow: 0 10px 200px rgba(2, 28, 39, 0.08);
-  border: 1px solid #021C27;
-  border-radius: 4px;
-  padding: 10px 15px 11px 15px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 120%;
-  color: #021C27;
-  opacity: 0.9;
-  cursor: pointer;
-}
-
-ul{
-  display:flex;
-  list-style-type: none;
-  padding-top: 10px;
-  padding-right: 52px;
-}
-.search-button{
-  border: 0;
-  background: none;
-  padding: 0;
-  outline: none;
-  margin-left: 24px;
-  margin-right: 29px;
-}
-li{
-  padding: 0 25px 0 0;
-}
-a{
-  list-style-type: none;
-  text-decoration: none;
-  color:#021C27;
-
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 120%;
-}
-p{
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 120%;
-  padding-top: 12px;
+  &__navigate {
+    &-links {
+      padding: 0 25px 0 0;
+      &-wrapper {
+        display: flex;
+        list-style-type: none;
+        padding-top: 10px;
+        padding-right: 52px;
+      }
+    }
+    &-link {
+      list-style-type: none;
+      text-decoration: none;
+      color: #021C27;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 120%;
+      cursor: pointer;
+    }
+  }
+  &__number {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    padding-top: 12px;
+    cursor: pointer;
+  }
+  &__search-button {
+    border: 0;
+    background: none;
+    padding: 0;
+    outline: none;
+    margin-left: 24px;
+    margin-right: 29px;
+    cursor: pointer;
+  }
+  &__payment-button {
+    background: #FFFFFF;
+    box-shadow: 0 10px 200px rgba(2, 28, 39, 0.08);
+    border: 1px solid #021C27;
+    border-radius: 4px;
+    padding: 10px 15px 11px 15px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 120%;
+    color: #021C27;
+    opacity: 0.9;
+    cursor: pointer;
+  }
 }
 
 /*@media screen and (max-width:1440px){
