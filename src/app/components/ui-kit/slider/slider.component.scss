@@ -41,11 +41,17 @@
 }
 .left-slide{
   position: absolute;
-  top:240px;
+  top:50%;
   left:42px;
+  transform: scaleY(-50%);
+  width: 48px;
+  height: 48px;
 }
 .right-slide{
   position: absolute;
-  top:240px;
-  right:42px
+  top:50%;
+  right:42px;
+  transform: scaleY(-50%);
+  width: 48px;
+  height: 48px;
 }
