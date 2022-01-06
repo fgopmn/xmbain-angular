@@ -17,8 +17,8 @@ const routes: Routes = [
     path:"",
    loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule)
   },
-  {path:"company",
-    loadChildren: () => import('./components/company/company.module').then(m => m.CompanyModule)
+  {path:"production",
+    loadChildren: () => import('./components/production/production.module').then(m => m.ProductionModule)
   },
   {path:"air-heaters",
     loadChildren: () => import('./components/air-heaters/air-heaters.module').then(m => m.AirHeatersModule)

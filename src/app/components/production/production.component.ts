@@ -4,10 +4,10 @@ import {environment} from "../../../environments/environment.prod";
 
 @Component({
   selector: 'app-company',
-  templateUrl: './company.component.html',
-  styleUrls: ['./company.component.scss']
+  templateUrl: './production.component.html',
+  styleUrls: ['./production.component.scss']
 })
-export class CompanyComponent implements OnInit {
+export class ProductionComponent implements OnInit {
   technoImg: any[] = []
   system:any[]=[]
   systemTwo:any[]=[]
