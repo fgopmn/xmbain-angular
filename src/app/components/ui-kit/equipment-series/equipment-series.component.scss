@@ -1,43 +1,47 @@
 
 
-.indoor-block-child {
-  padding-right: 20px;
-  width: 285px;
-}
-.indoor-block-child-img{
-  padding: 35px 60px 19px 61px;
-}
-.indoor-block-child-title{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 19px;
-  line-height: 120%;
-  text-align: center;
-  letter-spacing: 0.2px;
-  color: #021C27;
-}
-.indoor-block-child-titleAbout{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 120%;
-  letter-spacing: 0.2px;
-  color: #021C27;
-  padding-left: 40px;
-  padding-top: 10px;
-}
-.indoor-block-child-text{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 120%;
-  letter-spacing: 0.2px;
-  color: #021C27;
-  opacity: 0.4;
-  padding-left: 40px;
-  padding-top: 38px;
-  padding-bottom: 96px;
-}
+ .indoor {
+   padding-right: 20px;
+   width: 285px;
+
+   &__img {
+     padding: 35px 60px 19px 61px;
+   }
+
+   &__title {
+     font-family: Manrope;
+     font-style: normal;
+     font-weight: 600;
+     font-size: 19px;
+     line-height: 120%;
+     text-align: center;
+     letter-spacing: 0.2px;
+     color: #021C27;
+   }
+
+   &__about {
+     font-family: Manrope;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 15px;
+     line-height: 120%;
+     letter-spacing: 0.2px;
+     color: #021C27;
+     padding-left: 40px;
+     padding-top: 10px;
+   }
+
+   &__description {
+     font-family: Manrope;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 15px;
+     line-height: 120%;
+     letter-spacing: 0.2px;
+     color: #021C27;
+     opacity: 0.4;
+     padding-left: 40px;
+     padding-top: 38px;
+     padding-bottom: 96px;
+   }
+ }

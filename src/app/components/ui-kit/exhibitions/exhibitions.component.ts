@@ -12,6 +12,7 @@ export class ExhibitionsComponent implements OnInit {
   @Input("month") month?:string
   @Input("text") text?:any
   @Input("day2") day2?:any
+  @Input("isShadow") isShadow?:boolean=false
 
   ngOnInit(): void {
   }

@@ -19,6 +19,12 @@ export const environment = {
   show:{
     get: '/show'
   },
+  showTwo:{
+    get: '/showTwo'
+  },
+  showThree:{
+    get: '/showThree'
+  },
   services:{
     get:'/services'
   },
