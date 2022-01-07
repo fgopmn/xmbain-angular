@@ -254,13 +254,16 @@ h2 {
   border-bottom: 1px solid #009fe352;
   margin-left: 12px;
 }
+.maps-block{
+  text-align: center;
+}
+.maps-block iframe{
+  width: 100%;
+  max-width:1920px;
+  height:360px;
+  border:0;
 
-.maps-block {
-  background-image: url("../../../assets/contacts/Mask Group (1).png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: top center;
-  height: 360px;
+
 }
 .information-cities {
   width: 83%;
@@ -286,7 +289,7 @@ h2 {
   letter-spacing: 0.2px;
   color: #021C27;
   text-align: start;
-  border-bottom: 1px dashed #009FE3;
+  border-bottom: 1px dashed #009fe33d;
   padding: 25px 14px 0px 1px;
 }
 .cities-block {

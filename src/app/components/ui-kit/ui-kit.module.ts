@@ -24,6 +24,7 @@ import {MatExpansionModule} from "@angular/material/expansion";
 import {ClickOutsideModule} from "ng-click-outside";
 import {CdkAccordionModule} from "@angular/cdk/accordion";
 import {AccordionComponent} from "./accordion/accordion.component";
+import { InstructionsComponent } from './instructions/instructions.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import {AccordionComponent} from "./accordion/accordion.component";
     AccordionComponent,
     NewsChildComponent,
     ChooseComponent,
-    FillComponent
+    FillComponent,
+    InstructionsComponent
   ],
 
   exports: [
@@ -83,7 +85,8 @@ import {AccordionComponent} from "./accordion/accordion.component";
     AccordionComponent,
     NewsChildComponent,
     ChooseComponent,
-    FillComponent
+    FillComponent,
+    InstructionsComponent
   ],
 
   imports: [

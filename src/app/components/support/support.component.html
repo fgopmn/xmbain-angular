@@ -14,7 +14,7 @@
       <div class="support-child1">
         <p class="support-child1-text1">По вопросам сервисного обслуживания и поддержки <br> обращайтесь в центральный
           офис Tecnoclima в Москве. </p>
-        <img src="../../../assets/icons/Vectors.png">
+        <img src="../../../assets/icons/Vectors.png" alt="no image">
         <p class="support-child1-text2">ООО «TC Груп Энергия» <br> Варшавское шоссе, д. 17, стр. 5 <br> Москва, 117105
           <br> Россия</p>
       </div>
@@ -38,16 +38,45 @@
     </ul>
     <div class="choose-block">
       <p class="documents-block-title">Руководства</p>
-      <button (click)="toggleModal()">Выберите серию
+      <button (click)="toggleModal()" class="button-value">{{series}}
         <span>
-           <img src="../../../assets/icons/Vector.png">
+           <img src="../../../assets/icons/Vector.png"  alt="no image">
          </span>
       </button>
-
-
     </div>
+    <app-instructions>
+      <div
+        class="instructions"
+        [class.instructions_show]="isShowDocument"
+      >
+        <div class="instructions__wrapper">
+          <div class="instructions__text">
+            <img src="../../../assets/icons/Group 179.png" alt="no image"/>
+            <p class="instructions__title">Инструкция по эксплуатации, монтажу и техническому обслуживанию (RU)</p>
+          </div>
+          <div class="instructions__action">
+            <p class="instructions__data">03.02.20 Rev.0</p>
+            <button class="instructions__button">Скачать</button>
+          </div>
+
+        </div>
+
+        <div class="instructions__wrapper">
+          <div class="instructions__text">
+            <img src="../../../assets/icons/Group 179.png" alt="no image"/>
+            <p class="instructions__title">Operating, Installation and Maintenance Instructions (EN)</p>
+          </div>
+          <div class="instructions__action">
+            <p class="instructions__data">12.02.18 Rev.2</p>
+            <button class="instructions__button">Скачать</button>
+          </div>
+
+        </div>
+
+      </div>
+    </app-instructions>
     <div class="file-img">
-      <img src="../../../assets/icons/Group 512.png">
+      <img src="../../../assets/icons/Group 512.png" alt="no image">
     </div>
   </div>
 </div>
@@ -60,7 +89,7 @@
       </div>
     </div>
     <div class="questions2">
-      <div><img src="../../../assets/img/question 1.png"></div>
+      <div><img src="../../../assets/img/question 1.png" alt="no image"></div>
       <p class="questions2-title">Задать вопрос</p>
       <p class="questions2-text">Не нашли нужный ответ? Задайте вопрос и наши специалисты вам оперативно ответят.</p>
       <button>Задать вопрос</button>
@@ -75,123 +104,123 @@
   <div class="modal__list-wrapper">
     <ul class="modal__list">
       <li>A</li>
-      <li>AGRI-C</li>
-      <li>AGRI-DF</li>
-      <li>AGRI-P</li>
-      <li>AQUACIKKI</li>
-      <li>AQUAPIGGY</li>
-      <li>AZN</li>
-      <li>AZN EC</li>
-      <li>AZN-X</li>
+      <li (click)="select('AGRI-C')">AGRI-C</li>
+      <li (click)="select('AGRI-DF')">AGRI-DF</li>
+      <li (click)="select('AGRI-P')">AGRI-P</li>
+      <li (click)="select('AQUACIKKI')">AQUACIKKI</li>
+      <li (click)="select('AQUACIGGI')">AQUAPIGGY</li>
+      <li (click)="select('AZN')">AZN</li>
+      <li (click)="select('AZN EC')">AZN EC</li>
+      <li (click)="select('AZN-X')">AZN-X</li>
     </ul>
     <ul class="modal__list">
 
       <li>B</li>
-      <li>BA PLUS</li>
-      <li>BOXY</li>
+      <li (click)="select('BA PLUS')">BA PLUS</li>
+      <li (click)="select('BOXY')">BOXY</li>
     </ul>
     <ul class="modal__list">
       <li>C</li>
-      <li>CF-CM/P</li>
-      <li>CF-GAS</li>
-      <li>CF-GAS SP</li>
-      <li>CF-GAS/P</li>
-      <li>CF-XTRIM</li>
-      <li>CMX</li>
+      <li (click)="select('CF-CM/P')">CF-CM/P</li>
+      <li (click)="select('CF-GAS')">CF-GAS</li>
+      <li (click)="select('CF-GAS SP')">CF-GAS SP</li>
+      <li (click)="select('CF-GAS/P')">CF-GAS/P</li>
+      <li (click)="select('CF-XTRIM')">CF-XTRIM</li>
+      <li (click)="select('CMX')">CMX</li>
     </ul>
     <ul class="modal__list">
       <li>D</li>
-      <li>DAE</li>
-      <li>DGK</li>
-      <li>DGP</li>
-      <li>DGS</li>
-      <li>DM</li>
-      <li>DM-SE</li>
-      <li>DST</li>
-      <li>DUO-MO</li>
+      <li (click)="select('DAE')">DAE</li>
+      <li (click)="select('DGK')">DGK</li>
+      <li (click)="select('DGP')">DGP</li>
+      <li (click)="select('DGS')">DGS</li>
+      <li (click)="select('DM')">DM</li>
+      <li (click)="select('DM-SE')">DM-SE</li>
+      <li (click)="select('DST')">DST</li>
+      <li (click)="select('DUO-MO')">DUO-MO</li>
     </ul>
     <ul class="modal__list">
       <li>E</li>
-      <li>EKOCIKKI</li>
-      <li>EKOCIKKI 80</li>
-      <li>ENERGY</li>
-      <li>ENERGY-O</li>
-      <li> ENERGY-O/K</li>
-      <li>ENERGY/K</li>
+      <li (click)="select('EKOCIKKI')">EKOCIKKI</li>
+      <li (click)="select('EKOCIKKI 80')">EKOCIKKI 80</li>
+      <li (click)="select('ENERGY')">ENERGY</li>
+      <li (click)="select('ENERGY-O')">ENERGY-O</li>
+      <li (click)="select('ENERGY-O/K')"> ENERGY-O/K</li>
+      <li (click)="select('ENERGY/K')">ENERGY/K</li>
     </ul>
     <ul class="modal__list">
       <li>H</li>
-      <li>HB PLUS</li>
+      <li (click)="select('HB PLUS')">HB PLUS</li>
     </ul>
     <ul class="modal__list">
       <li>K</li>
-      <li>KLIMAXS</li>
-      <li>KUBO-S</li>
+      <li (click)="select('KLIMAXS')">KLIMAXS</li>
+      <li (click)="select('KUBO-S')">KUBO-S</li>
     </ul>
     <ul class="modal__list">
       <li>M</li>
-      <li>M-CF</li>
-      <li>MB UNIT</li>
-      <li>MINIJET</li>
-      <li>MIXI 80</li>
-      <li>MIXIJET</li>
+      <li (click)="select('M-CF')">M-CF</li>
+      <li (click)="select('MB UNIT')">MB UNIT</li>
+      <li (click)="select('MINIJET')">MINIJET</li>
+      <li (click)="select('MIXI 80')">MIXI 80</li>
+      <li (click)="select('MIXIJET')">MIXIJET</li>
     </ul>
     <ul class="modal__list">
       <li>N</li>
-      <li>NTN</li>
-      <li>NTPM</li>
+      <li (click)="select('NTN')">NTN</li>
+      <li (click)="select('NTPM')">NTPM</li>
     </ul>
     <ul class="modal__list">
       <li>P</li>
-      <li>PA</li>
-      <li>PCM</li>
-      <li>PMX</li>
+      <li (click)="select('PA')">PA</li>
+      <li (click)="select('PCM')">PCM</li>
+      <li (click)="select('PMX')">PMX</li>
     </ul>
     <ul class="modal__list">
       <li>R</li>
-      <li>RCF</li>
-      <li>RCU</li>
-      <li>RCU-HE</li>
+      <li (click)="select('RCF')">RCF</li>
+      <li (click)="select('RCU')">RCU</li>
+      <li (click)="select('RCU-HE')">RCU-HE</li>
     </ul>
     <ul class="modal__list">
       <li>S</li>
-      <li>SMARTBOXY</li>
-      <li>SMX</li>
-      <li>SR</li>
-      <li>SR-CM ÷ SR-CM/K</li>
-      <li>SR-UT ÷ SR-UT/K</li>
-      <li>SR/K</li>
-      <li>SUPERBESST</li>
-      <li>SUPERCIKKI 80</li>
-      <li>SUPERFRESH</li>
+      <li (click)="select('SMARTBOXY')">SMARTBOXY</li>
+      <li (click)="select('SMX')">SMX</li>
+      <li (click)="select('SR')">SR</li>
+      <li (click)="select('SR-CM÷SR-CM/K')">SR-CM÷SR-CM/K</li>
+      <li (click)="select('SR-UT÷SR-UT/K')">SR-UT÷SR-UT/K</li>
+      <li (click)="select('SR/K')">SR/K</li>
+      <li (click)="select('SUPERBESST')">SUPERBESST</li>
+      <li (click)="select('SUPERCIKKI 80')">SUPERCIKKI 80</li>
+      <li (click)="select('SUPERFRESH')">SUPERFRESH</li>
     </ul>
     <ul class="modal__list">
       <li>T</li>
-      <li>TANDEM CM</li>
-      <li>TC-DF</li>
-      <li>TC-E</li>
-      <li>TC-E/K</li>
-      <li>TC-TEK</li>
-      <li>TCO-DF</li>
-      <li>TCO-E</li>
-      <li>TCO-E/K</li>
-      <li>TE</li>
+      <li (click)="select('TANDEM CM')">TANDEM CM</li>
+      <li (click)="select('TC-DF')">TC-DF</li>
+      <li (click)="select('TC-E')">TC-E</li>
+      <li (click)="select('TC-E/K')">TC-E/K</li>
+      <li (click)="select('TC-TEK')">TC-TEK</li>
+      <li (click)="select('TCO-DF')">TCO-DF</li>
+      <li (click)="select('TCO-E')">TCO-E</li>
+      <li (click)="select('TCO-E/K')">TCO-E/K</li>
+      <li (click)="select('TE')">TE</li>
     </ul>
     <ul class="modal__list">
       <li>U</li>
-      <li>UT</li>
-      <li>UT/K</li>
-      <li>UTAK</li>
-      <li>UTC</li>
-      <li>UTC/K</li>
+      <li (click)="select('UT')">UT</li>
+      <li (click)="select('UT/K')">UT/K</li>
+      <li (click)="select('UTAK')">UTAK</li>
+      <li (click)="select('UTC')">UTC</li>
+      <li (click)="select('UTC/K')">UTC/K</li>
     </ul>
     <ul class="modal__list">
       <li>V</li>
-      <li>VX</li>
+      <li (click)="select('VX')">VX</li>
     </ul>
     <ul class="modal__list">
       <li>W</li>
-      <li>WIMBLEDON</li>
+      <li (click)="select('WIMBLEDON')">WIMBLEDON</li>
     </ul>
   </div>
 

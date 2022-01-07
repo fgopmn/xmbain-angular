@@ -4,7 +4,8 @@
 
 .menu {
   display: flex;
-  max-width: 1200px;
+  max-width: 1440px;
+  width: 83%;
   margin: auto;
   border-bottom: 1px solid #C0C6C9;
   padding-bottom: 16px;
@@ -23,6 +24,7 @@
 
 .support-container {
   width: 83%;
+  max-width: 1440px;
   margin: auto;
 }
 
@@ -111,9 +113,11 @@
 }
 
 .documents-block {
-  max-width: 1200px;
+  max-width: 1440px;
+  width: 83%;
   margin: auto;
   padding-bottom: 108px;
+  position: relative;
 }
 
 .documents-title {
@@ -128,6 +132,7 @@
 .documents-ul {
   display: flex;
   margin-top: 60px;
+  border-bottom: 1px solid #C0C6C9;
 }
 
 .documents-ul li {
@@ -152,7 +157,7 @@
   opacity: 0.3;
   padding-left: 30px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #C0C6C9;
+
 }
 
 .documents-block-title {
@@ -191,8 +196,75 @@
   text-align: center;
 }
 
+.instructions {
+  width: 100%;
+  margin: auto;
+  max-width: 1440px;
+  position: absolute;
+  bottom: 100px;
+  background: linear-gradient(90deg, #FBFEFF 0%, #F0F8FC 100%);
+  display: none;
+
+  &_show {
+    display: block;
+  }
+
+  &__wrapper {
+    border-bottom: 1px solid #C0C6C9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    margin-left: 14px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 160%;
+    letter-spacing: 0.2px;
+    color: #021C27;
+    display: inline-block;
+    padding-top: 38px;
+    padding-bottom: 41px;
+  }
+
+  &__data {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 120%;
+    text-align: right;
+    letter-spacing: 0.2px;
+    color: #C0C6C9;
+    display: inline-block;
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+
+  &__button {
+    border: 1px solid #009fe33b;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 120%;
+    letter-spacing: 0.2px;
+    color: #009FE3;
+    padding: 6px 10px;
+    margin-left: 40px;
+    background: none;
+    cursor: pointer;
+  }
+}
+
 .questions {
-  max-width: 1200px;
+  max-width: 1440px;
+  width: 83%;
   margin: auto;
   display: flex;
   justify-content: space-between
@@ -266,7 +338,7 @@
   font-size: 15px;
   line-height: 160%;
   letter-spacing: 0.2px;
-  color: #021C27;
+  color: #021c27;
   padding-top: 30px;
 }
 
