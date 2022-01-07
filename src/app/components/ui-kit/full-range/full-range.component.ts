@@ -8,19 +8,24 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 
 export class FullRangeComponent implements OnInit {
-  @Input("heatText")heatText!:any
-  @Input("heatNumber") heatNumber:number=0
+  @Input("heatText") heatText!: any
+  @Input("heatNumber") heatNumber: number = 0
+  @Input("heatAbout") heatAbout?: string
+
   public or: boolean = true
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit(): void {
-this.zero()
+    this.zero()
   }
-  zero(){
-    if (this.heatNumber<10){
-      this.or=true
-    }else{
-      this.or=false
+
+  zero() {
+    if (this.heatNumber < 10) {
+      this.or = true
+    } else {
+      this.or = false
     }
   }
 

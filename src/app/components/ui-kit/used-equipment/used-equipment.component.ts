@@ -5,14 +5,9 @@ import {Component, Input, OnInit} from '@angular/core';
   templateUrl: './used-equipment.component.html',
   styleUrls: ['./used-equipment.component.scss']
 })
-export class UsedEquipmentComponent implements OnInit {
+export class UsedEquipmentComponent {
   @Input("img")img?:string
   @Input("title") title?:string
   @Input("description")description?:string
   @Input("description2") description2?:string
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }

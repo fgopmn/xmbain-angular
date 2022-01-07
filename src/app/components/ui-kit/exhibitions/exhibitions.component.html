@@ -1,16 +1,14 @@
 <div class="show">
-  <div class="show-container">
-
-        <div class="show-block">
-          <div class="show-texts">
-            <p class="show-day">{{day}}</p>
-            <p class="show-month">{{month}}</p>
-            <span class="line2">|</span>
-            <p class="show-day">{{day2}}</p>
-            <p class="show-month">{{month}}</p>
-            <p class="show-title">{{text}}</p>
-          </div>
-        </div>
+  <div class="show__container"
+       [class.show__container_shadow]="isShadow"
+  >
+    <div class="show__texts">
+      <p class="show__day">{{day}}</p>
+      <p class="show__month">{{month}}</p>
+      <span class="show__line2">|</span>
+      <p class="show__day">{{day2}}</p>
+      <p class="show__month">{{month}}</p>
+      <p class="show__title">{{text}}</p>
+    </div>
   </div>
-
 </div>

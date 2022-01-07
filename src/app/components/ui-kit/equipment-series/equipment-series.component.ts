@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import {environment} from "../../../../environments/environment.prod";
+import {Component, Input, OnInit} from '@angular/core';
 import {RequestService} from "../../../service/request.service";
 
 
@@ -8,19 +7,12 @@ import {RequestService} from "../../../service/request.service";
   templateUrl: './equipment-series.component.html',
   styleUrls: ['./equipment-series.component.scss']
 })
-export class EquipmentSeriesComponent implements OnInit {
-  public getList: any[] = [];
+export class EquipmentSeriesComponent {
+  @Input("title")title!:string
+  @Input("img")img!:string
+  @Input("about")about!:string
+  @Input("text")text!:string
+
 
   constructor(public requestService:RequestService) { }
-
-  ngOnInit(): void {
-    this.getRequest()
-
-  }
-  getRequest(){
-    this.requestService.getData(`${environment.url}${environment.indoor.get}`).subscribe((items:any) => {
-      this.getList = items
-    })
-  }
-
 }

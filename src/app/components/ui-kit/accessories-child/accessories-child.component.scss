@@ -1,14 +1,14 @@
-.description{
-  width:205px;
-  padding-top:45px;
-  font-weight: 600;
-  font-size: 19px;
-  line-height: 120%;
-  text-align: center;
-  letter-spacing: 0.2px;
-  color: #021C27;
-}
 .accessories{
   padding:61px 46px 35px 46px;
   text-align: center;
+  &__description{
+    width:205px;
+    padding-top:45px;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #021C27;
+  }
 }

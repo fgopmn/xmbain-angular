@@ -49,15 +49,47 @@
     <div  class="click"><button class="event-click"><span>Все события</span></button></div>
 
 </div>
+  <div>
+    <div class="container">
+      <div class="exhibition_one">
+        <app-exhibitions
+        *ngFor="let j of show"
+        [day]="j.day"
+        [month]="j.month"
+        [day2]="j.day2"
+        [text]="j.text"
+      >
+      </app-exhibitions>
+      </div>
 
-<app-exhibitions
-  *ngFor="let j of show"
-  [day]="j.day"
- [month]="j.month"
- [day2]="j.day2"
- [text]="j.text"
->
-</app-exhibitions>
+      <div class="">
+        <app-exhibitions
+          *ngFor="let j of showTwo"
+          [day]="j.day"
+          [month]="j.month"
+          [day2]="j.day2"
+          [text]="j.text"
+          [isShadow]="true"
+        >
+        </app-exhibitions>
+      </div>
+
+      <div class="exhibition-three">
+        <app-exhibitions
+          *ngFor="let j of showThree"
+          [day]="j.day"
+          [month]="j.month"
+          [day2]="j.day2"
+          [text]="j.text"
+          [isShadow]="true"
+        >
+        </app-exhibitions>
+      </div>
+
+
+    </div>
+  </div>
+
 
 
 <app-footer></app-footer>

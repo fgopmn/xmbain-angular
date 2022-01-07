@@ -1,10 +1,14 @@
+@import "src/assets/scss/mixins/container.scss";
+
 .footer{
   background: #021C27;
   &__image {
-    background: url("../../../../assets/img/footer-img.png")  0 0/100% auto no-repeat;
+    background: url("../../../../assets/img/footer-img.png") 0 0/100% auto no-repeat;
     width: 100%;
-    padding: 44px 0 52px 0px;
+    padding: 44px 0 52px 0;
+
     &-title {
+      @include container;
       font-style: normal;
       font-weight: 800;
       font-size: 42px;
@@ -13,7 +17,9 @@
       color: #FFFFFF;
       text-shadow: 0 2px 20px rgba(67, 94, 106, 0.5);
     }
+
     &-text {
+      @include container;
       font-style: normal;
       font-weight: 800;
       font-size: 24px;
@@ -21,21 +27,62 @@
       letter-spacing: -0.03em;
       color: #FFFFFF;
     }
+
     &_disable {
       display: none;
     }
+
     &_active {
       display: block;
     }
   }
+  &__wrapper {
+    @include container;
+    display: flex;
+    padding:67px 0 56px;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(192, 198, 201, 0.18);
+  }
+  &__about {
+    &-company{
+      padding-right:76px;
+    }
+    &-company li{
+      padding-bottom: 11px;
+
+    }
+    &-product li {
+      padding-bottom: 12px;
+    }
+    &-document{
+      margin-right:20px;
+      width: 183px;
+      li {
+        padding-bottom: 12px;
+      }
+    }
+  }
+  &__logo{
+    margin-left: 121px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    &-text{
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 130%;
+      text-align: right;
+      letter-spacing: 0.2px;
+      color: #C0C6C9;
+      opacity: 0.3;
+      padding-left: 111px;
+      margin-top:15px;
+    }
+  }
 }
 
-.footer-flex{
-  display: flex;
-  padding:67px 0 56px;
-  justify-content: space-between;
-  border-bottom: 1px solid rgba(192, 198, 201, 0.18);
-}
 a{
   font-family: Manrope;
   font-style: normal;
@@ -46,31 +93,6 @@ a{
   color: #C0C6C9;
   opacity: 0.6;
   text-decoration: none;
-}
-.uls{
-  display:flex;
-}
-li{
-  list-style-type: none;
-}
-.about {
-  &-company{
-    padding-right:76px;
-  }
-  &-company li{
-    padding-bottom: 11px;
-
-  }
-  &-product li {
-    padding-bottom: 12px;
-  }
-  &-document{
-    margin-right:20px;
-    width: 183px;
-    li {
-      padding-bottom: 12px;
-    }
-  }
 }
 ul{
   margin-right:20px;
@@ -93,25 +115,7 @@ button{
   padding:10px 19px 11px 20px;
   cursor: pointer;
 }
-.footer-logo{
-  margin-left: 121px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-.footer-logo p{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 130%;
-  text-align: right;
-  letter-spacing: 0.2px;
-  color: #C0C6C9;
-  opacity: 0.3;
-  padding-left: 111px;
-  margin-top:15px;
-}
+
 .phone-number{
   padding-bottom: 12px;
 }

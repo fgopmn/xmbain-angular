@@ -1,114 +1,113 @@
+@import "src/assets/scss/mixins/container";
+@import "src/assets/scss/mixins/flex-center-mixin";
 
-.technical-block{
+.technical{
+  @include container;
   display: flex;
   background:#FFFFFF;
-  box-shadow: 0px 20px 60px rgba(2, 26, 36, 0.04);
+  box-shadow: 0 20px 60px rgba(2, 26, 36, 0.04);
   border-radius: 40px;
-}
-.iten2-img-flex{
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-}
-.chut{
-  height: 68px;
-}
-.technical-block h6{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 120%;
-  text-align: center;
-  color: #021C27;
-  padding-top: 24px;
-}
-.technical-discription {
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 140%;
-  text-align: center;
-  letter-spacing: 0.2px;
-  color: #021C27;
-  padding-top: 12px;
-}
-
-.techno1{
-  width: 33.3%;
-  border-right: 1px solid rgba(192, 198, 201, 1);
-  padding: 70px 78px 63px 70px;
-}
-.techno2{
-  width: 33.3%;
-
-  border-right: 1px solid rgba(192, 198, 201, 1) ;
-
-  padding: 70px 72px 63px 86px;
-}
-.techno3{
-  width: 33.3%;
-  padding: 70px 48px 63px 97px;
-}
-.percent-block{
-  display: flex;
-  padding-top: 22px;
-}
-.percent-rule{
-  border-radius:50% ;
-  border:1px solid blue;
-  display: inline;
-  padding:13px  7px;
-  text-align:left;
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 140%;
-  letter-spacing: -0.09em;
-  text-transform: uppercase;
-  color: #021C27;
-  opacity: 0.33;
-}
-.capex{
-  text-align:left;
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 140%;
-  letter-spacing: -0.09em;
-  text-transform: uppercase;
-  color: #021C27;
-  opacity: 0.33;
-  margin-top: 8px;
-}
-.econom{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 9px;
-  line-height: 130%;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #021C27;
-  opacity: 0.33;
-  margin-top: 2px;
-}
-.percent-line{
-  margin-right: 34px;
-  border: 1px solid #021C27;
-  margin-left: 14px;
-  opacity: 0.1;
-
-}
-
-#item3-title{
-  margin-top: 54px;
-  padding: 0;
-}
-#item3-text{
-  padding-top: 12px;
-  text-align: center;
+  &__title {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #021C27;
+    padding-top: 24px;
+    &_block3 {
+      margin-top: 75px;
+      padding: 0;
+    }
+  }
+  &__block1 {
+    width: 33.3%;
+    border-right: 1px solid rgba(192, 198, 201, 1);
+    padding: 70px 78px 63px 70px;
+  }
+  &__block2 {
+    width: 33.3%;
+    border-right: 1px solid rgba(192, 198, 201, 1) ;
+    padding: 70px 72px 63px 86px;
+  }
+  &__block3 {
+    width: 33.3%;
+    padding: 70px 48px 63px 97px;
+    &-container {
+      display: flex;
+      padding-top: 22px;
+    }
+    &-rule {
+      border-radius:50% ;
+      display: inline;
+      padding:13px  7px;
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 140%;
+      letter-spacing: -0.09em;
+      text-transform: uppercase;
+      color: #021c274a;
+      background-image: url("../../../../assets/img/Ellipse 30.png");
+      background-size:cover;
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+    &-line{
+      margin-right: 34px;
+      border: 1px solid #021C27;
+      margin-left: 14px;
+      opacity: 0.1;
+    }
+    &-title {
+      text-align:left;
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 140%;
+      letter-spacing: -0.09em;
+      text-transform: uppercase;
+      color: #021C27;
+      opacity: 0.33;
+      margin-top: 8px;
+    }
+    &-description {
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 9px;
+      line-height: 130%;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #021C27;
+      opacity: 0.33;
+      margin-top: 2px;
+    }
+  }
+  &__description {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #021C27;
+    padding-top: 12px;
+    &_block3 {
+      padding-top: 12px;
+      text-align: center;
+    }
+  }
+  &-images {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  &-small-image {
+    height: 68px;
+  }
 }
