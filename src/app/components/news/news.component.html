@@ -14,7 +14,7 @@
 </div>
 
 <div class="info-global" style="background-color: white">
-  <div class="info-container">
+  <div class="container">
     <div class="info-flex">
       <div class="info">
         <div class="contain-dats">
@@ -46,10 +46,9 @@
 <app-news-child></app-news-child>
 
 
-<div style="background-color: white;">
-  <div class="contain-information">
+<div >
+  <div class="container">
     <div class="information-flex">
-
       <div class="information-texts">
         <p class="info-texts">
           Тем не менее, и сегодня существуют системы обогрева
@@ -67,7 +66,7 @@
     <li class="text-info-lies" *ngFor="let i of getAirs">{{i.text}}</li>
   </ul>
 </div>
-        <div class="information-risks-texts3" style="background-color: white">
+        <div class="information-risks-texts3">
           <p class="information-risks-texts3-1">В системах воздушного отопления тепло передается напрямую от
             источника к воздуху, подаваемому в помещение, без применения
             промежуточного теплоносителя. Таким образом, из системы
@@ -150,7 +149,7 @@
 <app-related-equipment
 [title]="text"
 ></app-related-equipment>
-<div style="background: linear-gradient(90deg,#abd5e840 0%, rgba(255, 255, 255, 0) 100%);">
+<div class="contain-group" >
 
   <div class="contain-title-press-blog">
     <p>Другие материалы</p>

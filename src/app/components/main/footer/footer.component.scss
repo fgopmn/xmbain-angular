@@ -49,16 +49,20 @@
     }
     &-company li{
       padding-bottom: 11px;
+      list-style-type: none;
 
     }
     &-product li {
       padding-bottom: 12px;
+      list-style-type: none;
+
     }
     &-document{
       margin-right:20px;
       width: 183px;
       li {
         padding-bottom: 12px;
+        list-style-type: none;
       }
     }
   }
