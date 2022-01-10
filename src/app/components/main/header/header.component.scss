@@ -8,16 +8,31 @@
 
   &__logo {
     padding-right: 43px;
+    display: flex;
+    align-items: center;
+    @media screen and (max-width:1430px){
+    padding-right: 15px;
+    }
   }
-
+  &__logo img {
+    @media screen and (max-width:1430px){
+   width:110px;
+       }
+  }
   &__navigate {
     &-links {
       padding: 0 25px 0 0;
+      @media screen and (max-width:1430px){
+        padding: 0 17px 0 0;
+      }
       &-wrapper {
         display: flex;
         list-style-type: none;
         padding-top: 10px;
         padding-right: 52px;
+        @media screen and (max-width:1430px){
+          padding-right: 0;
+        }
       }
     }
     &-link {
@@ -44,9 +59,12 @@
     background: none;
     padding: 0;
     outline: none;
-    margin-left: 24px;
-    margin-right: 29px;
+    margin:10px 29px 0 24px;
     cursor: pointer;
+    @media only screen and (max-width:1430px){
+     margin-left: 14px;
+     margin-right: 14px;
+    }
   }
   &__payment-button {
     background: #FFFFFF;
@@ -61,25 +79,32 @@
     color: #021C27;
     opacity: 0.9;
     cursor: pointer;
+    @media only screen and (max-width:1430px){
+      padding: 5px 10px;
+    }
+
   }
 }
 
-/*@media screen and (max-width:1440px){
+//@media screen and (max-width:1430px){
+//  &__logo img {
+//   width:110px;
+//  }
 
- i{
-   padding:0 10px;
- }
- a{
-   font-size: 13px;
- }
- .button2{
-   padding:5px 5px;
- }
- .search-button{
-   margin:0 5px
- }
-}
-@media screen and (max-width:1100px){
+ //i{
+ //  padding:0 10px;
+ //}
+ //a{
+ //  font-size: 13px;
+ //}
+ //.button2{
+ //  padding:5px 5px;
+ //}
+ //.search-button{
+ //  margin:0 5px
+ //}
+//}
+//@media screen and (max-width:1100px){
+//
+//}
 
-}
-*/
