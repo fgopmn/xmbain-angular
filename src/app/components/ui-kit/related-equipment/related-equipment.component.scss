@@ -1,72 +1,67 @@
-.related-title{
+.related__title{
   background: linear-gradient(180deg, #abd5e836 4.17%, rgba(255, 255, 255, 0) 100%);
-
-}
-.related-title-container{
-  width:83%;
-  margin: auto;
-
-}
-.related-name{
-  padding-top:80px ;
-  padding-bottom: 45px;
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 46px;
-  line-height: 120%;
-  letter-spacing: -0.02em;
-  color: #021C27;
-}
-.related{
-  padding:0 37px;
-  //margin-right: 53px;
-}
-.related-block{
   background-color: white;
-}
-.related-block-flex{
-  display: flex;
-  padding-bottom:99px;
-}
-.related-block-flex:last-child{
-  margin:0;
+    &__name{
+    padding-top:80px ;
+    padding-bottom: 45px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #021C27;
+    }
 }
 
-.related-block-container{
-  width:83%;
-  margin:auto;
-}
-.related-seria{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 19px;
-  line-height: 120%;
-  text-align: center;
-  letter-spacing: 0.2px;
-  color: #021C27;
-  margin-top:19px;
-  margin-bottom: 10px;
-}
-.related-text{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 120%;
-  letter-spacing: 0.2px;
-  color: #021C27;
-  opacity: 0.4;
-}
-.related-little-title{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 120%;
-  letter-spacing: 0.2px;
-  color: #021C27;
-  margin-bottom: 17px;
 
+.related__block{
+  background-color: white;
+  &__flex{
+    display: flex;
+    padding-bottom:99px;
+    &:last-child{
+      margin:0;
+    }
+  }
+}
+
+.related__block__flex .related {
+  padding:0 37px;
+  &__seria{
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #021C27;
+    margin-top:19px;
+    margin-bottom: 10px;
+  }
+  &__text{
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 120%;
+    letter-spacing: 0.2px;
+    color: #021C27;
+    opacity: 0.4;
+  }
+  &__little__title{
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 120%;
+    letter-spacing: 0.2px;
+    color: #021C27;
+    margin-bottom: 17px;
+
+  }
+  &__img{
+    text-align: center;
+  }
 }

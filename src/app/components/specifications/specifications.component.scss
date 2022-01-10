@@ -21,10 +21,8 @@
   color: #C0C6C9;
   margin-right:10px;
 }
-.specifications{
-  max-width: 1200px;
-  margin: auto;
-}
+
+
 .specifications-title{
   font-family: Manrope;
   font-style: normal;
@@ -73,8 +71,6 @@
   opacity: 0.4;
 }
 .specifications-about{
-  max-width: 1230px;
-  margin: auto;
   display: flex;
 
 
@@ -84,9 +80,7 @@ cursor: pointer;
   background: #009fe312;
 
 }
-.specifications-about .child{
-  padding-left: 15px;
-}
+
 .specifications-about .child1{
   padding-left: 49px;
 }
@@ -119,10 +113,7 @@ cursor: pointer;
   padding-bottom: 20px;
   padding-top: 20px;
 }
-.dimensions {
-  max-width: 1200px;
-  margin: auto;
-}
+
 .dimensions-title{
   font-family: Manrope;
   font-style: normal;
@@ -135,8 +126,6 @@ cursor: pointer;
   padding-bottom: 64px;
 }
 .dimensions-block{
-  max-width: 1200px;
-  margin: auto;
   display: flex;
   border-bottom: 1px solid #C0C6C9;
 }
@@ -238,8 +227,6 @@ cursor: pointer;
 }
 
 .dimensions-about{
-  max-width: 1230px;
-  margin: auto;
   display: flex;
 
 
@@ -248,9 +235,6 @@ cursor: pointer;
   cursor: pointer;
   background: #009fe312;
 
-}
-.dimensions-about .child8{
-  padding-left: 15px;
 }
 .dimensions-about .child9{
   padding-left: 89px;
@@ -289,6 +273,7 @@ cursor: pointer;
   background-color: #abd5e81a;
   display: inline-block;
   padding: 60px 0;
+  width: 100%;
 }
 :host::ng-deep .footer .footer__image{
   display: block;

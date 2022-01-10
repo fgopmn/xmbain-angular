@@ -1,18 +1,19 @@
-<div class="related-title" style="background-color: white">
+<div class="related__title">
   <div class="container">
-    <p class="related-name" >{{title}}Сопутствующее оборудование </p>
+    <p class="related__title__name" >{{title}}Сопутствующее оборудование </p>
   </div>
 
 </div>
 
-<div class="related-block">
+<div class="related__block">
   <div class="container">
-    <div class="related-block-flex">
+    <div class="related__block__flex">
       <div class="related" *ngFor="let item of related">
-        <img src="{{item.img}}" alt="">
-        <p class="related-seria">{{item.seria}}</p>
-        <p class="related-little-title">{{item.title}}</p>
-        <p class="related-text">{{item.text}}</p>
+        <div class="related__img"> <img src="{{item.img}}" alt=""></div>
+
+        <p class="related__seria">{{item.seria}}</p>
+        <p class="related__little__title">{{item.title}}</p>
+        <p class="related__text">{{item.text}}</p>
       </div>
     </div>
   </div>

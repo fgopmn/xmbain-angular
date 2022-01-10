@@ -3,53 +3,55 @@
   padding-top: 52px;
   padding-bottom: 116px;
   position: relative;
+    &__left{
+    position: absolute;
+    top:41%;
+    left:42px;
+    width: 48px;
+    height: 48px;
+  }
+    &__right{
+       position: absolute;
+       top:41%;
+       right:42px;
+       width: 48px;
+       height: 48px;
+     }
+      &__block{
+        display: flex;
+        justify-content: space-between;
+        &__child{
+        max-width: 49.16%;
+        background: linear-gradient(90deg, #FBFEFF 0%, #F0F8FC 100%);
+        border-radius: 40px;
+        display: flex;
+          &__flex p{
+            font-family: Manrope;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 140%;
+            letter-spacing: 0.2px;
+            color: #021C27;
+            padding-left: 51px;
+            padding-right: 66px;
+          }
+          &__flex h6{
+            font-family: Manrope;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 140%;
+            color: #021C27;
+            padding-top: 50px;
+            padding-bottom: 46px;
+            padding-left: 51px;
+          }
+      }
+      }
 }
-.slider-block{
-  display: flex;
-  justify-content: space-between;
-}
-.slider-child{
-  max-width: 49.16%;
-  background: linear-gradient(90deg, #FBFEFF 0%, #F0F8FC 100%);
-  border-radius: 40px;
-  display: flex;
-}
-.slider-child-flex p{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 140%;
-  letter-spacing: 0.2px;
-  color: #021C27;
-  padding-left: 51px;
-  padding-right: 66px;
-}
-.slider-child-flex h6{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 140%;
-  color: #021C27;
-  padding-top: 50px;
-  padding-bottom: 46px;
-  padding-left: 51px;
-}
-.airHeaters-slider{
-  position:relative;
-}
-.left-slide{
-  position: absolute;
-  top:41%;
-  left:42px;
-  width: 48px;
-  height: 48px;
-}
-.right-slide{
-  position: absolute;
-  top:41%;
-  right:42px;
-  width: 48px;
-  height: 48px;
-}
+
+
+
+
+
