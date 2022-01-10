@@ -6,7 +6,6 @@
     background: url("../../../../assets/img/footer-img.png") 0 0/100% auto no-repeat;
     width: 100%;
     padding: 44px 0 52px 0;
-
     &-title {
       @include container;
       font-style: normal;
@@ -17,7 +16,6 @@
       color: #FFFFFF;
       text-shadow: 0 2px 20px rgba(67, 94, 106, 0.5);
     }
-
     &-text {
       @include container;
       font-style: normal;
@@ -27,11 +25,9 @@
       letter-spacing: -0.03em;
       color: #FFFFFF;
     }
-
     &_disable {
       display: none;
     }
-
     &_active {
       display: block;
     }
@@ -50,12 +46,10 @@
     &-company li{
       padding-bottom: 11px;
       list-style-type: none;
-
     }
     &-product li {
       padding-bottom: 12px;
       list-style-type: none;
-
     }
     &-document{
       margin-right:20px;
@@ -86,7 +80,6 @@
     }
   }
 }
-
 a{
   font-family: Manrope;
   font-style: normal;
@@ -102,7 +95,6 @@ ul{
   margin-right:20px;
   width: 183px;
 }
-
 button{
   border: 1px solid #009FE3;
   border-radius: 5px;
@@ -119,7 +111,6 @@ button{
   padding:10px 19px 11px 20px;
   cursor: pointer;
 }
-
 .phone-number{
   padding-bottom: 12px;
 }
