@@ -1,21 +1,21 @@
-<cdk-accordion class="example-accordion">
+<cdk-accordion class="example__accordion">
   <cdk-accordion-item
     *ngFor="let item of getList; let index = index;"
     #accordionItem="cdkAccordionItem"
-    class="example-accordion-item"
+    class="example__accordion__item"
     role="button"
     tabindex="0"
     [attr.id]="'accordion-header-' + index"
     [attr.aria-expanded]="accordionItem.expanded"
     [attr.aria-controls]="'accordion-body-' + index">
-    <div class="example-accordion-item-header" (click)="accordionItem.toggle()">
-      <span class="example-accordion-item-description">
+    <div class="example__accordion__item__header" (click)="accordionItem.toggle()">
+      <span class="example__accordion__item__header__description">
       {{ accordionItem.expanded ? '-' : '+' }}
       </span>
-      <span class="example-accordion-title">{{item.text}}</span>
+      <span class="example__accordion__item__header__title">{{item.text}}</span>
     </div>
     <div
-      class="example-accordion-item-body"
+      class="example__accordion__item__body"
       role="region"
       [style.display]="accordionItem.expanded ? '' : 'none'"
       [attr.id]="'accordion-body-' + index"
