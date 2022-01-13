@@ -6,7 +6,7 @@
         <b>Отапливайте промышленные помещения</b>
         <p class="percent">C выгодой до 30% в год<br> с помощью воздушных теплогенераторов</p>
         <div style="margin-top:40px;">
-          <button class="industrial__button">Оборудование</button>
+          <button routerLink="/production" class="industrial__button">Оборудование</button>
         </div>
       </div>
       <div class="industrialImg">
@@ -71,7 +71,7 @@
           Комплексные<br> решения<br> <span> по отоплению,<br> охлаждению,<br> вентиляции,<br> генерации <br> горячего воздуха</span>
         </p>
         <div>
-          <button>Оставить заявку</button>
+          <button (click)="openApplication()">Оставить заявку</button>
         </div>
         <div><img src="../../../../assets/img/image 86.png" alt="no image"></div>
       </div>
@@ -82,6 +82,20 @@
             [title]="item.title"
           ></app-complex>
         </div>
+        <app-application
+          [is-open]="!isApplicationOpen"
+          (whenApplicationOpen)="openApplication($event)"
+          class="application"
+        >
+              <button class="application__close__button">x</button>
+                <p class="application__tittle">Оставить заявку</p>
+                <p class="application__text">Оставьте свое имя с номером телефона и наши <br> специалисты свяжутся с вами.</p>
+
+              <div >
+                <img src="../../../assets/img/image 125 (2) (1).png" class="application__blue__flag"/>
+              </div>
+
+        </app-application>
       </div>
 
     </div>
@@ -90,14 +104,14 @@
 <div>
   <div class="airHeaters-block">
     <div class="airHeaters">
-      <div class="scroll"></div>
-      <div class="airHeaters-text">
-        <p class="ppp">Воздухонагреватели</p>
-        <p>Крышные <br> кондиционеры roof top</p>
-        <h6>Водяное тепловое оборудование</h6>
-        <p>Вентиляция и рекуперация тепла</p>
-        <p>Чилеры и тепловые насосы</p>
-        <p>Оборудование в специальном <br> исполнении</p>
+
+      <div class="airHeaters__text">
+        <div class="airHeaters__text__child"><p>Воздухонагреватели</p></div>
+        <div class="airHeaters__text__child"><p>Крышные <br> кондиционеры roof top</p></div>
+        <div class="airHeaters__text__child"><p>Водяное тепловое оборудование</p></div>
+        <div class="airHeaters__text__child"><p>Вентиляция и рекуперация тепла</p></div>
+        <div class="airHeaters__text__child"><p>Чилеры и тепловые насосы</p></div>
+        <div class="airHeaters__text__child"><p>Оборудование в специальном <br> исполнении</p></div>
       </div>
     </div>
     <div class="rectangle360">
@@ -122,20 +136,20 @@
           <p>Назначение</p>
           <ul>
             <li><input type="checkbox" id="check-one1">
-              <label for="check-one">Отопление</label></li>
+              <label for="check-one1">Отопление</label></li>
             <li><input type="checkbox" id="check-two1">
-              <label for="check-two">Отопление и охлаждение</label></li>
+              <label for="check-two1">Отопление и охлаждение</label></li>
             <li><input type="checkbox" id="check-three1">
-              <label for="check-three">Рекуперация тепла</label></li>
+              <label for="check-three1">Рекуперация тепла</label></li>
           </ul>
         </div>
         <div class="check-block3">
           <p>Расположение</p>
           <ul>
             <li><input type="checkbox" id="check-one2">
-              <label for="check-one">Внутри помещения</label></li>
+              <label for="check-one2">Внутри помещения</label></li>
             <li><input type="checkbox" id="check-two2">
-              <label for="check-two">Снаружи помещения</label></li>
+              <label for="check-two2">Снаружи помещения</label></li>
           </ul>
         </div>
         <button class="check-click">Показать</button>
@@ -143,6 +157,7 @@
       <div></div>
       <div></div>
     </div>
+
   </div>
 </div>
 

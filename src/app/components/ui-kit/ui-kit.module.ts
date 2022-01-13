@@ -25,6 +25,7 @@ import {ClickOutsideModule} from "ng-click-outside";
 import {CdkAccordionModule} from "@angular/cdk/accordion";
 import {AccordionComponent} from "./accordion/accordion.component";
 import { InstructionsComponent } from './instructions/instructions.component';
+import { ApplicationComponent } from './application/application.component';
 
 @NgModule({
   declarations: [
@@ -55,39 +56,41 @@ import { InstructionsComponent } from './instructions/instructions.component';
     NewsChildComponent,
     ChooseComponent,
     FillComponent,
-    InstructionsComponent
+    InstructionsComponent,
+    ApplicationComponent
   ],
 
-  exports: [
-    ComplexComponent,
-    EquipmentComponent,
-    TechnologicalComponent,
-    SelectInputComponent,
-    PressEventsComponent,
-    PressBlogComponent,
-    ExhibitionsComponent,
-    SliderComponent,
-    ProductCheckComponent,
-    SystemProductComponent,
-    HighlyEfficientComponent,
-    EquipmentSeriesComponent,
-    EquipmentSeriesComponent,
-    FullRangeComponent,
-    RelatedEquipmentComponent,
-    AccessoriesChildComponent,
-    UsedEquipmentComponent,
-    FullRangeComponent,
-    RelatedEquipmentComponent,
-    RelatedEquipmentComponent,
-    EquipmentSeriesComponent,
-    NewsChildComponent,
-    ModalComponent,
-    AccordionComponent,
-    NewsChildComponent,
-    ChooseComponent,
-    FillComponent,
-    InstructionsComponent
-  ],
+    exports: [
+        ComplexComponent,
+        EquipmentComponent,
+        TechnologicalComponent,
+        SelectInputComponent,
+        PressEventsComponent,
+        PressBlogComponent,
+        ExhibitionsComponent,
+        SliderComponent,
+        ProductCheckComponent,
+        SystemProductComponent,
+        HighlyEfficientComponent,
+        EquipmentSeriesComponent,
+        EquipmentSeriesComponent,
+        FullRangeComponent,
+        RelatedEquipmentComponent,
+        AccessoriesChildComponent,
+        UsedEquipmentComponent,
+        FullRangeComponent,
+        RelatedEquipmentComponent,
+        RelatedEquipmentComponent,
+        EquipmentSeriesComponent,
+        NewsChildComponent,
+        ModalComponent,
+        AccordionComponent,
+        NewsChildComponent,
+        ChooseComponent,
+        FillComponent,
+        InstructionsComponent,
+        ApplicationComponent
+    ],
 
   imports: [
     CommonModule,

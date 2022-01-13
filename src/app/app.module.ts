@@ -66,7 +66,7 @@ const routes: Routes = [
   },
   {
     path:"contacts",
-    component:ContactsComponent
+    loadChildren: () => import('./components/contacts/contacts.module').then(m => m.ContactsModule)
   }
 ];
 @NgModule({

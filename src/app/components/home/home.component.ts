@@ -10,15 +10,21 @@ import{RequestService} from "../../service/request.service";
 })
 export class HomeComponent implements OnInit{
  complex: any[] = [];
-
   getList: any[] = [];
   day:string="17"
   day2:string="20"
   month:string="сентября"
   text:string="Mostra Convengo Expocomfort 2020"
+  public isApplicationOpen:boolean = true
+
 
   constructor(public requestService:RequestService) { }
+  public openApplication(val?:boolean) {
+    this.isApplicationOpen = (val !== undefined)? val : !this.isApplicationOpen
+  }
+
   ngOnInit() {
+
     this.getRequest()
     this.getComplex()
   }
@@ -31,6 +37,8 @@ export class HomeComponent implements OnInit{
     this.requestService.getData(`${environment.url}${environment.complex.get}`).subscribe((items:any) => {
       this.complex = items
     })
+
+
   }
 
 

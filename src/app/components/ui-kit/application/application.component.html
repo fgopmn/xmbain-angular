@@ -1,0 +1,12 @@
+<div class="backOverlay"
+     [class.backOverlay_show]="isOpenProps"
+>
+</div>
+<div class="application"
+     (click)="closeApplication()"
+     [class.application_show]="isOpenProps"
+>
+
+  <ng-content></ng-content>
+</div>
+
