@@ -3,10 +3,10 @@
 >
 </div>
 <div class="application"
-     (click)="closeApplication()"
+
      [class.application_show]="isOpenProps"
 >
-
+  <button class="application__close__button"   (click)="closeApplication()">X</button>
   <ng-content></ng-content>
 </div>
 

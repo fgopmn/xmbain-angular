@@ -6,16 +6,17 @@ import {RouterModule, Routes} from "@angular/router";
 import {HttpClientModule} from "@angular/common/http";
 import {PressComponent } from './components/press/press.component';
 import {MainModule} from "./components/main/main.module";
-import { ServicesComponent } from './components/services/services.component';
 import {UiKitModule} from "./components/ui-kit/ui-kit.module";
-import {ContactsComponent } from './components/contacts/contacts.component';
-import {ProductComponent} from "./components/product/product.component";
 
 
 const routes: Routes = [
   {
     path:"",
    loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule)
   },
   {path:"production",
     loadChildren: () => import('./components/production/production.module').then(m => m.ProductionModule)
@@ -62,7 +63,7 @@ const routes: Routes = [
   },
   {
     path:"services",
-    component:ServicesComponent
+    loadChildren: () => import('./components/services/services.module').then(m => m.ServicesModule)
   },
   {
     path:"contacts",
@@ -72,10 +73,7 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    ContactsComponent,
     PressComponent,
-    ServicesComponent,
-    ProductComponent,
   ],
   imports: [
     BrowserModule,

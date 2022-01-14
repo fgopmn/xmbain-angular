@@ -17,10 +17,45 @@
                 <div class="technical-description">
                     <p class="technical-title">{{item.title}}</p>
                     <p class="technical-text">{{item.text}}</p>
-                    <button>{{item.button}}</button>
+                    <button (click)="openApplication()">{{item.button}}</button>
                 </div>
                 <img src="{{item.img}}" alt="">
             </div>
+          <app-application
+            [is-open]="!isApplicationOpen"
+            (whenApplicationOpen)="openApplication($event)"
+            class="application"
+          >
+
+            <p class="application__tittle">Оставить заявку</p>
+            <p class="application__text">Оставьте свое имя с номером телефона и наши <br> специалисты свяжутся с вами.</p>
+
+
+            <form [formGroup]="form" class="application__form">
+
+              <div class="application__form__name">
+                <label for="userName">Ваше имя </label>
+                <div><input formControlName="name" type="text" id="userName"></div>
+              </div>
+
+              <div class="application__form__tel">
+                <label for="number">Телефон</label>
+                <div><input type="tel" id="number" name="number" formControlName ="number"></div>
+              </div>
+
+              <div class="application__form__checkbox">
+                <input type="checkbox"  id="check">
+                <label for="check">Отправляя заявку, даю согласие на хранение <br>
+                  и обработку персональных данных</label>
+              </div>
+              <button [disabled]="form.invalid"  class="application__form__button">Отправить</button>
+            </form>
+
+            <div >
+              <img src="../../../assets/img/image 125 (2) (1).png" class="application__blue__flag"/>
+            </div>
+
+          </app-application>
         </div>
     </div>
 </div>

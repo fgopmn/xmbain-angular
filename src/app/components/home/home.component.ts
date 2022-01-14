@@ -1,6 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {environment} from "../../../environments/environment.prod";
 import{RequestService} from "../../service/request.service";
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import {Router} from "@angular/router";
 
 
 @Component({
@@ -11,23 +13,30 @@ import{RequestService} from "../../service/request.service";
 export class HomeComponent implements OnInit{
  complex: any[] = [];
   getList: any[] = [];
-  day:string="17"
-  day2:string="20"
-  month:string="сентября"
-  text:string="Mostra Convengo Expocomfort 2020"
-  public isApplicationOpen:boolean = true
+  day:string="17";
+  day2:string="20";
+  month:string="сентября";
+  text:string="Mostra Convengo Expocomfort 2020";
 
+  public isApplicationOpen:boolean = true;
 
-  constructor(public requestService:RequestService) { }
-  public openApplication(val?:boolean) {
-    this.isApplicationOpen = (val !== undefined)? val : !this.isApplicationOpen
-  }
+  form = this.fb.group({
+    name:["", [Validators.required, Validators.min(8)]],
+    number:["", [Validators.required, Validators.min(8)]],
+  })
+  constructor(public requestService:RequestService,
+              public fb: FormBuilder,
+              public route: Router) { }
 
   ngOnInit() {
-
     this.getRequest()
     this.getComplex()
   }
+
+  public openApplication(val?:boolean) {
+    this.isApplicationOpen = val ? val : !this.isApplicationOpen
+  }
+
   getRequest(){
     this.requestService.getData(`${environment.url}${environment.complexService.get}`).subscribe((items:any) => {
       this.getList = items
@@ -38,9 +47,5 @@ export class HomeComponent implements OnInit{
       this.complex = items
     })
 
-
   }
-
-
-
 }

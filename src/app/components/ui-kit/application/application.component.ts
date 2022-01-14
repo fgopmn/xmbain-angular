@@ -13,7 +13,7 @@ export class ApplicationComponent implements OnInit {
   constructor() { }
 
   public closeApplication() {
-    this.isOpenProps = false
+    this.isOpenProps = !this.isOpenProps;
     this.whenApplicationOpen.emit(this.isOpenProps)
   }
 
