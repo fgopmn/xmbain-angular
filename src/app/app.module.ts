@@ -57,6 +57,10 @@ const routes: Routes = [
     loadChildren: () => import('./components/seo/seo.module').then(m => m.SeoModule)
   },
   {
+    path:"news-block",
+    loadChildren: () => import('./components/news-block/news-block.module').then(m => m.NewsBlockModule)
+  },
+  {
     path:"press",
     component:PressComponent
   },

@@ -1,9 +1,4 @@
-.container {
-  width: 1200px;
-  margin: auto;
-  padding-top: 20px;
-  background-color: white;
-}
+
 .navigation ul {
   padding-bottom: 16px;
   display: flex;
@@ -25,11 +20,6 @@
   border-bottom: 1px solid #C0C6C9;
   background-color: white;
 }
-.info-container {
-  width: 1200px;
-  margin: auto;
-  background-color: white;
-}
 .conference-dats {
   font-family: Manrope;
   font-style: normal;
@@ -46,11 +36,11 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.news-conference {
-  background-color: white;
-  width: 1200px;
-  margin: auto;
-}
+//.news-conference {
+//  background-color: white;
+//  width: 1200px;
+//  margin: auto;
+//}
 .conference-h-p {
   font-family: Manrope;
   font-style: normal;
@@ -63,9 +53,11 @@
 .conference-h {
   padding-right: 102px;
   padding-bottom: 66px;
+  width: 57%;
 }
 .conference-info {
   background: linear-gradient(90deg,#abd5e840 0%, rgba(255, 255, 255, 0) 100%);
+  width: 43%;
 }
 .conference-info img {
   padding-left: 122.67px;
