@@ -15,7 +15,7 @@ import { NewsChildComponent } from './news-child/news-child.component';
 import {HighlyEfficientComponent} from "./highly-efficient/highly-efficient.component";
 import { FullRangeComponent } from './full-range/full-range.component';
 import { UsedEquipmentComponent } from './used-equipment/used-equipment.component';
-import { RelatedEquipmentComponent } from './related-equipment/related-equipment.component';
+
 import { AccessoriesChildComponent } from './accessories-child/accessories-child.component';
 import { ChooseComponent } from './choose/choose.component';
 import { FillComponent } from './fill/fill.component';
@@ -43,12 +43,9 @@ import { ApplicationComponent } from './application/application.component';
     EquipmentSeriesComponent,
     EquipmentSeriesComponent,
     FullRangeComponent,
-    RelatedEquipmentComponent,
     AccessoriesChildComponent,
     UsedEquipmentComponent,
     FullRangeComponent,
-    RelatedEquipmentComponent,
-    RelatedEquipmentComponent,
     EquipmentSeriesComponent,
     NewsChildComponent,
     ModalComponent,
@@ -75,12 +72,9 @@ import { ApplicationComponent } from './application/application.component';
         EquipmentSeriesComponent,
         EquipmentSeriesComponent,
         FullRangeComponent,
-        RelatedEquipmentComponent,
         AccessoriesChildComponent,
         UsedEquipmentComponent,
         FullRangeComponent,
-        RelatedEquipmentComponent,
-        RelatedEquipmentComponent,
         EquipmentSeriesComponent,
         NewsChildComponent,
         ModalComponent,

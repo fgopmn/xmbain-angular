@@ -145,15 +145,29 @@
     </div>
   </div>
 </div>
+<div>
+  <div class="equipment-color">
+    <div class="container">
+      <p class="equipment-series-title2">Примеры теплогенераторов</p>
+  </div>
+</div>
+  <div>
+    <div class="container">
+      <div class="equipment-series-flex">
+        <app-equipment-series *ngFor="let item of equipment"
+                              [img]="item.img"
+                              [title]="item.seria"
+                              [about]="item.title"
+                              [text]="item.text"
+        ></app-equipment-series>
+      </div>
+    </div>
+  </div>
+</div>
 
-<app-related-equipment
-[title]="text"
-></app-related-equipment>
 <div class="contain-group" >
-
-  <div class="contain-title-press-blog">
-    <p>Другие материалы</p>
-
+  <div class="container">
+    <p class="contain-title">Другие материалы</p>
   </div>
   <app-press-blog></app-press-blog>
 </div>

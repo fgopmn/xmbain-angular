@@ -247,7 +247,25 @@
 </div>
 <app-equipment></app-equipment>
 
-<app-related-equipment></app-related-equipment>
+<div>
+  <div class="equipment-color">
+    <div class="container">
+      <p class="equipment-series-title2">Примеры теплогенераторов</p>
+    </div>
+  </div>
+  <div>
+    <div class="container">
+      <div class="equipment-series-flex">
+        <app-equipment-series *ngFor="let item of equipment"
+                              [img]="item.img"
+                              [title]="item.seria"
+                              [about]="item.title"
+                              [text]="item.text"
+        ></app-equipment-series>
+      </div>
+    </div>
+  </div>
+</div>
 <app-slider></app-slider>
 <div class="technological">
   <app-technological></app-technological>

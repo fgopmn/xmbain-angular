@@ -24,25 +24,45 @@
   </div>
 </div>
 <app-equipment></app-equipment>
-<div>
+
   <div>
     <div class="container">
-      <p class="indoor-title">Оборудование из серии</p>
-      <div class="indoor-equipment">
-      <app-equipment-series *ngFor="let j of equipment"
-                            [title]="j.title"
-                            [img]="j.img"
-                            [about]="j.about"
-                            [text]="j.text"
-      >
-
-      </app-equipment-series>
+      <p class="equipment-series-title">Оборудование из серии</p>
+      <div class="equipment-series-flex">
+        <app-equipment-series
+          [img]="'../../../../assets/air-heaters/image 27.png'"
+          [title]="'TCO-DF'"
+          [about]="'Вертикальные нагреватели для внутренней установки'"
+          [text]="'Тепл. мощность: 62-446 кВт Возд. поток: 4800-33000 м3/ч'"
+        ></app-equipment-series>
+        <app-equipment-series
+          [img]="'../../../../assets/air-heaters/image 27 (1).png'"
+          [title]="'TCO-E'"
+          [about]="'Конденсационные вертикальные обогреватели'"
+          [text]="'Тепл. мощность: 68-1090 кВт Возд. поток: 4600-71000 м3/ч'"
+        ></app-equipment-series>
       </div>
 
     </div>
   </div>
-  <app-related-equipment></app-related-equipment>
+<div>
+  <div class="equipment-color">
+    <div class="container">
+      <p class="equipment-series-title2">Сопутствующее оборудование</p>
+    </div>
+  </div>
+  <div class="container">
+  <div class="equipment-series-flex">
+    <app-equipment-series *ngFor="let item of equipment"
+                          [img]="item.img"
+                          [title]="item.seria"
+                          [about]="item.title"
+                          [text]="item.text"
+    ></app-equipment-series>
+  </div>
+  </div>
 </div>
+
 
 <div class="airHeaters-slider-title">
   <div class="container">

@@ -62,9 +62,7 @@
 }
 :host::ng-deep .footer .footer__image{
   display: block;
-
 }
-
 .indoor-title{
   font-family: Manrope;
   font-style: normal;
@@ -77,4 +75,28 @@
 }
 .indoor-equipment{
   display: flex;
+}
+.equipment-series-flex{
+  display: flex;
+}
+.equipment-series-title{
+  font-family: Manrope;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  color: #021C27;
+  padding-top:80px;
+}
+.equipment-series-title2{
+  font-family: Manrope;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  color: #021C27;
+  padding-top:80px;
+}
+.equipment-color{
+  background: linear-gradient(180deg, #abd5e838 4.17%, rgba(255, 255, 255, 0.12) 100%);
 }

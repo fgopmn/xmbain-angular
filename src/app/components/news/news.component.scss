@@ -324,16 +324,13 @@
   background-color: white;
   padding-bottom: 100px;
 }
-.contain-title-press-blog {
-  margin: auto;
-  width: 1200px;
-}
+
 .contain-group{
   padding-bottom: 80px;
   padding-top: 84px;
  background: linear-gradient(90deg,#abd5e840 0%, rgba(255, 255, 255, 0) 100%);
 }
-.contain-title-press-blog p {
+.contain-title {
   font-family: Manrope;
   font-style: normal;
   font-weight: 800;
@@ -341,4 +338,20 @@
   line-height: 120%;
   letter-spacing: -0.02em;
   color: #021C27;
+}
+.equipment-series-flex{
+  display: flex;
+}
+
+.equipment-series-title2{
+  font-family: Manrope;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  color: #021C27;
+  padding-top:80px;
+}
+.equipment-color{
+  background: linear-gradient(180deg, #abd5e838 4.17%, rgba(255, 255, 255, 0.12) 100%);
 }

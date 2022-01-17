@@ -21,7 +21,7 @@ export class AccessoriesComponent implements OnInit {
     })
   }
   getEquipment(){
-    this.requestService.getData(`${environment.url}${environment.indoor.get}`).subscribe((items:any) => {
+    this.requestService.getData(`${environment.url}${environment.related.get}`).subscribe((items:any) => {
       this.equipment = items
     })
   }
