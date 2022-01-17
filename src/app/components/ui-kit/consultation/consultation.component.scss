@@ -14,7 +14,7 @@
   }
 }
 
-.application {
+.consultation {
   position: fixed;
   background-color: white;
   z-index: 998;
@@ -25,7 +25,7 @@
   right: 0;
   transform: translate(0,0);
   display: none;
-     &__close__button{
+  &__close__button{
     background: none;
     border: none;
     color: #021c274a;

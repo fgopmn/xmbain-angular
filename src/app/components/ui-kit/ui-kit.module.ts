@@ -26,6 +26,9 @@ import {CdkAccordionModule} from "@angular/cdk/accordion";
 import {AccordionComponent} from "./accordion/accordion.component";
 import { InstructionsComponent } from './instructions/instructions.component';
 import { ApplicationComponent } from './application/application.component';
+import {RouterModule} from "@angular/router";
+import { ConsultationComponent } from './consultation/consultation.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -54,7 +57,8 @@ import { ApplicationComponent } from './application/application.component';
     ChooseComponent,
     FillComponent,
     InstructionsComponent,
-    ApplicationComponent
+    ApplicationComponent,
+    ConsultationComponent
   ],
 
     exports: [
@@ -83,7 +87,8 @@ import { ApplicationComponent } from './application/application.component';
         ChooseComponent,
         FillComponent,
         InstructionsComponent,
-        ApplicationComponent
+        ApplicationComponent,
+        ConsultationComponent
     ],
 
   imports: [
@@ -91,7 +96,9 @@ import { ApplicationComponent } from './application/application.component';
     MatExpansionModule,
     ClickOutsideModule,
     MatExpansionModule,
-    CdkAccordionModule
+    CdkAccordionModule,
+    RouterModule,
+    ReactiveFormsModule
   ]
 })
 export class UiKitModule { }

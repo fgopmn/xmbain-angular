@@ -43,17 +43,54 @@
           </div>
 
         </div>
-        <button class="highlyEfficient__button">Получить консультацию</button>
+        <button class="highlyEfficient__button"   (click)="openConsultation()">Получить консультацию</button>
       </div>
+
+      <app-consultation
+        [is-open]="!isConsultationOpen"
+        (whenConsultationOpen)="openConsultation($event)"
+        class="consultation"
+      >
+
+        <p class="consultation__tittle">Получить консультацию</p>
+        <p class="consultation__text">Оставьте свое имя с номером телефона и наши <br> специалисты свяжутся с вами.</p>
+
+
+        <form [formGroup]="form" class="consultation__form">
+
+          <div class="consultation__form__name">
+            <label for="userName">Ваше имя </label>
+            <div><input formControlName="name" type="text" id="userName"></div>
+          </div>
+
+          <div class="consultation__form__tel">
+            <label for="number">Телефон</label>
+            <div><input type="tel" id="number" name="number" formControlName ="number"></div>
+          </div>
+
+          <div class="consultation__form__checkbox">
+            <input type="checkbox"  id="check">
+            <label for="check">Отправляя заявку, даю согласие на хранение <br>
+              и обработку персональных данных</label>
+          </div>
+          <button [disabled]="form.invalid"  class="consultation__form__button">Отправить</button>
+        </form>
+
+        <div >
+          <img src="../../../assets/img/image 125 (2) (1).png" class="consultation__blue__flag"/>
+        </div>
+
+      </app-consultation>
+
 
     </div>
     <div class="technical">
       <div class="technical__menu">
-        <div class="technical__element">Описание</div>
+        <div class="technical__element"><a routerLink="/air-heaters">Описание</a> </div>
         <div class="technical__element">Конструкция</div>
-        <div class="technical__element">Технические характеристики</div>
-        <div class="technical__element">Документы и файлы</div>
-        <div class="technical__element">Аксессуары</div>
+        <div class="technical__element"> <a routerLink="/specifications">Технические характеристики</a> </div>
+        <div class="technical__element"><a routerLink="/documents"> Документы и файлы</a> </div>
+        <div class="technical__element"> <a routerLink="/accessories">Аксессуары</a> </div>
 
       </div>
     </div>

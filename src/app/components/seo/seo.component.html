@@ -11,10 +11,10 @@
   </div>
 </div>
 <div class="seo">
-  <div class="seo-container">
+  <div class="seo--container">
     <div>
-        <h1>Кондиционеры <br> и воздушное <br> отопление <br> в автосалонах</h1>
-        <p>Крышные кондиционеры (руфтопы) и теплогенераторы<br>
+        <h1 class="h1 ">Кондиционеры <br> и воздушное <br> отопление <br> в автосалонах</h1>
+        <p class="p1">Крышные кондиционеры (руфтопы) и теплогенераторы<br>
           Tecnoclima являются идеальным решением для полной<br>
           очистки воздуха и отопления в австосервисах.<br>
           Благодаря новейшим технологиям, нашейv<br>
@@ -24,10 +24,46 @@
           отопления / охлаждения, Tecnoclima может предложить<br>
           решение для любого запроса по отоплению и<br>
           кондиционированию объектов.</p>
-        <button>Получить консультацию</button>
+        <button class="button1"  (click)="openConsultation()">Получить консультацию</button>
     </div>
     <div>
       <img src="../../../assets/seo/Mask Group (5).png" height="580" width="589"/></div>
+    <app-consultation
+      [is-open]="!isConsultationOpen"
+      (whenConsultationOpen)="openConsultation($event)"
+      class="consultation"
+    >
+
+      <p class="consultation__tittle">Получить консультацию</p>
+      <p class="consultation__text">Оставьте свое имя с номером телефона и наши <br> специалисты свяжутся с вами.</p>
+
+
+      <form [formGroup]="form" class="consultation__form">
+
+        <div class="consultation__form__name">
+          <label for="userName">Ваше имя </label>
+          <div><input formControlName="name" type="text" id="userName"></div>
+        </div>
+
+        <div class="consultation__form__tel">
+          <label for="number">Телефон</label>
+          <div><input type="tel" id="number" name="number" formControlName ="number"></div>
+        </div>
+
+        <div class="consultation__form__checkbox">
+          <input type="checkbox"  id="check">
+          <label for="check">Отправляя заявку, даю согласие на хранение <br>
+            и обработку персональных данных</label>
+        </div>
+        <button [disabled]="form.invalid"  class="consultation__form__button">Отправить</button>
+      </form>
+
+      <div >
+        <img src="../../../assets/img/image 125 (2) (1).png" class="consultation__blue__flag"/>
+      </div>
+
+    </app-consultation>
+
   </div>
 </div>
 <div>
@@ -123,9 +159,10 @@
     <img src="../../../assets/img/image 125 (1).png" >
   </div>
 </div>
-<div class="slider-block">
-  <p>Примеры решений</p>
+<div class="container">
+  
 </div>
 <app-slider></app-slider>
+
 <app-equipment></app-equipment>
 <app-footer></app-footer>

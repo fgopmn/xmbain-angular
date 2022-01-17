@@ -3,6 +3,16 @@
   padding-top: 52px;
   padding-bottom: 116px;
   position: relative;
+  &__title{
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #021C27;
+
+  }
     &__left{
     position: absolute;
     top:41%;
@@ -20,6 +30,8 @@
       &__block{
         display: flex;
         justify-content: space-between;
+
+
         &__child{
         max-width: 49.16%;
         background: linear-gradient(90deg, #FBFEFF 0%, #F0F8FC 100%);
@@ -35,6 +47,7 @@
             color: #021C27;
             padding-left: 51px;
             padding-right: 66px;
+
           }
           &__flex h6{
             font-family: Manrope;
@@ -46,6 +59,11 @@
             padding-top: 50px;
             padding-bottom: 46px;
             padding-left: 51px;
+
+            a{
+              text-decoration: none;
+              color: #021C27;
+            }
           }
       }
       }
