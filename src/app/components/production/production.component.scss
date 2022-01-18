@@ -24,19 +24,10 @@ background: #FFFFFF;
   color: #C0C6C9;
   padding-right: 9px;
 }
-.product-title{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 64px;
-  line-height: 100%;
-  letter-spacing: -0.02em;
-  color: #021C27;
-  padding-top:30px;
-}
+
 .product-description{
   background-color: #FFFFFF;
-  padding-bottom: 87px;
+
 }
 .product-description-container {
   width:83%;
@@ -48,7 +39,8 @@ background: #FFFFFF;
 .techno-flex{
   display: flex;
   flex-wrap: wrap;
-  margin-left:38px;
+  justify-content: space-evenly;
+  padding-top: 180px;
 }
 .techno-block{
   padding:35px 15px 43px 15px;
@@ -70,9 +62,8 @@ margin:0 46px;
   margin:auto;
 }
 .bbb{
-  width: 354px;
   display: flex;
-  margin-right:120px;
+  padding-top: 180px;
 }
 .seria{
   margin-right:20px;
@@ -109,6 +100,7 @@ margin:0 46px;
 }
 .system{
   display: flex;
+  justify-content: space-between;
 }
 .system-description{
   font-family: Manrope;

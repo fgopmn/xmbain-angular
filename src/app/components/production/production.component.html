@@ -1,6 +1,6 @@
 <app-header></app-header>
 <div class="product">
-  <div class="product-container">
+  <div class="container">
     <div class="menu-list">
       <ul class="menu">
         <li>Главная</li>
@@ -9,16 +9,13 @@
       </ul>
     </div>
 
-    <div class="product-title">
-      <p>Продукция</p>
-    </div>
   </div>
 </div>
 
 <div class="product-description">
+  <div class="container">
   <div class="product-description-flex">
     <app-product-check></app-product-check>
-
     <div class="techno-flex">
       <div *ngFor="let item of technoImg" class="techno-block">
         <img src="{{item.img}}" alt="no image" class="techno-img">
@@ -143,22 +140,40 @@
       </div>
     </div>
   </div>
+    </div>
 </div>
 <div class="technological">
   <app-technological></app-technological>
 </div>
 <img class="blue-flag" src="../../../assets/img/image 125 (1).png" alt="">
 <div class="showAll">
-  <div class="showAll-block">
+  <div class="container">
     <div>
 
+      <div class="system">
+        <div *ngFor="let i of system" class="systemOne">
+          <p>{{i.plus}}</p>
+          <p>{{i.description}}</p>
+        </div>
+      </div>
+      <div class="system">
+        <div *ngFor="let i of systemTwo" class="systemOne">
+          <p>{{i.plus}}</p>
+          <p>{{i.description}}</p>
+        </div>
+      </div>
       <div class="system">
         <div *ngFor="let i of systemThree" class="systemOne">
           <p>{{i.plus}}</p>
           <p>{{i.description}}</p>
         </div>
       </div>
-
+      <div class="system">
+        <div *ngFor="let i of systemFour" class="systemOne">
+          <p>{{i.plus}}</p>
+          <p>{{i.description}}</p>
+        </div>
+      </div>
 
 <!--      <div class="system">-->
 <!--        <app-system-product-->

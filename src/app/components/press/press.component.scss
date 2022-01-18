@@ -1,17 +1,14 @@
 .header-names{
   background: white;
 }
-.names-container{
-  width:83%;
-  margin:auto;
-}
+
 .navigation ul {
   margin-bottom: 16px;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
 }
-li {
+.navigation ul li {
   margin-right:16px;
   list-style-type: none ;
   font-family: Manrope;
@@ -30,10 +27,9 @@ li {
   background: #FFFFFF;
   padding-bottom:80px;
 }
-.press{
-  width:83%;
-  margin:auto;
-  border-top:1px solid #C0C6C9;
+
+.pressGlobal .press{
+
   padding-top:30px;
 }
 .title{
@@ -57,6 +53,7 @@ li {
   border-right:1px solid #000000;
   padding:10px 20px;
 }
+
 .blog-title{
   font-family: Manrope;
   font-style: normal;
@@ -65,11 +62,9 @@ li {
   line-height: 120%;
   letter-spacing: -0.02em;
   color: #021C27;
+  padding-top: 80px;
 }
-.title-menu{
-  width: 83%;
-  margin:auto;
-}
+
 .line{
   border-bottom:1px solid #C0C6C9;
 }
@@ -92,7 +87,15 @@ li {
   color: #021C27;
   opacity: 0.3;
   text-decoration: none;
+  padding-bottom: 16px;
+}
+.menu-italy li a:hover{
+  color: black;
+  opacity: 1;
 
+}
+.menu-italy li :hover{
+  border-bottom: 4px solid black;
 }
 .press-menu li a{
   font-family: Manrope;
@@ -109,18 +112,15 @@ li {
   background: linear-gradient(90deg, #FBFEFF 0%, #F0F8FC 100%);
 }
 .blog-click{
-  background-color: #009FE3;
-  opacity: 0.1;
+  background-color: rgba(0, 159, 227, 0.11);
+
   border-radius: 5px;
   padding:10px 20px;
   margin-top:40px;
   margin-bottom:80px;
   border:none;
 }
-.click{
-  width: 83%;
-  margin: auto;
-}
+
 .blog-click span{
   color: #009FE3;
   font-family: Manrope;
@@ -134,10 +134,24 @@ li {
 .events-global{
   background:#FFFFFF;
 }
+.global-tittle-blogg{
+  background: linear-gradient(180deg, rgba(171, 213, 232, 0.12) 4.17%, rgba(255, 255, 255, 0) 100%);
+}
+.title-name{
+  padding-top: 80px;
+  padding-bottom: 50px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #021C27;
 
+}
 .event-click{
-  background-color: #009FE3;
-  opacity: 0.1;
+  background-color: rgba(0, 159, 227, 0.1);
+
   border-radius: 5px;
   padding:10px 20px;
   margin:70.53px 0 80px 0;
