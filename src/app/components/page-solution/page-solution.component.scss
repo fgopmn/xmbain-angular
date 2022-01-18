@@ -64,7 +64,7 @@ product{
 }
 .location-text{
   margin-top:73px;
-
+  width: 386px;
 }
 .location-text p{
   font-style: normal;
@@ -122,10 +122,7 @@ product{
   background: white;
   position: relative;
 }
-.task-container{
-  width: 83%;
-  margin:auto;
-}
+
 
 .task-title1{
   font-weight: 800;
@@ -179,7 +176,6 @@ product{
 .advantages{
   background: linear-gradient(90deg, #abd5e829 0%, rgba(255, 255, 255, 0.12) 100%);
   padding-top: 57px;
-  width: 40%;
 }
 .solution-text{
   font-size: 17px;
@@ -201,10 +197,6 @@ product{
 }
 .opinion-img{
     margin-left: 20px;
-}
-.used-container{
-  width: 83%;
-  margin:auto;
 }
 .used-flex{
   display: flex;

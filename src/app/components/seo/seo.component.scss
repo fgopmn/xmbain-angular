@@ -1,43 +1,39 @@
 .seo-header{
   background-color: #FFFFFF;
+  position: relative;
+  &__ul{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 16px;
+    border-bottom:  1px solid #C0C6C9;
+    max-width: 532px;
+  }
+  &__li{
+    list-style-type: none;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 0.2px;
+    color: #C0C6C9;
+  }
+  &__li:nth-child(n+2){
+    padding-left: 12px;
+  }
+
 }
-.seo-header-flex{
-  max-width: 1440px;
-  width: 83%;
-  margin: auto;
-}
-.seo-header-flex ul{
-  display: flex;
-  padding-top: 20px;
-  padding-bottom: 16px;
-  border-bottom:  1px solid #C0C6C9;
-  max-width: 532px;
-}
-.seo-header-flex ul li{
-  list-style-type: none;
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 120%;
-  letter-spacing: 0.2px;
-  color: #C0C6C9;
-}
-.seo-header-flex ul li:nth-child(n+2){
-  padding-left: 12px;
-}
+
 
 .seo{
   background: linear-gradient(360deg, rgba(171, 213, 232, 0.12) 0%, rgba(171, 213, 232, 0) 100%), #FFFFFF;
-  .seo--container{
-
-    max-width: 1200px;
-    margin: auto;
+  &__flex {
     display: flex;
     padding-top: 14px;
     position: relative;
+  }
 
-    .h1{
+    &__h1{
       font-family: Manrope;
       font-style: normal;
       font-weight: 800;
@@ -48,7 +44,7 @@
       padding-bottom: 30px;
       padding-top: 44px;
     }
-   .p1{
+   &__text{
       font-family: Manrope;
       font-style: normal;
       font-weight: normal;
@@ -58,7 +54,7 @@
       color: #021C27;
       padding-bottom: 36px;
     }
-    .button1{
+    &__button{
       font-family: Manrope;
       font-style: normal;
       font-weight: 800;
@@ -73,16 +69,18 @@
       margin-bottom: 88px;
       cursor: pointer;
     }
-    div:last-child{
-      position: absolute;
-      right: 0;
-      bottom: 234px;
-    }
-
+  &__img{
+    position: absolute;
+    right: 0;
+    top: -51px;
   }
+
+
+
 }
 
-.seo--container .consultation{
+
+.consultation{
 
   &__blue__flag{
     position: fixed;
@@ -143,7 +141,6 @@
         border-radius: 5px;
         padding: 10px 10px;
       }
-
     }
     &__tel{
       position: fixed;
@@ -221,85 +218,15 @@
       color: #FFFFFF;
       border: none;
     }
-
-
   }
 }
 
 
-
-
-.dealerships-container{
-  display: flex;
-  max-width: 1200px;
-  margin: auto;
-}
-.dealerships-ul-block{
-  background: linear-gradient(270deg, #f6fafda6 0%, rgba(255, 255, 255, 0) 90%);
-  max-width: 267px;
-  width: 267px;
-}
-.check-block1  ul li {
-  list-style-type: none;
-}
-.check-block2 ul li {
-  list-style-type: none;
-}
-.check-block3  ul li {
-  list-style-type: none;
-}
-.check-block2,  ul li label{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 120%;
-  letter-spacing: 0.2px;
-  color: #021C27;
-}
-.check-block label{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 19px;
-  line-height: 120%;
-  letter-spacing: 0.2px;
-  color: #021C27;
-  padding-left: 9px;
-}
-.check-block p{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 120%;
-  letter-spacing: 0.2px;
-  color: #021C27;
-
-}
-.check-block input{
-  opacity: 0.2;
-  border: 1px solid #021C27;
-  box-sizing: border-box;
-  border-radius: 4px;
-  width: 18px;
-  height: 18px;
-  margin-top: 14px;
-}
-.check{
-  padding-top: 90px;
-
-}
-.check-block p{
-  margin-bottom:18px
-}
-.check-block2{
-  padding-top: 40px;
-}
-.check-block3{
-  padding-top: 40px;
-}
-.check-click{
+  .dealership {
+    display: flex;
+    justify-content: space-between;
+  }
+ .check-click{
   background: #009FE3;;
   border-radius: 5px;
   font-style: normal;
@@ -313,6 +240,11 @@
   padding: 11px 19px;
   margin-top: 40px;
 }
+ .blue-fon{
+   background: linear-gradient(275deg, rgba(171,213,232,0.12) -0, rgba(255, 255, 255, ) 60%);
+   width: 267px;
+   padding-top:45px
+ }
 .dealerships-child2-global-title{
   font-family: Manrope;
   font-style: normal;
@@ -323,6 +255,7 @@
   color: #021C27;
   padding-left: 78px;
   padding-top: 80px;
+
 }
 .dealerships-child2-global-title span{
   opacity: 0.3;
@@ -416,6 +349,7 @@
   color: #021C27;
   padding-left: 78px;
   padding-top: 100px;
+  width: 652px;
 }
 .conditioners-global-title span{
   opacity: 0.3;
