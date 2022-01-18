@@ -29,6 +29,7 @@ import { ApplicationComponent } from './application/application.component';
 import {RouterModule} from "@angular/router";
 import { ConsultationComponent } from './consultation/consultation.component';
 import {ReactiveFormsModule} from "@angular/forms";
+import { SeoFilterComponent } from './seo-filter/seo-filter.component';
 
 @NgModule({
   declarations: [
@@ -58,38 +59,39 @@ import {ReactiveFormsModule} from "@angular/forms";
     FillComponent,
     InstructionsComponent,
     ApplicationComponent,
-    ConsultationComponent
+    ConsultationComponent,
+    SeoFilterComponent
   ],
-
-    exports: [
-        ComplexComponent,
-        EquipmentComponent,
-        TechnologicalComponent,
-        SelectInputComponent,
-        PressEventsComponent,
-        PressBlogComponent,
-        ExhibitionsComponent,
-        SliderComponent,
-        ProductCheckComponent,
-        SystemProductComponent,
-        HighlyEfficientComponent,
-        EquipmentSeriesComponent,
-        EquipmentSeriesComponent,
-        FullRangeComponent,
-        AccessoriesChildComponent,
-        UsedEquipmentComponent,
-        FullRangeComponent,
-        EquipmentSeriesComponent,
-        NewsChildComponent,
-        ModalComponent,
-        AccordionComponent,
-        NewsChildComponent,
-        ChooseComponent,
-        FillComponent,
-        InstructionsComponent,
-        ApplicationComponent,
-        ConsultationComponent
-    ],
+  exports: [
+    ComplexComponent,
+    EquipmentComponent,
+    TechnologicalComponent,
+    SelectInputComponent,
+    PressEventsComponent,
+    PressBlogComponent,
+    ExhibitionsComponent,
+    SliderComponent,
+    ProductCheckComponent,
+    SystemProductComponent,
+    HighlyEfficientComponent,
+    EquipmentSeriesComponent,
+    EquipmentSeriesComponent,
+    FullRangeComponent,
+    AccessoriesChildComponent,
+    UsedEquipmentComponent,
+    FullRangeComponent,
+    EquipmentSeriesComponent,
+    NewsChildComponent,
+    ModalComponent,
+    AccordionComponent,
+    NewsChildComponent,
+    ChooseComponent,
+    FillComponent,
+    InstructionsComponent,
+    ApplicationComponent,
+    ConsultationComponent,
+    SeoFilterComponent
+  ],
 
   imports: [
     CommonModule,

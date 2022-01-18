@@ -1,20 +1,22 @@
 <app-header></app-header>
 <div class="seo-header">
-  <div class="seo-header-flex">
-    <ul>
-      <li>Главная</li>
-      <li>></li>
-      <li>Продукция</li>
-      <li>></li>
-      <li>Кондиционирование воздушное отопление в автосервисах</li>
+  <div class="container">
+    <ul class="seo-header__ul">
+      <li class="seo-header__li">Главная</li>
+      <li class="seo-header__li">></li>
+      <li class="seo-header__li">Продукция</li>
+      <li class="seo-header__li">></li>
+      <li class="seo-header__li">Кондиционирование воздушное отопление в автосервисах</li>
     </ul>
   </div>
 </div>
+
 <div class="seo">
-  <div class="seo--container">
+  <div class="container">
+    <div class="seo__flex">
     <div>
-        <h1 class="h1 ">Кондиционеры <br> и воздушное <br> отопление <br> в автосалонах</h1>
-        <p class="p1">Крышные кондиционеры (руфтопы) и теплогенераторы<br>
+        <h1 class="seo__h1 ">Кондиционеры <br> и воздушное <br> отопление <br> в автосалонах</h1>
+        <p class="seo__text">Крышные кондиционеры (руфтопы) и теплогенераторы<br>
           Tecnoclima являются идеальным решением для полной<br>
           очистки воздуха и отопления в австосервисах.<br>
           Благодаря новейшим технологиям, нашейv<br>
@@ -24,22 +26,19 @@
           отопления / охлаждения, Tecnoclima может предложить<br>
           решение для любого запроса по отоплению и<br>
           кондиционированию объектов.</p>
-        <button class="button1"  (click)="openConsultation()">Получить консультацию</button>
+        <button class="seo__button"  (click)="openConsultation()">Получить консультацию</button>
     </div>
-    <div>
+    <div class="seo__img">
       <img src="../../../assets/seo/Mask Group (5).png" height="580" width="589"/></div>
+    </div>
     <app-consultation
       [is-open]="!isConsultationOpen"
       (whenConsultationOpen)="openConsultation($event)"
       class="consultation"
     >
-
       <p class="consultation__tittle">Получить консультацию</p>
       <p class="consultation__text">Оставьте свое имя с номером телефона и наши <br> специалисты свяжутся с вами.</p>
-
-
       <form [formGroup]="form" class="consultation__form">
-
         <div class="consultation__form__name">
           <label for="userName">Ваше имя </label>
           <div><input formControlName="name" type="text" id="userName"></div>
@@ -58,7 +57,7 @@
         <button [disabled]="form.invalid"  class="consultation__form__button">Отправить</button>
       </form>
 
-      <div >
+      <div>
         <img src="../../../assets/img/image 125 (2) (1).png" class="consultation__blue__flag"/>
       </div>
 
@@ -66,51 +65,15 @@
 
   </div>
 </div>
-<div>
-  <div class="dealerships-container">
-    <div class="dealerships-ul-block">
-      <div class="check">
-        <div class="check-block">
-          <p class="check-title">Топливо</p>
-          <div class="check-block1">
-            <ul>
-              <li><input type="checkbox" id="check-one">
-                <label for="check-one">Универсальное</label></li>
-              <li><input type="checkbox" id="check-two">
-                <label for="check-two">Газ</label></li>
-              <li><input type="checkbox" id="check-three">
-                <label for="check-three">Жидкое</label></li>
-              <li><input type="checkbox" id="check-four">
-                <label for="check-four">Вода</label></li>
-            </ul>
-          </div>
-          <div class="check-block2">
-            <p>Назначение</p>
-            <ul>
-              <li><input type="checkbox" id="check-one1">
-                <label for="check-one">Отопление</label></li>
-              <li><input type="checkbox" id="check-two1">
-                <label for="check-two">Отопление и охлаждение</label></li>
-              <li><input type="checkbox" id="check-three1">
-                <label for="check-three">Рекуперация тепла</label></li>
-            </ul>
-          </div>
-          <div class="check-block3">
-            <p>Расположение</p>
-            <ul>
-              <li><input type="checkbox" id="check-one2">
-                <label for="check-one">Внутри помещения</label></li>
-              <li><input type="checkbox" id="check-two2">
-                <label for="check-two">Снаружи помещения</label></li>
-            </ul>
-          </div>
 
-          <button class="check-click">Показать</button>
-    </div>
+ <div>
+  <div class="container">
+    <div class="dealership">
+      <app-seo-filter>
+        <button class="check-click">Показать</button>
+      </app-seo-filter>
 
-</div>
-    </div>
-    <div class="dealerships-child2-global">
+    <div class="dealerships__check2">
       <div>
         <p class="dealerships-child2-global-title">Воздухонагреватели <br> <span>для автосалонов</span> </p>
         <p class="dealerships-child2-global-text">
@@ -153,6 +116,7 @@
       </div>
     </div>
   </div>
+  </div>
 </div>
 <div class="flag">
   <div class="blue-flag">
@@ -160,7 +124,7 @@
   </div>
 </div>
 <div class="container">
-  
+
 </div>
 <app-slider></app-slider>
 

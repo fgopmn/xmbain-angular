@@ -1,0 +1,41 @@
+.dealership-check {
+  padding-top: 90px;
+
+  &__title {
+    margin-bottom: 18px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 120%;
+    letter-spacing: 0.2px;
+    color: #021C27;
+  }
+
+  &__li {
+    list-style-type: none;
+    align-items: center;
+    margin-top: 14px;
+    display: flex;
+  }
+  &__li label{
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 120%;
+    letter-spacing: 0.2px;
+    color: #021C27;
+    padding-left: 9px;
+  }
+  &__li input{
+    opacity: 0.2;
+    border: 1px solid #021C27;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 18px;
+    height: 18px;
+  }
+  &__block2{
+    margin-top:44px
+  }
+
+}
