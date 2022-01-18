@@ -15,7 +15,28 @@
 <div class="product-description">
   <div class="container">
   <div class="product-description-flex">
-    <app-product-check></app-product-check>
+    <div class="blue-fon">
+      <p class="product-title">Продукция</p>
+    <div class="product-description-power">
+      <p class="power-title">Тепловая мощность</p>
+      <div class="power-flex">
+        <div class="power-number">34</div>
+        <span>-</span>
+        <div class="powerVt"><p>54000</p><span>кВт</span></div>
+      </div>
+    </div>
+
+    <div class="product-description-power2">
+      <p class="power-title">Воздушный поток</p>
+      <div class="power-flex">
+        <div class="power-number2">300</div>
+        <span>-</span>
+        <div class="powerVt"><p>72000</p><span>м3/ч</span></div>
+      </div>
+    </div>
+      <app-product-check></app-product-check>
+    </div>
+
     <div class="techno-flex">
       <div *ngFor="let item of technoImg" class="techno-block">
         <img src="{{item.img}}" alt="no image" class="techno-img">
