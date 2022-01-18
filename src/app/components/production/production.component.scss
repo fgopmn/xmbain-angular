@@ -39,7 +39,7 @@ background: #FFFFFF;
 .techno-flex{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  margin-left: 53px;
   padding-top: 180px;
 }
 .techno-block{
@@ -78,18 +78,18 @@ margin:0 46px;
   letter-spacing: 0.2px;
   color: #021C27;
   opacity: 0.4;
-  line-height:14px;
+  line-height:24px;
   padding-bottom: 26px;
 }
 .technological{
   background: linear-gradient(90deg, #FBFEFF 0%, #F0F8FC 100%);
   padding: 60px 0;
 }
-.blue-flag{
-  padding-left: 138px;
-}
+
 .showAll{
   background-color: #FFFFFF;
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
 .showAll-block{
   width: 83%;
@@ -97,10 +97,27 @@ margin:0 46px;
 }
 .systemOne{
   display: flex;
+  align-items: center;
+  padding: 30px 6px 30px 25px;
+  width: 285px;
+}
+.systemOne p{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  opacity: 0.6;
 }
 .system{
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid rgba(192, 198, 201, 0.31);
+}
+.system:last-child{
+  border: none;
 }
 .system-description{
   font-family: Manrope;
