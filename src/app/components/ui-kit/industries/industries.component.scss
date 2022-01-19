@@ -1,0 +1,25 @@
+.industries{
+  background: linear-gradient(90deg, #FBFEFF 0%, #F0F8FC 100%);
+  &__tittle{
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #021C27;
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+  &__section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 80px;
+    div{
+      margin-top: 20px;
+
+    }
+  }
+}

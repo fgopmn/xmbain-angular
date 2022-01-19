@@ -1,0 +1,13 @@
+<div class="industries">
+  <div class="container">
+    <h1 class="industries__tittle">Отрасли</h1>
+   <div class="industries__section">
+     <div *ngFor="let item of complex">
+       <app-complex
+         [icon]="item.icon"
+         [title]="item.title"
+       ></app-complex>
+     </div>
+   </div>
+  </div>
+</div>

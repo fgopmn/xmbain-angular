@@ -1,0 +1,35 @@
+.solution-header{
+  background-color: #FFFFFF;
+  position: relative;
+
+
+  &__ul{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 16px;
+
+    max-width: 532px;
+  }
+  &__li{
+    list-style-type: none;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 0.2px;
+    color: #C0C6C9;
+  }
+  &__li:nth-child(n+2){
+    padding-left: 12px;
+  }
+
+}
+.solution-header .container{
+  border-bottom:  1px solid #C0C6C9;
+}
+.red-flag{
+  width: 69%;
+  margin: auto;
+  max-width: 1440px;
+}
