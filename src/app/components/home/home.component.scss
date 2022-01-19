@@ -5,27 +5,29 @@
     justify-content: flex-end;
   }
 }
-.industrial-text b{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 64px;
-  line-height: 100%;
-  letter-spacing: -0.02em;
-}
-.percent{
-  margin-top: 30px;
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 19px;
-  line-height: 140%;
-  letter-spacing: 0.2px;
-  color: #021C27;
-}
 .industrial{
   background-color: white;
   padding-bottom: 80px;
+  &__flex{
+    display: flex;
+    justify-content: space-between;
+    background-image: url("../../../assets/img/Group 382 (1).png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: 34px -184px;
+  }
+  &__text{
+    width: 50%;
+    margin-top: 70px;
+   b{
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 64px;
+      line-height: 100%;
+      letter-spacing: -0.02em;
+    }
+  }
   &__button{
     background: #009FE3;
     border-radius: 5px;
@@ -42,64 +44,59 @@
     &:hover{
       background: #021C27;
       border-radius: 4px;
-
     }
   }
-}
+  &__percent{
+    margin-top: 30px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #021C27;
+  }
+  &__img{
+    position: relative;
+    margin-top: 15px;
+    padding-bottom: 50px;
 
-.industrial-flex{
-  display: flex;
-  justify-content: space-between;
-  background-image: url("../../../assets/img/Group 382 (1).png");
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-position: 34px -184px;
-}
+    &__one{
+      position: absolute;
+      right:45px;
+      top:40px
+    }
+    &__two{
+      border-radius: 40px;
+    }
+  }
+  &__types{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 
-.industrial-text{
-  width: 50%;
-  margin-top: 70px;
-}
-.childBlock{
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end
+  &__heating{
+    border-bottom:1px solid #009FE3;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #021C27;
+    opacity: 0.5;
+    margin-right: 20px;
+    width: 146px;
+    padding-bottom: 26px;
+  }
+  }
+
 }
 .child1:first-child{
   border-bottom:5px solid #009FE3;
+}
 
-}
-.child1{
-  border-bottom:1px solid #009FE3;
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 140%;
-  letter-spacing: 0.2px;
-  color: #021C27;
-  opacity: 0.5;
-  margin-right: 20px;
-  width: 160px;
-  padding-bottom: 26px;
-}
-.industrialImg{
-  position: relative;
-  margin-top: 15px;
-  padding-bottom: 50px;
-}
-.industrialImg1{
-  position: absolute;
-  right:45px;
-  top:40px
-}
-.industrialImg2{
-  border-radius: 40px;
 
-}
-.equipment{
-  background-color: #FFFFFF;
-}
 .info-block{
   display: flex;
   width: 800px;
@@ -134,50 +131,54 @@
   color: #021C27;
 }
 
-.flag{
-  display: flex;
-}
-.video-button{
-  border: none;
-  background: none;
-  cursor: pointer;
-}
-.flag-block{
+.equipment{
   background-color: #FFFFFF;
-  padding-top: 80px;
+}
+.techno{
+  background-color: #FFFFFF;
+  padding-top: 82px;
+  padding-bottom: 98px;
+  background-image: url("../../../assets/img/Group 358.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  &__picture{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__tecnoclima {
+    margin-top: 122px;
+    &__text{
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 54px;
+      line-height: 120%;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      color: #021C27;
+      padding-bottom: 8px;
+    }
+  }
+  &__tecnotext{
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 160%;
+    letter-spacing: 0.2px;
+    color: #021C27;
+    padding-top:34px;
+    width: 489px;
+  }
+  &__button{
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
 }
 
-.textclima{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 54px;
-  line-height: 120%;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  color: #021C27;
-  padding-bottom: 8px;
-}
-.flag-block{
-  background-color: #FFFFFF;
-}
-.flag-img{
-  margin-right: 142px;
-  padding-bottom: 104px;
-}
-.tecnotext{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 19px;
-  line-height: 160%;
-  letter-spacing: 0.2px;
-  color: #021C27;
-  padding-top:34px;
-}
-.tecnoclima-block {
-  margin-top: 122px;
-}
+
 .italy-img{
   height: 720px;
   background-image: url("../../../assets/img/Mask Group.png");
@@ -200,13 +201,55 @@
   bottom: 133px;
 
 }
-.complex-block{
-  display: flex;
-  padding: 93px 0;
-
+.complex{
+  background: linear-gradient(359.7deg, #EAF5FA 0.32%, rgba(240, 248, 252, 0) 46.83%);
+  background-color: #FFFFFF;
+  &__flex{
+    display: flex;
+    padding: 93px 0;
+  }
+  &__title{
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #021C27;
+    mix-blend-mode: multiply;
+    width: 455px;
+    span{
+      opacity: 0.15;
+    }
+  }
+  &__click{
+    background: #009FE3;
+    border-radius: 5px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
+    padding: 15px 25px;
+    margin-top: 40px;
+    cursor: pointer;
+  }
+  &__image{
+    margin-top: 98px;
+  }
+  &__types{
+    &__flex{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+  }
 }
-.application{
 
+.application{
   &__blue__flag{
     position: fixed;
     bottom:0;
@@ -344,430 +387,377 @@
       color: #FFFFFF;
       border: none;
     }
-
-
   }
 }
 
 
-.complex-child p{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 46px;
-  line-height: 120%;
-  letter-spacing: -0.02em;
-  color: #021C27;
-  mix-blend-mode: multiply;
-}
-.complex-child span{
-  opacity: 0.15;
-}
-.complex-child button{
-  background: #009FE3;
-  border-radius: 5px;
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 120%;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  border: none;
-  padding: 15px 25px;
-  margin-top: 40px;
-  cursor: pointer;
-}
-.complex-child img{
-  margin-top: 98px;
-}
-.appcomplex{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-.complex{
-  background: linear-gradient(359.7deg, #EAF5FA 0.32%, rgba(240, 248, 252, 0) 46.83%);
-  background-color: #FFFFFF;
-}
 
-.airHeaters-block{
+
+.airHeaters {
   display: flex;
   background-color: white;
 
-}
+  &__types {
+    width: 303px;
+    position: relative;
+    margin-left: 120px;
+  }
 
-.airHeaters{
-  width: 303px;
-  position: relative;
-  margin-left: 120px;
-    &__text{
-      padding-bottom: 123px;
-      padding-top: 76px;
-      &__child{
-        margin-top: 44px;
+  &__type {
+    padding-bottom: 123px;
+    padding-top: 76px;
+  }
 
-      }
+  &__text {
+    margin-top: 44px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.2px;
+    color: rgba(2, 28, 39, 0.3);
 
+    &:hover {
+      border-right: 5px solid #E3061B;
+      cursor: pointer;
+      color: #021C27;
     }
-}
-.airHeaters__text__child p{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 120%;
-  letter-spacing: 0.2px;
-  color: rgba(2, 28, 39, 0.3);
-
-}
-.airHeaters__text__child p:hover{
-  border-right: 5px solid #E3061B;
-  cursor: pointer;
-  color: #021C27;
-}
-
-.rectangle360{
-  background-image:url("../../../assets/img/image 104 (2) (1).png");
-
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-  position: relative;
-}
-
-.rectangle360 img{
-  width: 520px;
-  height: 520px;
-  margin-top: 160px;
-  margin-left: 100px;
-
-}
-.fermax{
-  background-image: url("../../../assets/img/Mask Group (1).jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: top center;
-  position: relative;
-  height: 720px;
-}
-.fermax p{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 64px;
-  line-height: 100%;
-  letter-spacing: -0.02em;
-  color: #FFFFFF;
-  text-shadow: 0px 5px 50px rgba(83, 120, 149, 0.4);
-  position: absolute;
-  right: 323px;
-  bottom: 133px;
-}
-.full-title{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 34px;
-  line-height: 100%;
-  letter-spacing: -0.02em;
-  color: #021C27;
-
-}
-.global-fullRange{
-  background-color: #FFFFFF;
-}
-.fullRange{
-  padding-top: 80px;
-
-}
-.numbers-block{
-  display: flex;
-  justify-content: space-between;
-  padding-top: 46px;
-  padding-bottom: 75px;
-}
-.numbers{
-  background: linear-gradient(90deg, #FBFEFF 0%, #F0F8FC 100%);
-  border-radius: 20px;
-  width: 15.6%;
-  cursor: pointer;
-}
-.numbers-number{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 62px;
-  line-height: 100%;
-  letter-spacing: -0.15em;
-  color: #009FE3;
-  opacity: 0.1;
-  border-bottom: 2px solid #009FE3;
-  display: inline-block;
-  padding-bottom: 13px;
-  margin-bottom:24px
-}
-.numbers-text{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 130%;
-  letter-spacing: -0.02em;
-  color: #021C27;
-  padding-bottom:65px;
-  width: 130px;
-}
-.num-text{
-  margin-left:40px;
-  margin-top:40px;
-}
-.check-block1  ul li {
-  list-style-type: none;
-}
-.check-block2 ul li {
-  list-style-type: none;
-}
-.check-block3  ul li {
-  list-style-type: none;
-}
-.check-block2,  ul li label{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 120%;
-  letter-spacing: 0.2px;
-  color: #021C27;
-}
-.check-block label{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 19px;
-  line-height: 120%;
-  letter-spacing: 0.2px;
-  color: #021C27;
-  padding-left: 9px;
-}
-.check-block p{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 19px;
-  line-height: 120%;
-  letter-spacing: 0.2px;
-  color: #021C27;
-
-}
-.check-block input{
-  opacity: 0.2;
-  border: 1px solid #021C27;
-  box-sizing: border-box;
-  border-radius: 4px;
-  width: 18px;
-  height: 18px;
-}
-.check{
-  margin-top:125px;
-  padding-left: 93px;
-}
-.check-block p{
-margin-bottom:18px
-}
-.check-block2{
-  padding-top: 40px;
-}
-.check-block3{
-  padding-top: 40px;
-}
-.check-click{
-  background: #021C27;
-  border-radius: 5px;
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 120%;
-  letter-spacing: 0.2px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  border: none;
-  padding: 12px 20px 13px 25px;
-  margin-top: 48px;
-  cursor: pointer;
-}
-:host::ng-deep .footer .footer__image{
-  display: block;
-
-}
-.recuperative-block{
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 80px;
-}
-.recuperative{
-  background-color: #FFFFFF;
-}
-.oem{
-  background: #FFFFFF;
-  box-shadow: 0px 20px 60px rgba(2, 26, 36, 0.04);
-  border-radius: 40px;
-  display: inline-block;
-  padding: 59px 50px 66px 70px;
-}
-.general-press-image {
-  background-image: url("../../../assets/img/Group 385.png");
-  background-size: 100% 87%;
-  background-repeat: no-repeat;
-  background-position: top center;
-}
-.oem h6{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 34px;
-  line-height: 110%;
-  letter-spacing: -0.02em;
-  color: #021C27;
-}
-.oem-p{
-  padding-top: 24px;
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 140%;
-  letter-spacing: 0.2px;
-  color: #021C27;
-
-}
-.oem-img p{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 21px;
-  line-height: 120%;
-  text-align: center;
-  letter-spacing: -0.02em;
-  color: #FFFFFF;
-  position: relative;
-  bottom: 45px;
-}
-.oem-img{
-  display: inline-block;
-}
-.oem-child{
-  padding-top: 46px;
+  }
+  &__picture {
+    background-image: url("../../../assets/img/image 104 (2) (1).png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+    img {
+      width: 520px;
+      height: 520px;
+      margin-top: 160px;
+      margin-left: 100px;
+    }
+  }
+  &__check {
+    margin-top: 83px;
+    padding-left: 93px;
+    &__title{
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 120%;
+    letter-spacing: 0.2px;
+    color: #021C27;
+    margin-top:42px;
+    margin-bottom:6px
+  }
+    li{
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      margin-top:12px
+    }
+    label {
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 120%;
+      letter-spacing: 0.2px;
+      color: #021C27;
+    }
+    input {
+      opacity: 0.2;
+      border: 1px solid #021C27;
+      box-sizing: border-box;
+      border-radius: 4px;
+      width: 18px;
+      height: 18px;
+      margin-right:9px
+    }
+    &__click{
+        background: #021C27;
+        border-radius: 5px;
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 120%;
+        letter-spacing: 0.2px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        border: none;
+        padding: 12px 20px 13px 25px;
+        margin-top: 48px;
+        cursor: pointer;
+    }
+  }
 }
 
-.technological{
-  background-color: #abd5e81a;
-  display: inline-block;
-  padding: 60px 0;
-  width: 100%;
-}
-.blue-flag {
-  width: 100%;
-}
-.clients{
-  background-color: white;
-}
-.clients-title{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 46px;
-  line-height: 120%;
-  letter-spacing: -0.02em;
-  color: #021C27;
-  padding-top: 28px;
-}
-.logo-block{
-  text-align: center;
-  display: flex;
-  align-items: center;
-  margin-top: 63px;
-}
-.logo-border{
-  height: 50px;
-  border-left: 1px solid #C0C6C9;
-  opacity: 0.5;
-}
-.logo-child{
-  width: 204px;
-}
-#logo-child-first{
-  width: 204px;
-}
-#logo-child-last{
-  width: 204px;
-}
-.press-centre{
-  background: linear-gradient(180deg, #abd5e836  0%, rgba(171, 213, 232, 0) 104.43%);
-}
-.press-title{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 46px;
-  line-height: 120%;
-  letter-spacing: -0.02em;
-  color: #021C27;
-  padding-top: 100px;
-}
-.press-text{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 34px;
-  line-height: 100%;
-  letter-spacing: -0.02em;
-  color: #021C27;
-  padding-top: 70px;
-}
-.blog-event{
-  background: linear-gradient(180deg, #abd5e838 0%, rgba(171, 213, 232, 0) 100.12%);
-}
-.blog-event h6{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 46px;
-  line-height: 120%;
-  letter-spacing: -0.02em;
-  color: #021C27;
-  padding-top: 100px;
-  padding-left: 120px;
-}
-.blog-event p{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 34px;
-  line-height: 100%;
-  letter-spacing: -0.02em;
-  color: #021C27;
-  padding-top: 75px;
-}
-.exhibitions-block p{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 34px;
-  line-height: 100%;
-  letter-spacing: -0.02em;
-  color: #021C27;
-  padding-bottom: 36px;
-  padding-top: 80px;
-}
-.logos{
-  background-color: white;
-}
-.logos-block{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 89px;
-  padding-bottom: 110px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .fermax {
+    background-image: url("../../../assets/img/Mask Group (1).jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+    height: 720px;
+    &__text{
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 64px;
+      line-height: 100%;
+      letter-spacing: -0.02em;
+      color: #FFFFFF;
+      text-shadow: 0px 5px 50px rgba(83, 120, 149, 0.4);
+      position: absolute;
+      right: 323px;
+      bottom: 133px;
+    }
+  }
+
+  .fullRange {
+    background-color: #FFFFFF;
+    padding-top: 80px;
+    &__title {
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 34px;
+      line-height: 100%;
+      letter-spacing: -0.02em;
+      color: #021C27;
+    }
+    &__numbers {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 46px;
+      padding-bottom: 75px;
+      &__number {
+        background: linear-gradient(90deg, #FBFEFF 0%, #F0F8FC 100%);
+        border-radius: 20px;
+        width: 15.6%;
+        cursor: pointer;
+        &__text {
+          padding: 40px 0 43px 38px;
+        }
+        &__day{
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 62px;
+        line-height: 100%;
+        letter-spacing: -0.15em;
+        color: #009FE3;
+        opacity: 0.1;
+        border-bottom: 2px solid #009FE3;
+        display: inline-block;
+        padding-bottom: 13px;
+        margin-bottom: 24px
+      }
+        &__description {
+          font-family: Manrope;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 17px;
+          line-height: 130%;
+          letter-spacing: -0.02em;
+          color: #021C27;
+          width: 130px;
+        }
+      }
+    }
+  }
+
+  :host::ng-deep .footer .footer__image {
+    display: block;
+  }
+  .recuperative-block {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+  }
+  .recuperative {
+    background-color: #FFFFFF;
+  }
+  .oem {
+    background: #FFFFFF;
+    box-shadow: 0px 20px 60px rgba(2, 26, 36, 0.04);
+    border-radius: 40px;
+    display: inline-block;
+    padding: 59px 50px 66px 70px;
+  }
+  .general-press-image {
+    background-image: url("../../../assets/img/Group 385.png");
+    background-size: 100% 87%;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+  .oem h6 {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    color: #021C27;
+  }
+  .oem-p {
+    padding-top: 24px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #021C27;
+  }
+  .oem-img p {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 21px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    position: relative;
+    bottom: 45px;
+  }
+  .oem-img {
+    display: inline-block;
+  }
+  .oem-child {
+    padding-top: 46px;
+  }
+  .technological {
+    background-color: #abd5e81a;
+    display: inline-block;
+    padding: 60px 0;
+    width: 100%;
+  }
+  .blue-flag {
+    width: 100%;
+  }
+  .clients {
+    background-color: white;
+  }
+  .clients-title {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #021C27;
+    padding-top: 28px;
+  }
+  .logo-block {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-top: 63px;
+  }
+  .logo-border {
+    height: 50px;
+    border-left: 1px solid #C0C6C9;
+    opacity: 0.5;
+  }
+  .logo-child {
+    width: 204px;
+  }
+  #logo-child-first {
+    width: 204px;
+  }
+  #logo-child-last {
+    width: 204px;
+  }
+  .press-centre {
+    background: linear-gradient(180deg, #abd5e836 0%, rgba(171, 213, 232, 0) 104.43%);
+  }
+  .press-title {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #021C27;
+    padding-top: 100px;
+  }
+  .press-text {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: #021C27;
+    padding-top: 70px;
+  }
+  .blog-event {
+    background: linear-gradient(180deg, #abd5e838 0%, rgba(171, 213, 232, 0) 100.12%);
+  }
+  .blog-event h6 {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #021C27;
+    padding-top: 100px;
+    padding-left: 120px;
+  }
+
+  .blog-event p {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: #021C27;
+    padding-top: 75px;
+  }
+
+  .exhibitions-block p {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: #021C27;
+    padding-bottom: 36px;
+    padding-top: 80px;
+  }
+
+  .logos {
+    background-color: white;
+  }
+
+  .logos-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 89px;
+    padding-bottom: 110px;
+  }
+

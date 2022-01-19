@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {environment} from "../../../../environments/environment.prod";
 import {RequestService} from "../../../service/request.service";
 
@@ -8,6 +8,7 @@ import {RequestService} from "../../../service/request.service";
   styleUrls: ['./press-events.component.scss']
 })
 export class PressEventsComponent implements OnInit {
+  @Input("title")title!:string
   days:any[]=[];
   constructor(public requestService:RequestService) { }
 

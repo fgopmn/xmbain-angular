@@ -1,6 +1,7 @@
-<div class="event__container">
-  <p class="event__container__title ">События</p>
-  <div class="event__container__flex">
+<div class="event">
+  <div class="container">
+  <p class="event__title ">{{title}}</p>
+  <div class="event__flex">
     <div *ngFor="let i of days" class="event">
       <div class="event__img__month">
         <div class="event__days">
@@ -14,4 +15,5 @@
       </div>
     </div>
   </div>
+</div>
 </div>

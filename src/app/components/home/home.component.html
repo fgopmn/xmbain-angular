@@ -1,56 +1,52 @@
 <app-header></app-header>
 <div class="industrial">
   <div class="container">
-    <div class="industrial-flex">
-      <div class='industrial-text'>
+    <div class="industrial__flex">
+      <div class='industrial__text'>
         <b>Отапливайте промышленные помещения</b>
-        <p class="percent">C выгодой до 30% в год<br> с помощью воздушных теплогенераторов</p>
+        <p class="industrial__percent">C выгодой до 30% в год<br> с помощью воздушных теплогенераторов</p>
         <div style="margin-top:40px;">
           <button routerLink="/production" class="industrial__button">Оборудование</button>
         </div>
       </div>
-      <div class="industrialImg">
-        <img class="industrialImg1" src="../../../../assets/img/Group 237.png" alt="no image">
-        <img class="industrialImg2" src="../../../../assets/img/Италия - Dezainer Oulet Barberino (2) 3.png"
+      <div class="industrial__img">
+        <img class="industrial__img__one" src="../../../../assets/img/Group 237.png" alt="no image">
+        <img class="industrial__img__two" src="../../../../assets/img/Италия - Dezainer Oulet Barberino (2) 3.png"
              alt="no image">
       </div>
     </div>
-    <div class="childBlock">
-      <div class="child1">Отопление
+    <div class="industrial__types">
+      <div class="industrial__types__heating">Отопление
         промышленных объектов
       </div>
-      <div class="child1">Отопление
+      <div class="industrial__types__heating">Отопление
         сельско хозяйственных помещений
       </div>
-      <div class="child1">Отопление и парогенерация на буровых установках</div>
-      <div class="child1">Отопление шахт и рудников</div>
-      <div class="child1">Генерация горячего воздуха для технологических процессов</div>
-      <div class="child1">Крышные кондиционеры типа rooftop</div>
+      <div class="industrial__types__heating">Отопление и парогенерация на буровых установках</div>
+      <div class="industrial__types__heating">Отопление шахт и рудников</div>
+      <div class="industrial__types__heating">Генерация горячего воздуха для технологических процессов</div>
+      <div class="industrial__types__heating">Крышные кондиционеры типа rooftop</div>
     </div>
   </div>
 </div>
+
+
 <div class="equipment">
-  <div class="equipment-flex">
-    <div class="rectangle137">
-      <div class="child2"></div>
-      <div class="child2"></div>
-      <div class="child2"></div>
-    </div>
     <app-equipment></app-equipment>
-  </div>
 </div>
-<div class=" flag-block">
+
+<div class="techno">
   <div class="container">
-    <div class="flag">
-      <img class="flag-img" src="../../../../assets/img/Group 383.png" alt="no image">
-      <div class="tecnoclima-block">
-        <p class="textclima">
+    <div class="techno__picture">
+      <img class="techno__img" src="../../../../assets/img/Group 383.png" alt="no image">
+      <div class="techno__tecnoclima">
+        <p class="techno__tecnoclima__text">
           Tecnoclima
         </p>
-        <button class="video-button">
+        <button class="techno__button">
           <img src="../../../../assets/img/Group 559.png" alt="no image">
         </button>
-        <p class="tecnotext">
+        <p class="techno__tecnotext">
           Группа компаний Tecnoclima более 40 лет работает в сфере воздушного отопления.
           Головной офис и прозводство находятся в городе Тренто, Италии.
           Основные компетенции компании: проектирование и производство оборудования для нагрева,
@@ -63,47 +59,42 @@
 <div class="italy-img">
   <p>Греем<br> воздух <br> в соборах <br> Европы</p>
 </div>
+
 <div class="complex">
   <div class="container">
-    <div class="complex-block">
-      <div class="complex-child">
-        <p>
-          Комплексные<br> решения<br> <span> по отоплению,<br> охлаждению,<br> вентиляции,<br> генерации <br> горячего воздуха</span>
+    <div class="complex__flex">
+      <div>
+        <p class="complex__title">
+          Комплексные решения <br> <span> по отоплению, охлаждению, вентиляции, генерации  горячего воздуха</span>
         </p>
-        <div>
-          <button (click)="openApplication()">Оставить заявку</button>
-        </div>
-        <div><img src="../../../../assets/img/image 86.png" alt="no image"></div>
+          <button (click)="openApplication()" class="complex__click">Оставить заявку</button>
+        <img src="../../../../assets/img/image 86.png" alt="no image" class="complex__image">
       </div>
-      <div class="home__complex">
-        <div *ngFor="let item of complex">
-          <app-complex
+
+      <div class="complex__types">
+        <div class="complex__types__flex">
+          <app-complex *ngFor="let item of complex"
             [icon]="item.icon"
             [title]="item.title"
           ></app-complex>
         </div>
+
         <app-application
           [is-open]="!isApplicationOpen"
           (whenApplicationOpen)="openApplication($event)"
           class="application"
         >
-
                 <p class="application__tittle">Оставить заявку</p>
                 <p class="application__text">Оставьте свое имя с номером телефона и наши <br> специалисты свяжутся с вами.</p>
-
-
                     <form [formGroup]="form" class="application__form">
-
                       <div class="application__form__name">
                         <label for="userName">Ваше имя </label>
                         <div><input formControlName="name" type="text" id="userName"></div>
                       </div>
-
                       <div class="application__form__tel">
                         <label for="number">Телефон</label>
                        <div><input type="tel" id="number" name="number" formControlName ="number"></div>
                       </div>
-
                       <div class="application__form__checkbox">
                         <input type="checkbox"  id="check">
                         <label for="check">Отправляя заявку, даю согласие на хранение <br>
@@ -123,25 +114,24 @@
   </div>
 </div>
 <div>
-  <div class="airHeaters-block">
-    <div class="airHeaters">
+  <div class="airHeaters">
+    <div class="airHeaters__types">
 
-      <div class="airHeaters__text">
-        <div class="airHeaters__text__child"><p>Воздухонагреватели</p></div>
-        <div class="airHeaters__text__child"><p>Крышные <br> кондиционеры roof top</p></div>
-        <div class="airHeaters__text__child"><p>Водяное тепловое оборудование</p></div>
-        <div class="airHeaters__text__child"><p>Вентиляция и рекуперация тепла</p></div>
-        <div class="airHeaters__text__child"><p>Чилеры и тепловые насосы</p></div>
-        <div class="airHeaters__text__child"><p>Оборудование в специальном <br> исполнении</p></div>
+      <div class="airHeaters__type">
+        <p class="airHeaters__text">Воздухонагреватели</p>
+        <p class="airHeaters__text">Крышные кондиционеры roof top</p>
+        <p class="airHeaters__text">Водяное тепловое оборудование</p>
+        <p class="airHeaters__text">Вентиляция и рекуперация тепла</p>
+        <p class="airHeaters__text">Чилеры и тепловые насосы</p>
+        <p class="airHeaters__text">Оборудование в специальном исполнении</p>
       </div>
     </div>
-    <div class="rectangle360">
+    <div class="airHeaters__picture">
       <img src="../../../../assets/img/Group 210.png" alt="no image">
     </div>
-    <div class="check">
-      <div class="check-block">
-        <p class="check-title">Топливо</p>
-        <div class="check-block1">
+    <div class="airHeaters__check">
+        <div>
+          <p class="airHeaters__check__title">Топливо</p>
           <ul>
             <li><input type="checkbox" id="check-one">
               <label for="check-one">Универсальное</label></li>
@@ -153,8 +143,8 @@
               <label for="check-four">Вода</label></li>
           </ul>
         </div>
-        <div class="check-block2">
-          <p>Назначение</p>
+        <div>
+          <p class="airHeaters__check__title">Назначение</p>
           <ul>
             <li><input type="checkbox" id="check-one1">
               <label for="check-one1">Отопление</label></li>
@@ -164,8 +154,8 @@
               <label for="check-three1">Рекуперация тепла</label></li>
           </ul>
         </div>
-        <div class="check-block3">
-          <p>Расположение</p>
+        <div>
+          <p class="airHeaters__check__title">Расположение</p>
           <ul>
             <li><input type="checkbox" id="check-one2">
               <label for="check-one2">Внутри помещения</label></li>
@@ -173,28 +163,26 @@
               <label for="check-two2">Снаружи помещения</label></li>
           </ul>
         </div>
-        <button class="check-click">Показать</button>
+        <button class="airHeaters__check__click">Показать</button>
       </div>
-      <div></div>
-      <div></div>
     </div>
-
   </div>
-</div>
+
 
 
 <div class="fermax">
-  <p>Создаем <br> климат <br> для урожая <br> на фермах</p>
+  <p class="fermax__text">Создаем <br> климат <br> для урожая <br> на фермах</p>
 </div>
-<div class="global-fullRange">
+
+<div class="fullRange">
   <div class="container">
     <div class="fullRange">
-      <p class="full-title">Полный комплекс услуг</p>
-      <div class="numbers-block">
-        <div routerLink="/services" class="numbers" *ngFor="let item of getList">
-          <div class="num-text">
-            <p class="numbers-number">{{item.day}}</p>
-            <p class="numbers-text">{{item.text}}</p>
+      <p class="fullRange__title">Полный комплекс услуг</p>
+      <div class="fullRange__numbers">
+        <div routerLink="/services" class="fullRange__numbers__number" *ngFor="let item of getList">
+          <div class="fullRange__numbers__number__text">
+            <p class="fullRange__numbers__number__day">{{item.day}}</p>
+            <p class="fullRange__numbers__number__description">{{item.text}}</p>
           </div>
         </div>
       </div>
@@ -253,7 +241,8 @@
   <app-press-blog></app-press-blog>
 </div>
 
-  <app-press-events></app-press-events>
+  <app-press-events
+  [title]="'События'"></app-press-events>
   <div class="exhibitions-block">
     <div class="container">
       <p>Выставки</p>

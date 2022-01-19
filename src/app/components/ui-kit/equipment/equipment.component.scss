@@ -1,4 +1,4 @@
-.equipment__flex{
+.equipment{
   width: 87%;
   max-width: 1440px;
   margin:0 auto;
@@ -7,24 +7,35 @@
   border-radius: 40px;
   position: relative;
   padding-left:70px;
-
   &__tittle{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 34px;
-  line-height: 120%;
-  padding: 56px 0;
-  color: black;
-    span {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 120%;
+    padding: 56px 0;
+    color: black;
+   span {
       opacity: 0.5;
     }
 }
-}
-.techno-img{
-    position: absolute;
-    bottom: 65px;
-    right:120px
+  &__click{
+    background: #E3061B;
+    border-radius: 5px;
+    border:none;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 120%;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding:12px 25px;
+    margin-top:28px;
+    margin-bottom:46px;
+    cursor: pointer;
+  }
 }
 .general__tabs{
   width: 692px;
@@ -45,16 +56,9 @@
   }
 }
 
-.data-rules-flex{
-  display: flex;
-}
-
-
-
 .fuel{
   display: flex;
   margin-top: 55px;
-
   background-color: #FFFFFF;
   &:last-child {
     margin-right: 0;
@@ -71,8 +75,6 @@
     letter-spacing: 0.2px;
     color: #021C27;
     margin-bottom: 17px;
-
-
     b{
       font-family: Manrope;
       font-style: normal;
@@ -92,35 +94,7 @@
     overflow: hidden;
   }
 }
-.fuel-flex:nth-child(n+2){
-  padding-left: 297px;
-}
-.continue-click{
-  background: #E3061B;
-  border-radius: 5px;
-  border:none;
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 120%;
-  letter-spacing: 0.2px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  padding:12px 25px;
-  margin-top:28px;
-  margin-bottom:46px;
-  cursor: pointer;
-}
-
-.download-block{
-  display:flex;
-  margin-top:33px;
-}
-.download{
-  display: flex;
-}
-.info__block{
+.info{
   display: flex;
   border-top: 1px dashed #009FE3;
   width: 57%;
@@ -131,9 +105,6 @@
     margin-top: 33px;
     margin-bottom: 56px;
     cursor: pointer;
-    &__download-icon{
-      margin-right:15px;
-    }
     p{
       font-family: Manrope;
       font-style: normal;
@@ -154,9 +125,15 @@
     align-items: flex-start;
     margin-top: 33px;
     margin-bottom: 56px;
-
   }
-
+  &__img{
+    position: absolute;
+    bottom: 65px;
+    right:120px
+  }
+  &__icon{
+    margin-right:15px;
+  }
 }
 
 

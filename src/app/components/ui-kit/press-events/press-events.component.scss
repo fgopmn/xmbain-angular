@@ -1,8 +1,5 @@
-.event__container{
-  width:83%;
-  margin:auto;
-  padding-top: 80px;
-  max-width: 1440px;
+.event{
+  padding-top:80px;
     &__title{
       font-family: Manrope;
       font-style: normal;
@@ -17,10 +14,8 @@
        flex-wrap: wrap;
        justify-content: space-between;
      }
-
 }
-
-.event__container__flex .event{
+.event__flex .event{
   background: #FFFFFF;
   box-shadow: 0 5px 40px rgba(2, 26, 36, 0.04);
   border-radius: 20px;
