@@ -1,15 +1,13 @@
-<div class="heating-container">
-  <div class="heating-global">
-    <div *ngFor="let item of getList" class="system">
-      <div class="system-container">
-        <button class="system-click">{{item.button}}</button>
-        <p class="system-title">{{item.title}}</p>
-        <p class="system-text">{{item.text}}</p>
-        <div class="person-data">
-          <img src="{{item.img}}" alt="" class="system-person">
-          <p class="system-info">{{item.info}}</p>
+<div class="container">
+  <div class="heating">
+    <div *ngFor="let item of getList" class="heating__system">
+        <button class="heating__button">{{item.button}}</button>
+        <p class="heating__title">{{item.title}}</p>
+        <p class="heating__text">{{item.text}}</p>
+        <div class="heating__person-data">
+          <img src="{{item.img}}" alt="" class="heating__person">
+          <p class="heating__info">{{item.info}}</p>
         </div>
-      </div>
       </div>
     </div>
   </div>

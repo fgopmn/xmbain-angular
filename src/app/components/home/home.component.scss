@@ -391,10 +391,6 @@
     }
   }
 }
-
-
-
-
 .airHeaters {
   display: flex;
   background-color: white;
@@ -495,23 +491,6 @@
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   .fermax {
     background-image: url("../../../assets/img/Mask Group (1).jpg");
     background-size: 100% 100%;
@@ -533,7 +512,6 @@
       bottom: 133px;
     }
   }
-
   .fullRange {
     background-color: #FFFFFF;
     padding-top: 80px;
@@ -586,160 +564,116 @@
       }
     }
   }
-
   :host::ng-deep .footer .footer__image {
     display: block;
   }
-  .recuperative-block {
+  .recuperative {
+    background-color: #FFFFFF;
+    &__type {
     display: flex;
     justify-content: space-between;
     padding-bottom: 80px;
+      &__title{
+          margin-top:15px;
+          font-family: Manrope;
+          font-style: normal;
+          font-weight: 800;
+          font-size: 34px;
+          line-height: 110%;
+          letter-spacing: -0.02em;
+          color: #021C27;
+      }
+      &__text{
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 140%;
+        letter-spacing: 0.2px;
+        color: #021C27;
+        margin-top:24px;
+      }
   }
-  .recuperative {
-    background-color: #FFFFFF;
+    &__logo{
+      box-shadow: 0px 20px 60px rgba(2, 26, 36, 0.04);
+      border-radius: 40px;
+      display: inline-block;
+      padding: 59px 50px 66px 70px;
+      &__radius{
+        border-radius: 50%;
+        background: #009FE3;
+        width: 60px;
+        height: 60px;
+       p{
+          font-family: Manrope;
+          font-style: normal;
+          font-weight: 800;
+          font-size: 21px;
+          line-height: 120%;
+          text-align: center;
+          letter-spacing: -0.02em;
+          color: #FFFFFF;
+         padding-top: 17px;
+        }
+      }
+    }
+    &__type-two{
+      padding-top: 46px;
+    }
   }
-  .oem {
-    background: #FFFFFF;
-    box-shadow: 0px 20px 60px rgba(2, 26, 36, 0.04);
-    border-radius: 40px;
-    display: inline-block;
-    padding: 59px 50px 66px 70px;
-  }
-  .general-press-image {
-    background-image: url("../../../assets/img/Group 385.png");
-    background-size: 100% 87%;
-    background-repeat: no-repeat;
-    background-position: top center;
-  }
-  .oem h6 {
-    font-family: Manrope;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 34px;
-    line-height: 110%;
-    letter-spacing: -0.02em;
-    color: #021C27;
-  }
-  .oem-p {
-    padding-top: 24px;
-    font-family: Manrope;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 140%;
-    letter-spacing: 0.2px;
-    color: #021C27;
-  }
-  .oem-img p {
-    font-family: Manrope;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 21px;
-    line-height: 120%;
-    text-align: center;
-    letter-spacing: -0.02em;
-    color: #FFFFFF;
-    position: relative;
-    bottom: 45px;
-  }
-  .oem-img {
-    display: inline-block;
-  }
-  .oem-child {
-    padding-top: 46px;
-  }
+
   .technological {
     background-color: #abd5e81a;
-    display: inline-block;
     padding: 60px 0;
-    width: 100%;
   }
-  .blue-flag {
-    width: 100%;
-  }
+
   .clients {
     background-color: white;
+    &__title {
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 46px;
+      line-height: 120%;
+      letter-spacing: -0.02em;
+      color: #021C27;
+      padding-top: 28px;
+    }
+    &__flag {
+      width: 100%;
+    }
   }
-  .clients-title {
-    font-family: Manrope;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 46px;
-    line-height: 120%;
-    letter-spacing: -0.02em;
-    color: #021C27;
-    padding-top: 28px;
-  }
-  .logo-block {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    margin-top: 63px;
-  }
-  .logo-border {
-    height: 50px;
-    border-left: 1px solid #C0C6C9;
-    opacity: 0.5;
-  }
-  .logo-child {
-    width: 204px;
-  }
-  #logo-child-first {
-    width: 204px;
-  }
-  #logo-child-last {
-    width: 204px;
-  }
-  .press-centre {
+  .press {
     background: linear-gradient(180deg, #abd5e836 0%, rgba(171, 213, 232, 0) 104.43%);
+    &__title {
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 46px;
+      line-height: 120%;
+      letter-spacing: -0.02em;
+      color: #021C27;
+      padding-top: 100px;
+    }
+    &__text {
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 34px;
+      line-height: 100%;
+      letter-spacing: -0.02em;
+      color: #021C27;
+      padding-top: 70px;
+    }
+    &__images {
+      background-image: url("../../../assets/img/Group 385.png");
+      background-size: 100% 87%;
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
   }
-  .press-title {
-    font-family: Manrope;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 46px;
-    line-height: 120%;
-    letter-spacing: -0.02em;
-    color: #021C27;
-    padding-top: 100px;
-  }
-  .press-text {
-    font-family: Manrope;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 34px;
-    line-height: 100%;
-    letter-spacing: -0.02em;
-    color: #021C27;
-    padding-top: 70px;
-  }
-  .blog-event {
-    background: linear-gradient(180deg, #abd5e838 0%, rgba(171, 213, 232, 0) 100.12%);
-  }
-  .blog-event h6 {
-    font-family: Manrope;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 46px;
-    line-height: 120%;
-    letter-spacing: -0.02em;
-    color: #021C27;
-    padding-top: 100px;
-    padding-left: 120px;
-  }
-
-  .blog-event p {
-    font-family: Manrope;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 34px;
-    line-height: 100%;
-    letter-spacing: -0.02em;
-    color: #021C27;
-    padding-top: 75px;
-  }
-
-  .exhibitions-block p {
+  .exhibitions{
+  p {
     font-family: Manrope;
     font-style: normal;
     font-weight: 800;
@@ -750,16 +684,27 @@
     padding-bottom: 36px;
     padding-top: 80px;
   }
-
+  }
   .logos {
     background-color: white;
-  }
-
-  .logos-block {
+    &__block {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 89px;
     padding-bottom: 110px;
+
+    &__image {
+      width: 204px;
+    }
+    &__images{
+      width: 204px;
+    }
+    &__images-last {
+      width: 204px;
+    }
   }
+  }
+
+
 

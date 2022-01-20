@@ -1,4 +1,30 @@
 
+<!--<div class="slider">-->
+<!--  <div class="slider__left">-->
+<!--    <img src="./../../../../assets/air-heaters/left.png" alt="">-->
+<!--  </div>-->
+<!--  <div class="slider__right">-->
+<!--    <img src="./../../../../assets/air-heaters/right.png" alt="">-->
+<!--  </div>-->
+<!--  <div class="container">-->
+
+
+<!--  <div class="slider__block">-->
+
+<!--    <div class="slider__block__child" *ngFor="let item of getList">-->
+
+<!--      <img src="{{item.img}}" alt="">-->
+<!--      <div class="slider__block__child__flex"  >-->
+<!--        <h6><a  routerLink="/page-solution">{{item.title}}</a></h6>-->
+<!--        <p>{{item.text}}</p>-->
+<!--      </div>-->
+
+<!--    </div>-->
+
+<!--  </div>-->
+<!--  </div>-->
+<!--</div>-->
+
 <div class="slider">
   <div class="slider__left">
     <img src="./../../../../assets/air-heaters/left.png" alt="">
@@ -6,21 +32,20 @@
   <div class="slider__right">
     <img src="./../../../../assets/air-heaters/right.png" alt="">
   </div>
+
   <div class="container">
 
+    <div class="slider__block">
 
-  <div class="slider__block">
+      <div class="slider__block__child" *ngFor="let item of getList">
+        <img src="{{item.img}}" alt="">
+        <div class="slider__block__child__flex"  >
+          <h6><a  routerLink="/page-solution">{{item.title}}</a></h6>
+          <p>{{item.text}}</p>
+        </div>
 
-    <div class="slider__block__child" *ngFor="let item of getList">
-
-      <img src="{{item.img}}" alt="">
-      <div class="slider__block__child__flex"  >
-        <h6><a  routerLink="/page-solution">{{item.title}}</a></h6>
-        <p>{{item.text}}</p>
       </div>
 
     </div>
-
-  </div>
   </div>
 </div>
