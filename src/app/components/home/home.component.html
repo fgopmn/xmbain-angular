@@ -64,9 +64,9 @@
   <div class="container">
     <div class="complex__flex">
       <div>
-        <p class="complex__title">
+        <a routerLink="/solution-examples"  class="complex__title">
           Комплексные решения <br> <span> по отоплению, охлаждению, вентиляции, генерации  горячего воздуха</span>
-        </p>
+        </a> <br>
           <button (click)="openApplication()" class="complex__click">Оставить заявку</button>
         <img src="../../../../assets/img/image 86.png" alt="no image" class="complex__image">
       </div>
@@ -216,19 +216,7 @@
       <img class="blue-flag" src="../../../assets/img/image 125 (1).png" alt="no image">
       <p class="clients-title">Клиенты</p>
     </div>
-    <div class="logo-block">
-      <div id="logo-child-first"><img src="../../../assets/img/Vector (2).png" alt="no image"></div>
-      <div class="logo-border"></div>
-      <div class="logo-child"><img src="../../../assets/img/Group 289.png" alt="no image"></div>
-      <div class="logo-border"></div>
-      <div class="logo-child"><img src="../../../assets/img/Group 290.png" alt="no image"></div>
-      <div class="logo-border"></div>
-      <div class="logo-child"><img src="../../../assets/img/Group (1).png" alt="no image"></div>
-      <div class="logo-border"></div>
-      <div class="logo-child"><img src="../../../assets/img/Group 291.png" alt="no image"></div>
-      <div class="logo-border"></div>
-      <div id="logo-child-last"><img src="../../../assets/img/Алмазная шахта Мир.png" alt="no image"></div>
-    </div>
+    <app-logos></app-logos>
   </div>
 </div>
 <app-slider></app-slider>

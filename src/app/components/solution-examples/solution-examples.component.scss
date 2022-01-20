@@ -33,3 +33,40 @@
   margin: auto;
   max-width: 1440px;
 }
+.techno-flex{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.techno-flex-title{
+  padding-bottom: 60px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+}
+.techno-block{
+  padding:35px 15px 43px 15px;
+
+}
+.techno-img{
+  margin:0 46px;
+}
+.techno-description{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  width:255px;
+  margin:auto;
+}
+.logos-block-global{
+  padding-bottom: 80px;
+}

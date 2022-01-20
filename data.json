@@ -42,8 +42,8 @@
     },
     {
       "id": 9,
-      "icon": "../../../assets/icons/Vectors.png",
-      "title": "Школы и спорт центры"
+      "icon": "../../../assets/icons/Vector (2).png",
+      "title": "Производство"
     },
     {
       "id":10,
@@ -115,7 +115,7 @@
   "fuel":[
     {
       "id":1,
-      "icon": "../../../assets/icons/Group.png",
+      "icon": "../../../assets/icons/Vector.png",
       "title": "Топливо",
       "mainText1": "Универсальное",
       "mainText2": "Газ",

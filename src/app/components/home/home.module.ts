@@ -5,6 +5,7 @@ import {MainModule} from "../main/main.module";
 import {UiKitModule} from "../ui-kit/ui-kit.module";
 import {ReactiveFormsModule} from "@angular/forms";
 import {HomeComponent} from "./home.component";
+import {RouterModule} from "@angular/router";
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import {HomeComponent} from "./home.component";
     HomeRoutingModule,
     MainModule,
     UiKitModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule
 
   ]
 })

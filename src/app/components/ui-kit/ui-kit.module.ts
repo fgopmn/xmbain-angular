@@ -30,6 +30,10 @@ import {RouterModule} from "@angular/router";
 import { ConsultationComponent } from './consultation/consultation.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import { SeoFilterComponent } from './seo-filter/seo-filter.component';
+import { LogosComponent } from './logos/logos.component';
+import { SolutionExampelsHeaderComponent } from './solution-exampels-header/solution-exampels-header.component';
+import { IndustriesComponent } from './industries/industries.component';
+import { SeriesComponent } from './series/series.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +64,11 @@ import { SeoFilterComponent } from './seo-filter/seo-filter.component';
     InstructionsComponent,
     ApplicationComponent,
     ConsultationComponent,
-    SeoFilterComponent
+    SeoFilterComponent,
+    LogosComponent,
+    SolutionExampelsHeaderComponent,
+    IndustriesComponent,
+    SeriesComponent
   ],
   exports: [
     ComplexComponent,
@@ -90,7 +98,11 @@ import { SeoFilterComponent } from './seo-filter/seo-filter.component';
     InstructionsComponent,
     ApplicationComponent,
     ConsultationComponent,
-    SeoFilterComponent
+    SeoFilterComponent,
+    LogosComponent,
+    SolutionExampelsHeaderComponent,
+    IndustriesComponent,
+    SeriesComponent
   ],
 
   imports: [

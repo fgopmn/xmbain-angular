@@ -71,6 +71,10 @@ const routes: Routes = [
     loadChildren: () => import('./components/services/services.module').then(m => m.ServicesModule)
   },
   {
+    path:"solution-examples",
+    loadChildren: () => import('./components/solution-examples/solution-examples.module').then(m => m.SolutionExamplesModule)
+  },
+  {
     path:"contacts",
     loadChildren: () => import('./components/contacts/contacts.module').then(m => m.ContactsModule)
   }
@@ -79,6 +83,7 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     PressComponent,
+
   ],
   imports: [
     BrowserModule,

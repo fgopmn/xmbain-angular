@@ -12,16 +12,31 @@
 
 <app-solution-exampels-header></app-solution-exampels-header>
 
-<app-industries></app-industries>
+    <app-industries></app-industries>
+
+
 
 <div>
   <div class="red-flag">
     <img src="../../../assets/img/Group 396.png" height="86" width="1000"/></div>
 </div>
 
+
+  <div class="container">
+    <p class="techno-flex-title">Оборудование</p>
+    <div class="techno-flex">
+      <div *ngFor="let item of technoImg" class="techno-block">
+        <img src="{{item.img}}" alt="no image" class="techno-img">
+        <p class="techno-description">{{item.description}}</p>
+      </div>
+    </div>
+  </div>
+
+
+
 <app-series></app-series>
 
-<div>
+<div class="logos-block-global">
   <div class="container">
     <app-logos></app-logos>
   </div>
