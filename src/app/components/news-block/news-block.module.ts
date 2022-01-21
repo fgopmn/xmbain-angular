@@ -9,12 +9,15 @@ import {NewsStoriesComponent} from "../ui-kit/news-stories/news-stories.componen
 
 
 @NgModule({
-  declarations: [NewsBlockComponent, NewsStoriesComponent],
-  imports: [
-    CommonModule,
-    NewsBlockRoutingModule,
-    UiKitModule,
-    MainModule,
-  ]
+    declarations: [NewsBlockComponent, NewsStoriesComponent],
+    exports: [
+        NewsStoriesComponent
+    ],
+    imports: [
+        CommonModule,
+        NewsBlockRoutingModule,
+        UiKitModule,
+        MainModule,
+    ]
 })
 export class NewsBlockModule { }
