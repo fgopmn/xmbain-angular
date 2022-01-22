@@ -10,6 +10,7 @@ import {UiKitModule} from "./components/ui-kit/ui-kit.module";
 
 
 
+
 const routes: Routes = [
   {
     path:"",
@@ -83,6 +84,7 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     PressComponent,
+
 
   ],
   imports: [
