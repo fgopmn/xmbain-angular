@@ -1,0 +1,83 @@
+<app-header></app-header>
+
+<div style="background-color: white;">
+  <div class="container">
+    <div class="navigation">
+      <ul>
+        <li>Главная</li>
+        <li> > </li>
+        <li>Пресс-центр</li>
+        <li> > </li>
+        <li>Выставки</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="image-block">
+  <div class="image-block-shadow">
+  <div class="image-block__container">
+    <h1 class="image-block__container__title">Mostra Convegno<br> Expocomfort 2020</h1>
+
+      <app-exhibitions
+        *ngFor="let j of show"
+        [day]="j.day"
+        [month]="j.month"
+        [day2]="j.day2"
+        [text]="j.text"
+        class="image-block__container__data"
+      >
+      </app-exhibitions>
+
+  </div>
+  </div>
+</div>
+<app-news-stories></app-news-stories>
+<div class="global-tittle-blogg">
+  <div  class="container">
+    <h5 class="title-name">Выставки</h5>
+  </div>
+</div>
+
+<div>
+  <div class="container">
+    <div class="exhibition_one">
+      <app-exhibitions
+        *ngFor="let j of show"
+        [day]="j.day"
+        [month]="j.month"
+        [day2]="j.day2"
+        [text]="j.text"
+      >
+      </app-exhibitions>
+    </div>
+
+    <div class="">
+      <app-exhibitions
+        *ngFor="let j of showTwo"
+        [day]="j.day"
+        [month]="j.month"
+        [day2]="j.day2"
+        [text]="j.text"
+        [isShadow]="true"
+      >
+      </app-exhibitions>
+    </div>
+
+    <div class="exhibition-three">
+      <app-exhibitions
+        *ngFor="let j of showThree"
+        [day]="j.day"
+        [month]="j.month"
+        [day2]="j.day2"
+        [text]="j.text"
+        [isShadow]="true"
+      >
+      </app-exhibitions>
+    </div>
+
+
+
+  </div>
+  <div  class="container"><button class="event-click"><span>Все выставки</span></button></div>
+</div>
+<app-footer></app-footer>

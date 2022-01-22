@@ -6,6 +6,7 @@
   line-height: 140%;
   letter-spacing: 0.2px;
   color: #000000;
+  padding-top: 70px;
 }
 .flex-container {
   display: flex;
@@ -40,6 +41,33 @@
   letter-spacing: 0.2px;
   color: #021C27;
   padding-left: 121px;
-  padding-top: 175px;
+  padding-top: 245px;
   padding-bottom: 175px;
+}
+.contain-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.text-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.text-information {
+  width: 57%;
+}
+.text-conference-info {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  padding-top: 77px;
+  padding-right: 116px;
+  padding-bottom: 100px;
 }

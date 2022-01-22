@@ -7,6 +7,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {PressComponent } from './components/press/press.component';
 import {MainModule} from "./components/main/main.module";
 import {UiKitModule} from "./components/ui-kit/ui-kit.module";
+import { NewsExhibitionComponent } from './components/news-exhibition/news-exhibition.component';
 
 
 
@@ -78,7 +79,12 @@ const routes: Routes = [
   {
     path:"contacts",
     loadChildren: () => import('./components/contacts/contacts.module').then(m => m.ContactsModule)
+  },
+  {
+    path:"news-exhibition",
+    loadChildren: () => import('./components/news-exhibition/news-exhibition.module').then(m => m.NewsExhibitionModule)
   }
+
 ];
 @NgModule({
   declarations: [
