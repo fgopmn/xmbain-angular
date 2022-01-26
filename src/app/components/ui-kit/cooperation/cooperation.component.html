@@ -1,0 +1,13 @@
+<div class="backOverlay"
+     [class.backOverlay_show]="isOpenProps"
+>
+</div>
+<div class="cooperation"
+
+     [class.cooperation_show]="isOpenProps"
+>
+  <button class="cooperation__close__button"   (click)="closeCooperation()">X</button>
+  <ng-content></ng-content>
+</div>
+
+

@@ -11,6 +11,7 @@ import { NewsExhibitionComponent } from './components/news-exhibition/news-exhib
 
 
 
+
 const routes: Routes = [
   {
     path:"",

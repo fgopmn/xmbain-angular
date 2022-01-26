@@ -34,6 +34,7 @@ import { LogosComponent } from './logos/logos.component';
 import { SolutionExampelsHeaderComponent } from './solution-exampels-header/solution-exampels-header.component';
 import { IndustriesComponent } from './industries/industries.component';
 import { SeriesComponent } from './series/series.component';
+import { CooperationComponent } from './cooperation/cooperation.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,8 @@ import { SeriesComponent } from './series/series.component';
     LogosComponent,
     SolutionExampelsHeaderComponent,
     IndustriesComponent,
-    SeriesComponent
+    SeriesComponent,
+    CooperationComponent
   ],
   exports: [
     ComplexComponent,
@@ -102,7 +104,8 @@ import { SeriesComponent } from './series/series.component';
     LogosComponent,
     SolutionExampelsHeaderComponent,
     IndustriesComponent,
-    SeriesComponent
+    SeriesComponent,
+    CooperationComponent
   ],
 
   imports: [

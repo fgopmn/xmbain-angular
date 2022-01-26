@@ -1,10 +1,7 @@
 .partners-global{
   background: white;
 }
-.partners-container{
-  width:83%;
-  margin: auto;
-}
+
 .partner-group{
   margin-right: 85px;
 }
@@ -138,3 +135,95 @@ padding-bottom: 14px;
 :host::ng-deep .footer .footer__image{
   display: block;
 }
+.cooperation{
+  &__blue__flag{
+
+  }
+  &__tittle{
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #021C27;
+    margin-top: 80px;
+
+  }
+  &__text{
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 160%;
+    color: #021C27;
+    margin-top: 34px;
+    margin-bottom: 10px;
+
+  }
+  &__form{
+
+    &__type{
+
+      margin-top: 30px;
+      label{
+
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 120%;
+        letter-spacing: 0.2px;
+        color: #021C27;
+      }
+      input{
+        width: 488px;
+        height: 50px;
+        background: #FFFFFF;
+        opacity: 0.6;
+        border: 1px solid #C0C6C9;
+        box-sizing: border-box;
+        border-radius: 5px;
+        padding: 10px 10px;
+      }
+    }
+    &__type2{
+      display: flex;
+      align-items: center;
+      margin-top:23px;
+      margin-bottom: 30px;
+    &__checkbox{
+    width: 16px;
+      height:16px;
+      cursor: pointer;
+      margin-right: 8px;
+    }
+      label{
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 120%;
+        letter-spacing: 0.2px;
+        color: black;
+      }
+    }
+
+    &__button{
+      cursor: pointer;
+      background: #009FE3;
+      border-radius: 5px;
+      padding: 13px 24px;
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 17px;
+      line-height: 120%;
+      letter-spacing: 0.2px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      border: none;
+    }
+  }
+}
+

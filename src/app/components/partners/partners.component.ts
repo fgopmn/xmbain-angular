@@ -2,6 +2,8 @@ import {Component, OnInit} from '@angular/core';
 import {environment} from "../../../environments/environment.prod";
 import {RequestService} from "../../service/request.service";
 import {TaskInterface} from "../../interfaces/task";
+import {FormBuilder, Validators} from "@angular/forms";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-partners',
@@ -15,7 +17,17 @@ export class PartnersComponent implements OnInit {
   educationList: TaskInterface[] = [];
   suggestionList: TaskInterface[] = [];
 
-  constructor(public requestService: RequestService) {
+  public isCooperationOpen:boolean = true;
+
+  form = this.fb.group({
+    name:["", [Validators.required, Validators.min(8)]],
+    number:["", [Validators.required, Validators.min(8)]],
+    email: ['',Validators.pattern(/^[a-zA-Z0-9_\.\-]+\@[a-zA-Z0-9\-]+\.+[a-zA-Z0-9]{2,6}/)],
+  })
+
+  constructor(public requestService: RequestService,
+              public fb: FormBuilder,
+              public route: Router) {
   }
 
   ngOnInit(): void {
@@ -24,6 +36,10 @@ export class PartnersComponent implements OnInit {
     this.getExperience()
     this.getEducation()
     this.getSuggestion()
+  }
+
+  public openCooperation(val?:boolean) {
+    this.isCooperationOpen = val ? val : !this.isCooperationOpen
   }
 
   getInvite() {
