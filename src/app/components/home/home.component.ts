@@ -13,6 +13,7 @@ import {Router} from "@angular/router";
 export class HomeComponent implements OnInit{
  complex: any[] = [];
   getList: any[] = [];
+  getSlide: any[] = [];
   day:string="17";
   day2:string="20";
   month:string="сентября";
@@ -31,6 +32,7 @@ export class HomeComponent implements OnInit{
   ngOnInit() {
     this.getRequest()
     this.getComplex()
+    this.getSlider()
   }
 
   public openApplication(val?:boolean) {
@@ -46,6 +48,10 @@ export class HomeComponent implements OnInit{
     this.requestService.getData(`${environment.url}${environment.complex.get}`).subscribe((items:any) => {
       this.complex = items
     })
-
   }
+  getSlider(){
+   this.requestService.getData(`${environment.url}${environment.slider.get}`).subscribe((items:any) => {
+      this.getSlide = items
+     })
+    }
 }

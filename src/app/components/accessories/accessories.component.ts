@@ -9,11 +9,14 @@ import {RequestService} from "../../service/request.service";
 export class AccessoriesComponent implements OnInit {
   accessories:any[] = [];
   equipment: any[] = [];
+  getSlide: any[] = [];
+
   constructor(public requestService:RequestService) { }
 
   ngOnInit(): void {
     this.getAccesssories()
     this.getEquipment()
+    this.getSlider()
   }
   getAccesssories() {
     this.requestService.getData(`${environment.url}${environment.accessories.get}`).subscribe((items:any)=>{
@@ -25,6 +28,10 @@ export class AccessoriesComponent implements OnInit {
       this.equipment = items
     })
   }
-
+  getSlider(){
+    this.requestService.getData(`${environment.url}${environment.slider.get}`).subscribe((items:any) => {
+      this.getSlide = items
+    })
+  }
 
 }

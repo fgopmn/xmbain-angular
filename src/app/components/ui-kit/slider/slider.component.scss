@@ -1,8 +1,8 @@
 .slider{
-  background-color: #FFFFFF;
-  padding-top: 52px;
-  padding-bottom: 116px;
-  position: relative;
+  background: linear-gradient(90deg, #FBFEFF 0%, #F0F8FC 100%);
+  border-radius: 40px;
+  display: flex;
+  width: 590px;
   &__title{
     font-family: Manrope;
     font-style: normal;
@@ -11,32 +11,9 @@
     line-height: 120%;
     letter-spacing: -0.02em;
     color: #021C27;
-
   }
-    &__left{
-    position: absolute;
-    top:41%;
-    left:42px;
-    width: 48px;
-    height: 48px;
-  }
-    &__right{
-       position: absolute;
-       top:41%;
-       right:42px;
-       width: 48px;
-       height: 48px;
-     }
-      &__block{
-        display: flex;
-        justify-content: space-between;
 
 
-        &__child{
-        max-width: 49.16%;
-        background: linear-gradient(90deg, #FBFEFF 0%, #F0F8FC 100%);
-        border-radius: 40px;
-        display: flex;
           &__flex p{
             font-family: Manrope;
             font-style: normal;
@@ -65,8 +42,6 @@
               color: #021C27;
             }
           }
-      }
-      }
 }
 
 

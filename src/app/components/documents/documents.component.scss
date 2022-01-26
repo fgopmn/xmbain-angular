@@ -108,5 +108,27 @@
 }
 :host::ng-deep .footer .footer__image{
   display: block;
+}
 
+.slider{
+  position:relative;
+  padding-bottom: 116px;
+  &__flex{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__left{
+    position: absolute;
+    top:41%;
+    left:42px;
+    width: 48px;
+    height: 48px;
+  }
+  &__right{
+    position: absolute;
+    top:41%;
+    right:42px;
+    width: 48px;
+    height: 48px;
+  }
 }

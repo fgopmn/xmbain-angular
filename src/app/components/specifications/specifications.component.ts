@@ -8,14 +8,21 @@ import{RequestService} from "../../service/request.service";
 })
 export class SpecificationsComponent implements OnInit {
   equipment:any[]=[]
+  getSlide:any[]=[]
   constructor(public requestService:RequestService) { }
 
   ngOnInit(): void {
-    this. getEquipment()
+    this.getEquipment()
+    this.getSlider()
   }
   getEquipment(){
     this.requestService.getData(`${environment.url}${environment.related.get}`).subscribe((items:any) => {
       this.equipment = items
+    })
+  }
+  getSlider(){
+    this.requestService.getData(`${environment.url}${environment.slider.get}`).subscribe((items:any) => {
+      this.getSlide = items
     })
   }
 }

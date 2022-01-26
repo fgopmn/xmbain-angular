@@ -11,6 +11,7 @@ import {Router} from "@angular/router";
 })
 export class SeoComponent implements OnInit {
   getList: any[] = [];
+  getSlide: any[] = [];
 
   public isConsultationOpen:boolean = true;
 
@@ -26,6 +27,7 @@ export class SeoComponent implements OnInit {
   ngOnInit(): void {
     this.getRequest()
     this.getRequest2()
+    this.getSlider()
   }
 
   public openConsultation(val?:boolean) {
@@ -40,6 +42,11 @@ export class SeoComponent implements OnInit {
   getRequest2(){
     this.requestService.getData(`${environment.url}${environment.seo2.get}`).subscribe((items:any) => {
       this.getList = items
+    })
+  }
+  getSlider(){
+    this.requestService.getData(`${environment.url}${environment.slider.get}`).subscribe((items:any) => {
+      this.getSlide = items
     })
   }
 }

@@ -443,10 +443,26 @@
   line-height: 120%;
   letter-spacing: -0.02em;
   color: #021C27;
-
 }
-
 .flag{
   background: linear-gradient(180deg, #abd5e870 0%, rgba(171, 213, 232, 0) 104.43%);
-
 }
+
+.slider{
+  padding-bottom: 116px;
+  &__flex{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.airHeaters-title{
+  padding-bottom: 60px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+}
+

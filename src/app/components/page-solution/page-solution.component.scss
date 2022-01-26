@@ -243,3 +243,10 @@ product{
 .slider-global{
   background: linear-gradient(180deg, #abd5e824 4.17%, rgba(255, 255, 255, 0.12) 100%);
 }
+.slider{
+  padding-bottom: 116px;
+  &__flex{
+    display: flex;
+    justify-content: space-between;
+  }
+}
