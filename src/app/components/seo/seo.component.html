@@ -128,7 +128,22 @@
 
 </div>
 
-<app-slider></app-slider>
-
+<div class="airHeaters-slider-title">
+  <div class="container">
+    <p class="airHeaters-title">Примеры решений</p>
+  </div>
+</div>
+<div class="slider">
+  <div class="container">
+    <div class="slider__flex">
+      <app-slider
+        *ngFor="let item of getSlide"
+        [img]=item.img
+        [title]=item.title
+        [text]=item.text
+      ></app-slider>
+    </div>
+  </div>
+</div>
 <app-equipment></app-equipment>
 <app-footer></app-footer>

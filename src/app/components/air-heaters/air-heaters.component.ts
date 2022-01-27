@@ -13,11 +13,13 @@ export class AirHeatersComponent implements OnInit {
   getair:any[] = [];
   heats:any[]=[]
   equipment:any[]=[]
+  getSlide:any[]=[]
 
   ngOnInit(): void {
     this.getAir()
     this.getHeat()
     this.getEquipment()
+    this.getSlider()
   }
 
   getAir(){
@@ -34,6 +36,11 @@ export class AirHeatersComponent implements OnInit {
   getEquipment(){
     this.requestService.getData(`${environment.url}${environment.related.get}`).subscribe((items:any) => {
       this.equipment = items
+    })
+  }
+  getSlider(){
+    this.requestService.getData(`${environment.url}${environment.slider.get}`).subscribe((items:any) => {
+      this.getSlide = items
     })
   }
 }

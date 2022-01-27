@@ -290,3 +290,46 @@ cursor: pointer;
 .equipment-color{
   background: linear-gradient(180deg, #abd5e838 4.17%, rgba(255, 255, 255, 0.12) 100%);
 }
+
+
+.slider{
+  position:relative;
+  padding-bottom: 116px;
+  &__flex{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__left{
+    position: absolute;
+    top:41%;
+    left:42px;
+    width: 48px;
+    height: 48px;
+  }
+  &__right{
+    position: absolute;
+    top:41%;
+    right:42px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.airHeaters-slider-title-container{
+  width: 83%;
+  margin: auto;
+}
+.airHeaters-title{
+  padding-top: 80px;
+  padding-bottom: 45px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+}
+.airHeaters-slider-title{
+  background: linear-gradient(180deg, #abd5e836 4.17%, rgba(255, 255, 255, 0) 100%);
+}

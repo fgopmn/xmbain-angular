@@ -311,3 +311,25 @@ ol li {
 .equipment-color{
   background: linear-gradient(180deg, #abd5e838 4.17%, rgba(255, 255, 255, 0.12) 100%);
 }
+.slider{
+  position:relative;
+  padding-bottom: 116px;
+  &__flex{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__left{
+    position: absolute;
+    top:41%;
+    left:42px;
+    width: 48px;
+    height: 48px;
+  }
+  &__right{
+    position: absolute;
+    top:41%;
+    right:42px;
+    width: 48px;
+    height: 48px;
+  }
+}

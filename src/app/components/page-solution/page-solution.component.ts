@@ -16,7 +16,7 @@ export class PageSolutionComponent implements OnInit{
   advantages:TaskInterface[]=[];
   solution:TaskInterface[]=[];
   used:any[]=[];
-
+  getSlide: any[] = [];
 
   constructor(public requestService:RequestService) {
 
@@ -26,6 +26,7 @@ export class PageSolutionComponent implements OnInit{
     this.getAdvantages()
     this.getSolution()
     this.getUsed()
+    this. getSlider()
   }
   getTask(){
     this.requestService.getData(`${environment.url}${environment.task.get}`).subscribe((items:any) => {
@@ -46,6 +47,11 @@ export class PageSolutionComponent implements OnInit{
     this.requestService.getData(`${environment.url}${environment.used.get}`).subscribe((items:any) =>{
       this.used = items
       console.log(this.used)
+    })
+  }
+  getSlider(){
+    this.requestService.getData(`${environment.url}${environment.slider.get}`).subscribe((items:any) => {
+      this.getSlide = items
     })
   }
 }

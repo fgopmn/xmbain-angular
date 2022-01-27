@@ -558,9 +558,15 @@
       }
     }
   }
-  :host::ng-deep .footer .footer__image {
-    display: block;
-  }
+:host::ng-deep .footer .footer__image {
+  display: block;
+}
+:host::ng-deep .slider__left{
+  display:none;
+}
+:host::ng-deep .slider__right{
+  display:none;
+}
   .recuperative {
     background-color: #FFFFFF;
     &__type {
@@ -699,6 +705,12 @@
     }
   }
   }
-
+  .slider{
+    padding-bottom: 110px;
+  }
+.slider-flex{
+  display: flex;
+  justify-content: space-between;
+}
 
 

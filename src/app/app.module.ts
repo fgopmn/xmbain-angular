@@ -5,6 +5,8 @@ import {RouterModule, Routes} from "@angular/router";
 import {HttpClientModule} from "@angular/common/http";
 import {MainModule} from "./components/main/main.module";
 import {UiKitModule} from "./components/ui-kit/ui-kit.module";
+import { NfComponent } from './components/nf/nf.component';
+
 
 
 
@@ -62,8 +64,20 @@ const routes: Routes = [
     loadChildren: () => import('./components/news-block/news-block.module').then(m => m.NewsBlockModule)
   },
   {
+    path:"solution-category",
+    loadChildren: () => import('./components/solution-category/solution-category.module').then(m => m.SolutionCategoryModule)
+  },
+  {
     path:"press",
     loadChildren: () => import('./components/press/press.module').then(m => m.PressModule)
+  },
+  {
+    path:"404",
+    component:NfComponent
+  },
+  {
+    path:"**",
+    redirectTo:'404'
   },
   {
     path:"services",
@@ -90,6 +104,7 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
+    NfComponent,
   ],
   imports: [
     BrowserModule,
