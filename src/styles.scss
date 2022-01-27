@@ -13,3 +13,10 @@
 //li{
 //  list-style-type: none;
 //}
+.container__gradient{
+  background: linear-gradient(90deg, rgba(171, 213, 232, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
+  width: 38%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 67px;
+}

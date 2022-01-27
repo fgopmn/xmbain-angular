@@ -3,7 +3,7 @@
 .header {
   @include container;
   display: flex;
-  padding: 40px 0 21px;
+  padding: 40px 0 50px;
   justify-content: space-between;
 
   &__logo {

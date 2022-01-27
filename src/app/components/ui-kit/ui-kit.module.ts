@@ -35,6 +35,8 @@ import { SolutionExampelsHeaderComponent } from './solution-exampels-header/solu
 import { IndustriesComponent } from './industries/industries.component';
 import { SeriesComponent } from './series/series.component';
 import { CooperationComponent } from './cooperation/cooperation.component';
+import { AdvantagesComponent } from './advantages/advantages.component';
+import { NewsSliderComponent } from './news-slider/news-slider.component';
 
 @NgModule({
   declarations: [
@@ -70,43 +72,47 @@ import { CooperationComponent } from './cooperation/cooperation.component';
     SolutionExampelsHeaderComponent,
     IndustriesComponent,
     SeriesComponent,
-    CooperationComponent
+    CooperationComponent,
+    AdvantagesComponent,
+    NewsSliderComponent
   ],
-  exports: [
-    ComplexComponent,
-    EquipmentComponent,
-    TechnologicalComponent,
-    SelectInputComponent,
-    PressEventsComponent,
-    PressBlogComponent,
-    ExhibitionsComponent,
-    SliderComponent,
-    ProductCheckComponent,
-    SystemProductComponent,
-    HighlyEfficientComponent,
-    EquipmentSeriesComponent,
-    EquipmentSeriesComponent,
-    FullRangeComponent,
-    AccessoriesChildComponent,
-    UsedEquipmentComponent,
-    FullRangeComponent,
-    EquipmentSeriesComponent,
-    NewsChildComponent,
-    ModalComponent,
-    AccordionComponent,
-    NewsChildComponent,
-    ChooseComponent,
-    FillComponent,
-    InstructionsComponent,
-    ApplicationComponent,
-    ConsultationComponent,
-    SeoFilterComponent,
-    LogosComponent,
-    SolutionExampelsHeaderComponent,
-    IndustriesComponent,
-    SeriesComponent,
-    CooperationComponent
-  ],
+    exports: [
+        ComplexComponent,
+        EquipmentComponent,
+        TechnologicalComponent,
+        SelectInputComponent,
+        PressEventsComponent,
+        PressBlogComponent,
+        ExhibitionsComponent,
+        SliderComponent,
+        ProductCheckComponent,
+        SystemProductComponent,
+        HighlyEfficientComponent,
+        EquipmentSeriesComponent,
+        EquipmentSeriesComponent,
+        FullRangeComponent,
+        AccessoriesChildComponent,
+        UsedEquipmentComponent,
+        FullRangeComponent,
+        EquipmentSeriesComponent,
+        NewsChildComponent,
+        ModalComponent,
+        AccordionComponent,
+        NewsChildComponent,
+        ChooseComponent,
+        FillComponent,
+        InstructionsComponent,
+        ApplicationComponent,
+        ConsultationComponent,
+        SeoFilterComponent,
+        LogosComponent,
+        SolutionExampelsHeaderComponent,
+        IndustriesComponent,
+        SeriesComponent,
+        CooperationComponent,
+        AdvantagesComponent,
+        NewsSliderComponent
+    ],
 
   imports: [
     CommonModule,

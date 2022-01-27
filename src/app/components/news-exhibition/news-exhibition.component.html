@@ -15,18 +15,23 @@
 </div>
 <div class="image-block">
   <div class="image-block-shadow">
-  <div class="image-block__container">
-    <h1 class="image-block__container__title">Mostra Convegno<br> Expocomfort 2020</h1>
+  <div class="container">
+    <h1 class="container__title">Mostra Convegno<br> Expocomfort 2020</h1>
 
-      <app-exhibitions
-        *ngFor="let j of show"
-        [day]="j.day"
-        [month]="j.month"
-        [day2]="j.day2"
-        [text]="j.text"
-        class="image-block__container__data"
-      >
-      </app-exhibitions>
+    <div class="container__data" >
+      <div>
+        <p>17  </p>
+        <span>сентября</span>
+      </div>
+      <div>
+        <span>|</span>
+      </div>
+      <div>
+        <p>20 </p>
+        <span>сентября</span>
+      </div>
+    </div>
+
 
   </div>
   </div>

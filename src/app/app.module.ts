@@ -1,13 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import {RouterModule, Routes} from "@angular/router";
 import {HttpClientModule} from "@angular/common/http";
-import {PressComponent } from './components/press/press.component';
 import {MainModule} from "./components/main/main.module";
 import {UiKitModule} from "./components/ui-kit/ui-kit.module";
-import { NewsExhibitionComponent } from './components/news-exhibition/news-exhibition.component';
 
 
 
@@ -66,7 +63,7 @@ const routes: Routes = [
   },
   {
     path:"press",
-    component:PressComponent
+    loadChildren: () => import('./components/press/press.module').then(m => m.PressModule)
   },
   {
     path:"services",
@@ -83,15 +80,16 @@ const routes: Routes = [
   {
     path:"news-exhibition",
     loadChildren: () => import('./components/news-exhibition/news-exhibition.module').then(m => m.NewsExhibitionModule)
+  },
+  {
+    path:"company",
+    loadChildren: () => import('./components/company/company.module').then(m => m.CompanyModule)
   }
 
 ];
 @NgModule({
   declarations: [
     AppComponent,
-    PressComponent,
-
-
   ],
   imports: [
     BrowserModule,

@@ -23,7 +23,7 @@
 
     &__fon {
       background: linear-gradient(90deg, #abd5e840 0%, rgba(255, 255, 255, 0) 100%);
-      width: 490px;
+      width: 38%;
       &__text {
         font-family: Manrope;
         font-style: normal;
@@ -32,7 +32,8 @@
         line-height: 160%;
         letter-spacing: 0.2px;
         color: #021C27;
-        padding-left: 121px;
+        margin-left: 67px;
+        width: 385px;
       }
     }
 
@@ -60,7 +61,6 @@
       }
 
 
-
       &__flex {
         display: flex;
         justify-content: space-between;
@@ -81,12 +81,13 @@
         letter-spacing: 0.2px;
         color: #021C27;
         background-color: white;
-        margin-top: 75px;
+        padding-top: 75px;
+        padding-bottom: 70px;
       }
 
       &__gradient {
         background: linear-gradient(90deg, #abd5e840 0%, rgba(255, 255, 255, 0) 100%);
-        width: 490px;
+        width: 38%;
       }
 
     }

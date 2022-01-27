@@ -55,8 +55,8 @@
   width: 57%;
 }
 .conference-info {
-  background: linear-gradient(90deg,#abd5e840 0%, rgba(255, 255, 255, 0) 100%);
-  width: 43%;
+  background: linear-gradient(90deg, rgba(171, 213, 232, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
+  width: 38%;
 }
 .conference-info img {
   padding-left: 122.67px;
@@ -64,7 +64,7 @@
 }
 
 .global-gradient {
-  background: linear-gradient(90deg, #FBFEFF 0%, #F0F8FC 100%);
+  background: linear-gradient(90deg,#abd5e840 0%, rgba(255, 255, 255, 0) 100%);
   padding-bottom: 100px;
   &__title{
     font-family: Manrope;

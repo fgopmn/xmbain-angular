@@ -92,15 +92,11 @@
   width: 590px;
 }
 .contain-account {
-  width: 490px;
+  width: 38%;
   background: linear-gradient(90deg,#abd5e840 0%, rgba(255, 255, 255, 0) 100%);
 }
 
-.info-container{
-  width:83%;
-  margin:auto;
-  background-color: white;
-}
+
 .info-flex{
   display:flex;
   justify-content: space-between;
@@ -156,7 +152,7 @@
 }
 .information-risks {
   background: linear-gradient(90deg,#abd5e840 0%, rgba(255, 255, 255, 0) 100%);
-  width: 490px;
+  width: 38%;
 }
 .info-texts-h {
   font-family: Manrope;
@@ -330,6 +326,7 @@
 }
 
 .contain-group{
+
   padding-bottom: 80px;
   padding-top: 84px;
  background: linear-gradient(90deg,#abd5e840 0%, rgba(255, 255, 255, 0) 100%);

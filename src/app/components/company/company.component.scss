@@ -1,0 +1,88 @@
+.seo-header{
+  &__ul{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 16px;
+    border-bottom:  1px solid #C0C6C9;
+    max-width: 532px;
+  }
+  &__li{
+    list-style-type: none;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 0.2px;
+    color: #C0C6C9;
+  }
+  &__li:nth-child(n+2){
+    padding-left: 12px;
+  }
+
+}
+.company{
+  background-color: white;
+}
+.company .container{
+  background-image: url("../../../assets/img/image 44.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 675px;
+}
+.about-company{
+  //background-image: url("../../../assets/img/Group 386 (1).png");
+  //background-size: cover;
+  //background-repeat: no-repeat;
+  //background-position: top center;
+  &__flex{
+
+    display: flex;
+    justify-content: space-between;
+
+  }
+  &__title{
+    h1{
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 64px;
+      line-height: 100%;
+      letter-spacing: -0.02em;
+      color: #021C27;
+      padding-top: 30px;
+      padding-bottom: 66px;
+    }
+
+    p{
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 19px;
+      line-height: 140%;
+      letter-spacing: 0.2px;
+      color: #000000;
+      padding-bottom: 312px;
+    }
+  }
+  &__img{
+    background: linear-gradient(90deg, #abd5e840 0%, rgba(255, 255, 255, 0) 100%);
+    position: relative;
+    width: 38%;
+     img{
+       position: absolute;
+       top: -46px;
+       right: 0;
+     }
+     }
+
+   }
+
+:host::ng-deep .footer .footer__image{
+  display: block;
+
+}
+
+
+
+
