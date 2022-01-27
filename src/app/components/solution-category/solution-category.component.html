@@ -1,0 +1,67 @@
+<app-header></app-header>
+
+<div class="solution-header">
+  <div class="container solution-header__border">
+    <ul class="solution-header__ul">
+      <li class="solution-header__li">Главная</li>
+      <li class="solution-header__li">></li>
+      <li class="solution-header__li">Примеры решений</li>
+    </ul>
+  </div>
+</div>
+<app-solution-exampels-header></app-solution-exampels-header>
+<div class="salon">
+  <div class="container">
+    <div class="salon__header">
+      <p class="salon__title">Автосалоны</p>
+      <div class="salon__link">
+        <div class="salon__link__square"></div>
+        <div class="salon__link__square2"></div>
+        <a href="">Применяемое оборудование</a>
+      </div>
+    </div>
+
+    <div class="salon__slider">
+      <div class="salon__slider__flex">
+      <app-slider
+        *ngFor="let item of getSlide"
+        [img]=item.img
+        [title]=item.title
+        [text]=item.text
+      ></app-slider>
+      </div>
+      <div class="salon__slider__flex">
+        <app-slider
+          *ngFor="let item of getSlide"
+          [img]=item.img
+          [title]=item.title
+          [text]=item.text
+        ></app-slider>
+      </div>
+
+      <div class="salon__slider__flex">
+        <app-slider
+          *ngFor="let item of getSlide"
+          [img]=item.img
+          [title]=item.title
+          [text]=item.text
+        ></app-slider>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="slideSelect">
+  <div class="container">
+    <div><img class="container__right-vector" src="../../../assets/icons/Arrow 1.png" height="12" width="16"/></div>
+    <div class="container__numbers">
+      <div><p>1</p></div>
+      <div><p>2</p></div>
+      <div><p>3</p></div>
+      <div><p>4</p></div>
+      <div><p>5</p></div>
+    </div>
+    <div><img src="../../../assets/icons/Arrow 1.png" height="12" width="16"/></div>
+  </div>
+</div>
+
+<app-footer></app-footer>
