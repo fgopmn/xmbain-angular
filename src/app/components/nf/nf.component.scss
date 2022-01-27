@@ -75,7 +75,9 @@
   width:88.8%;
   position: absolute;
   bottom: 100px;
-  left: 80px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .error .container{
   background-image: url("../../../assets/img/image 104 (2) (1).png");
