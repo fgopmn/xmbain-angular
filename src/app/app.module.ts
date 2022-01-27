@@ -71,14 +71,7 @@ const routes: Routes = [
     path:"press",
     loadChildren: () => import('./components/press/press.module').then(m => m.PressModule)
   },
-  {
-    path:"404",
-    component:NfComponent
-  },
-  {
-    path:"**",
-    redirectTo:'404'
-  },
+
   {
     path:"services",
     loadChildren: () => import('./components/services/services.module').then(m => m.ServicesModule)
@@ -91,6 +84,7 @@ const routes: Routes = [
     path:"contacts",
     loadChildren: () => import('./components/contacts/contacts.module').then(m => m.ContactsModule)
   },
+
   {
     path:"news-exhibition",
     loadChildren: () => import('./components/news-exhibition/news-exhibition.module').then(m => m.NewsExhibitionModule)
@@ -98,8 +92,15 @@ const routes: Routes = [
   {
     path:"company",
     loadChildren: () => import('./components/company/company.module').then(m => m.CompanyModule)
-  }
-
+  },
+  {
+    path:"404",
+    component:NfComponent
+  },
+  {
+    path:"**",
+    redirectTo:'404'
+  },
 ];
 @NgModule({
   declarations: [
