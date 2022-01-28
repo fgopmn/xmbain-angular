@@ -1,7 +1,14 @@
-.rout-link {
-  width: 80%;
-  margin: auto;
-  &__nav {
+.product-header{
+  background-color: #FFFFFF;
+  position: relative;
+  &__ul{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 16px;
+    max-width: 532px;
+  }
+  &__li{
+    list-style-type: none;
     font-family: Manrope;
     font-style: normal;
     font-weight: 500;
@@ -10,5 +17,11 @@
     letter-spacing: 0.2px;
     color: #C0C6C9;
   }
-}
+  &__li:nth-child(n+2){
+    padding-left: 12px;
+  }
 
+}
+.product-header .container{
+  border-bottom:  1px solid #C0C6C9;
+}
