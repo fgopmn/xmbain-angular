@@ -126,5 +126,8 @@ export const environment = {
   },
   accordion:{
     get:'/accordion'
+  },
+  product:{
+    get:'/product'
   }
 };

@@ -1,7 +1,14 @@
-.rout-link {
-  width: 80%;
-  margin: auto;
-  &__nav {
+.product-header{
+  background-color: #FFFFFF;
+  position: relative;
+  &__ul{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 16px;
+    max-width: 532px;
+  }
+  &__li{
+    list-style-type: none;
     font-family: Manrope;
     font-style: normal;
     font-weight: 500;
@@ -10,5 +17,193 @@
     letter-spacing: 0.2px;
     color: #C0C6C9;
   }
+  &__li:nth-child(n+2){
+    padding-left: 12px;
+  }
+
+}
+.product-header .container{
+  border-bottom:  1px solid #C0C6C9;
 }
 
+.dealership {
+  display: flex;
+}
+.check-click{
+  background: #009FE3;;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: none;
+  padding: 11px 19px;
+  margin-top: 40px;
+}
+.blue-fon{
+  background: linear-gradient(275deg, rgba(171,213,232,0.12) -0, rgba(255, 255, 255, ) 60%);
+  width: 267px;
+
+}
+.product-title{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+  padding-top:30px;
+}
+.conditioners-global-title{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+  padding-left: 78px;
+  padding-top: 190px;
+  width: 652px;
+}
+
+.conditioners-global-text{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #000000;
+  padding-left: 78px;
+  padding-top: 34px;
+  padding-bottom: 50px;
+}
+.dealerships-flex1{
+  max-width: 895px;
+  margin-top: 33px;
+  margin-left: 38px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+}
+.dealerships-flex1-child{
+  max-width: 285px;
+  margin-top: 17px;
+
+}
+.dealerships-flex1-child img{
+  padding: 35px 60px 19px 61px;
+}
+
+.dealerships-flex1-child-type{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.2px ;
+  color: #021C27;
+
+}
+.dealerships-flex1-child-title{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  padding: 10px 40px 20px 40px;
+}
+.dealerships-flex1-child-text{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  opacity: 0.4;
+  padding: 0 26px 36px 40px;
+}
+.slideSelect .length{
+  padding-top: 70px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+  width: 88.3%;
+  margin-left: 78px;
+
+  &__right-vector{
+    transform: rotateY(180deg);
+  }
+  &__numbers{
+    display: flex;
+    justify-content: space-between;
+    width: 162px;
+    border-bottom: 1px solid rgba(2, 28, 39, 0.15);
+
+
+    div{
+      margin: auto;
+      cursor: pointer;
+      padding-bottom: 14px;
+
+      &:hover{
+
+        border-bottom: 1px solid black;
+      }
+    }
+    p{
+      color: rgba(2, 28, 39, 0.15);
+      &:hover{
+        position: static;
+        color: black;
+        transform: scale(1.7,1.7);
+        z-index: 999;
+
+
+
+      }
+    }
+  }
+  img{
+    color: black;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.15;
+    }
+  }
+
+}
+.technological {
+  background-color: #abd5e81a;
+  padding: 60px 0;
+}
+.flag{
+  background: linear-gradient(180deg, #abd5e870 0%, rgba(171, 213, 232, 0) 104.43%);
+}
+
+.slider{
+  padding-bottom: 116px;
+  &__flex{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.airHeaters-title{
+  padding-bottom: 60px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+}

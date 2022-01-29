@@ -111,7 +111,7 @@ import { NewsSliderComponent } from './news-slider/news-slider.component';
         SeriesComponent,
         CooperationComponent,
         AdvantagesComponent,
-        NewsSliderComponent
+        NewsSliderComponent,
     ],
 
   imports: [

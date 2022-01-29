@@ -6,7 +6,8 @@
         <b>Отапливайте промышленные помещения</b>
         <p class="industrial__percent">C выгодой до 30% в год<br> с помощью воздушных теплогенераторов</p>
         <div style="margin-top:40px;">
-          <button routerLink="/production" class="industrial__button">Оборудование</button>
+          <a routerLink="/production"><button  class="industrial__button">Оборудование</button></a>
+
         </div>
       </div>
       <div class="industrial__img">
@@ -126,7 +127,8 @@
       </div>
     </div>
     <div class="airHeaters__picture">
-      <img src="../../../../assets/img/Group 210.png" alt="no image">
+      <a routerLink="/product"><img src="../../../../assets/img/Group 210.png" alt="no image"></a>
+
     </div>
     <div class="airHeaters__check">
         <div>
@@ -162,7 +164,8 @@
               <label for="check-two2">Снаружи помещения</label></li>
           </ul>
         </div>
-        <button class="airHeaters__check__click">Показать</button>
+      <a routerLink="/product"><button class="airHeaters__check__click">Показать</button></a>
+
       </div>
     </div>
   </div>
@@ -178,12 +181,17 @@
     <div class="fullRange">
       <p class="fullRange__title">Полный комплекс услуг</p>
       <div class="fullRange__numbers">
-        <div routerLink="/services" class="fullRange__numbers__number" *ngFor="let item of getList">
-          <div class="fullRange__numbers__number__text">
-            <p class="fullRange__numbers__number__day">{{item.day}}</p>
-            <p class="fullRange__numbers__number__description">{{item.text}}</p>
+        <div  class="fullRange__numbers__number" *ngFor="let item of getList">
+        <a routerLink="/services">
+
+            <div class="fullRange__numbers__number__text">
+              <p class="fullRange__numbers__number__day">{{item.day}}</p>
+              <p class="fullRange__numbers__number__description">{{item.text}}</p>
+            </div>
+        </a>
           </div>
-        </div>
+
+
       </div>
     </div>
   </div>
@@ -213,7 +221,7 @@
   <div class="container">
     <div>
       <img class="clients__flag" src="../../../assets/img/image 125 (1).png" alt="no image">
-      <p class="clients__title">Клиенты</p>
+      <a routerLink="solution-examples" class="clients__title">Клиенты</a>
     </div>
     <app-logos></app-logos>
   </div>
@@ -239,8 +247,9 @@
 
 <div class="press">
   <div class="container">
-    <h6 class="press__title">Пресс-центр</h6>
-    <p class="press__text">Блог</p>
+    <a routerLink="/press" class="press__title">Пресс-центр</a> <br>
+    <a routerLink="/press" class="press__text">Блог</a>
+
   </div>
 <div class="press__images">
   <app-press-blog></app-press-blog>

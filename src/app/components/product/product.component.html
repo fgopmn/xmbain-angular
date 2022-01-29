@@ -1,2 +1,95 @@
 <app-header></app-header>
 
+
+
+<div class="product-header">
+  <div class="container">
+    <ul class="product-header__ul">
+      <li class="product-header__li">Главная</li>
+      <li class="product-header__li">></li>
+      <li class="product-header__li">Продукция</li>
+      <li class="product-header__li">></li>
+      <li class="product-header__li">Воздухонагреватели</li>
+    </ul>
+  </div>
+</div>
+
+
+<div>
+  <div class="container">
+    <div class="dealership">
+
+      <div class="blue-fon">
+        <p class="product-title">Продукция</p>
+        <app-product-check></app-product-check>
+      </div>
+      <div>
+          <p class="conditioners-global-title">Воздухонагреватели <br>и парогенераторы </p>
+          <p class="conditioners-global-text">
+            Более 60 лет исследований и опыта в области промышленного тепловог <br>
+            оборудования привели к разработке нескольких направлений продуктов,<br>
+            которые на сегодняшний день включают более 300 моделей<br>
+            высокоэффективных воздухонагревателей в соответствии с самыми строгими<br>
+            европейскими и международными стандартами. Непрерывная эволюция<br>
+            продуктов позволяет компании сохранять лидирующие позиции в области <br>
+            отопления горячим воздухом.
+          </p>
+        <div class="dealerships-flex1">
+          <div class="dealerships-flex1-child" *ngFor="let item of getList">
+            <img src="{{item.img}}" alt="">
+            <p class="dealerships-flex1-child-type">{{item.type}}</p>
+            <p class="dealerships-flex1-child-title">{{item.title}}</p>
+            <p class="dealerships-flex1-child-text">{{item.text}}</p>
+          </div>
+
+        </div>
+        <div class="slideSelect">
+          <div class="length">
+            <div><img class="length__right-vector" src="../../../assets/icons/Arrow 1.png" height="12" width="16"/></div>
+            <div class="length__numbers">
+              <div><p>1</p></div>
+              <div><p>2</p></div>
+              <div><p>3</p></div>
+              <div><p>4</p></div>
+              <div><p>5</p></div>
+            </div>
+            <div><img src="../../../assets/icons/Arrow 1.png" height="12" width="16"/></div>
+          </div>
+        </div>
+    </div>
+  </div>
+  </div>
+</div>
+<div class="technological">
+  <app-technological></app-technological>
+</div>
+
+
+<div class="flag">
+  <div class="container">
+    <div class="blue-flag">
+      <img src="../../../assets/img/image 125 (1).png" >
+    </div>
+  </div>
+
+</div>
+
+
+<div class="airHeaters-slider-title">
+  <div class="container">
+    <p class="airHeaters-title">Примеры решений</p>
+  </div>
+</div>
+<div class="slider">
+  <div class="container">
+    <div class="slider__flex">
+      <app-slider
+        *ngFor="let item of getSlide"
+        [img]=item.img
+        [title]=item.title
+        [text]=item.text
+      ></app-slider>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

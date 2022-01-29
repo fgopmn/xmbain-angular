@@ -8,9 +8,6 @@ import {UiKitModule} from "./components/ui-kit/ui-kit.module";
 import { NfComponent } from './components/nf/nf.component';
 
 
-
-
-
 const routes: Routes = [
   {
     path:"",
@@ -38,6 +35,10 @@ const routes: Routes = [
   {
     path:"documents",
     loadChildren: () => import('./components/documents/documents.module').then(m => m.DocumentsModule)
+  },
+  {
+    path:"product",
+    loadChildren: () => import('./components/product/product.module').then(m => m.ProductModule)
   },
   {
     path:"page-solution",
@@ -84,7 +85,6 @@ const routes: Routes = [
     path:"contacts",
     loadChildren: () => import('./components/contacts/contacts.module').then(m => m.ContactsModule)
   },
-
   {
     path:"news-exhibition",
     loadChildren: () => import('./components/news-exhibition/news-exhibition.module').then(m => m.NewsExhibitionModule)
