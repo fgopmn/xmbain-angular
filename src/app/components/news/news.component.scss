@@ -342,17 +342,56 @@
 }
 .equipment-series-flex{
   display: flex;
+  justify-content: space-between;
 }
 
-.equipment-series-title2{
-  font-family: Manrope;
-  font-weight: 800;
-  font-size: 46px;
-  line-height: 120%;
-  letter-spacing: -0.03em;
-  color: #021C27;
-  padding-top:80px;
-}
+
 .equipment-color{
   background: linear-gradient(180deg, #abd5e838 4.17%, rgba(255, 255, 255, 0.12) 100%);
+  &__series__title2{
+    font-family: Manrope;
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    color: #021C27;
+    padding-top:80px;
+  }
+  &__salon__link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+  }
+  &__link__square{
+    background: #009FE3;
+    opacity: 0.3;
+    border-radius: 2px;
+    width: 13px;
+    height: 13px;
+  }
+  &__link__square2{
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    background: #009FE3;
+    border-radius: 2px;
+  }
+  a{
+    text-decoration: none;
+    border-bottom:1px solid rgba(0, 159, 227, 0.3);
+    font-family: Manrope;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    color: #021C27;
+    margin-left:14px;
+  }
+}
+.equipment-color .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

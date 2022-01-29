@@ -44,6 +44,7 @@
     &:hover{
       background: #021C27;
       border-radius: 4px;
+      transition-duration: 0.5s;
     }
   }
   &__percent{
@@ -482,6 +483,10 @@
         padding: 12px 20px 13px 25px;
         margin-top: 48px;
         cursor: pointer;
+      &:hover{
+        transition-duration: 0.5s;
+        background-color: #009FE3;
+      }
     }
   }
 }
@@ -528,8 +533,12 @@
         border-radius: 20px;
         width: 15.6%;
         cursor: pointer;
+        a{
+          text-decoration: none;
+        }
         &__text {
           padding: 40px 0 43px 38px;
+
         }
         &__day{
         font-family: Manrope;
@@ -554,6 +563,7 @@
           letter-spacing: -0.02em;
           color: #021C27;
           width: 130px;
+
         }
       }
     }
@@ -629,6 +639,7 @@
 
   .clients {
     background-color: white;
+    padding-bottom: 80px;
     &__title {
       font-family: Manrope;
       font-style: normal;
@@ -638,6 +649,13 @@
       letter-spacing: -0.02em;
       color: #021C27;
       padding-top: 28px;
+      text-decoration: none;
+      cursor: pointer;
+      display: inline-block;
+      &:hover{
+        opacity: 0.7;
+        transition-duration: 0.5s;
+      }
     }
     &__flag {
       width: 100%;
@@ -653,7 +671,14 @@
       line-height: 120%;
       letter-spacing: -0.02em;
       color: #021C27;
-      padding-top: 100px;
+      margin-top: 100px;
+      text-decoration: none;
+      display: inline-block;
+      &:hover{
+        opacity: 0.7;
+        transition-duration: 0.5s;
+        cursor: pointer;
+      }
     }
     &__text {
       font-family: Manrope;
@@ -664,6 +689,13 @@
       letter-spacing: -0.02em;
       color: #021C27;
       padding-top: 70px;
+      text-decoration: none;
+      display: inline-block;
+      &:hover{
+        opacity: 0.7;
+        transition-duration: 0.5s;
+        cursor: pointer;
+      }
     }
     &__images {
       background-image: url("../../../assets/img/Group 385.png");

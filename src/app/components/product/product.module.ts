@@ -5,6 +5,7 @@ import { ProductRoutingModule } from './product-routing.module';
 import {ProductionModule} from "../production/production.module";
 import {ProductComponent} from "./product.component";
 import {MainModule} from "../main/main.module";
+import {UiKitModule} from "../ui-kit/ui-kit.module";
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import {MainModule} from "../main/main.module";
   imports: [
     CommonModule,
     ProductRoutingModule,
-    MainModule
+    MainModule,
+    UiKitModule
   ]
 })
 export class ProductModule { }

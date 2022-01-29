@@ -1,6 +1,7 @@
 <div class="container">
   <div class="heating">
-    <div *ngFor="let item of getList" class="heating__system">
+    <a routerLink="/news">
+     <div *ngFor="let item of getList" class="heating__system">
         <button class="heating__button">{{item.button}}</button>
         <p class="heating__title">{{item.title}}</p>
         <p class="heating__text">{{item.text}}</p>
@@ -9,6 +10,7 @@
           <p class="heating__info">{{item.info}}</p>
         </div>
       </div>
+    </a>
     </div>
   </div>
 
