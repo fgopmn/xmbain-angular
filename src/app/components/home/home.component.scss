@@ -1,3 +1,5 @@
+
+
 .home {
   &__complex {
     display: flex;
@@ -15,10 +17,16 @@
     background-size:cover;
     background-repeat: no-repeat;
     background-position: 34px -184px;
+    @media screen and (max-width:1200px){
+      background:none;
+    }
   }
   &__text{
     width: 50%;
     margin-top: 70px;
+    @media screen and (max-width:1200px){
+      width: 62%;
+  }
    b{
       font-family: Manrope;
       font-style: normal;
@@ -26,6 +34,9 @@
       font-size: 64px;
       line-height: 100%;
       letter-spacing: -0.02em;
+     @media screen and (max-width:1200px){
+      font-size: 55px;
+     }
     }
   }
   &__button{
@@ -60,6 +71,14 @@
     position: relative;
     margin-top: 15px;
     padding-bottom: 50px;
+    width: 50%;
+    @media screen and (max-width:1200px){
+    width:35%;
+      margin-top:60px;
+  }
+   :last-child{
+      width: 100%;
+    }
 
     &__one{
       position: absolute;
@@ -74,6 +93,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    position: relative;
 
   &__heating{
     border-bottom:1px solid #009FE3;
@@ -88,6 +108,13 @@
     margin-right: 20px;
     width: 146px;
     padding-bottom: 26px;
+    &:hover {
+      color:black;
+      border-bottom:5px solid #009FE3;
+      opacity: 1;
+      transition-duration: 0.5s;
+    }
+
   }
   }
 
@@ -141,13 +168,24 @@
   background-image: url("../../../assets/img/Group 358.png");
   background-repeat: no-repeat;
   background-position: left;
+  @media screen and (max-width: 1200px){
+  background: #FFFFFF;
+  }
   &__picture{
     display: flex;
     justify-content: space-between;
   }
-
+  &__img{
+    @media screen and (max-width:1200px){
+      width: 33%;
+      height: 100%;
+    }
+  }
   &__tecnoclima {
     margin-top: 122px;
+    @media screen and (max-width: 1200px){
+      margin:0;
+    }
     &__text{
       font-family: Manrope;
       font-style: normal;
@@ -388,6 +426,10 @@
 .airHeaters {
   display: flex;
   background-color: white;
+  @media screen and (max-width: 1200px){
+    align-items: center;
+  }
+
 
   &__types {
     width: 303px;
@@ -422,16 +464,30 @@
     background-repeat: no-repeat;
     background-position: top center;
     position: relative;
+    @media screen and (max-width: 1200px){
+   background: #FFFFFF;
+    }
+
     img {
       width: 520px;
       height: 520px;
       margin-top: 160px;
       margin-left: 100px;
+      @media screen and (max-width: 1200px){
+        width: 300px;
+        height: 330px;
+        margin:50px 25px;
+      }
+
     }
   }
   &__check {
     margin-top: 83px;
     padding-left: 93px;
+    @media screen and (max-width: 1200px){
+    padding:0;
+    margin:0;
+    }
     &__title{
     font-family: Manrope;
     font-style: normal;
@@ -492,6 +548,9 @@
     background-position: top center;
     position: relative;
     height: 720px;
+    @media screen and (max-width:1200px) {
+      height: 440px;
+    }
     &__text{
       font-family: Manrope;
       font-style: normal;
@@ -523,11 +582,18 @@
       justify-content: space-between;
       padding-top: 46px;
       padding-bottom: 75px;
+      @media screen and (max-width: 1200px){
+        flex-wrap: wrap;
+      }
       &__number {
         background: linear-gradient(90deg, #FBFEFF 0%, #F0F8FC 100%);
         border-radius: 20px;
         width: 15.6%;
         cursor: pointer;
+        @media screen and (max-width: 1200px){
+          width: 30%;
+          margin-top: 25px;
+        }
         &__text {
           padding: 40px 0 43px 38px;
         }
@@ -554,6 +620,9 @@
           letter-spacing: -0.02em;
           color: #021C27;
           width: 130px;
+          @media screen and (max-width: 1200px){
+            font-size: 20px;
+          }
         }
       }
     }
@@ -561,18 +630,16 @@
 :host::ng-deep .footer .footer__image {
   display: block;
 }
-:host::ng-deep .slider__left{
-  display:none;
-}
-:host::ng-deep .slider__right{
-  display:none;
-}
+
   .recuperative {
     background-color: #FFFFFF;
     &__type {
     display: flex;
     justify-content: space-between;
     padding-bottom: 80px;
+      @media screen and (max-width: 1200px){
+        flex-wrap: wrap;
+      }
       &__title{
           margin-top:15px;
           font-family: Manrope;
@@ -670,6 +737,10 @@
       background-size: 100% 87%;
       background-repeat: no-repeat;
       background-position: top center;
+      @media screen and(max-width:1200px){
+        background: none;
+
+      }
     }
   }
   .exhibitions{
@@ -693,7 +764,6 @@
     align-items: center;
     padding-top: 89px;
     padding-bottom: 110px;
-
     &__image {
       width: 204px;
     }
@@ -707,10 +777,37 @@
   }
   .slider{
     padding-bottom: 110px;
+    position: relative;
+    &__left{
+      position: absolute;
+      top:41%;
+      left:42px;
+      width: 48px;
+      height: 48px;
+    }
+    &__right{
+      position: absolute;
+      top:41%;
+      right:42px;
+      width: 48px;
+      height: 48px;
+    }
   }
 .slider-flex{
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 1200px){
+    justify-content: center;
+    margin-top: 50px;
+
+  :last-child{
+      display: none;
+    }
+  }
 }
 
-
+//.change{
+//  :first-child {
+//    display: none;
+//  }
+//}

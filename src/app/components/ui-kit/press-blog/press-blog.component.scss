@@ -2,12 +2,17 @@
   display: flex;
   justify-content: space-between;
   padding-top:60px;
+  flex-wrap: wrap;
   &__system{
     background: #FFFFFF;
     box-shadow: 0 5px 40px rgba(2, 26, 36, 0.04);
     border-radius: 20px;
     width: 32.3%;
     padding: 40px;
+    @media screen and (max-width:1200px){
+      width:70%;
+      margin-top: 40px;
+    }
 
     &__type{
       padding:40px 25px 68px 40px;

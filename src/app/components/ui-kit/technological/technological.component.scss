@@ -7,6 +7,9 @@
   background:#FFFFFF;
   box-shadow: 0 20px 60px rgba(2, 26, 36, 0.04);
   border-radius: 40px;
+  @media screen and (max-width: 1200px){
+    flex-wrap: wrap;
+  }
   &__title {
     font-family: Manrope;
     font-style: normal;
@@ -16,24 +19,46 @@
     text-align: center;
     color: #021C27;
     padding-top: 24px;
+    @media screen and (max-width: 1200px){
+      text-align: left;
+    }
+  }
     &_block3 {
       margin-top: 75px;
       padding: 0;
     }
-  }
+
   &__block1 {
     width: 33.3%;
     border-right: 1px solid rgba(192, 198, 201, 1);
     padding: 70px 78px 63px 70px;
+    @media screen and (max-width: 1200px){
+      width: 80%;
+      margin:auto;
+      border-right:none;
+      border-bottom: 1px solid rgba(192, 198, 201, 1) ;
+    }
+
   }
   &__block2 {
     width: 33.3%;
     border-right: 1px solid rgba(192, 198, 201, 1) ;
     padding: 70px 72px 63px 86px;
+    @media screen and (max-width: 1200px){
+      width: 80%;
+      margin:auto;
+      border-right:none;
+      border-bottom: 1px solid rgba(192, 198, 201, 1) ;
+    }
   }
   &__block3 {
     width: 33.3%;
     padding: 70px 48px 63px 97px;
+    @media screen and (max-width: 1200px){
+    width: 80%;
+    margin:auto;
+  }
+
     &-container {
       display: flex;
       padding-top: 22px;
@@ -97,9 +122,16 @@
     letter-spacing: 0.2px;
     color: #021C27;
     padding-top: 12px;
+    @media screen and (max-width: 1200px){
+   text-align: left;
+    }
+
     &_block3 {
       padding-top: 12px;
       text-align: center;
+      @media screen and (max-width: 1200px){
+        text-align: left;
+      }
     }
   }
   &-images {

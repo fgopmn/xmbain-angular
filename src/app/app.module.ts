@@ -94,6 +94,10 @@ const routes: Routes = [
     loadChildren: () => import('./components/company/company.module').then(m => m.CompanyModule)
   },
   {
+    path:"product",
+    loadChildren: () => import('./components/product/product.module').then(m => m.ProductModule)
+  },
+  {
     path:"404",
     component:NfComponent
   },
