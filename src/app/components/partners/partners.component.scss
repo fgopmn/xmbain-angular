@@ -223,6 +223,11 @@ padding-bottom: 14px;
       text-transform: uppercase;
       color: #FFFFFF;
       border: none;
+      &:hover{
+        background: #021C27;
+        border-radius: 4px;
+        transition-duration: 0.5s;
+      }
     }
   }
 }

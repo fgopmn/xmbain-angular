@@ -68,6 +68,11 @@
       border: none;
       margin-bottom: 88px;
       cursor: pointer;
+      &:hover{
+        background: #021C27;
+        border-radius: 4px;
+        transition-duration: 0.5s;
+      }
     }
   &__img{
     position: absolute;
@@ -466,4 +471,4 @@
   color: #021C27;
 }
 
-         
+

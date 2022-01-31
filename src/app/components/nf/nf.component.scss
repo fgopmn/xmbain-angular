@@ -68,6 +68,11 @@
       line-height: 120%;
       text-transform: uppercase;
       color: #FFFFFF;
+      &:hover{
+        background: #021C27;
+        border-radius: 4px;
+        transition-duration: 0.5s;
+      }
     }
   }
 }

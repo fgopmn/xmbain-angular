@@ -277,6 +277,11 @@
     padding: 15px 25px;
     margin-top: 40px;
     cursor: pointer;
+    &:hover{
+      background: #021C27;
+      border-radius: 4px;
+      transition-duration: 0.5s;
+    }
   }
   &__image{
     margin-top: 98px;
@@ -452,11 +457,11 @@
     line-height: 120%;
     letter-spacing: 0.2px;
     color: rgba(2, 28, 39, 0.3);
-
     &:hover {
       border-right: 5px solid #E3061B;
       cursor: pointer;
       color: #021C27;
+      transition-duration: 0.5s;
     }
   }
   &__picture {
@@ -587,6 +592,7 @@
       justify-content: space-between;
       padding-top: 46px;
       padding-bottom: 75px;
+
       @media screen and (max-width: 1200px){
         flex-wrap: wrap;
       }
@@ -595,6 +601,10 @@
         border-radius: 20px;
         width: 15.6%;
         cursor: pointer;
+        &:hover{
+          background: linear-gradient(90deg, #FBFEFF 0%, #009FE3A3 100%);
+          border-radius: 20px;
+        }
         @media screen and (max-width: 1200px){
           width: 30%;
           margin-top: 25px;

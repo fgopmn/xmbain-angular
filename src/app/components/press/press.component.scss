@@ -76,6 +76,7 @@
 .menu-italy li{
   list-style-type: none;
   padding: 0 13px;
+
 }
 .menu-italy li a{
   font-family: Manrope;
@@ -88,6 +89,9 @@
   opacity: 0.3;
   text-decoration: none;
   padding-bottom: 16px;
+  &:hover{
+  transition-duration: 0.5s;
+}
 }
 .menu-italy li a:hover{
   color: black;

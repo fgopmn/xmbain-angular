@@ -12,7 +12,11 @@ a{
   height: auto;
   margin-bottom: 24px;
   padding: 13px 0;
-
+  &:hover{
+    background: #d4f3ff;
+    border-radius: 20px;
+    transition-duration: 0.5s;
+  }
 
   &__image {
     padding-left: 20px;
