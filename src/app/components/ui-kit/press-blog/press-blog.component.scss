@@ -1,4 +1,8 @@
 .heating{
+  display: flex;
+  justify-content: space-between;
+  padding-top:60px;
+  flex-wrap: wrap;
 
   &__system{
     background: #FFFFFF;
@@ -6,6 +10,10 @@
     border-radius: 20px;
     width: 32.3%;
     padding: 40px;
+    @media screen and (max-width:1200px){
+      width:70%;
+      margin-top: 40px;
+    }
 
     &__type{
       padding:40px 25px 68px 40px;

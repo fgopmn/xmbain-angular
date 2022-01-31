@@ -1,8 +1,9 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {environment} from "../../../environments/environment.prod";
 import{RequestService} from "../../service/request.service";
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import {Router} from "@angular/router";
+import {animateChild} from "@angular/animations";
 
 
 @Component({
@@ -11,14 +12,14 @@ import {Router} from "@angular/router";
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit{
- complex: any[] = [];
+  // @Input("left")left:any
+  complex: any[] = [];
   getList: any[] = [];
   getSlide: any[] = [];
   day:string="17";
   day2:string="20";
   month:string="сентября";
   text:string="Mostra Convengo Expocomfort 2020";
-
   public isApplicationOpen:boolean = true;
 
   form = this.fb.group({
@@ -34,6 +35,10 @@ export class HomeComponent implements OnInit{
     this.getComplex()
     this.getSlider()
   }
+  // change(){
+  // let x:any= document.getElementById("left")
+  //   x.classList.add("change")
+  // }
 
   public openApplication(val?:boolean) {
     this.isApplicationOpen = val ? val : !this.isApplicationOpen

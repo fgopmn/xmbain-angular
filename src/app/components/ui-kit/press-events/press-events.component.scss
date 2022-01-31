@@ -1,5 +1,6 @@
 .event{
   padding-top:80px;
+
     &__title{
       font-family: Manrope;
       font-style: normal;
@@ -28,6 +29,9 @@
   width: 32.3%;
   padding:40px 40px 47px 40px;
   margin-top:40px;
+  @media screen and(max-width:1200px){
+    width: 70%;
+  }
     &__days{
     display: flex;
     background: #FFFFFF;
@@ -35,6 +39,9 @@
     box-sizing: border-box;
     border-radius: 5px;    align-items: center;
     justify-content: flex-start;
+      @media screen and (max-width:1200px){
+       border: none;
+      }
       &__month__block{
       padding-left: 11px;
         &__month__day{
