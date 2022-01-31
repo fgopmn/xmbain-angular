@@ -1,0 +1,129 @@
+
+.header-flex-ul ul{
+  display: flex;
+  border-bottom: 1px solid;
+  padding-top: 40px;
+  color: #C0C6C9;
+  padding-bottom: 20px;
+}
+.header-flex-ul ul li{
+  list-style-type: none;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: #C0C6C9;
+  margin-right:10px;
+}
+.accessories{
+  max-width: 1200px;
+  margin: auto;
+}
+.accessories-title{
+  padding-bottom: 60px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+}
+.accessories-flex{
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 75px;
+}
+.technological{
+  background-color: #abd5e81a;
+  display: inline-block;
+  width: 100%;
+  padding: 60px 0;
+}
+.airHeaters-slider-title-container{
+  width: 83%;
+  margin: auto;
+}
+.airHeaters-title{
+  padding-top: 80px;
+  padding-bottom: 45px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+}
+.airHeaters-slider-title{
+  background: linear-gradient(180deg, #abd5e836 4.17%, rgba(255, 255, 255, 0) 100%);
+}
+:host::ng-deep .footer .footer__image{
+  display: block;
+}
+.indoor-title{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  color: #021C27;
+  padding-top: 80px;
+}
+.indoor-equipment{
+  display: flex;
+}
+.equipment-series-flex{
+  display: flex;
+  justify-content: space-between;
+}
+.equipment-series-title{
+  font-family: Manrope;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  color: #021C27;
+  padding-top:80px;
+}
+.equipment-series-title2{
+  font-family: Manrope;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  color: #021C27;
+  padding-top:80px;
+}
+.equipment-color{
+  background: linear-gradient(180deg, #abd5e838 4.17%, rgba(255, 255, 255, 0.12) 100%);
+}
+
+
+.slider{
+  position:relative;
+  padding-bottom: 116px;
+  &__flex{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__left{
+    position: absolute;
+    top:41%;
+    left:42px;
+    width: 48px;
+    height: 48px;
+  }
+  &__right{
+    position: absolute;
+    top:41%;
+    right:42px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+

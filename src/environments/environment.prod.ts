@@ -19,6 +19,12 @@ export const environment = {
   show:{
     get: '/show'
   },
+  showTwo:{
+    get: '/showTwo'
+  },
+  showThree:{
+    get: '/showThree'
+  },
   services:{
     get:'/services'
   },
@@ -42,5 +48,86 @@ export const environment = {
   },
   contacts3:{
     get:'/contacts3'
+  },
+  download:{
+    get:'/download'
+  },
+  technoImg:{
+    get:"/technoImg"
+  },
+  system:{
+  get:"/system"
+  },
+  systemTwo:{
+    get:"/systemTwo"
+  },
+  systemThree:{
+    get:"/systemThree"
+  },
+  systemFour:{
+    get:"/systemThree"
+  },
+  slider:{
+    get:'/slider'
+  },
+  airTC:{
+    get:'/airTC'
+  },
+  indoor:{
+    get:'/indoor'
+  },
+  related:{
+    get:'/related'
+  },
+  newsChild:{
+    get:'/newsChild'
+  },
+  heatGenerator:{
+    get:'/heatGenerator'
+  },
+  accessories:{
+    get:'/accessories'
+  },
+  seo1:{
+    get:'/seo1'
+  },
+  seo2:{
+    get:'/seo2'
+  },
+  airHeating:{
+    get:'/airHeating'
+  },
+  task:{
+    get:'/task'
+  },
+  advantages:{
+    get:'/advantages'
+  },
+  solution:{
+    get:'/solution'
+  },
+  used:{
+    get:'/used'
+  },
+  invite:{
+    get:'/invite'
+  },
+  provide:{
+    get:'/provide'
+  },
+  experience:{
+    get:'/experience'
+  },
+  education:{
+    get:'/education'
+  },
+ suggestion:{
+    get:'/suggestion'
+  },
+  accordion:{
+    get:'/accordion'
+  },
+  product:{
+    get:'/product'
   }
 };

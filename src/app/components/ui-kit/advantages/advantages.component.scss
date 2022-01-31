@@ -1,0 +1,150 @@
+.advantages
+  .container {
+  display: flex;
+  justify-content: space-between;
+  &__features{
+    &__content{
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 160%;
+      letter-spacing: 0.2px;
+      color: #021C27;
+      padding-top: 80px;
+    }
+    &__title{
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 46px;
+      line-height: 120%;
+      padding-top: 80px;
+      letter-spacing: -0.02em;
+      color: #021C27;
+    }
+    &__general{
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 160%;
+      letter-spacing: 0.2px;
+      color: #021C27;
+      padding-top: 34px;
+      padding-bottom: 80px;
+    }
+    &__system{
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 160%;
+      letter-spacing: 0.2px;
+      color: #021C27;
+      padding-top: 80px;
+      padding-bottom: 60px;
+      width: 570px;
+
+    }
+    &__paragraphTitle{
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 34px;
+      line-height: 120%;
+      letter-spacing: -0.02em;
+      color: #021C27;
+    }
+    &__paragraph{
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 160%;
+      letter-spacing: 0.2px;
+      color: #021C27;
+      width: 570px;
+      padding-top: 30px;
+      padding-bottom: 60px;
+      span{
+        font-weight: bold;
+      }
+    }
+    &__paragraphName{
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 140%;
+      color: #021C27;
+    }
+    &__paragraphText{
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 160%;
+      letter-spacing: 0.2px;
+      color: #021C27;
+      width: 570px;
+      padding-top: 30px;
+    }
+    &__ul{
+      margin-left: 20px;
+      li{
+        padding-top: 24px;
+        padding-left: 20px;
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 160%;
+        letter-spacing: 0.2px;
+        color: #021C27;
+      }
+    }
+  }
+
+      &__gradient{
+
+        &__description{
+          font-family: Manrope;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 15px;
+          line-height: 160%;
+          letter-spacing: 0.2px;
+          color: #021C27;
+          padding-top: 80px;
+
+        }
+        &__about{
+          font-family: Manrope;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 15px;
+          line-height: 160%;
+          letter-spacing: 0.2px;
+          color: #021C27;
+          padding-top: 30px;
+
+        }
+        &__title{
+          font-family: Manrope;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 120%;
+          letter-spacing: -0.02em;
+          color: #021C27;
+
+        }
+      }
+
+      img{
+
+        padding-top: 60px;
+      }
+
+}

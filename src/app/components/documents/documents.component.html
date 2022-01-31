@@ -1,0 +1,85 @@
+<app-header></app-header>
+<div>
+  <div class="header-flex-ul">
+    <ul>
+      <li>Главная</li>
+      <li>></li>
+      <li>Продукция</li>
+      <li>></li>
+      <li>Воздухонагреватели</li>
+    </ul>
+  </div>
+</div>
+<app-highly-efficient></app-highly-efficient>
+<div>
+  <div class="document">
+      <p class="document-title">Документы и файлы</p>
+    <div class="document-block">
+      <div class="document-block-child">
+        <div class="document-section">
+          <img src="../../../assets/icons/Group 179.png" alt="">
+          <p>Инструкция по эксплуатации, монтажу и техническому обслуживанию (RU)</p>
+        </div>
+
+        <div> <span>09.06.20 Rev.1</span>
+          <button class="download">Скачать</button></div>
+      </div>
+      <div class="document-block-child">
+        <div class="document-section">
+          <img src="../../../assets/icons/Group 179.png" alt="">
+          <p>Презентация TC-DF</p>
+        </div>
+        <div><span>22.06.20</span>
+          <button class="download">Скачать</button></div>
+      </div>
+      <div class="document-block-child">
+        <div class="document-section">
+          <img src="../../../assets/icons/Group 179.png" alt="">
+          <p>Чертежи конструкции TC-DF</p>
+        </div>
+        <div><span>05.05.20 Rev.0</span>
+          <button class="download">Скачать</button></div>
+      </div>
+      <div class="document-block-child">
+        <div class="document-section">
+          <img src="../../../assets/icons/Group 179.png" alt="">
+          <p>3D модель оборудования TC-DF</p>
+        </div>
+        <div> <span>09.06.20 Rev.1</span>
+          <button class="download">Скачать</button></div>
+
+      </div>
+    </div>
+</div>
+  </div>
+<app-equipment></app-equipment>
+<app-equipment-series></app-equipment-series>
+<div class="airHeaters-slider-title">
+  <div class="airHeaters-slider-title-container">
+    <p>Примеры решений</p>
+  </div>
+
+</div>
+<div class="slider">
+  <div class="slider__left">
+    <img src="./../../../../assets/air-heaters/left.png" alt="">
+  </div>
+  <div class="slider__right">
+    <img src="./../../../../assets/air-heaters/right.png" alt="">
+  </div>
+  <div class="container">
+    <div class="slider__flex">
+      <app-slider
+        *ngFor="let item of getSlide"
+        [img]=item.img
+        [title]=item.title
+        [text]=item.text
+      ></app-slider>
+    </div>
+  </div>
+</div>
+<div class="technological">
+  <app-technological></app-technological>
+</div>
+
+<app-footer></app-footer>

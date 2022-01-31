@@ -1,10 +1,16 @@
+@import "src/assets/scss/mixins/container.scss";
+
 .footer{
   background: #021C27;
+  &__contact{
+    margin-top:67px;
+  }
   &__image {
-    background: url("../../../../assets/img/footer-img.png")  0 0/100% auto no-repeat;
+    background: url("../../../../assets/img/footer-img.png") 0 0/100% auto no-repeat;
     width: 100%;
-    padding: 44px 0 52px 120px;
+    padding: 44px 0 52px 0;
     &-title {
+      @include container;
       font-style: normal;
       font-weight: 800;
       font-size: 42px;
@@ -14,6 +20,7 @@
       text-shadow: 0 2px 20px rgba(67, 94, 106, 0.5);
     }
     &-text {
+      @include container;
       font-style: normal;
       font-weight: 800;
       font-size: 24px;
@@ -28,13 +35,71 @@
       display: block;
     }
   }
-}
-.footer-flex{
-  display: flex;
-  width:83%;
-  margin:auto;
-  padding:67px 0 56px;
-  justify-content: space-between;
+  &__wrapper {
+    @include container;
+    display: flex;
+    padding:67px 0 56px;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(192, 198, 201, 0.18);
+    @media screen and (max-width: 900px){
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+  }
+  &__about {
+    &-company{
+    }
+    &-company li{
+      padding-bottom: 11px;
+      list-style-type: none;
+    }
+    &-product li {
+      padding-bottom: 12px;
+      list-style-type: none;
+    }
+    &-document{
+      margin-right:20px;
+      width: 183px;
+      li {
+        padding-bottom: 12px;
+        list-style-type: none;
+      }
+    }
+  }
+  &__logo{
+    margin-left: 121px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    @media screen and (max-width: 1200px){
+      margin:0
+    }
+    @media screen and (max-width: 900px){
+     margin-top: 35px;
+    }
+    @media screen and (max-width: 750px){
+      width: 200px;
+      margin: 35px auto;
+    }
+
+
+    &-text{
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 130%;
+      text-align: right;
+      letter-spacing: 0.2px;
+      color: #C0C6C9;
+      opacity: 0.3;
+      padding-left: 111px;
+      margin-top:15px;
+      @media screen and (max-width: 1200px){
+        padding-left:0;
+      }
+    }
+  }
 }
 a{
   font-family: Manrope;
@@ -46,35 +111,16 @@ a{
   color: #C0C6C9;
   opacity: 0.6;
   text-decoration: none;
-}
-.uls{
-  display:flex;
-}
-li{
-  list-style-type: none;
-  /*padding: 8px 16px;*/
-}
-.about {
-  &-company li{
-    padding-bottom: 11px;
-    padding-right: 92px;
-  }
-  &-product li {
-    padding-bottom: 12px;
-    padding-right: 55px;
-  }
-  &-document{
-    margin-right:20px;
-    li {
-      padding-bottom: 12px;
-      padding-right: 55px;
-    }
+  @media screen and (max-width: 1200px){
+    font-size: 19px;
   }
 }
 ul{
-  margin-right:20px
-}
-.contact{
+  margin-right:20px;
+  width: 183px;
+  @media screen and (max-width: 1200px){
+    margin-right:25px;
+  }
 }
 button{
   border: 1px solid #009FE3;
@@ -92,25 +138,6 @@ button{
   padding:10px 19px 11px 20px;
   cursor: pointer;
 }
-.footer-logo{
-  margin-left: 121px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-.footer-logo p{
-  font-family: Manrope;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 130%;
-  text-align: right;
-  letter-spacing: 0.2px;
-  color: #C0C6C9;
-  opacity: 0.3;
-  padding-left: 111px;
-  margin-top:15px;
-}
 .phone-number{
   padding-bottom: 12px;
 }
@@ -127,4 +154,51 @@ button{
 .number-mail{
   margin-bottom: 27px;
 }
+.flag{
+  background: #021C27;
+  border-radius: 4px;
+}
+.flag-container{
+  width: 83%;
+  margin:auto;
+}
+.flag-flex{
+  display: flex;
+  padding-top:18px;
+  padding-bottom: 56px;
+  justify-content: space-between;
+}
+.flag-russia{
+  display: flex;
 
+}
+.flag-russia img{
+  border-radius: 4px;
+  height: 12px;
+}
+.language{
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.2px;
+  color: #C0C6C9;
+  opacity: 0.3;
+  margin-left:8px
+}
+.security{
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.2px;
+  color: #C0C6C9;
+  opacity: 0.3;
+  margin-left:21px;
+}
+.web{
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 130%;
+  text-align: right;
+  letter-spacing: 0.2px;
+  color: #C0C6C9;
+  opacity: 0.3;
+}

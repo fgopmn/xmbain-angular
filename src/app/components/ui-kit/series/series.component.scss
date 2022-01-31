@@ -1,0 +1,28 @@
+.series__tittle{
+  background: linear-gradient(180deg, rgba(171, 213, 232, 0.12) 4.17%, rgba(255, 255, 255, 0) 100%);
+      h1{
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 46px;
+        line-height: 120%;
+        letter-spacing: -0.02em;
+        color: #021C27;
+        padding-top: 80px;
+        padding-bottom: 45px;
+      }
+
+}
+.series__section{
+  display: flex;
+  justify-content: space-between;
+  li{
+    list-style-type: none;
+
+    p{
+      padding-top: 5px;
+      font-family: Manrope;
+
+    }
+  }
+}

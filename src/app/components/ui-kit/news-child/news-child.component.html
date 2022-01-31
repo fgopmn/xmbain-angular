@@ -1,0 +1,28 @@
+
+<div class="news">
+  <div class="container">
+  <div *ngFor="let item of newsChild">
+    <div class="news__group">
+     <p class="news__text" [innerHTML]="item.text1"></p>
+      <div class="news__fon">
+     <p class="news__fon__text" [innerHTML]="item.text2"></p>
+      </div>
+    </div>
+    <div class="news__images">
+      <img class="news__image" src="{{item.img1}}" alt="">
+      <img class="news__imageTwo" src="{{item.img2}}" alt="">
+    </div>
+    <div>
+      <div>
+        <div class="news__flex">
+        <div class="news__info-text">
+          <p class="news__file-text" [innerHTML]="item.text3"></p>
+        </div>
+        <div class="news__gradient">
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

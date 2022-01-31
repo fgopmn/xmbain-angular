@@ -1,40 +1,38 @@
-
-  <div class="technical-block">
-    <div *ngFor="let item of getList" class="techno1">
-      <img src="{{item.img}}" alt="">
-      <h6>{{item.title}}</h6>
-      <p class="technical-discription">{{item.text}}</p>
-    </div>
-
-    <div *ngFor="let item2 of getList2" class="techno2">
-      <div class="iten2-img-flex">
-        <img class="chut" src="{{item2.img1}}" alt="">
-        <img src="{{item2.img2}}" alt="">
-      </div>
-      <h6>{{item2.title}}</h6>
-      <p class="technical-discription">{{item2.text}}</p>
-    </div>
-
-    <div *ngFor="let item3 of getList3" class="techno3">
-
-     <div class="percent-block">
-       <div class="percent-block-text">
-         <p class="percent-rule">{{item3.percent}}</p>
-         <p class="capex">{{item3.capex}}</p>
-         <p class="econom">{{item3.econom}}</p>
-       </div>
-<div class="percent-line"></div>
-       <div class="percent-block-text">
-         <p class="percent-rule">{{item3.percent2}}</p>
-         <p class="capex">{{item3.opex}}</p>
-         <p class="econom">{{item3.econom2}}</p>
-       </div>
-
-    </div>
-
-      <h6 id="item3-title">{{item3.title}}</h6>
-      <p id="item3-text">{{item3.text}}</p>
-    </div>
-
+<div class="technical">
+  <div *ngFor="let item of getList" class="technical__block1">
+    <img src="{{item.img}}" alt="">
+    <h6 class="technical__title">{{item.title}}</h6>
+    <p class="technical__description">{{item.text}}</p>
   </div>
+
+  <div *ngFor="let item2 of getList2" class="technical__block2">
+    <div class="technical__block2-images">
+      <img class="technical__block2-small-image" src="{{item2.img1}}" alt="">
+      <img src="{{item2.img2}}" alt="">
+    </div>
+    <h6 class="technical__title">{{item2.title}}</h6>
+    <p class="technical__description">{{item2.text}}</p>
+  </div>
+
+  <div *ngFor="let item3 of getList3" class="technical__block3">
+    <div class="technical__block3-container">
+      <div class="technical__block3-wrapper">
+        <p class="technical__block3-rule">{{item3.percent}}</p>
+        <p class="technical__block3-title">{{item3.capex}}</p>
+        <p class="technical__block3-description">{{item3.econom}}</p>
+      </div>
+      <div class="technical__block3-line"></div>
+      <div class="technical__block3-wrapper">
+        <p class="technical__block3-rule">{{item3.percent2}}</p>
+        <p class="technical__block3-title">{{item3.opex}}</p>
+        <p class="technical__block3-description">{{item3.econom2}}</p>
+      </div>
+    </div>
+    <h6 class="technical__title technical__title_block3">{{item3.title}}</h6>
+    <p class="technical__description_block3">{{item3.text}}</p>
+  </div>
+
+</div>
+
+
 

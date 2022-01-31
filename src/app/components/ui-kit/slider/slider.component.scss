@@ -1,0 +1,48 @@
+.slider{
+  background: linear-gradient(90deg, #FBFEFF 0%, #F0F8FC 100%);
+  border-radius: 40px;
+  display: flex;
+  width: 590px;
+  &__title{
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #021C27;
+  }
+          &__flex p{
+            font-family: Manrope;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 140%;
+            letter-spacing: 0.2px;
+            color: #021C27;
+            padding-left: 51px;
+            padding-right: 66px;
+
+          }
+          &__flex h6{
+            font-family: Manrope;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 140%;
+            color: #021C27;
+            padding-top: 50px;
+            padding-bottom: 46px;
+            padding-left: 51px;
+
+            a{
+              text-decoration: none;
+              color: #021C27;
+            }
+          }
+}
+
+
+
+
+

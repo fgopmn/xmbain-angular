@@ -8,7 +8,7 @@ body{
   width: 83%;
   margin: auto;
 }
-ul {
+.navigation ul {
   margin-bottom: 16px;
   display: flex;
   flex-wrap: nowrap;
@@ -27,7 +27,7 @@ li {
 }
 .navigation {
   border-bottom: 1px solid #C0C6C9;
-  margin-bottom: 30px;
+
 }
 h1 {
   font-family: Manrope;
@@ -38,6 +38,7 @@ h1 {
   letter-spacing: -0.02em;
   color: #021C27;
   margin-bottom: 86px;
+  padding-top: 30px;
 }
 .information {
   width: 100%;
@@ -54,7 +55,246 @@ h2 {
 }
 .address {
   width: 50%;
+  display: flex;
+  align-content: flex-start;
+  flex-direction: column;
+}
+.address-telephone{
+  display: flex;
+  flex-direction: column;
+  flex-direction: row;
+  padding-top: 60px;
+  padding-bottom: 42px;
+  border-bottom:  1px solid #C0C6C9;
+}
+.telephone-fax {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  opacity: 0.4;
+  padding-right: 44px;
+
+}
+.numbers {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-left: 24px;
+
+}
+.numbers-text {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  cursor: pointer;
+}
+.button-fax{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #021C27;
+  width: 48px;
+  height: 18px;
+  margin-top: 32px;
+  margin-left: 7px;
+  opacity: 0.4;
+}
+.email-text {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  opacity: 0.4;
+  padding-right: 44px;
+}
+.email-service {
+  display: flex;
+  flex-direction: column;
+  flex-direction: row;
+  padding-top: 34px;
+  padding-bottom: 40px;
+  border-bottom:  1px solid #C0C6C9;
+}
+.email-addresses {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  border-bottom: 1px solid #009fe352;
+  margin-left: 56px;
+  cursor: pointer;
+}
+.address-service {
+  display: flex;
+  flex-direction: column;
+  flex-direction: row;
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+.address-text{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  opacity: 0.4;
+  padding-right: 44px;
+}
+.addresses-organization {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  margin-left: 50px;
+  cursor: pointer;
+
 }
 .contact-us {
+  background: linear-gradient(90deg, #abd5e826 0%, rgba(255, 255, 255, 0) 100%);
   width: 50%;
+  margin-left: 102px;
+}
+.contact-us-block {
+  padding: 201px 102px 107px 120px;
+}
+.downloads-text {
+  display: flex;
+}
+.title1 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+}
+.title2 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  margin-bottom: 41px;
+}
+.main-text {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  padding-top: 30px;
+}
+.message-button {
+  background-color: #009FE3;
+  border-radius: 5px;
+  border: none;
+  margin-top: 36px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 11px 20px;
+  margin-bottom: 80px;
+}
+.information-button {
+  background-color: #021C27;
+  border-radius: 5px;
+  border: none;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 11px 20px;
+  margin-bottom: 30px;
+}
+.downloads-text2 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  border-bottom: 1px solid #009fe352;
+  margin-left: 12px;
+}
+.maps-block{
+  text-align: center;
+}
+.maps-block iframe{
+  width: 100%;
+  max-width:1920px;
+  height:360px;
+  border:0;
+
+
+}
+.information-cities {
+  width: 83%;
+  margin: auto;
+}
+.information-cities h4 {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+.information-cities li {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  text-align: start;
+  border-bottom: 1px dashed #009fe33d;
+  padding: 25px 14px 0px 1px;
+}
+.cities-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 102px;
 }

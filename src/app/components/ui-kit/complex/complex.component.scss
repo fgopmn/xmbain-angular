@@ -1,25 +1,44 @@
-.complex-choose{
+a{
+  text-decoration: none;
+}
+
+.complex{
+
   background: #FFFFFF;
   box-shadow: 0 5px 40px rgba(2, 26, 36, 0.04);
   border-radius: 20px;
   width: 285px;
+  cursor: pointer;
+  height: auto;
+  margin-bottom: 24px;
+  padding: 13px 0;
+
+
   &__image {
     padding-left: 20px;
     padding-top: 20px;
   }
   &__title {
-    padding: 20px 25px 32px 20px;
-  }
-  &:nth-child(odd){
-    margin-right: 20px;
-  }
-}
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 120%;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.2px;
+    color: #021C27;
+    padding: 9px 20px;
 
+  }
+  //&:nth-child(odd){
+  //  margin-right: 20px;
+  //}
+}
 .child5-flex{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 120px;
   justify-content: space-between;
-
 }

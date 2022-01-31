@@ -1,0 +1,12 @@
+<div class="backOverlay"
+     [class.backOverlay_show]="isOpenProps"
+>
+</div>
+<div class="consultation"
+
+     [class.consultation_show]="isOpenProps"
+>
+  <button class="consultation__close__button"   (click)="closeConsultation()">X</button>
+  <ng-content></ng-content>
+</div>
+

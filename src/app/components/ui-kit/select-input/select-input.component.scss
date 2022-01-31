@@ -1,5 +1,4 @@
 .select-input {
-  width: 307px;
   height: 52px;
   font-family: Manrope;
   font-style: normal;
@@ -9,12 +8,14 @@
   letter-spacing: 0.2px;
   color: #021C27;
   background: white;
-  border-bottom: 1px solid rgba(0,159,227,.12);
+  border-bottom: 1px solid rgba(0, 159, 227, .12);
   padding: 17px 0 16px 35px;
+
   &_selected {
     color: #009FE3;
-    background:rgba(0,159,227,.1);
+    background: rgba(0, 159, 227, .1);
   }
+
   &_default {
     color: #021C27;
     background: white;

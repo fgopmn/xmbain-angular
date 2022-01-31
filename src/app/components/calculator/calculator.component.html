@@ -1,0 +1,181 @@
+<app-header></app-header>
+<div class="header-names">
+  <div class="container">
+    <div class="navigation">
+      <ul>
+        <li>Главная</li>
+        <li> ></li>
+        <li>О компании</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="calculator">
+  <div class="container">
+    <div class="calculator-title-description">
+      <p class="calculator-title">Калькулятор</p>
+      <p class="calculator-description">Заполните представленную ниже
+        форму для подбора оборудования.
+        Наши специалисты оперативно выполнять
+        расчеты и свяжутся с вами.</p>
+    </div>
+  </div>
+</div>
+<div class="equipment">
+
+    <app-equipment></app-equipment>
+</div>
+<app-footer></app-footer>
+<div class="data-entry">
+  <div class="container">
+    <div class="data-rules-flex">
+      <div class="rectangle137">
+        <div class="red-rule"></div>
+      </div>
+      <div class="rectangle13">
+        <div class="red-rule"></div>
+        <div class="red-rule2"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="data-select">
+    <div class="container">
+      <div class="data-select-group">
+        <form action="">
+        <div class="data-flex">
+
+            <div class="data-select-one">
+              <app-choose
+                [selectTitle]="'Тип помещения'"
+                [logo]="'../../../assets/icons/Group 318 (1).png'"></app-choose>
+              <app-choose
+                [selectTitle]="'Материал стен'"
+                [logo]="'../../../assets/icons/Group 536.png'"
+              ></app-choose>
+              <app-fill
+                [selectTitle]="'Толщина стен'"
+                [logo]="'../../../assets/icons/Group 537.png'"
+                [mm]="'MM'">
+              </app-fill>
+              <app-choose
+                [selectTitle]="'Окна и световые фонари'"
+                [logo]="'../../../assets/icons/Rectangle 482.png'"
+              ></app-choose>
+              <app-fill
+                [selectTitle]="'Площадь остекления'"
+                [logo]="'../../../assets/icons/Group 542.png'"
+                [square]="'2'"
+                [mm]="'M'"></app-fill>
+              <p class="on-text">Включая световые фонари</p>
+            </div>
+            <div class="data-select-two">
+              <app-fill
+                [selectTitle]="'Категория пожаровзрывоопасности помещения'"
+                [logo]="'../../../assets/icons/fire.png'"
+                [mm]="''">
+              </app-fill>
+              <app-choose
+                [selectTitle]="'Материал кровли'"
+                [logo]="'../../../assets/icons/Group 538.png'"
+              ></app-choose>
+              <app-fill
+                [selectTitle]="'Толщина кровли'"
+                [logo]="'../../../assets/icons/Group 539.png'"
+                [mm]="'MM'">
+              </app-fill>
+              <app-fill
+                [selectTitle]="'Требуемая кратность воздухообмена'"
+                [logo]="'../../../assets/icons/Group 541.png'"
+                [mm]="'м3/ч'">
+              </app-fill>
+              <app-fill
+                [selectTitle]="'Площадь ворот и дверей'"
+                [logo]="'../../../assets/icons/Group 542.png'"
+                [square]="'2'"
+                [mm]="'M'">
+              </app-fill>
+
+
+          </div>
+
+            <div class="data-select-three">
+              <div class="select-group">
+                <label class="volume-title"><img src="../../../assets/icons/Group 535.png" alt="no image"/>Объем
+                  помещения</label> <br>
+                <div class="volume-group">
+                  <input type="text" class="volume" placeholder="Длина"><span class="mm">M</span>
+                  <input type="text" class="volume" placeholder="Ширина"><span class="mm">M</span>
+                  <input type="text" class="volume" placeholder="Высота по стене"><span class="mm">M</span>
+                  <input type="text" class="volume" placeholder="Высота в коньке"><span class="mm">M</span>
+                </div>
+                <p class="volume-m">Указать объем в м<sup>3</sup></p>
+              </div>
+              <app-fill
+                [selectTitle]="'Требуемая температура в помещении'"
+                [logo]="'../../../assets/icons/Group 544.png'"
+                [mm]="'°C'">
+              </app-fill>
+              <app-fill
+                [selectTitle]="'Город расположения'"
+                [logo]="'../../../assets/icons/Group 545.png'"
+              >
+              </app-fill>
+            </div>
+        </div>
+          <div class="information-area">
+            <textarea name="" id="area" cols="30" rows="10" placeholder="Дополнительная информация"></textarea>
+            <div class="submit-flex">
+              <button class="back">Назад</button>
+              <button class="next">Далее</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="dashed">
+      <img src="../../../assets/partners/dashed.png"/>
+    </div>
+<div class="rule-group">
+  <div class="rule">
+  <div class="container">
+    <div class="data-rules-flex2">
+      <div class="rectangle137">
+        <div class="red-rule"></div>
+      </div>
+      <div class="rectangle15">
+        <div class="red-rule"></div>
+        <div class="red-rule4"></div>
+      </div>
+    </div>
+    <div class="personal-data">
+      <div class="contact">
+        <img src="../../../assets/partners/person2.png" alt="no image"/>
+        <p class="yourContact">Ваши контакты</p>
+      </div>
+      <form action="">
+      <div class="contacts">
+        <input  class="volume" type="text" placeholder="Имя">
+        <input  class="volume" type="text" placeholder="Телефон">
+        <input  class="volume" type="text" placeholder="Email">
+      </div>
+        <div class="check-group">
+      <input type="checkbox" id="check">
+      <p>Отправляя заявку, даю согласие на
+        хранение и обработку персональных данных</p>
+        </div>
+        <div class="submit-flex">
+          <button class="back">Назад</button>
+          <button class="next">Отправить</button>
+
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+  </div>
+</div>

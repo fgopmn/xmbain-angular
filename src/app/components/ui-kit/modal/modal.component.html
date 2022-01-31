@@ -1,0 +1,11 @@
+<div class="overlay"
+      [class.overlay_show]="isOpenProps"
+  >
+</div>
+<div class="modal"
+     (clickOutside)="closeModal()"
+     [class.modal_show]="isOpenProps"
+>
+
+  <ng-content ></ng-content>
+</div>

@@ -1,0 +1,203 @@
+<app-header></app-header>
+<div>
+  <div class="container">
+  <div>
+    <ul class="header-ul">
+      <li>Главная</li>
+      <li>></li>
+      <li>Продукция</li>
+      <li>></li>
+      <li>Воздухонагреватели</li>
+    </ul>
+  </div>
+  </div>
+</div>
+<app-highly-efficient></app-highly-efficient>
+<div class="applicationss">
+  <div class="container">
+    <div>
+      <p class="applicationss-title">Применение</p>
+      <p class="applicationss-text">Воздухонагреватели TC-DF являются универсальными и
+        подходят для обогрева практически любых помещений, а также нагрева свежего
+        наружного воздуха в системах приточной вентиляции.</p>
+    </div>
+    <div class="app-flex">
+      <div *ngFor="let item of getair" class="descripton-img-text">
+        <img src="{{item.img}}" alt="" class="descriptiom-img">
+        <p class="descriptiom-text">{{item.text}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="heat-section">
+  <div class="container">
+    <div>
+      <p class="heat-title">Достоинства и преимущества оборудования Tecnoclima</p>
+     <p class="heat-little-title">Стационарные теплогенераторы TC и секции нагрева SR</p>
+    </div>
+    <div class="heat-flex">
+      <app-full-range
+        *ngFor="let heat of heats"
+      [heatText]="heat.heatText"
+      [heatNumber]="heat.id"
+        [heatAbout]="heat.about"
+      ></app-full-range>
+    </div>
+  </div>
+</div>
+
+<div class="air">
+  <div class="container">
+    <div class="air-title-air">
+      <p class="air-litle-title">Воздухонагреватель</p>
+      <p class="air-title">Tecnoclima TC-DF</p>
+    </div>
+
+    <div class="tecnoclima-tc">
+        <p class="tech-description-text">Оборудование состоит в основном из изолированного шкафа,
+          принимающего поток воздуха, создаваемый группой вентиляторов.
+          Шкаф содержит высокоэффективный теплообменник INOX из нержавеющей
+          стали, который передает тепловую мощность посредством прямого обмена
+          между продуктами сгорания и потоком обрабатываемого воздуха.
+          Такой воздух нагревается при прохождении по горячей поверхности теплообменника,
+          а затем распределяется по предпосылки. Нагреватель теплого воздуха, если он соединен
+          с главными рукавами с вторичными ответвительными рукавами, позволяет нагревать только
+          чувствительные части растения, такие как корни и листья, создавая своего рода «капельный
+          нагрев» через устройство распределения воздуха к земле, предоставляя глобальное энергосбережение.
+          Характеристики центробежного вентилятора делают оборудование пригодным для установки там,
+          где воздух должен распределяться по трубопроводам, или, в более общем случае, там, где
+          требуется высокое статическое давление. Нагреватель теплого воздуха укомплектован электрическим
+          устройством для управления функциями нагревателя, а определенный фланец (как на выходе, так и на входе)
+          позволяет подключать оборудование к трубопроводам. </p>
+
+        <p class="tech-description-text2">По запросу доступны все модели для работы с двухступенчатыми или модулирующими
+          горелками для полного контроля температуры теплицы. Это позволяет достичь
+          максимальной глобальной эффективности установки.</p>
+
+
+    </div>
+  </div>
+</div>
+
+    <div class="tecnologia">
+      <div class="container">
+        <div class="tecnologia-flex">
+          <div class="dry-system">
+            <div class="green-ellipse">КПД <br> <span>до</span>
+              108%</div>
+            <p class="dry-system-title">Технология Dry System Tecnoclima</p>
+            <p class="dry-system-text">Прямая передача энергии <br> в помещение, без использования z теплоносителя.</p>
+
+          </div>
+
+          <div class="air-dry">
+            <img src="../../../../assets/air-heaters/air-system.png" alt="no image">
+
+          </div>
+
+        </div>
+
+        <div class="air-heater-greenHouse">
+          <div class="green-num">
+            <ol>
+              <li>Широкая гамма мощностей от 60 до 1160 кВт;</li>
+               <li>Расход воздуха – от 4300 до 70000 нм3/ч;</li>
+               <li> Степень нагрева – от 40 до 60°С;</li>
+               <li>Максимальное статическое давление (станд. исп.) – до 220 Па;</li>
+               <li>Максимальное статическое давление («S» версия) – до 450 Па;</li>
+               <li>Эффективность (КПД) – до 90%;</li>
+               <li> Для прямой подачи воздуха в помещение или для работы с системой воздуховодов;</li>
+               <li>Работают как с газовой, так и с жидкотопливной горелкой; одно-, двухступенчатой или с плавным регулированием мощности;</li>
+               <li> Камера сгорания из жаропрочной нержавеющей стали AISI 430;</li>
+                <li>Эл. система контроля, интеллектуальная система управления;</li>
+               <li>Прочный корпус рамной конструкции со звуко-  и теплоизолированными панелями;</li>
+               <li>Используются малошумные центробежные вентиляторы двухстороннего всасывания с клиноременной передачей;</li>
+               <li>Конвективная часть теплообменника из нержавеющей стали;</li>
+              <li>Доступны также исполнения: с низким NOx, с изменяемым расходом воздуха, с высоким напором воздуха, версия с конденсацией.</li>
+            </ol>
+          </div>
+
+          <div>
+            <img src="../../../../assets/air-heaters/greenhouse2.png" alt="no image">
+            <p class="green-description">Применение воздухонагревателя TC-DF для отопления теплицы</p>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+
+<app-equipment></app-equipment>
+
+<div class="equipment-series">
+  <div class="container">
+    <p class="equipment-series-title">Оборудование из серии</p>
+    <div class="equipment-series-flex">
+  <app-equipment-series
+    [img]="'../../../../assets/air-heaters/image 27.png'"
+    [title]="'TCO-DF'"
+    [about]="'Вертикальные нагреватели для внутренней установки'"
+    [text]="'Тепл. мощность: 62-446 кВт Возд. поток: 4800-33000 м3/ч'"
+  ></app-equipment-series>
+  <app-equipment-series
+      [img]="'../../../../assets/air-heaters/image 27 (1).png'"
+      [title]="'TCO-E'"
+      [about]="'Конденсационные вертикальные обогреватели'"
+      [text]="'Тепл. мощность: 68-1090 кВт Возд. поток: 4600-71000 м3/ч'"
+    ></app-equipment-series>
+</div>
+</div>
+</div>
+  <div class="equipment-series">
+    <div class="equipment-color">
+      <div class="container">
+        <p class="equipment-series-title2">Сопутствующее оборудование</p>
+      </div>
+    </div>
+  <div>
+    <div class="container">
+      <div class="equipment-series-flex">
+    <app-equipment-series *ngFor="let item of equipment"
+      [img]="item.img"
+      [title]="item.seria"
+      [about]="item.title"
+      [text]="item.text"
+    ></app-equipment-series>
+    </div>
+    </div>
+  </div>
+<div class="airHeaters-slider">
+  <div class="airHeaters-slider-title">
+    <div class="container">
+      <p class="air-title">Примеры решений</p>
+    </div>
+
+  </div>
+
+  <div class="slider">
+    <div class="slider__left">
+      <img src="./../../../../assets/air-heaters/left.png" alt="">
+    </div>
+    <div class="slider__right">
+      <img src="./../../../../assets/air-heaters/right.png" alt="">
+    </div>
+
+    <div class="container">
+      <div class="slider__flex">
+        <app-slider
+          *ngFor="let item of getSlide"
+          [img]=item.img
+          [title]=item.title
+          [text]=item.text
+        ></app-slider>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="technological">
+  <app-technological></app-technological>
+</div>
+  </div>
+<app-footer></app-footer>

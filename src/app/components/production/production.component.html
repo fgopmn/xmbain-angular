@@ -1,0 +1,239 @@
+<app-header></app-header>
+<div class="product">
+  <div class="container">
+    <div class="menu-list">
+      <ul class="menu">
+        <li>Главная</li>
+        <li> ></li>
+        <li> Продукция</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<div class="product-description">
+  <div class="container">
+  <div class="product-description-flex">
+    <div class="blue-fon">
+      <p class="product-title">Продукция</p>
+    <div class="product-description-power">
+      <p class="power-title">Тепловая мощность</p>
+      <div class="power-flex">
+        <div class="power-number">34</div>
+        <span>-</span>
+        <div class="powerVt"><p>54000</p><span>кВт</span></div>
+      </div>
+    </div>
+
+    <div class="product-description-power2">
+      <p class="power-title">Воздушный поток</p>
+      <div class="power-flex">
+        <div class="power-number2">300</div>
+        <span>-</span>
+        <div class="powerVt"><p>72000</p><span>м3/ч</span></div>
+      </div>
+    </div>
+      <app-product-check></app-product-check>
+    </div>
+
+    <div class="techno-flex">
+      <div *ngFor="let item of technoImg" class="techno-block">
+        <img src="{{item.img}}" alt="no image" class="techno-img">
+        <p class="techno-description">{{item.description}}</p>
+      </div>
+    </div>
+    <div class="bbb">
+      <div class="seria">
+        <p>Серии</p>
+
+
+        <p>
+          A<br>
+          AGRI-C<br>
+          AGRI-DF<br>
+          AGRI-P<br>
+          AQUACIKKI<br>
+          AQUAPIGGY<br>
+          AZN<br>
+          AZN EC<br>
+          AZN-X<br>
+        </p>
+        <p>
+          B<br>
+          BA PLUS<br>
+          BOXY </p>
+
+        <p> C<br>
+          CF-CM/P<br>
+          CF-GAS<br>
+          CF-GAS SP<br>
+          CF-GAS/P<br>
+          CF-XTRIM<br>
+          CMX</p>
+
+        <p> D<br>
+          DAE<br>
+          DGK<br>
+          DGP<br>
+          DGS<br>
+          DM<br>
+          DM-SE<br>
+          DST<br>
+          DUO-MO</p>
+
+        <p>
+          E<br>
+          EKOCIKKI<br>
+          EKOCIKKI 80<br>
+          ENERGY<br>
+          ENERGY-O<br>
+          ENERGY-O/K<br>
+          ENERGY/K</p>
+
+        <p>
+          H<br>
+          HB PLUS</p>
+
+        <p>
+          K<br>
+          KLIMAXS<br>
+          KUBO-S<br>
+        </p>
+        <p> M<br>
+          M-CF<br>
+          MB UNIT<br>
+          MINIJET<br>
+          MIXI 80<br>
+          MIXIJET<br>
+        </p>
+      </div>
+
+
+      <div class="seria">
+        <p><br> </p>
+        <p>
+          N <br>
+          NTN  <br>
+          NTPM
+        </p>
+
+        <p>
+          P<br>
+          PA<br>
+          PCM <br>
+          PMX
+        </p>
+
+        <p>
+          R <br>
+          RCF <br>
+          RCU <br>
+          RCU-HE
+
+        </p>
+
+        <p>
+          S<br>
+          SMARTBOXY<br>
+          SMX<br>
+          SR<br>
+          SR-CM ÷
+          SR-CM/K<br>
+          SR-UT ÷
+          SR-UT/K<br>
+          SR/K<br>
+          SUPERBESST<br>
+          SUPERCIKKI
+          80<br>
+          SUPERFRESH
+        </p>
+
+
+        <p>
+          T<br>
+          TANDEM CM <br>
+          TC-DF <br>
+          TC-E <br>
+          TC-E/K <br>
+          TC-TEK <br>
+          TCO-DF <br>
+          TCO-E <br>
+          TCO-E/K <br>
+          TE
+        </p>
+
+        <p>
+          U<br>
+          UT<br>
+          UT/K<br>
+          UTAK<br>
+          UTC<br>
+          UTC/K
+        </p>
+
+        <p>
+          V <br>
+          VX
+        </p>
+        <p>
+          W <br>
+          WIMBLEDON
+        </p>
+
+
+      </div>
+    </div>
+  </div>
+    </div>
+</div>
+<div class="technological">
+  <app-technological></app-technological>
+</div>
+<div class="container">
+  <img class="blue-flag" src="../../../assets/img/image 125 (1).png" alt="">
+</div>
+
+<div class="showAll">
+  <div class="container">
+    <div>
+
+      <div class="system">
+        <div *ngFor="let i of system" class="systemOne">
+          <p style="padding-right: 22px;">{{i.plus}}</p>
+          <p>{{i.description}}</p>
+        </div>
+      </div>
+      <div class="system">
+        <div *ngFor="let i of systemTwo" class="systemOne">
+          <p style="padding-right: 22px;">{{i.plus}}</p>
+          <p>{{i.description}}</p>
+        </div>
+      </div>
+      <div class="system">
+        <div *ngFor="let i of systemThree" class="systemOne">
+          <p style="padding-right: 22px;">{{i.plus}}</p>
+          <p>{{i.description}}</p>
+        </div>
+      </div>
+      <div class="system">
+        <div *ngFor="let i of systemFour" class="systemOne">
+          <p style="padding-right: 22px;">{{i.plus}}</p>
+          <p>{{i.description}}</p>
+        </div>
+      </div>
+
+<!--      <div class="system">-->
+<!--        <app-system-product-->
+<!--          *ngFor="let i of systemFour"-->
+<!--          [text]="i.description"-->
+<!--        >-->
+<!--        </app-system-product>-->
+<!--      </div>-->
+    </div>
+    <button class="click-all">Показать все</button>
+  </div>
+
+</div>
+
+<app-footer></app-footer>

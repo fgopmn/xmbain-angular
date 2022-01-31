@@ -1,0 +1,42 @@
+.backOverlay {
+  position: fixed;
+  height: 100vh;
+  z-index: 997;
+  background-color: rgba(0, 0, 0, .2);
+  filter: drop-shadow(0px 100px 250px rgba(2, 21, 29, 0.5));
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+
+  &_show {
+    display: block;
+  }
+}
+
+.application {
+  position: fixed;
+  background-color: white;
+  z-index: 998;
+  min-width: 843px;
+  max-width: 1000px;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  transform: translate(0,0);
+  display: none;
+     &__close__button{
+    background: none;
+    border: none;
+    color: #021c274a;
+    font-size: 50px;
+    position: fixed;
+    top: 45px;
+    right: 45px;
+    cursor: pointer;
+  }
+
+  &_show {
+    display: block;
+  }
+}

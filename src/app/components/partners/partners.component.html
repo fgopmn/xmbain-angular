@@ -1,0 +1,125 @@
+<app-header></app-header>
+<div class="partners-global">
+  <div class="container">
+  <div class="partner-title-flex">
+    <div class="partner-group">
+    <div class="title-click">
+      <p class="partners-title">Партнерам</p>
+      <p class="partners-description">ООО «TC Груп Энергия» входит в группу
+        компаний Tecnoclima S.p.A. в качестве
+        коммерческого подразделения на рынках
+        России и Восточной Европы.</p>
+      <button  (click)="openCooperation()"  class="send">Отправить запрос</button>
+    </div>
+
+    <div class="invite-group">
+      <p class="invite-title">Приглашаем</p>
+      <ul class="invite-numbers">
+        <li *ngFor="let item of inviteList">{{item.description}}</li>
+      </ul>
+    </div>
+      <div class="provide-group">
+        <p class="invite-title">Обеспечиваем</p><ul class="provide-numbers">
+        <li *ngFor="let item of provideList">{{item.description}}</li>
+      </ul>
+      </div>
+
+      <div class="proposal">
+        <p>Предлагаем взаимовыгодные условия и всестороннюю
+        поддержку нашим партнерам: консультации специалистов проектного и
+        монтажного отделов, поощрительные программы посещения завода-изготовителя
+        оборудования в Италии, бонусы и ценные подарки по итогам совместных реализаций
+        проектов</p>
+      </div>
+
+      <div class="experience">
+        <p class="invite-title">Наш опыт</p>
+        <div class="experience-description">
+          <p class="experience-text" *ngFor="let item of experienceList" >{{item.description}}</p>
+        </div>
+      </div>
+
+      <div class="education">
+        <p class="invite-title">Обучение</p>
+        <div class="experience-description">
+          <p class="experience-text" *ngFor="let item of educationList" >{{item.description}}</p>
+        </div>
+      </div>
+  </div>
+    <div class="suggestions">
+      <div class="suggestion-text">
+        <p class="suggestion-description">
+          Компания TC Груп Энергия разработала и
+          продвигает программу поощрения и поддержки
+          для специалистов, применяющих наше оборудование
+          в разрабатываемых проектах.</p>
+        <p class="suggestion-description">Закладывая в проект оборудование Tecnoclima,
+          вы сможете получить бонус от нашей компании и
+          поучаствовать в наших программах стимулирования
+          сотрудничества.</p>
+        <b class="suggestion-description">Вы можете применить наше оборудование
+          в следующих областях:</b>
+
+      <ul class="suggestion-types">
+        <li *ngFor="let item of suggestionList">{{item.description}}</li>
+      </ul>
+
+        <p class="end-description">В программу поддержки проектировщиков входит
+          предоставление всех необходимых расчетных данных,
+          технической документации, инструкций и технических паспортов на оборудование,
+          ознакомление с аналогичными проектами, уже реализованными нашей компанией,
+          консультации специалистов проектного и монтажного отделов.</p>
+
+      </div>
+
+      <div class="sketch">
+        <img src="../../../assets/partners/sketch.png"/></div>
+    </div>
+
+  </div>
+  </div>
+</div>
+
+<app-cooperation
+  [is-open]="!isCooperationOpen"
+  (whenCooperationOpen)="openCooperation($event)"
+  class="application"
+>
+  <p class="cooperation__tittle">Сотрудничество</p>
+  <p class="cooperation__text">Оставьте свои контакты и наши специалисты свяжутся <br>
+    с вами. Для устной консультации по вопросам <br>
+    сотрудничества звоните по номеру +7 495 104-70-77.</p>
+
+  <form [formGroup]="form" class="cooperation__form">
+
+
+    <div class="cooperation__form__type">
+      <label for="userName">Ваше имя </label>
+      <div><input formControlName="name" type="text" id="userName"></div>
+    </div>
+    <div class="cooperation__form__type">
+      <label for="number">Телефон</label>
+      <div><input type="tel" id="number" name="number" formControlName ="number"></div>
+    </div>
+    <div class="cooperation__form__type">
+      <label for="email">Email</label> <br>
+      <div>  <input type="email" id="email" name="email" formControlName ="email"></div>
+
+      </div>
+    <div class="cooperation__form__type2">
+      <input type="checkbox"  id="check" class="cooperation__form__type2__checkbox">
+      <label for="check">Отправляя заявку, даю согласие на хранение <br>
+        и обработку персональных данных</label>
+    </div>
+    <button [disabled]="form.invalid"  class="cooperation__form__button">Отправить</button>
+  </form>
+
+  <div >
+    <img src="../../../assets/img/image 125 (2) (1).png" class="cooperation__blue__flag"/>
+  </div>
+
+</app-cooperation>
+
+<app-footer></app-footer>
+
+

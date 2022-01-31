@@ -1,0 +1,147 @@
+<app-header xmlns="http://www.w3.org/1999/html"></app-header>
+<div class="solution-global">
+  <div class="container">
+    <div class="menu-list">
+      <ul class="menu">
+        <li>Главная</li>
+        <li> ></li>
+        <li> Примеры решений </li>
+        <li> ></li>
+        <li>  Производство</li>
+      </ul>
+    </div>
+    <div class="solution-flex">
+      <div class="solution-OAO">
+      <p class="solution-little-title">Решение для компании</p>
+      <p class="solution-global-title">ОАО «Алтайвагон»</p>
+      <p class="solution-description">Алтайский вагоностроительный завод выпускает вагоны  для нужд железнодорожного транспорта.
+        Одно из крупнейших предприятий Алтайского края; крупнейшее специализирующееся на вагоностроении предприятие России.
+        Предприятие занимается разработкой и изготовлением новых моделей, а также осуществляет деповской и капитальный ремонт
+        грузовых вагонов.</p>
+      </div>
+      <div class="location">
+        <img src="./assets/page-solution/logo-yellow.png" alt="no image" class="yellow-logo">
+        <div class="location-text">
+          <p><span>Местоположение:</span>Новоалтайск, Алтайский край, Россия</p>
+          <p><span>Общая мощность:</span> 22 000 кВт</p>
+          <p> <span>Назначение:</span> Отопление и вентиляция производственного цеха,
+            обеспечение притока свежего воздуха с автоматическим
+            регулированием соотношения наружного и рециркуляционного воздуха</p>
+          <b class="year"> 2012</b>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+<div class="slide-global">
+<div class="container">
+  <div>
+    <button class="left-slide"><</button>
+    <button class="right-slide">> </button>
+  </div>
+
+  <div class="slide-block">
+    <img src="./assets/page-solution/building-one.png" alt="">
+    <img src="./assets/page-solution/building-two.png" alt="">
+    <button class="left-slide"><</button>
+    <button class="right-slide">> </button>
+  </div>
+
+</div>
+</div>
+
+
+
+<div class="task-global">
+  <div class="container">
+    <div class="task-flex">
+<div class="task" >
+  <h6 class="task-title1">Задача</h6>
+  <ol class="task-group">
+    <li class="task-description" *ngFor="let item of taskList">{{item.description}}</li>
+  </ol>
+  <h6 class="task-title1">Решение</h6>
+  <p class="solution-text">Принято решение об установке 22 вертикальных воздухонагревателей
+    наружного исполнения модели TC 800 E/K (суммарная тепловая мощность 22 МВт),
+    укомплектованных газовыми горелками с модуляцией мощности RIELLO RS 100/M.
+    Воздухонагреватели включают опцию для низких температур наружного воздуха
+    (в том числе, автономный нагрев обмоток двигателей вентиляторной секции),
+    обеспечивающую бесперебойную работу установок при температурах до -40°С.</p>
+  <ol class="task-group">
+    <li class="task-description" *ngFor="let j of solution">{{j.description}}</li>
+  </ol>
+</div>
+      <div class="advantages">
+        <div class="advantages-container">
+        <h6 class="advantages-title">Преимущества</h6>
+        <ul class="advantages-group"><li class="advantages-description" *ngFor="let i of advantages">{{i.description}}</li></ul>
+          <div>
+        <h6 class="advantages-title">Отзыв</h6>
+        <div class="opinion">
+          <img src="./assets/page-solution/opinion.png" alt="">
+          <img class='opinion-img' src="./assets/page-solution/opinion2.png" alt="">
+        </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+</div>
+</div>
+<div>
+  <div class="used-global">
+    <div class="used-title-global">
+      <div class="container">
+      <div class="used-title-group">
+        <div class="used-title-block">
+          <p class="used-title">Используемое оборудование</p>
+          <div>
+            <a routerLink="/seo"><button class="air-click">Все для отрасли</button></a>
+
+          </div>
+
+        </div>
+
+        <div class="button-flex-group">
+          <button class="air-button">Воздухонагреватели</button>
+          <button class="air-button">Крышные кондиционеры roof top</button>
+          <button class="air-button">Вентиляция и рекуперация тепла</button>
+        </div>
+
+      </div>
+    </div>
+    </div>
+<div class="used-global">
+    <div class="container">
+      <div class="used-flex">
+        <app-used-equipment *ngFor="let us of used"
+                            [img]= "us.img"
+                            [title]= "us.title"
+                            [description]= "us.description"
+                            [description2]= "us.description2">
+          </app-used-equipment>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+<div class="slider-global">
+  <div class="container">
+    <p class="slider-title">Примеры решений</p>
+  </div>
+</div>
+<div class="slider">
+  <div class="container">
+    <div class="slider__flex">
+      <app-slider
+        *ngFor="let item of getSlide"
+        [img]=item.img
+        [title]=item.title
+        [text]=item.text
+      ></app-slider>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

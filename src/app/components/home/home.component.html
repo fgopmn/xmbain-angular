@@ -1,217 +1,291 @@
 <app-header></app-header>
-
-<div>
-
-</div>
 <div class="industrial">
-  <div class="industrial-flex">
-    <div class="industrial-block">
-      <div class = 'industrial-text'>
+  <div class="container">
+    <div class="industrial__flex">
+      <div class='industrial__text'>
         <b>Отапливайте промышленные помещения</b>
-        <p class="percent">C выгодой до 30% в год<br>  с помощью воздушных теплогенераторов</p>
-        <div style="margin-top:40px;">  <button class="industrial__button">Оборудование</button></div>
+        <p class="industrial__percent">C выгодой до 30% в год<br> с помощью воздушных теплогенераторов</p>
+        <div style="margin-top:40px;">
+          <a routerLink="/production"><button  class="industrial__button">Оборудование</button></a>
 
+        </div>
       </div>
-      <div>
-        <img style="border-radius: 40px;" src="../../../../assets/img/Италия - Dezainer Oulet Barberino (2) 3.png">
+      <div class="industrial__img">
+        <img class="industrial__img__one" src="../../../../assets/img/Group 237.png" alt="no image">
+        <img class="industrial__img__two" src="../../../../assets/img/Италия - Dezainer Oulet Barberino (2) 3.png"
+             alt="no image">
       </div>
     </div>
-
-    <div style="display: flex; justify-content: space-between">
-
-      <div class="child1">Отопление
-        промышленных  объектов</div>
-      <div class="child1">Отопление
-        сельско  хозяйственных помещений</div>
-      <div class="child1">Отопление  и парогенерация  на буровых установках</div>
-      <div class="child1">Отопление шахт  и рудников</div>
-      <div class="child1">Генерация  горячего воздуха  для технологических процессов</div>
-      <div class="child1">Крышные кондиционеры  типа rooftop</div>
+    <div class="industrial__types">
+      <div class="industrial__types__heating">Отопление
+        промышленных объектов
+      </div>
+      <div class="industrial__types__heating">Отопление
+        сельско хозяйственных помещений
+      </div>
+      <div class="industrial__types__heating">Отопление и парогенерация на буровых установках</div>
+      <div class="industrial__types__heating">Отопление шахт и рудников</div>
+      <div class="industrial__types__heating">Генерация горячего воздуха для технологических процессов</div>
+      <div class="industrial__types__heating">Крышные кондиционеры типа rooftop</div>
     </div>
   </div>
-
 </div>
+
+
 <div class="equipment">
-  <div class="equipment-flex">
-    <p class="p1">Подберите свое оборудование<span> прямо сейчас</span></p>
-    <div class="rectangle137">
-      <div class="child2"></div>
-      <div class="child2"></div>
-      <div class="child2"></div>
-    </div>
-
     <app-equipment></app-equipment>
-      <div class="line88"><img src=">../../../../assets/img/Line 88.png"></div>
+</div>
 
-
-
-
-    <!--      <div class="info-block">-->
-<!--        <div class="child3">-->
-<!--          <img src="../../../../assets/icons/Group 178.png">-->
-<!--          <p>Вы можете скачать опросный лист в виде файла и отправить его по электронной почте info@tcgroupenergia.ru</p>-->
-<!--        </div>-->
-<!--        <div class="child3">-->
-<!--          <img src="../../../../assets/icons/Group 179.png">-->
-<!--          <p>Скачать  опросный лист</p>-->
-<!--        </div>-->
-<!--      </div>-->
-
-  </div>
-    </div>
-
-<div class=" flag-block">
-  <div class="flag">
-    <img class= "flag-img" src="../../../../assets/img/Group 383.png">
-
-    <div class="tecnoclima-block">
-      <p class="textclima">
-        Tecnoclima
-      </p>
-      <button class="video-button">
-        <img src="../../../../assets/img/Group 559.png" alt="">
-      </button>
-      <p class="tecnotext">
-        Группа компаний Tecnoclima более 40 лет работает в сфере воздушного отопления.
-        Головной офис и прозводство находятся в городе Тренто, Италии.
-        Основные компетенции компании: проектирование и производство оборудования для нагрева,
-        вентиляции и кондиционирования воздуха.
-      </p>
+<div class="techno">
+  <div class="container">
+    <div class="techno__picture">
+      <img class="techno__img" src="../../../../assets/img/Group 383.png" alt="no image">
+      <div class="techno__tecnoclima">
+        <p class="techno__tecnoclima__text">
+          Tecnoclima
+        </p>
+        <button class="techno__button">
+          <img src="../../../../assets/img/Group 559.png" alt="no image">
+        </button>
+        <p class="techno__tecnotext">
+          Группа компаний Tecnoclima более 40 лет работает в сфере воздушного отопления.
+          Головной офис и прозводство находятся в городе Тренто, Италии.
+          Основные компетенции компании: проектирование и производство оборудования для нагрева,
+          вентиляции и кондиционирования воздуха.
+        </p>
+      </div>
     </div>
   </div>
 </div>
 <div class="italy-img">
-<p>Греем<br> воздух <br>  в соборах <br> Европы</p>
+  <p>Греем<br> воздух <br> в соборах <br> Европы</p>
 </div>
 
 <div class="complex">
-  <div class="complex-block">
-    <div class="complex-child" >
-      <p>
-        Комплексные<br> решения<br> <span> по отоплению,<br> охлаждению,<br> вентиляции,<br> генерации <br> горячего воздуха</span>
-      </p>
-      <div><button>Оставить заявку</button></div>
+  <div class="container">
+    <div class="complex__flex">
+      <div>
+        <a routerLink="/solution-examples"  class="complex__title">
+          Комплексные решения <br> <span> по отоплению, охлаждению, вентиляции, генерации  горячего воздуха</span>
+        </a> <br>
+          <button (click)="openApplication()" class="complex__click">Оставить заявку</button>
+        <img src="../../../../assets/img/image 86.png" alt="no image" class="complex__image">
+      </div>
 
-      <div><img src="../../../../assets/img/image 86.png" alt=""></div>
+      <div class="complex__types">
+        <div class="complex__types__flex">
+          <app-complex *ngFor="let item of complex"
+            [icon]="item.icon"
+            [title]="item.title"
+          ></app-complex>
+        </div>
+
+        <app-application
+          [is-open]="!isApplicationOpen"
+          (whenApplicationOpen)="openApplication($event)"
+          class="application"
+        >
+                <p class="application__tittle">Оставить заявку</p>
+                <p class="application__text">Оставьте свое имя с номером телефона и наши <br> специалисты свяжутся с вами.</p>
+                    <form [formGroup]="form" class="application__form">
+                      <div class="application__form__name">
+                        <label for="userName">Ваше имя </label>
+                        <div><input formControlName="name" type="text" id="userName"></div>
+                      </div>
+                      <div class="application__form__tel">
+                        <label for="number">Телефон</label>
+                       <div><input type="tel" id="number" name="number" formControlName ="number"></div>
+                      </div>
+                      <div class="application__form__checkbox">
+                        <input type="checkbox"  id="check">
+                        <label for="check">Отправляя заявку, даю согласие на хранение <br>
+                          и обработку персональных данных</label>
+                      </div>
+                      <button [disabled]="form.invalid"  class="application__form__button">Отправить</button>
+                    </form>
+
+              <div >
+                <img src="../../../assets/img/image 125 (2) (1).png" class="application__blue__flag"/>
+              </div>
+
+        </app-application>
+      </div>
 
     </div>
-    <app-complex class="appcomplex"></app-complex>
-
   </div>
 </div>
-
-<div class="airHeaters-block">
+<div>
   <div class="airHeaters">
-    <div class="scroll"></div>
-    <div class="airHeaters-text">
-      <p class="ppp">Воздухонагреватели</p>
-      <p>Крышные <br> кондиционеры roof top</p>
-      <h6>Водяное тепловое оборудование</h6>
-      <p>Вентиляция и рекуперация тепла</p>
-      <p>Чилеры и тепловые насосы</p>
-      <p>Оборудование в специальном <br> исполнении</p>
+    <div class="airHeaters__types">
+      <div class="airHeaters__type">
+        <p class="airHeaters__text">Воздухонагреватели</p>
+        <p class="airHeaters__text">Крышные кондиционеры roof top</p>
+        <p class="airHeaters__text">Водяное тепловое оборудование</p>
+        <p class="airHeaters__text">Вентиляция и рекуперация тепла</p>
+        <p class="airHeaters__text">Чилеры и тепловые насосы</p>
+        <p class="airHeaters__text">Оборудование в специальном исполнении</p>
+      </div>
+    </div>
+    <div class="airHeaters__picture">
+      <a routerLink="/product"><img src="../../../../assets/img/Group 210.png" alt="no image"></a>
+
+    </div>
+    <div class="airHeaters__check">
+        <div>
+          <p class="airHeaters__check__title">Топливо</p>
+          <ul>
+            <li><input type="checkbox" id="check-one">
+              <label for="check-one">Универсальное</label></li>
+            <li><input type="checkbox" id="check-two">
+              <label for="check-two">Газ</label></li>
+            <li><input type="checkbox" id="check-three">
+              <label for="check-three">Жидкое</label></li>
+            <li><input type="checkbox" id="check-four">
+              <label for="check-four">Вода</label></li>
+          </ul>
+        </div>
+        <div>
+          <p class="airHeaters__check__title">Назначение</p>
+          <ul>
+            <li><input type="checkbox" id="check-one1">
+              <label for="check-one1">Отопление</label></li>
+            <li><input type="checkbox" id="check-two1">
+              <label for="check-two1">Отопление и охлаждение</label></li>
+            <li><input type="checkbox" id="check-three1">
+              <label for="check-three1">Рекуперация тепла</label></li>
+          </ul>
+        </div>
+        <div>
+          <p class="airHeaters__check__title">Расположение</p>
+          <ul>
+            <li><input type="checkbox" id="check-one2">
+              <label for="check-one2">Внутри помещения</label></li>
+            <li><input type="checkbox" id="check-two2">
+              <label for="check-two2">Снаружи помещения</label></li>
+          </ul>
+        </div>
+      <a routerLink="/product"><button class="airHeaters__check__click">Показать</button></a>
+
+      </div>
     </div>
   </div>
-  <div class="rectangle360">
-  <img src="../../../../assets/img/Group 210.png" alt="">
-  </div>
-
-  <div class="check">
-    <div class="check-block">
-      <p class="check-title">Топливо</p>
-      <div class="check-block1">
-        <ul>
-          <li><input type="checkbox" id ="check-one">
-            <label for="check-one">Универсальное</label></li>
-          <li> <input type="checkbox" id ="check-two">
-          <label for="check-two">Газ</label></li>
-          <li><input type="checkbox" id ="check-three">
-            <label for="check-three">Жидкое</label></li>
-          <li><input type="checkbox" id ="check-four">
-          <label for="check-four">Вода</label></li>
-        </ul>
 
 
-      </div>
-      <div class="check-block2">
-        <p>Назначение</p>
-        <ul>
-          <li><input type="checkbox" id ="check-one1">
-            <label for="check-one">Отопление</label></li>
-          <li> <input type="checkbox" id ="check-two1">
-            <label for="check-two">Отопление и охлаждение</label></li>
-          <li><input type="checkbox" id ="check-three1">
-            <label for="check-three">Рекуперация тепла</label></li>
-
-        </ul>
-      </div>
-
-      <div class="check-block3">
-        <p>Расположение</p>
-        <ul>
-          <li><input type="checkbox" id ="check-one2">
-            <label for="check-one">Внутри помещения</label></li>
-          <li> <input type="checkbox" id ="check-two2">
-            <label for="check-two">Снаружи помещения</label></li>
-        </ul>
-      </div>
-
-      <button class="check-click">Показать</button>
-    </div>
-    <div></div>
-    <div></div>
-  </div>
-</div>
 
 <div class="fermax">
-  <p>Создаем <br> климат <br> для урожая <br> на фермах</p>
+  <p class="fermax__text">Создаем <br> климат <br> для урожая <br> на фермах</p>
 </div>
-<div class="global-fullRange">
-  <div class="fullRange">
-    <p class="full-title">Полный комплекс услуг</p>
-    <div class="numbers-block">
-      <div class="numbers" *ngFor="let item of getList">
-        <div class="num-text">
-          <p class="numbers-number">{{item.day}}</p>
-          <p class="numbers-text">{{item.text}}</p>
-        </div>
+
+<div class="full">
+  <div class="container">
+    <div class="fullRange">
+      <p class="fullRange__title">Полный комплекс услуг</p>
+      <div class="fullRange__numbers">
+        <div  class="fullRange__numbers__number" *ngFor="let item of getList">
+        <a routerLink="/services">
+
+            <div class="fullRange__numbers__number__text">
+              <p class="fullRange__numbers__number__day">{{item.day}}</p>
+              <p class="fullRange__numbers__number__description">{{item.text}}</p>
+            </div>
+        </a>
+          </div>
+
+
       </div>
     </div>
-
   </div>
 </div>
-
 <div class="recuperative">
-  <div class="recuperative-block">
-    <div class="oem">
-      <div class="oem-flex">
-        <div class="oem-img">
-          <img src="../../../../assets/img/Ellipse 8.png">
+  <div class="container">
+    <div class="recuperative__type">
+      <div class="recuperative__logo">
+        <div class="recuperative__logo__radius">
           <p>OEM</p>
         </div>
-        <h6>Теплообменники <br> рекуперативного типа </h6>
-        <p class="oem-p">Используются в оборудовании <br> Tecnoclima для сторонних <br> производителей.</p>
+        <h6 class="recuperative__type__title">Теплообменники рекуперативного типа </h6>
+        <p class="recuperative__type__text">Используются в оборудовании <br> Tecnoclima для сторонних <br> производителей.</p>
       </div>
-
-    </div>
-    <div class="oem-child">
-      <img src="../../../../assets/img/Group 334.png">
+      <div class="recuperative__type-two">
+        <img src="../../../../assets/img/Group 334.png" alt="no image">
+      </div>
     </div>
   </div>
 </div>
-<div class="technological"><app-technological></app-technological></div>
+
+<div class="technological">
+  <app-technological></app-technological>
+</div>
 
 <div class="clients">
-  <img class="blue-flag" src="../../../assets/img/image 125 (1).png" alt="">
-  <p>Клиенты</p>
-  <div class="logo-block">
-    <div id="logo-child-first"> <img src="../../../assets/img/Vector (1).png" alt=""></div>
-    <div class="logo-child"><img src="../../../assets/img/whirlpool.png" alt=""></div>
-    <div class="logo-child"><img src="../../../assets/img/mcdonalds.png" alt=""></div>
-    <div class="logo-child"><img src="../../../assets/img/siemens.png" alt=""></div>
-    <div class="logo-child"><img src="../../../assets/img/rosneft.png" alt=""></div>
-    <div id="logo-child-last"><img src="../../../assets/img/Алмазная шахта Мир.png" alt=""></div>
+  <div class="container">
+    <div>
+      <img class="clients__flag" src="../../../assets/img/image 125 (1).png" alt="no image">
+      <a routerLink="solution-examples" class="clients__title">Клиенты</a>
+    </div>
+    <app-logos></app-logos>
   </div>
 </div>
-<app-footer> </app-footer>
+<div class="slider">
+  <div class="slider__left">
+    <img src="./../../../../assets/air-heaters/left.png" alt="">
+  </div>
+  <div class="slider__right">
+    <img src="./../../../../assets/air-heaters/right.png" alt="">
+  </div>
+  <div class="container">
+    <div class="slider-flex" id="left">
+    <app-slider
+      *ngFor="let item of getSlide"
+      [img]=item.img
+      [title]=item.title
+      [text]=item.text
+    ></app-slider>
+    </div>
+  </div>
+</div>
 
+<div class="press">
+  <div class="container">
+    <a routerLink="/press" class="press__title">Пресс-центр</a> <br>
+    <a routerLink="/press" class="press__text">Блог</a>
+
+  </div>
+<div class="press__images">
+  <app-press-blog></app-press-blog>
+</div>
+
+  <app-press-events
+  [title]="'События'"></app-press-events>
+  <div class="exhibitions">
+    <div class="container">
+      <p>Выставки</p>
+      <app-exhibitions
+        [day]="day"
+        [text]="text"
+        [month]="month"
+        [day2]="day2"
+      ></app-exhibitions>
+    </div>
+  </div>
+</div>
+
+<div class="logos">
+  <div class="container">
+    <div class="logos__block">
+      <div class="logos__image">
+        <img src="../../../assets/img/продукция сертифицирована производство  в Италии.png" alt="no image">
+      </div>
+      <div class="logos__images"><img src="../../../assets/img/image 5.png" alt="no image"></div>
+      <div class="logos__images"><img src="../../../assets/img/image 6.png" alt="no image"></div>
+      <div class="logos__images"><img src="../../../assets/img/Group (1).png" alt="no image"></div>
+      <div class="logos__images"><img src="../../../assets/img/Group 386.png" alt="no image"></div>
+      <div class="logos__images"><img src="../../../assets/img/Group 387.png" alt="no image"></div>
+      <div class="logos__images"><img src="../../../assets/img/Group 388.png" alt="no image"></div>
+      <div class="logos__images"><img src="../../../assets/img/AGA-Logo-transparent 1.png" alt="no image"></div>
+      <div class="logos__images"><img src="../../../assets/img/image 8.png" alt="no image"></div>
+      <div id="logos__images-last"><img src="../../../assets/img/Group 389.png" alt="no image"></div>
+    </div>
+  </div>
+</div>
+<app-footer ></app-footer>

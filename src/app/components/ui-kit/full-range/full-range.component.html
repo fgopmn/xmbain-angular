@@ -1,0 +1,8 @@
+<div class="heat">
+  <p class="heat__generator">{{heatText}}
+  <span class="heat__about">{{heatAbout}}</span>
+  </p>
+    <p class="heat__number"
+       *ngIf="or">0{{heatNumber}}</p>
+    <div class="heat__number"  *ngIf="!or">{{heatNumber}}</div>
+</div>

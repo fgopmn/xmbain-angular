@@ -1,0 +1,94 @@
+<app-header></app-header>
+<div>
+  <div class="container">
+  <div class="header-flex-ul" >
+    <ul>
+      <li>Главная</li>
+      <li>></li>
+      <li>Продукция</li>
+      <li>></li>
+      <li>Воздухонагреватели</li>
+    </ul>
+  </div>
+  </div>
+</div>
+<app-highly-efficient></app-highly-efficient>
+<div>
+  <div class="container">
+    <p class="accessories-title">
+      Аксессуары
+    </p>
+    <div class="accessories-flex">
+      <app-accessories-child *ngFor="let item of accessories" [img]="item.img" [text]="item.text"></app-accessories-child>
+    </div>
+  </div>
+</div>
+<app-equipment></app-equipment>
+
+  <div>
+    <div class="container">
+      <p class="equipment-series-title">Оборудование из серии</p>
+      <div class="equipment-series-flex">
+        <app-equipment-series
+          [img]="'../../../../assets/air-heaters/image 27.png'"
+          [title]="'TCO-DF'"
+          [about]="'Вертикальные нагреватели для внутренней установки'"
+          [text]="'Тепл. мощность: 62-446 кВт Возд. поток: 4800-33000 м3/ч'"
+        ></app-equipment-series>
+        <app-equipment-series
+          [img]="'../../../../assets/air-heaters/image 27 (1).png'"
+          [title]="'TCO-E'"
+          [about]="'Конденсационные вертикальные обогреватели'"
+          [text]="'Тепл. мощность: 68-1090 кВт Возд. поток: 4600-71000 м3/ч'"
+        ></app-equipment-series>
+      </div>
+
+    </div>
+  </div>
+<div>
+  <div class="equipment-color">
+    <div class="container">
+      <p class="equipment-series-title2">Сопутствующее оборудование</p>
+    </div>
+  </div>
+  <div class="container">
+  <div class="equipment-series-flex">
+    <app-equipment-series *ngFor="let item of equipment"
+                          [img]="item.img"
+                          [title]="item.seria"
+                          [about]="item.title"
+                          [text]="item.text"
+    ></app-equipment-series>
+  </div>
+  </div>
+</div>
+
+
+<div class="airHeaters-slider-title">
+  <div class="container">
+    <p class="airHeaters-title">Примеры решений</p>
+  </div>
+</div>
+<div class="slider">
+  <div class="slider__left">
+    <img src="./../../../../assets/air-heaters/left.png" alt="">
+  </div>
+  <div class="slider__right">
+    <img src="./../../../../assets/air-heaters/right.png" alt="">
+  </div>
+  <div class="container">
+    <div class="slider__flex">
+      <app-slider
+        *ngFor="let item of getSlide"
+        [img]=item.img
+        [title]=item.title
+        [text]=item.text
+      ></app-slider>
+    </div>
+  </div>
+</div>
+<div class="technological">
+  <app-technological></app-technological>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,134 @@
+.header-flex-ul{
+  width: 83%;
+  margin: auto;
+}
+.header-flex-ul ul{
+  display: flex;
+  border-bottom: 1px solid;
+  padding-top: 40px;
+  color: #C0C6C9;
+  padding-bottom: 20px;
+}
+.header-flex-ul ul li{
+  list-style-type: none;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: #C0C6C9;
+  margin-right:10px;
+}
+.document{
+  max-width: 1200px;
+  margin: auto;
+}
+.document-title{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+
+}
+.document-block {
+
+
+  margin-top: 42px;
+}
+.document-block-child{
+  display: flex;
+  border-bottom: 1px solid #C0C6C9;
+  padding-top:38px ;
+  padding-bottom: 43px;
+  justify-content: space-between;
+}
+.document-block-child p{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  margin-left: 14px;
+  border-bottom: 1px solid #009fe35e;;
+}
+.document-block-child span{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 120%;
+  text-align: right;
+  letter-spacing: 0.2px;
+  color: #C0C6C9;
+   margin-right:50px;
+}
+.download{
+  opacity: 0.3;
+  border: 1px solid #009FE3;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 6px 14px;
+  font-size: 15px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: #009FE3;
+}
+.document-section{
+  display: flex;
+  width: 56%;
+}
+.technological{
+  background-color: #abd5e81a;
+  display: inline-block;
+  padding: 60px 0;
+}
+.airHeaters-slider-title-container{
+  width: 83%;
+  margin: auto;
+}
+.airHeaters-slider-title-container p{
+  padding-top: 80px;
+  padding-bottom: 45px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+}
+.airHeaters-slider-title{
+  background: linear-gradient(180deg, #abd5e836 4.17%, rgba(255, 255, 255, 0) 100%);
+}
+:host::ng-deep .footer .footer__image{
+  display: block;
+}
+
+.slider{
+  position:relative;
+  padding-bottom: 116px;
+  &__flex{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__left{
+    position: absolute;
+    top:41%;
+    left:42px;
+    width: 48px;
+    height: 48px;
+  }
+  &__right{
+    position: absolute;
+    top:41%;
+    right:42px;
+    width: 48px;
+    height: 48px;
+  }
+}

@@ -1,0 +1,15 @@
+.background{
+  display: flex;
+  justify-content: flex-start;
+  &__images{
+    display: flex;
+    width: 66.25%;
+    justify-content: space-between;
+  }
+}
+.color{
+  background: linear-gradient(90deg, rgba(171, 213, 232, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
+  display: flex;
+  justify-content: flex-end;
+  width: 33.75%;
+}

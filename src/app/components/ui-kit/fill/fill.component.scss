@@ -1,0 +1,32 @@
+.select {
+  margin-top: 40px;
+  width: 310px;
+
+  &__title {
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 120%;
+    letter-spacing: 0.2px;
+    color: #021C27;
+
+    &__img {
+      width: 15px;
+      height: 15px;
+      margin-right: 15px
+    }
+  }
+ &__input{
+    opacity: 0.3;
+    border: 1px solid #009FE3;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding:16px 101px 17px 35px;
+    margin-top: 17px;
+  }
+  &__mm {
+    margin-left: -55px;
+    font-size: 15px;
+    color: #009FE3;
+    opacity: 0.5;
+  }
+}

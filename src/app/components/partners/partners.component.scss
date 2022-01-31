@@ -1,0 +1,229 @@
+.partners-global{
+  background: white;
+}
+
+.partner-group{
+  margin-right: 85px;
+}
+.partner-title-flex{
+  display:flex;
+}
+.title-click{
+  padding-bottom: 100px;
+}
+.partners-title{
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+  padding-top:30px;
+}
+.partners-description{
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #000000;
+  width: 530px;
+  margin-top:66px;
+  margin-bottom: 36px;
+}
+.send{
+  background: #009FE3;
+  border-radius: 5px;font-weight: 800;
+  font-size: 20px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border:none;
+  padding:15px 25px;
+}
+.invite-title{
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: #021C27;
+}
+.invite-numbers{
+  padding-left: 20px;
+  margin-top:30px;
+}
+.invite-numbers li{
+  padding-left:15px;
+  padding-bottom: 25px;
+  padding-right: 86px;
+}
+
+.proposal{
+    background: linear-gradient(90deg, #E6F5FC 0%, #FCE6E8 100%);
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 160%;
+    letter-spacing: 0.2px;
+    color: #021C27;
+    padding:40px;
+    margin-top:12px;
+   margin-bottom: 80px;
+}
+.provide-group{
+  margin-top:34px
+}
+.proposal p{
+  width: 520px;
+}
+.provide-numbers{
+  padding-left: 20px;
+  margin-top: 30px;
+}
+.provide-numbers li{
+  padding-right: 120px;
+  padding-left:15px;
+  padding-bottom: 28px;
+}
+.experience-description{
+  width: 590px;
+  margin-top: 34px;
+  margin-bottom:60px;
+}
+.experience-text{
+  font-size: 17px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  padding-bottom: 40px;
+}
+.suggestion-description{
+  font-size: 15px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  margin-bottom: 20px;
+}
+.suggestions{
+  background: linear-gradient(90deg, #abd5e81a 0%, rgba(255, 255, 255, 0.12) 100%);
+}
+.suggestion-text{
+  margin-left:121px;
+  width: 387px;
+  margin-top: 525px;
+}
+.suggestion-types{
+  padding-left: 20px;
+  margin-top: 24px;
+}
+.suggestion-types li{
+padding-bottom: 14px;
+  font-size: 15px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+}
+.end-description{
+  font-size: 15px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  width: 387px;
+}
+.sketch{
+  margin-left: 121px;
+  margin-top: 520px;
+}
+:host::ng-deep .footer .footer__image{
+  display: block;
+}
+.cooperation{
+  &__blue__flag{
+
+  }
+  &__tittle{
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #021C27;
+    margin-top: 80px;
+
+  }
+  &__text{
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 160%;
+    color: #021C27;
+    margin-top: 34px;
+    margin-bottom: 10px;
+
+  }
+  &__form{
+
+    &__type{
+
+      margin-top: 30px;
+      label{
+
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 120%;
+        letter-spacing: 0.2px;
+        color: #021C27;
+      }
+      input{
+        width: 488px;
+        height: 50px;
+        background: #FFFFFF;
+        opacity: 0.6;
+        border: 1px solid #C0C6C9;
+        box-sizing: border-box;
+        border-radius: 5px;
+        padding: 10px 10px;
+      }
+    }
+    &__type2{
+      display: flex;
+      align-items: center;
+      margin-top:23px;
+      margin-bottom: 30px;
+    &__checkbox{
+    width: 16px;
+      height:16px;
+      cursor: pointer;
+      margin-right: 8px;
+    }
+      label{
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 120%;
+        letter-spacing: 0.2px;
+        color: black;
+      }
+    }
+
+    &__button{
+      cursor: pointer;
+      background: #009FE3;
+      border-radius: 5px;
+      padding: 13px 24px;
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 17px;
+      line-height: 120%;
+      letter-spacing: 0.2px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      border: none;
+    }
+  }
+}
+

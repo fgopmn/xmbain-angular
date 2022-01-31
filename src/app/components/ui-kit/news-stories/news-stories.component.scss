@@ -1,0 +1,73 @@
+.text-conference {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #000000;
+  padding-top: 70px;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.conference-info {
+  width: 38%;
+  background: linear-gradient(90deg, rgba(171, 213, 232, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.text-info {
+  width: 57%;
+  padding-right:102px ;
+}
+.text2-conference {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  padding-top: 100px;
+  padding-bottom: 76px;
+}
+.info-text {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  padding-left: 121px;
+  padding-top: 245px;
+  padding-bottom: 175px;
+}
+.contain-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.text-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.text-information {
+  width: 57%;
+}
+.text-conference-info {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  padding-top: 77px;
+  padding-right: 116px;
+  padding-bottom: 100px;
+}

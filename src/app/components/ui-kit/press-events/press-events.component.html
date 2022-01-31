@@ -1,0 +1,19 @@
+<div class="event">
+  <div class="container">
+  <a routerLink="/press" class="event__title ">{{title}}</a>
+  <div class="event__flex">
+    <div *ngFor="let i of days" class="event">
+      <div class="event__img__month">
+        <div class="event__days">
+          <img src="{{i.img}}" alt="">
+          <div class="event__days__month__block">
+            <p class="event__days__month__block__month__day">{{i.day}}</p>
+            <p class="event__days__month__block__month">{{i.month}}</p>
+          </div>
+        </div>
+        <div   class="event__day__description"><p [innerHTML]="i.text"></p></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
