@@ -114,6 +114,7 @@
       border-bottom:5px solid #009FE3;
       opacity: 1;
       transition-duration: 0.5s;
+      cursor: pointer;
     }
 
   }
@@ -426,6 +427,12 @@
       text-transform: uppercase;
       color: #FFFFFF;
       border: none;
+      &:hover{
+        background: #021C27;;
+        border-radius: 4px;
+        transition-duration: 0.5s;
+        color: #FFFFFF;
+      }
     }
   }
 }
@@ -602,7 +609,7 @@
         width: 15.6%;
         cursor: pointer;
         &:hover{
-          background: linear-gradient(90deg, #FBFEFF 0%, #009FE3A3 100%);
+          background: linear-gradient(90deg, #FBFEFF 0%, #d4f3ff 100%);
           border-radius: 20px;
         }
         @media screen and (max-width: 1200px){

@@ -10,6 +10,11 @@
     border-radius: 20px;
     width: 32.3%;
     padding: 40px;
+    &:hover{
+      background: #d4f3ff;
+      border-radius: 20px;
+      transition-duration: 0.5s;
+    }
     @media screen and (max-width:1200px){
       width:70%;
       margin-top: 40px;

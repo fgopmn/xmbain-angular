@@ -8,6 +8,12 @@
   border-radius: 20px;
   height: 190px;
   width:387px;
+  &:hover{
+    background: #d4f3ff;
+    border-radius: 20px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+  }
 
   &__generator {
     font-family: Manrope;
