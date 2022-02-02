@@ -227,6 +227,12 @@ h2 {
   color: #FFFFFF;
   padding: 11px 20px;
   margin-bottom: 80px;
+  &:hover{
+    background: #021C27;
+    border-radius: 4px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+  }
 }
 .information-button {
   background-color: #021C27;
@@ -242,6 +248,11 @@ h2 {
   color: #FFFFFF;
   padding: 11px 20px;
   margin-bottom: 30px;
+  cursor: pointer;
+  &:hover{
+   background: #009FE3;
+  }
+
 }
 .downloads-text2 {
   font-family: Manrope;
@@ -291,6 +302,13 @@ h2 {
   text-align: start;
   border-bottom: 1px dashed #009fe33d;
   padding: 25px 14px 0px 1px;
+  cursor: pointer;
+}
+.information-cities li:hover{
+  color: #021C27;
+  opacity: 0.35;
+  border-radius: 4px;
+  transition-duration: 0.5s;
 }
 .cities-block {
   display: flex;
@@ -298,3 +316,4 @@ h2 {
   justify-content: space-between;
   padding-bottom: 102px;
 }
+

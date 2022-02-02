@@ -72,9 +72,9 @@
 
 }
 .specifications-about:hover{
-cursor: pointer;
+  cursor: pointer;
   background: #009fe312;
-
+  transition-duration: 0.5s;
 }
 
 .specifications-about .child1{
@@ -230,7 +230,7 @@ cursor: pointer;
 .dimensions-about:hover{
   cursor: pointer;
   background: #009fe312;
-
+  transition-duration: 0.5s;
 }
 .dimensions-about .child9{
   padding-left: 89px;

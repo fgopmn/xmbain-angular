@@ -5,8 +5,12 @@
   background: #FFFFFF;
   box-shadow: 0 20px 60px rgba(2, 26, 36, 0.1);
   border-radius: 40px;
-  position: relative;
-  padding-left:70px;
+
+  &__container{
+    width: 89%;
+    margin: auto;
+    position: relative;
+  }
   &__tittle{
     font-family: Manrope;
     font-style: normal;
@@ -34,7 +38,13 @@
     padding:12px 25px;
     margin-top:28px;
     margin-bottom:46px;
+
     cursor: pointer;
+    &:hover{
+      background: #021C27;
+      border-radius: 4px;
+      transition-duration: 0.5s;
+    }
   }
 }
 .general__tabs{
@@ -43,6 +53,7 @@
   border: 1px solid #ECEEEF;
   display: flex;
   justify-content: space-between;
+
   &__tab{
     width: 18px;
     height: 18px;
@@ -53,6 +64,7 @@
     position: relative;
     bottom: 9px;
     z-index: 1000;
+
   }
 }
 
@@ -60,8 +72,8 @@
   display: flex;
   justify-content: space-between;
   background-color: #FFFFFF;
-  width: 89%;
-  margin: 55px auto;
+  margin-top: 50px;
+
   @media screen and (max-width:1200px){
     flex-wrap: wrap;
     align-items: flex-end;
@@ -86,6 +98,7 @@
     letter-spacing: 0.2px;
     color: #021C27;
     margin-bottom: 17px;
+    padding-left: 6px;
     @media screen and (max-width:1200px){
       margin-top:30px
     }
@@ -113,6 +126,7 @@
   display: flex;
   border-top: 1px dashed #009FE3;
   width: 57%;
+  //padding-left: 70px;
   &__child3{
     display: flex;
     align-items: flex-start;

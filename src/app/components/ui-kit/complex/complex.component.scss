@@ -3,6 +3,7 @@ a{
 }
 
 .complex{
+
   background: #FFFFFF;
   box-shadow: 0 5px 40px rgba(2, 26, 36, 0.04);
   border-radius: 20px;
@@ -11,6 +12,11 @@ a{
   height: auto;
   margin-bottom: 24px;
   padding: 13px 0;
+  &:hover{
+    background: #d4f3ff;
+    border-radius: 20px;
+    transition-duration: 0.5s;
+  }
   @media screen and (max-width:1240px){
     width: 230px;
   }
@@ -19,9 +25,6 @@ a{
   &__image {
     padding-left: 20px;
     padding-top: 20px;
-
-
-
   }
   &__title {
     font-family: Manrope;

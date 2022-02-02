@@ -1,8 +1,27 @@
-.servieces-line{
-  opacity: 0.3;
-  border: 1px solid #C0C6C9;
-  margin-top: 104px;
+.container{
+  width:83%;
+  margin:auto;
 }
+.menu-list{
+  //opacity: 0.3;
+  border-bottom: 1px solid #C0C6C9;
+}
+.menu{
+  display: flex;
+  margin-bottom: 16px;
+}
+.menu li{
+  list-style-type: none;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: #C0C6C9;
+  padding-right: 9px;
+}
+
 .services-block h6{
   font-family: Manrope;
   font-style: normal;
@@ -77,6 +96,7 @@
 .technical-description button{
   background: #009FE3;
   border: none;
+  border-radius: 4px;
   padding: 11px 20px;
   font-style: normal;
   font-weight: bold;
@@ -86,7 +106,12 @@
   text-transform: uppercase;
   color: #FFFFFF;
   margin: 30px 82px 80px;
-
+  &:hover{
+    background: #021C27;
+    border-radius: 4px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+  }
 }
 
 .application{
@@ -227,6 +252,12 @@
       text-transform: uppercase;
       color: #FFFFFF;
       border: none;
+      &:hover{
+        background: #021C27;;
+        border-radius: 4px;
+        transition-duration: 0.5s;
+        color: #FFFFFF;
+      }
     }
 
 

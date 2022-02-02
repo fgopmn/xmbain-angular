@@ -89,11 +89,15 @@
 }
 .event-click{
   background-color: rgba(0, 159, 227, 0.1);
-
   border-radius: 5px;
   padding:10px 20px;
   margin:70.53px 0 80px 0;
   border:none;
+  &:hover{
+    background: #021C27;
+    border-radius: 4px;
+    transition-duration: 0.5s;
+  }
 }
 .event-click span{
   font-family: Manrope;

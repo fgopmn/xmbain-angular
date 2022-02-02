@@ -156,7 +156,6 @@
       padding-bottom: 14px;
 
       &:hover{
-
         border-bottom: 1px solid black;
       }
     }
@@ -167,9 +166,7 @@
         color: black;
         transform: scale(1.7,1.7);
         z-index: 999;
-
-
-
+        transition-duration: 0.5s;
       }
     }
   }
@@ -178,6 +175,7 @@
     cursor: pointer;
     &:hover{
       opacity: 0.15;
+      transition-duration: 0.5s;
     }
   }
 

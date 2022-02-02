@@ -101,6 +101,7 @@ margin:0 46px;
   padding: 30px 6px 30px 25px;
   width: 285px;
   cursor: pointer;
+
 }
 .systemOne p{
   font-family: Manrope;
@@ -111,6 +112,10 @@ margin:0 46px;
   letter-spacing: 0.2px;
   color: #021C27;
   opacity: 0.6;
+  &:hover{
+    opacity: 1;
+    transition-duration: 0.5s;
+  }
 }
 .system{
   display: flex;
@@ -129,6 +134,10 @@ margin:0 46px;
   letter-spacing: 0.2px;
   color: #021C27;
   opacity: 0.6;
+  &:hover{
+    opacity: 1;
+    transition-duration: 0.5s;
+  }
 }
 .click-all{
   background: rgba(0, 159, 227, 0.1);
@@ -146,7 +155,12 @@ margin:0 46px;
   padding:11px 50px;
   width: 100%;
   margin:40px 0 60px 0;
-
+  &:hover{
+    background: #021C27;
+    color: #FFFFFF;
+    border-radius: 4px;
+    transition-duration: 0.5s;
+  }
 }
 .blue-fon{
   background: linear-gradient(275deg, rgba(171,213,232,0.12) -0, rgba(255, 255, 255, ) 60%);

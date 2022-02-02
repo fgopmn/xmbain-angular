@@ -46,12 +46,21 @@
   display: inline-flex;
   border: 1px solid #021C27;
   border-radius: 5px;
-  margin-top:66px
+  margin-top:66px;
+
 }
+
 .press-menu li{
   list-style-type: none;
   border-right:1px solid #000000;
   padding:10px 20px;
+  &:hover{
+    background: #000000;
+    color: #FFFFFF;
+    border-radius: 4px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+  }
 }
 
 .blog-title{
@@ -76,6 +85,7 @@
 .menu-italy li{
   list-style-type: none;
   padding: 0 13px;
+
 }
 .menu-italy li a{
   font-family: Manrope;
@@ -88,6 +98,9 @@
   opacity: 0.3;
   text-decoration: none;
   padding-bottom: 16px;
+  &:hover{
+  transition-duration: 0.5s;
+}
 }
 .menu-italy li a:hover{
   color: black;
@@ -113,12 +126,17 @@
 }
 .blog-click{
   background-color: rgba(0, 159, 227, 0.11);
-
   border-radius: 5px;
   padding:10px 20px;
   margin-top:40px;
   margin-bottom:80px;
   border:none;
+  &:hover{
+    background: black;
+    color: #FFFFFF;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+  }
 }
 
 .blog-click span{

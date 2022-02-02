@@ -1,4 +1,5 @@
 
+
 .home {
   &__complex {
     display: flex;
@@ -113,6 +114,7 @@
       border-bottom:5px solid #009FE3;
       opacity: 1;
       transition-duration: 0.5s;
+      cursor: pointer;
     }
 
   }
@@ -279,6 +281,11 @@
     @media screen and (max-width: 1200px){
       margin-bottom: 100px;
     }
+    &:hover{
+      background: #021C27;
+      border-radius: 4px;
+      transition-duration: 0.5s;
+    }
   }
   &__image{
     margin-top: 98px;
@@ -426,6 +433,12 @@
       text-transform: uppercase;
       color: #FFFFFF;
       border: none;
+      &:hover{
+        background: #021C27;;
+        border-radius: 4px;
+        transition-duration: 0.5s;
+        color: #FFFFFF;
+      }
     }
   }
 }
@@ -465,6 +478,7 @@
       border-right: 5px solid #E3061B;
       cursor: pointer;
       color: #021C27;
+      transition-duration: 0.5s;
     }
   }
   &__picture {
@@ -552,7 +566,6 @@
         padding: 12px 20px 13px 25px;
         margin-top: 48px;
         cursor: pointer;
-
       &:hover{
         transition-duration: 0.5s;
         background-color: #009FE3;
@@ -609,6 +622,10 @@
         border-radius: 20px;
         width: 15.6%;
         cursor: pointer;
+        &:hover{
+          background: linear-gradient(90deg, #FBFEFF 0%, #d4f3ff 100%);
+          border-radius: 20px;
+        }
         @media screen and (max-width: 1200px){
           width: 30%;
           margin-top: 25px;

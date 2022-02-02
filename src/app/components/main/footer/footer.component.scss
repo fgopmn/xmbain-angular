@@ -137,6 +137,11 @@ button{
   opacity: 0.6;
   padding:10px 19px 11px 20px;
   cursor: pointer;
+  &:hover{
+    background: #d7d7d9;
+    border-radius: 4px;
+    transition-duration: 0.5s;
+  }
 }
 .phone-number{
   padding-bottom: 12px;

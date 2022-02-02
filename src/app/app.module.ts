@@ -6,6 +6,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {MainModule} from "./components/main/main.module";
 import {UiKitModule} from "./components/ui-kit/ui-kit.module";
 import { NfComponent } from './components/nf/nf.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 const routes: Routes = [
@@ -118,6 +119,7 @@ const routes: Routes = [
     HttpClientModule,
     MainModule,
     UiKitModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

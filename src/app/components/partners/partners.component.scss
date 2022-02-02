@@ -31,13 +31,20 @@
 }
 .send{
   background: #009FE3;
-  border-radius: 5px;font-weight: 800;
+  border-radius: 5px;
+  font-weight: 800;
   font-size: 20px;
   line-height: 120%;
   text-transform: uppercase;
   color: #FFFFFF;
   border:none;
   padding:15px 25px;
+  &:hover{
+    background: black;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+  }
 }
 .invite-title{
   font-weight: 800;
@@ -223,6 +230,11 @@ padding-bottom: 14px;
       text-transform: uppercase;
       color: #FFFFFF;
       border: none;
+      &:hover{
+        background: #021C27;
+        border-radius: 4px;
+        transition-duration: 0.5s;
+      }
     }
   }
 }

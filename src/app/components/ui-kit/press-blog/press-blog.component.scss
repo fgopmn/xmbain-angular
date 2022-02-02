@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding-top:60px;
-
+  flex-wrap: wrap;
 
   &__system{
     background: #FFFFFF;
@@ -10,6 +10,11 @@
     border-radius: 20px;
     width: 32.3%;
     padding: 40px;
+    &:hover{
+      background: #d4f3ff;
+      border-radius: 20px;
+      transition-duration: 0.5s;
+    }
     @media screen and (max-width:1350px){
     padding:25px;
     }
