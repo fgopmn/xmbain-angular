@@ -1,5 +1,4 @@
 
-
 .home {
   &__complex {
     display: flex;
@@ -277,9 +276,15 @@
     padding: 15px 25px;
     margin-top: 40px;
     cursor: pointer;
+    @media screen and (max-width: 1200px){
+      margin-bottom: 100px;
+    }
   }
   &__image{
     margin-top: 98px;
+    @media screen and (max-width:1240px){
+      width: 200px;
+    }
   }
   &__types{
     &__flex{
@@ -436,6 +441,9 @@
     width: 303px;
     position: relative;
     margin-left: 120px;
+    @media screen and (max-width: 1000px){
+     margin-left:70px;
+    }
   }
 
   &__type {
@@ -479,6 +487,11 @@
         height: 330px;
         margin:50px 25px;
       }
+      @media screen and (max-width: 1000px){
+        width: 200px;
+        height: 230px;
+      }
+
 
     }
   }
@@ -539,6 +552,7 @@
         padding: 12px 20px 13px 25px;
         margin-top: 48px;
         cursor: pointer;
+
       &:hover{
         transition-duration: 0.5s;
         background-color: #009FE3;

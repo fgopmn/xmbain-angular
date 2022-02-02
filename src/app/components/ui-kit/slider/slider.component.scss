@@ -3,6 +3,12 @@
   border-radius: 40px;
   display: flex;
   width: 590px;
+  @media screen and (max-width: 1400px){
+   width:467px;
+  }
+  @media screen and (max-width: 1200px){
+    width:600px;
+  }
   &__title{
     font-family: Manrope;
     font-style: normal;
