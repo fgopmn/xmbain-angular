@@ -48,7 +48,7 @@
   }
 }
 .general__tabs{
-  width: 692px;
+  width: 86%;
   height: 0.5px;
   border: 1px solid #ECEEEF;
   display: flex;
@@ -154,6 +154,9 @@
     align-items: flex-start;
     margin-top: 33px;
     margin-bottom: 56px;
+    @media screen and (max-width:900px){
+    margin-right:0;
+    }
   }
   &__img{
     position: absolute;
@@ -162,6 +165,11 @@
     @media screen and (max-width:1200px){
    right:50px
   }
+    @media screen and (max-width:900px){
+      right:10px;
+      bottom:30px;
+      width: 150px;
+    }
   }
   &__icon{
     margin-right:15px;
