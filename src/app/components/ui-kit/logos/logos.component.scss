@@ -4,10 +4,19 @@
   align-items: center;
   margin-top: 63px;
   justify-content: space-between;
+  @media screen and (max-width:900px) {
+  flex-wrap: wrap;
+   :nth-child(n+6){
+      text-align: left;
+    }
+  }
   &__border{
   height: 50px;
   border-left: 1px solid #C0C6C9;
   opacity: 0.5;
+    @media screen and (max-width:1000px) {
+      display: none;
+    }
 }
   &__image{
    width: 204px;
@@ -15,6 +24,10 @@
       transform: scale(1.1);
       cursor: pointer;
       transition-duration: 0.5s;
+    }
+    @media screen and (max-width:900px) {
+     width: 30%;
+      margin-top: 25px;
     }
  }
 }

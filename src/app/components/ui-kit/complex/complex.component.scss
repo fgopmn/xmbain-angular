@@ -3,23 +3,31 @@ a{
 }
 
 .complex{
+  height:120px;
   background: #FFFFFF;
   box-shadow: 0 5px 40px rgba(2, 26, 36, 0.04);
   border-radius: 20px;
   width: 285px;
   cursor: pointer;
-  height: auto;
   margin-bottom: 24px;
   padding: 13px 0;
+  &__container{
+    margin:20px auto;
+    width:81%;
+  }
   &:hover{
     background: #d4f3ff;
     border-radius: 20px;
     transition-duration: 0.5s;
   }
+  @media screen and (max-width:1240px){
+    width: 260px;
+  }
+
 
   &__image {
-    padding-left: 20px;
-    padding-top: 20px;
+    //padding-left: 20px;
+    //padding-top: 20px;
   }
   &__title {
     font-family: Manrope;
@@ -31,7 +39,7 @@ a{
     align-items: flex-end;
     letter-spacing: 0.2px;
     color: #021C27;
-    padding: 9px 20px;
+    //padding: 9px 20px;
 
   }
   //&:nth-child(odd){

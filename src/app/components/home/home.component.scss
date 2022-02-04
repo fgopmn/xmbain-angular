@@ -20,6 +20,11 @@
     @media screen and (max-width:1200px){
       background:none;
     }
+    @media screen and (max-width:900px){
+      justify-content: flex-start;
+    }
+
+
   }
   &__text{
     width: 50%;
@@ -27,6 +32,9 @@
     @media screen and (max-width:1200px){
       width: 62%;
   }
+    @media screen and (max-width:900px){
+      width: 60%;
+    }
    b{
       font-family: Manrope;
       font-style: normal;
@@ -34,8 +42,12 @@
       font-size: 64px;
       line-height: 100%;
       letter-spacing: -0.02em;
+
      @media screen and (max-width:1200px){
       font-size: 55px;
+     }
+     @media screen and (max-width:900px){
+       font-size: 40px;
      }
     }
   }
@@ -52,6 +64,10 @@
     color: #FFFFFF;
     border: none;
     cursor:pointer;
+    @media screen and (max-width:900px){
+      padding: 11px 11px;
+    }
+
     &:hover{
       background: #021C27;
       border-radius: 4px;
@@ -84,7 +100,10 @@
     &__one{
       position: absolute;
       right:45px;
-      top:40px
+      top:40px;
+      @media screen and (max-width:900px){
+      display:none;
+    }
     }
     &__two{
       border-radius: 40px;
@@ -165,26 +184,38 @@
   background-color: #FFFFFF;
   padding-top: 82px;
   padding-bottom: 98px;
-  background-image: url("../../../assets/img/Group 358.png");
-  background-repeat: no-repeat;
-  background-position: left;
-  @media screen and (max-width: 1200px){
+  //background-image: url("../../../assets/img/Group 358.png");
+  //background-repeat: no-repeat;
+  //background-position: left;
+  @media screen and (max-width: 1250px){
   background: #FFFFFF;
   }
   &__picture{
     display: flex;
     justify-content: space-between;
+    margin-top: 80px;
+    @media screen and (max-width:900px){
+     flex-wrap: wrap;
+      justify-content: center;
+    }
   }
   &__img{
-    @media screen and (max-width:1200px){
-      width: 33%;
+    @media screen and (max-width:1250px){
+      width: 40%;
       height: 100%;
+    }
+    @media screen and (max-width:900px){
+      width: 60%;
+
     }
   }
   &__tecnoclima {
     margin-top: 122px;
     @media screen and (max-width: 1200px){
       margin:0;
+    }
+    @media screen and (max-width:900px){
+      text-align: center;
     }
     &__text{
       font-family: Manrope;
@@ -196,6 +227,9 @@
       text-transform: uppercase;
       color: #021C27;
       padding-bottom: 8px;
+      @media screen and (max-width:900px){
+       margin-top:30px;
+      }
     }
   }
   &__tecnotext{
@@ -208,6 +242,12 @@
     color: #021C27;
     padding-top:34px;
     width: 489px;
+    @media screen and (max-width: 1300px){
+      width: 400px;
+    }
+    @media screen and (max-width:900px){
+      text-align: left;
+    }
   }
   &__button{
     border: none;
@@ -224,6 +264,9 @@
   background-repeat: no-repeat;
   background-position: top center;
   position: relative;
+  @media screen and (max-width:1200px){
+   height: 570px;
+  }
 }
 .italy-img p{
   font-family: Manrope;
@@ -238,26 +281,58 @@
   right: 378px;
   bottom: 133px;
 
+  @media screen and (max-width:900px){
+    //right: 200px;
+    //top:70px;
+    //font-size: 40px;
+  }
+
 }
 .complex{
   background: linear-gradient(359.7deg, #EAF5FA 0.32%, rgba(240, 248, 252, 0) 46.83%);
-
+  &__description{
+   width:50%;
+    position: relative;
+    @media screen and (max-width:1160px){
+      width:100%;
+    }
+    @media screen and (max-width:900px){
+     text-align: center;
+    }
+  }
   &__flex{
     display: flex;
     padding: 93px 0;
+    @media screen and (max-width:1160px){
+    flex-wrap: wrap;
+    }
   }
   &__title{
-    font-family: Manrope;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 46px;
-    line-height: 120%;
-    letter-spacing: -0.02em;
-    color: #021C27;
     mix-blend-mode: multiply;
-    width: 455px;
     cursor: pointer;
     text-decoration: none;
+    p{
+      width: 400px;
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 46px;
+      line-height: 120%;
+      letter-spacing: -0.02em;
+      color: #021C27;
+      @media screen and (max-width:1240px){
+       font-size: 40px;
+      }
+      @media screen and (max-width:1160px){
+       width: auto;
+      }
+      @media screen and (max-width:900px){
+        margin-top:130px;
+        padding-top:100px
+      }
+
+    }
+
     span{
       opacity: 0.15;
     }
@@ -276,6 +351,9 @@
     padding: 15px 25px;
     margin-top: 40px;
     cursor: pointer;
+    @media screen and (max-width: 1200px){
+      margin-bottom: 100px;
+    }
     &:hover{
       background: #021C27;
       border-radius: 4px;
@@ -284,12 +362,31 @@
   }
   &__image{
     margin-top: 98px;
+    @media screen and (max-width:1240px){
+      width: 200px;
+    }
+    @media screen and (max-width:1160px){
+      width: 300px;
+      margin-top: 30px;
+    }
+    @media screen and (max-width:900px){
+     top:0;
+      right: 130px;
+      position: absolute;
+    }
   }
   &__types{
+    width: 50%;
+    @media screen and (max-width: 1380px){
+    width: 70%;
+    }
+    @media screen and (max-width:1160px){
+    width: 100%;
+    }
     &__flex{
       display: flex;
       flex-wrap: wrap;
-      justify-content: flex-end;
+      justify-content: space-between;
     }
   }
 }
@@ -446,6 +543,9 @@
     width: 303px;
     position: relative;
     margin-left: 120px;
+    @media screen and (max-width: 1000px){
+     margin-left:70px;
+    }
   }
 
   &__type {
@@ -462,6 +562,9 @@
     line-height: 120%;
     letter-spacing: 0.2px;
     color: rgba(2, 28, 39, 0.3);
+    @media screen and (max-width: 900px){
+     font-size: 20px;
+    }
     &:hover {
       border-right: 5px solid #E3061B;
       cursor: pointer;
@@ -479,6 +582,7 @@
    background: #FFFFFF;
     }
 
+
     img {
       width: 520px;
       height: 520px;
@@ -489,6 +593,15 @@
         height: 330px;
         margin:50px 25px;
       }
+      @media screen and (max-width: 1000px){
+        width: 200px;
+        height: 230px;
+      }
+      @media screen and (max-width: 900px){
+        width: 130px;
+        height: 150px;
+      }
+
 
     }
   }
@@ -597,7 +710,6 @@
       justify-content: space-between;
       padding-top: 46px;
       padding-bottom: 75px;
-
       @media screen and (max-width: 1200px){
         flex-wrap: wrap;
       }
@@ -614,11 +726,17 @@
           width: 30%;
           margin-top: 25px;
         }
+        @media screen and (max-width: 900px){
+          width:45%;
+        }
         a{
           text-decoration: none;
         }
         &__text {
           padding: 40px 0 43px 38px;
+          @media screen and (max-width: 900px){
+            width: 144px;
+          }
 
         }
         &__day{
