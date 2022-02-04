@@ -95,7 +95,6 @@
     justify-content: space-between;
     align-items: flex-end;
     position: relative;
-
   &__heating{
     border-bottom:1px solid #009FE3;
     font-family: Manrope;
@@ -110,11 +109,10 @@
     width: 146px;
     padding-bottom: 26px;
     &:hover {
-      color:black;
-      border-bottom:5px solid #009FE3;
-      opacity: 1;
+      color: #000000;
       transition-duration: 0.5s;
       cursor: pointer;
+      transform: scale(1.1);
     }
 
   }

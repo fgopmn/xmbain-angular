@@ -48,13 +48,13 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.descripton-img-text{
+.description-img-text{
   width: 32.4%;
 }
-.descriptiom-img{
+.description-img{
   margin-bottom:24px;
 }
-.descriptiom-text{
+.description-text{
  padding-bottom: 60px;
   font-family: Manrope;
   font-style: normal;
@@ -85,8 +85,9 @@ padding-bottom: 34px;
   letter-spacing: 0.2px;
   color: #021C27;
   padding-bottom: 7px;
+  padding-top: 80px;
 }
-.air-title{
+.air-title1{
   font-family: Manrope;
   font-style: normal;
   font-weight: 800;
@@ -96,9 +97,9 @@ padding-bottom: 34px;
   color: #021C27;
 }
 .tecnoclima-tc{
-
   position: relative;
   padding-bottom: 97px;
+
 }
 
 .tech-description-text{
@@ -289,7 +290,7 @@ ol li {
 
 .equipment-series-flex{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .equipment-series-title{
   font-family: Manrope;
@@ -298,7 +299,6 @@ ol li {
   line-height: 120%;
   letter-spacing: -0.03em;
   color: #021C27;
-  padding-top:80px;
 }
 .equipment-series-title2{
   font-family: Manrope;

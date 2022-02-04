@@ -79,14 +79,9 @@
     right: 0;
     top: -51px;
   }
-
-
-
 }
 
-
 .consultation{
-
   &__blue__flag{
     position: fixed;
     bottom:0;
@@ -202,7 +197,6 @@
         letter-spacing: 0.2px;
         color: #021C27;
         padding-left: 8px;
-
       }
     }
     &__button{
@@ -225,8 +219,6 @@
     }
   }
 }
-
-
   .dealership {
     display: flex;
     justify-content: space-between;
@@ -294,7 +286,11 @@
 .dealerships-flex1-child{
   max-width: 285px;
   margin-top: 17px;
-
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition-duration: 0.5s;
+  }
 }
 .dealerships-flex1-child img{
   padding: 35px 60px 19px 61px;
@@ -394,6 +390,11 @@
 .conditioners-flex1-child{
   max-width: 285px;
   margin-top: 17px;
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition-duration: 0.5s;
+  }
 }
 .conditioners-flex1-child img{
   padding: 35px 60px 19px 61px;
