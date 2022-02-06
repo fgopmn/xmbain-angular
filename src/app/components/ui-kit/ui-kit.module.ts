@@ -37,9 +37,10 @@ import { SeriesComponent } from './series/series.component';
 import { CooperationComponent } from './cooperation/cooperation.component';
 import { AdvantagesComponent } from './advantages/advantages.component';
 import { NewsSliderComponent } from './news-slider/news-slider.component';
-import { CarouselComponent } from './carousel/carousel.component';
-import {CarouselModule} from "ngx-bootstrap/carousel";
-import {PaginationModule} from "ngx-bootstrap/pagination";
+// import { CarouselComponent } from './carousel/carousel.component';
+//import {CarouselModule} from "ngx-bootstrap/carousel";
+//import {PaginationModule} from "ngx-bootstrap/pagination";
+import { MenuComponent } from './menu/menu.component';
 @NgModule({
   declarations: [
     ComplexComponent,
@@ -77,7 +78,8 @@ import {PaginationModule} from "ngx-bootstrap/pagination";
     CooperationComponent,
     AdvantagesComponent,
     NewsSliderComponent,
-    CarouselComponent
+    MenuComponent,
+    // CarouselComponent
   ],
   exports: [
     ComplexComponent,
@@ -115,7 +117,8 @@ import {PaginationModule} from "ngx-bootstrap/pagination";
     CooperationComponent,
     AdvantagesComponent,
     NewsSliderComponent,
-    CarouselComponent,
+    MenuComponent,
+    // CarouselComponent,
   ],
 
   imports: [
@@ -126,9 +129,9 @@ import {PaginationModule} from "ngx-bootstrap/pagination";
     CdkAccordionModule,
     RouterModule,
     ReactiveFormsModule,
-    CarouselModule,
-    PaginationModule,
-    FormsModule
+    // CarouselModule,
+    // PaginationModule,
+   // FormsModule
   ]
 })
 export class UiKitModule { }

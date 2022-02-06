@@ -9,7 +9,6 @@
 }
 .industrial{
   background-color: white;
-  padding-bottom: 80px;
   &__flex{
     display: flex;
     justify-content: space-between;
@@ -114,6 +113,9 @@
     justify-content: space-between;
     align-items: flex-end;
     position: relative;
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
   &__heating{
     border-bottom:1px solid #009FE3;
     font-family: Manrope;
@@ -128,10 +130,12 @@
     width: 146px;
     padding-bottom: 26px;
     &:hover {
-      color: #000000;
+      border-bottom:1px solid #009FE3;
+      opacity: 1;
       transition-duration: 0.5s;
       cursor: pointer;
       transform: scale(1.1);
+      text-decoration: black;
     }
 
   }
@@ -259,7 +263,7 @@
 
 .italy-img{
   height: 720px;
-  background-image: url("../../../assets/img/Mask Group.png");
+  background-image: url("../../../assets/img/Mask Group.jpg");
   background-size:cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -829,6 +833,13 @@
     }
     &__type-two{
       padding-top: 46px;
+      img{
+        @media screen and (max-width: 900px){
+          width: 600px;
+          height: 285px;
+        }
+
+      }
     }
   }
 
@@ -929,18 +940,58 @@
     align-items: center;
     padding-top: 89px;
     padding-bottom: 110px;
+      @media screen and (max-width: 900px){
+      padding-top: 0;
+      }
 
+      }
+    &__text{
+      display: none;
+      @media screen and (max-width: 900px){
+        display: flex;
+        justify-content: space-between;
+        padding-top: 89px;
+        p{
+          width: 118px;
+        }
+        :last-child{
+          text-align: right;
+        }
+
+      }
+
+    }
     &__image {
-      width: 204px;
+        width: 204px;
+        @media screen and (max-width: 900px){
+          display: none;
+        }
     }
     &__images{
       width: 204px;
+      @media screen and (max-width: 900px){
+        width: 8%;
+      }
+      img{
+        @media screen and (max-width: 900px){
+          width: 100%;
+        }
+      }
+
     }
     &__images-last {
       width: 204px;
+      @media screen and(max-width:900px){
+        width: 8%;
+      }
+      img{
+        @media screen and (max-width: 900px){
+          width: 100%;
+        }
+      }
     }
   }
-  }
+
   .slider{
     padding-bottom: 110px;
     position: relative;
@@ -971,4 +1022,13 @@
     }
   }
 }
+
+.carousel{
+  display: none;
+  @media screen and (max-width: 900px) {
+    display: block;
+  }
+}
+
+
 

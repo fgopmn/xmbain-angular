@@ -1,44 +1,25 @@
-<!--<carousel>-->
-<!--  <slide>-->
-<!--    <div class="carousel-caption d-none d-md-block">-->
-<!--      <h3>First slide label</h3>-->
-<!--      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>-->
-<!--    </div>-->
-<!--  </slide>-->
-<!--  <slide>-->
-<!--    <div class="carousel-caption d-none d-md-block">-->
-<!--      <h3>Second slide label</h3>-->
-<!--      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
-<!--    </div>-->
-<!--  </slide>-->
-<!--  <slide>-->
-<!--    <div class="carousel-caption d-none d-md-block">-->
-<!--      <h3>Third slide label</h3>-->
-<!--      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>-->
-<!--    </div>-->
-<!--  </slide>-->
-<!--</carousel>-->
-<div class="row">
-  <div class="col-xs-12 col-12">
-    <pagination
-      [directionLinks]="false"
-      [totalItems]="totalItems"
-      [(ngModel)]="currentPage"
-      (numPages)="smallnumPages = $event">
-    </pagination>
-  </div>
-</div>
 
-<div class="row">
-  <div class="col-xs-12 col-12">
-    <pager
-      [totalItems]="totalItems"
-      [align]="true"
-      [(ngModel)]="currentPage"
-      (pageChanged)="pageChanged($event)"
-      pageBtnClass="btn"
-      [itemsPerPage]="10"
-      class="pull-left">
-    </pager>
-  </div>
-</div>
+<!--<div class="row">-->
+<!--  <div class="col-xs-12 col-12">-->
+<!--    <pagination-->
+<!--      [directionLinks]="false"-->
+<!--      [totalItems]="totalItems"-->
+<!--      [(ngModel)]="currentPage"-->
+<!--      (numPages)="smallnumPages = $event">-->
+<!--    </pagination>-->
+<!--  </div>-->
+<!--</div>-->
+
+<!--<div class="row">-->
+<!--  <div class="col-xs-12 col-12">-->
+<!--    <pager-->
+<!--      [totalItems]="totalItems"-->
+<!--      [align]="true"-->
+<!--      [(ngModel)]="currentPage"-->
+<!--      (pageChanged)="pageChanged($event)"-->
+<!--      pageBtnClass="btn"-->
+<!--      [itemsPerPage]="10"-->
+<!--      class="pull-left">-->
+<!--    </pager>-->
+<!--  </div>-->
+<!--</div>-->
