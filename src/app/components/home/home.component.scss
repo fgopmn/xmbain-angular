@@ -271,6 +271,24 @@
   @media screen and (max-width:1200px){
    height: 570px;
   }
+  @media screen and (max-width:1000px){
+    height: 500px;
+  }
+  @media screen and (max-width:900px) {
+    height: 440px;
+  }
+  @media screen and (max-width:700px) {
+    height: 380px;
+  }
+  @media screen and (max-width:600px) {
+    height: 320px;
+  }
+  @media screen and (max-width:500px) {
+    height: 250px;
+  }
+  @media screen and (max-width:400px) {
+    height: 220px;
+  }
 }
 .italy-img p{
   font-family: Manrope;
@@ -284,13 +302,21 @@
   position: absolute;
   right: 378px;
   bottom: 133px;
-
-  @media screen and (max-width:900px){
-    //right: 200px;
-    //top:70px;
-    //font-size: 40px;
+  @media screen and (max-width:900px) {
+    right: 220px;
+    bottom: 114px;
+    font-size: 45px;
   }
-
+  @media screen and (max-width:700px) {
+    right: 80px;
+    bottom: 30px;
+    font-size: 40px;
+  }
+  @media screen and (max-width:500px) {
+    right: 170px;
+    bottom: 30px;
+    font-size: 25px;
+  }
 }
 .complex{
   background: linear-gradient(359.7deg, #EAF5FA 0.32%, rgba(240, 248, 252, 0) 46.83%);
@@ -683,6 +709,15 @@
     @media screen and (max-width:1200px) {
       height: 440px;
     }
+    @media screen and (max-width:900px) {
+      height: 380px;
+    }
+    @media screen and (max-width:700px) {
+      height: 250px;
+    }
+    @media screen and (max-width:500px) {
+      height: 200px;
+    }
     &__text{
       font-family: Manrope;
       font-style: normal;
@@ -695,6 +730,22 @@
       position: absolute;
       right: 323px;
       bottom: 133px;
+      @media screen and (max-width:900px) {
+        right: 220px;
+        bottom: 114px;
+        font-size: 45px;
+      }
+      @media screen and (max-width:700px) {
+        right: 80px;
+        bottom: 30px;
+        font-size: 40px;
+      }
+      @media screen and (max-width:500px) {
+        right: 50px;
+        bottom: 30px;
+        font-size: 30px;
+      }
+
     }
   }
   .fullRange {

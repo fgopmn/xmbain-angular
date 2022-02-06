@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {RequestService} from "../../../service/request.service";
+import {FormBuilder} from "@angular/forms";
+import {Router} from "@angular/router";
 
 
 @Component({
@@ -7,13 +10,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit{
-  public isApplicationOpen:boolean = true;
+  public isMenuOpen:boolean = true;
+
+
   ngOnInit() {
 
   }
 
-  public openApplication(val?:boolean) {
-    this.isApplicationOpen = val ? val : !this.isApplicationOpen
+  public openMenu(val?:boolean) {
+    this.isMenuOpen = val ? val : !this.isMenuOpen
   }
 
 }

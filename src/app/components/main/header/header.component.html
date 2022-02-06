@@ -1,14 +1,10 @@
 <div class="header">
-  <app-menu class="menu"
-            [is-open]="!isApplicationOpen"
-            (whenApplicationOpen)="openApplication($event)"
-  ></app-menu>
 
 
   <div class="header__logo">
     <img src="../../../../assets/img/Group 120.png" alt="no image" routerLink="" >
   </div>
-  <ul class="header__navigate-links-wrapper" (click)="openApplication()">
+  <ul class="header__navigate-links-wrapper" (click)="openMenu()">
     <li class="header__navigate-links">
       <img src="../../../../assets/img/ico menu.png" alt="no image">
     </li>
@@ -26,4 +22,9 @@
   </button>
 
   <button class="header__payment-button">Расчет оборудования</button>
+  <app-menu class="menu"
+            [is-open]="!isMenuOpen"
+            (whenApplicationOpen)="openMenu($event)"
+
+  ></app-menu>
 </div>

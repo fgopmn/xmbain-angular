@@ -6,8 +6,13 @@
   padding: 40px 0 50px;
   justify-content: space-between;
   position: relative;
-  @media only screen and (max-width:800px){
+
+  &__show{
+    display: block;
+  }
+  @media screen and (max-width:800px){
    flex-wrap: wrap;
+
   }
 
   &__logo {

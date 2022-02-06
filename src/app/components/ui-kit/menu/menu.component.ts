@@ -6,7 +6,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
-  @Input('is-open') isOpenProps: boolean = true
+  @Input('is-open') isOpenProps: boolean = false
   @Output() whenApplicationOpen: EventEmitter<boolean> = new EventEmitter<boolean>()
 
   constructor() { }

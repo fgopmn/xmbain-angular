@@ -1,11 +1,29 @@
 .header{
   display: none;
+  position: fixed;
+  height: 100vh;
+  z-index: 999;
+  background-color: white;
+  filter: drop-shadow(0px 100px 250px rgba(2, 21, 29, 0.5));
+  top: 0;
+  right: 0;
+  width:80%;
+  overflow-y: scroll;
   &_show {
     display: block;
   }
 }
-
-
+.backShadow{
+  position: fixed;
+  height: 100vh;
+  z-index: 997;
+  background-color: rgba(0, 0, 0, .2);
+  filter: drop-shadow(0px 100px 250px rgba(2, 21, 29, 0.5));
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+}
 .menu{
   padding:18px 0 18px 30px;
   background: linear-gradient(90deg, #E8F4FA 0%, #FBFEFF 100%);
@@ -48,6 +66,8 @@
   &__close{
     width: 18px;
     height: 18px;
+    background: none;
+    border: none;
   }
 
 }

@@ -1,5 +1,10 @@
-<div class="header">
-  <div class="menu"  [class.backOverlay_show]="isOpenProps">
+<div class="c"
+[class.backShadow_show]="isOpenProps"
+>
+</div>
+
+<div class="header" [class.header_show]="isOpenProps">
+  <div class="menu" >
   <div class="container">
     <div class="menu__header">
     <div class="menu__flag">
@@ -54,4 +59,7 @@
     </div>
   </div>
 </div>
+  <ng-content></ng-content>
 </div>
+
+
