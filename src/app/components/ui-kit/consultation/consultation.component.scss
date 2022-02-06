@@ -34,6 +34,10 @@
     top: 45px;
     right: 45px;
     cursor: pointer;
+    &:hover{
+      color: #021C27;
+      transition-duration: 0.5s;
+    }
   }
 
   &_show {

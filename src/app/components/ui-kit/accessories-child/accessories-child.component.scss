@@ -1,6 +1,11 @@
 .accessories{
   padding:61px 46px 35px 46px;
   text-align: center;
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition-duration: 0.5s;
+  }
   &__description{
     width:205px;
     padding-top:45px;

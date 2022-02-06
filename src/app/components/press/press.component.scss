@@ -46,12 +46,19 @@
   display: inline-flex;
   border: 1px solid #021C27;
   border-radius: 5px;
-  margin-top:66px
+  margin-top:66px;
+
 }
+
 .press-menu li{
   list-style-type: none;
   border-right:1px solid #000000;
   padding:10px 20px;
+  &:hover{
+    background: #7b7b7b;
+    transition-duration: 0.5s;
+    cursor: pointer;
+  }
 }
 
 .blog-title{
@@ -117,12 +124,17 @@
 }
 .blog-click{
   background-color: rgba(0, 159, 227, 0.11);
-
   border-radius: 5px;
   padding:10px 20px;
   margin-top:40px;
   margin-bottom:80px;
   border:none;
+  &:hover{
+    background: black;
+    color: #FFFFFF;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+  }
 }
 
 .blog-click span{
@@ -155,11 +167,16 @@
 }
 .event-click{
   background-color: rgba(0, 159, 227, 0.1);
-
   border-radius: 5px;
   padding:10px 20px;
   margin:70.53px 0 80px 0;
   border:none;
+  &:hover{
+    background: black;
+    transition-duration: 0.5s;
+    cursor: pointer;
+
+  }
 }
 .event-click span{
   font-family: Manrope;

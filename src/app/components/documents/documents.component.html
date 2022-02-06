@@ -53,9 +53,52 @@
 </div>
   </div>
 <app-equipment></app-equipment>
-<app-equipment-series></app-equipment-series>
+
+
+<div>
+  <div class="equipment-color">
+    <div class="container">
+      <p class="equipment-series-title2">Оборудование из серии</p>
+    </div>
+  </div>
+  <div>
+    <div class="container">
+      <div class="equipment-seria-flex">
+        <app-equipment-series *ngFor="let item of equipmentSeries"
+                              [img]="item.img"
+                              [title]="item.seria"
+                              [about]="item.title"
+                              [text]="item.text"
+        ></app-equipment-series>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div>
+  <div class="equipment-color">
+    <div class="container">
+      <p class="equipment-series-title2">Сопутствующее оборудование</p>
+    </div>
+  </div>
+  <div>
+    <div class="container">
+      <div class="equipment-series-flex">
+        <app-equipment-series *ngFor="let item of equipment"
+                              [img]="item.img"
+                              [title]="item.seria"
+                              [about]="item.title"
+                              [text]="item.text"
+        ></app-equipment-series>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <div class="airHeaters-slider-title">
-  <div class="airHeaters-slider-title-container">
+  <div class="container">
     <p>Примеры решений</p>
   </div>
 

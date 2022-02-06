@@ -28,7 +28,7 @@ import { InstructionsComponent } from './instructions/instructions.component';
 import { ApplicationComponent } from './application/application.component';
 import {RouterModule} from "@angular/router";
 import { ConsultationComponent } from './consultation/consultation.component';
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { SeoFilterComponent } from './seo-filter/seo-filter.component';
 import { LogosComponent } from './logos/logos.component';
 import { SolutionExampelsHeaderComponent } from './solution-exampels-header/solution-exampels-header.component';
@@ -37,7 +37,10 @@ import { SeriesComponent } from './series/series.component';
 import { CooperationComponent } from './cooperation/cooperation.component';
 import { AdvantagesComponent } from './advantages/advantages.component';
 import { NewsSliderComponent } from './news-slider/news-slider.component';
-
+// import { CarouselComponent } from './carousel/carousel.component';
+//import {CarouselModule} from "ngx-bootstrap/carousel";
+//import {PaginationModule} from "ngx-bootstrap/pagination";
+import { MenuComponent } from './menu/menu.component';
 @NgModule({
   declarations: [
     ComplexComponent,
@@ -74,45 +77,49 @@ import { NewsSliderComponent } from './news-slider/news-slider.component';
     SeriesComponent,
     CooperationComponent,
     AdvantagesComponent,
-    NewsSliderComponent
+    NewsSliderComponent,
+    MenuComponent,
+    // CarouselComponent
   ],
-    exports: [
-        ComplexComponent,
-        EquipmentComponent,
-        TechnologicalComponent,
-        SelectInputComponent,
-        PressEventsComponent,
-        PressBlogComponent,
-        ExhibitionsComponent,
-        SliderComponent,
-        ProductCheckComponent,
-        SystemProductComponent,
-        HighlyEfficientComponent,
-        EquipmentSeriesComponent,
-        EquipmentSeriesComponent,
-        FullRangeComponent,
-        AccessoriesChildComponent,
-        UsedEquipmentComponent,
-        FullRangeComponent,
-        EquipmentSeriesComponent,
-        NewsChildComponent,
-        ModalComponent,
-        AccordionComponent,
-        NewsChildComponent,
-        ChooseComponent,
-        FillComponent,
-        InstructionsComponent,
-        ApplicationComponent,
-        ConsultationComponent,
-        SeoFilterComponent,
-        LogosComponent,
-        SolutionExampelsHeaderComponent,
-        IndustriesComponent,
-        SeriesComponent,
-        CooperationComponent,
-        AdvantagesComponent,
-        NewsSliderComponent,
-    ],
+  exports: [
+    ComplexComponent,
+    EquipmentComponent,
+    TechnologicalComponent,
+    SelectInputComponent,
+    PressEventsComponent,
+    PressBlogComponent,
+    ExhibitionsComponent,
+    SliderComponent,
+    ProductCheckComponent,
+    SystemProductComponent,
+    HighlyEfficientComponent,
+    EquipmentSeriesComponent,
+    EquipmentSeriesComponent,
+    FullRangeComponent,
+    AccessoriesChildComponent,
+    UsedEquipmentComponent,
+    FullRangeComponent,
+    EquipmentSeriesComponent,
+    NewsChildComponent,
+    ModalComponent,
+    AccordionComponent,
+    NewsChildComponent,
+    ChooseComponent,
+    FillComponent,
+    InstructionsComponent,
+    ApplicationComponent,
+    ConsultationComponent,
+    SeoFilterComponent,
+    LogosComponent,
+    SolutionExampelsHeaderComponent,
+    IndustriesComponent,
+    SeriesComponent,
+    CooperationComponent,
+    AdvantagesComponent,
+    NewsSliderComponent,
+    MenuComponent,
+    // CarouselComponent,
+  ],
 
   imports: [
     CommonModule,
@@ -121,7 +128,10 @@ import { NewsSliderComponent } from './news-slider/news-slider.component';
     MatExpansionModule,
     CdkAccordionModule,
     RouterModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    // CarouselModule,
+    // PaginationModule,
+   // FormsModule
   ]
 })
 export class UiKitModule { }

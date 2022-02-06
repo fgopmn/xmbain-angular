@@ -9,6 +9,10 @@
   width:83%;
   margin:auto;
   max-width: 1440px;
+  @media screen and (max-width: 670px) {
+    width:89%;
+    margin:auto;
+  }
 }
 //li{
 //  list-style-type: none;

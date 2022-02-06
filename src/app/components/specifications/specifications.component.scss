@@ -1,4 +1,22 @@
-
+.menu-list{
+  //opacity: 0.3;
+  border-bottom: 1px solid #C0C6C9;
+}
+.menu{
+  display: flex;
+  margin-bottom: 16px;
+}
+.menu li{
+  list-style-type: none;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: #C0C6C9;
+  padding-right: 9px;
+}
 .header-flex-ul ul{
   display: flex;
   border-bottom: 1px solid;
@@ -295,7 +313,6 @@
 
 .slider{
   position:relative;
-  padding-bottom: 116px;
   &__flex{
     display: flex;
     justify-content: space-between;
@@ -333,4 +350,26 @@
 }
 .airHeaters-slider-title{
   background: linear-gradient(180deg, #abd5e836 4.17%, rgba(255, 255, 255, 0) 100%);
+}
+
+
+.equipment-series-flex{
+  display: flex;
+  justify-content: space-between;
+}
+.equipment-seria-flex{
+  display: flex;
+  justify-content: flex-start;
+}
+.equipment-series-title2{
+  font-family: Manrope;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  color: #021C27;
+  padding-top:80px;
+}
+.equipment-color{
+  background: linear-gradient(180deg, #abd5e838 4.17%, rgba(255, 255, 255, 0.12) 100%);
 }

@@ -1,4 +1,5 @@
 <div class="equipment">
+  <div class="equipment__container">
   <p class="equipment__tittle">{{title}}<span>{{titleSpan}}</span></p>
   <div class="general__tabs">
     <div class="general__tabs__tab"></div>
@@ -18,6 +19,7 @@
           [text]=item.mainText1
         >
         </app-select-input>
+        <div class="fuel__check">
         <app-select-input
           [type]="selectInput.selected"
           [text]=item.mainText2
@@ -33,6 +35,7 @@
           [text]=item.mainText4
         >
         </app-select-input>
+        </div>
       </div>
 
     </div>
@@ -50,4 +53,5 @@
     </div>
     <img src="../../../../assets/img/techno.svg" alt="" class="info__img">
   </div>
+</div>
 </div>

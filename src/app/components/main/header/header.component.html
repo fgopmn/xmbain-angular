@@ -1,14 +1,13 @@
 <div class="header">
+
+
   <div class="header__logo">
     <a routerLink="/home"><img src="../../../../assets/img/Group 120.png" alt="no image" ></a>
 
   </div>
-  <ul class="header__navigate-links-wrapper">
+  <ul class="header__navigate-links-wrapper" (click)="openMenu()">
     <li class="header__navigate-links">
-      <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect y="3" width="18" height="2" fill="#021C27"/>
-        <rect y="8" width="18" height="2" fill="#021C27"/>
-      </svg>
+      <img src="../../../../assets/img/ico menu.png" alt="no image">
     </li>
     <li  class="header__navigate-links"><a routerLink="/production" class="header__navigate-link">Продукция</a></li>
     <li class="header__navigate-links"><a routerLink="/page-solution" class="header__navigate-link">Примеры решений</a></li>
@@ -24,4 +23,9 @@
   </button>
 
   <button class="header__payment-button">Расчет оборудования</button>
+  <app-menu class="menu"
+            [is-open]="!isMenuOpen"
+            (whenApplicationOpen)="openMenu($event)"
+
+  ></app-menu>
 </div>

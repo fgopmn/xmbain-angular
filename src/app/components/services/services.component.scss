@@ -114,6 +114,7 @@
     background: #021C27;
     border-radius: 4px;
     transition-duration: 0.5s;
+    cursor: pointer;
   }
 }
 
@@ -256,9 +257,10 @@
       color: #FFFFFF;
       border: none;
       &:hover{
-        background: black;
+        background: #021C27;;
+        border-radius: 4px;
         transition-duration: 0.5s;
-        cursor: pointer;
+        color: #FFFFFF;
       }
     }
 

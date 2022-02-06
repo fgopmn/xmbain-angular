@@ -79,6 +79,9 @@ export const environment = {
   related:{
     get:'/related'
   },
+  relatedTwo:{
+    get:'/relatedTwo'
+  },
   newsChild:{
     get:'/newsChild'
   },

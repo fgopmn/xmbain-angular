@@ -8,7 +8,6 @@
     max-width: 532px;
   }
   &__border{
-
     border-bottom: 1px solid rgba(192, 198, 201, 0.3);
   }
 
@@ -31,7 +30,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
   }
   &__link{
     display: flex;
@@ -81,7 +79,6 @@
       padding-top:60px
     }
   }
-
 }
 .slideSelect .container{
   padding-top: 70px;
@@ -97,16 +94,17 @@
     width: 162px;
     border-bottom: 1px solid rgba(2, 28, 39, 0.15);
 
-
     div{
      margin: auto;
       cursor: pointer;
       padding-bottom: 14px;
-
-      &:hover{
-
-        border-bottom: 1px solid black;
+      &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+        transition-duration: 0.5s;
+        //border-bottom: 1px solid black;
       }
+
       }
       p{
         color: rgba(2, 28, 39, 0.15);
@@ -115,9 +113,6 @@
           color: black;
           transform: scale(1.7,1.7);
           z-index: 999;
-
-
-
       }
     }
   }
@@ -128,5 +123,4 @@
       opacity: 0.15;
     }
   }
-
 }

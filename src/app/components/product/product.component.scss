@@ -44,7 +44,7 @@
   margin-top: 40px;
 }
 .blue-fon{
-  background: linear-gradient(275deg, rgba(171,213,232,0.12) -0, rgba(255, 255, 255, ) 60%);
+  background: linear-gradient(275deg, rgba(171,213,232,0.12) -0, rgba(255, 255, 255, ) 100%);
   width: 267px;
 
 }
@@ -147,25 +147,25 @@
     display: flex;
     justify-content: space-between;
     width: 162px;
-    border-bottom: 1px solid rgba(2, 28, 39, 0.15);
-
+    border-bottom: 1px solid black;
+    opacity: 0.5;
 
     div{
       margin: auto;
       cursor: pointer;
       padding-bottom: 14px;
 
-      &:hover{
-        border-bottom: 1px solid black;
-      }
+      //&:hover{
+      //  border-bottom: 1px solid black;
+      //}
     }
     p{
       color: rgba(2, 28, 39, 0.15);
       &:hover{
-        position: static;
+        //position: static;
         color: black;
-        transform: scale(1.7,1.7);
-        z-index: 999;
+        transform: scale(1.1);
+        //z-index: 999;
         transition-duration: 0.5s;
       }
     }
