@@ -66,6 +66,10 @@
   margin-top: 80px;
   align-items: flex-start;
 }
+.text-img-block button{
+  cursor: pointer;
+}
+
 .technical-title{
   font-family: Manrope;
   font-style: normal;
@@ -251,6 +255,11 @@
       text-transform: uppercase;
       color: #FFFFFF;
       border: none;
+      &:hover{
+        background: black;
+        transition-duration: 0.5s;
+        cursor: pointer;
+      }
     }
 
 

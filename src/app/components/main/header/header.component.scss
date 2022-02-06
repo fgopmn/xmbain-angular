@@ -79,6 +79,11 @@
     color: #021C27;
     opacity: 0.9;
     cursor: pointer;
+    &:hover{
+      background: #009FE3;
+      border-radius: 4px;
+      transition-duration: 0.5s;
+    }
     @media only screen and (max-width:1430px){
       padding: 5px 10px;
     }
