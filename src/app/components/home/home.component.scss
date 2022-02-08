@@ -43,7 +43,6 @@
       font-size: 64px;
       line-height: 100%;
       letter-spacing: -0.02em;
-
      @media screen and (max-width:1200px){
       font-size: 55px;
      }
@@ -650,7 +649,6 @@
    background: #FFFFFF;
     }
 
-
     img {
       width: 520px;
       height: 520px;
@@ -803,6 +801,7 @@
       justify-content: space-between;
       padding-top: 46px;
       padding-bottom: 75px;
+
       @media screen and (max-width: 1200px){
         flex-wrap: wrap;
       }
@@ -814,6 +813,7 @@
         &:hover{
           background: linear-gradient(90deg, #FBFEFF 0%, #d4f3ff 100%);
           border-radius: 20px;
+          transition-duration: 0.5s;
         }
         @media screen and (max-width: 1200px){
           width: 30%;
@@ -851,7 +851,8 @@
         border-bottom: 2px solid #009FE3;
         display: inline-block;
         padding-bottom: 13px;
-        margin-bottom: 24px
+        margin-bottom: 24px;
+
       }
         &__description {
           font-family: Manrope;
@@ -1092,7 +1093,6 @@
       }
     }
   }
-
   .slider{
     padding-bottom: 110px;
     position: relative;

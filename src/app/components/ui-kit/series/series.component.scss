@@ -16,9 +16,22 @@
 .series__section{
   display: flex;
   justify-content: space-between;
+  a{
+    text-decoration: none;
+    color: black;
+    &:hover{
+      opacity: 0.6;
+      transition-duration: 0.5s;
+    }
+
+  }
   li{
     list-style-type: none;
-
+    cursor: pointer;
+    &:hover{
+      opacity: 0.6;
+      transition-duration: 0.5s;
+    }
     p{
       padding-top: 5px;
       font-family: Manrope;
