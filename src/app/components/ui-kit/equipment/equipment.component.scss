@@ -1,7 +1,7 @@
 .equipment{
   width: 87%;
   max-width: 1440px;
-  margin:80px auto;
+  margin:auto;
   background: #FFFFFF;
   box-shadow: 0 20px 60px rgba(2, 26, 36, 0.1);
   border-radius: 40px;
@@ -19,6 +19,10 @@
     line-height: 120%;
     padding: 56px 0;
     color: black;
+    @media screen and (max-width: 490px){
+    font-size: 19px;
+      text-align: center;
+    }
    span {
       opacity: 0.5;
     }
@@ -144,6 +148,10 @@
     margin-top: 33px;
     margin-bottom: 56px;
     cursor: pointer;
+    @media screen and (max-width:900px){
+      margin:20px 0 20px 0;
+      width: 100%;
+    }
     p{
       font-family: Manrope;
       font-style: normal;
@@ -158,17 +166,7 @@
      }
     }
   }
-  &__child3{
-    display: flex;
-    margin-right: 93px;
-    align-items: flex-start;
-    margin-top: 33px;
-    margin-bottom: 56px;
-    @media screen and (max-width:900px){
-    margin-right:0;
-      width: 100%;
-    }
-  }
+
   &__img{
     position: absolute;
     bottom: 65px;

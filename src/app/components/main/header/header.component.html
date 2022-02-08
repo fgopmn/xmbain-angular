@@ -1,14 +1,12 @@
 <div class="header">
-
-
   <div class="header__logo">
     <img src="../../../../assets/img/Group 120.png" alt="no image" routerLink="" >
   </div>
   <ul class="header__navigate-links-wrapper" (click)="openMenu()">
-    <li class="header__navigate-links">
+    <li class="header__navigate-links icon">
       <img src="../../../../assets/img/ico menu.png" alt="no image">
     </li>
-    <li  class="header__navigate-links"><a routerLink="/production" class="header__navigate-link">Продукция</a></li>
+    <li  class="header__navigate-links "><a routerLink="/production" class="header__navigate-link">Продукция</a></li>
     <li class="header__navigate-links"><a routerLink="/page-solution" class="header__navigate-link">Примеры решений</a></li>
     <li class="header__navigate-links"><a routerLink="/services" class="header__navigate-link">Услуги</a></li>
     <li class="header__navigate-links"><a routerLink="" class="header__navigate-link">О компании</a></li>
@@ -22,9 +20,9 @@
   </button>
 
   <button class="header__payment-button">Расчет оборудования</button>
-  <app-menu class="menu"
-            [is-open]="!isMenuOpen"
-            (whenApplicationOpen)="openMenu($event)"
-
-  ></app-menu>
 </div>
+<app-menu class="menu"
+          [is-open]="!isMenuOpen"
+          (whenApplicationOpen)="openMenu($event)"
+
+></app-menu>

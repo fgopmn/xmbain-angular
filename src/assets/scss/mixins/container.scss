@@ -2,4 +2,8 @@
   width: 83%;
   max-width: 1440px;
   margin: auto;
+  @media screen and( max-width:670px){
+    width: 89%;
+    margin: auto;
+  }
 }
