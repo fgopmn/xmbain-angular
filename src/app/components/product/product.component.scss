@@ -193,6 +193,14 @@
   &__flex{
     display: flex;
     justify-content: space-between;
+      @media screen and (max-width: 1200px){
+        justify-content: center;
+        margin-top: 50px;
+        :last-child{
+          display: none;
+      }
+    }
+
   }
 }
 .airHeaters-title{
