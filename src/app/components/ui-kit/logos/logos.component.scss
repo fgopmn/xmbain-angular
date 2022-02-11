@@ -4,11 +4,11 @@
   align-items: center;
   margin-top: 63px;
   justify-content: space-between;
+  @media screen and (max-width:1100px) {
+
+  }
   @media screen and (max-width:900px) {
   flex-wrap: wrap;
-   :nth-child(n+6){
-      text-align: left;
-    }
   }
   &__border{
   height: 50px;
@@ -20,6 +20,18 @@
 }
   &__image{
    width: 204px;
+    text-align: center;
+    @media screen and (max-width:1100px) {
+    width: 10%;
+    }
+    img{
+      @media screen and (max-width:1100px) {
+        width:auto;
+      }
+      @media screen and (max-width:430px) {
+        width:79%;
+      }
+    }
     &:hover{
       opacity: 0.7;
       transition-duration: 0.5s;
@@ -31,7 +43,7 @@
       transition-duration: 0.5s;
     }
     @media screen and (max-width:900px) {
-     width: 30%;
+      width:30%;
       margin-top: 25px;
     }
  }

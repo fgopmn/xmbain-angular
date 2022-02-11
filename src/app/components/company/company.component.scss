@@ -19,7 +19,6 @@
   &__li:nth-child(n+2){
     padding-left: 12px;
   }
-
 }
 .company{
   background-color: white;
@@ -36,10 +35,8 @@
   //background-repeat: no-repeat;
   //background-position: top center;
   &__flex{
-
     display: flex;
     justify-content: space-between;
-
   }
   &__title{
     h1{
@@ -53,7 +50,6 @@
       padding-top: 30px;
       padding-bottom: 66px;
     }
-
     p{
       font-family: Manrope;
       font-style: normal;
@@ -78,7 +74,6 @@
        }
      }
      }
-
    }
 
 :host::ng-deep .footer .footer__image{

@@ -3,6 +3,10 @@
  .indoor {
    padding-right: 20px;
    width: 285px;
+   @media screen and (max-width:1260px){
+     width: 348px;
+   }
+
    &:hover {
      transform: scale(1.1);
      cursor: pointer;

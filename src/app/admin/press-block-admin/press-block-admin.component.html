@@ -1,0 +1,32 @@
+<form action="" [formGroup]="contactForm">
+<table>
+  <tr>
+    <td>button</td>
+    <td>title</td>
+    <td>text</td>
+    <td>image</td>
+    <td>image description</td>
+
+  </tr>
+  <tr *ngFor="let item of press">
+    <td>
+      <input type="text" [defaultValue]="item.button">
+    </td>
+    <td>
+ <textarea value="{{item.title}}"  ></textarea>
+        </td>
+    <td>
+      <textarea value="{{item.text}}" > </textarea>
+     </td>
+    <td> <input type="text" value="{{item.img}}">
+      </td>
+    <td> <textarea value="{{item.info}}"></textarea>
+     </td>
+    <td>
+      <button (click)="deleteItem(item.id)">Delete</button>
+      <button (click)="save(item)" >Edit</button>
+    </td>
+  </tr>
+</table>
+</form>
+
