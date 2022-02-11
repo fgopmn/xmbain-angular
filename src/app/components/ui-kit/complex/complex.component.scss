@@ -23,6 +23,11 @@ a{
   @media screen and (max-width:1240px){
     width: 260px;
   }
+  @media screen and (max-width:600px){
+    width: 80%;
+    margin: 20px auto;
+  }
+
 
 
   &__image {

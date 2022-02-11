@@ -7,9 +7,14 @@ import {MainModule} from "./components/main/main.module";
 import {UiKitModule} from "./components/ui-kit/ui-kit.module";
 import { NfComponent } from './components/nf/nf.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import {PressBlockAdminComponent} from "./admin/press-block-admin/press-block-admin.component";
+import {ReactiveFormsModule} from "@angular/forms";
 
 const routes: Routes = [
+  {
+    path:"press-block-admin",
+    component:PressBlockAdminComponent
+  },
   {
     path:"",
    loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule)
@@ -111,16 +116,19 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     NfComponent,
+    PressBlockAdminComponent
   ],
-  imports: [
-    BrowserModule,
-    RouterModule,
-    RouterModule.forRoot(routes),
-    HttpClientModule,
-    MainModule,
-    UiKitModule,
-    BrowserAnimationsModule,
-  ],
+    imports: [
+        BrowserModule,
+        RouterModule,
+        RouterModule.forRoot(routes),
+        HttpClientModule,
+        MainModule,
+        UiKitModule,
+        BrowserAnimationsModule,
+        ReactiveFormsModule,
+
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

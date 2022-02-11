@@ -12,4 +12,14 @@ export class RequestService {
     return this.http.get(url);
   }
 
+  create(url:string, data:any){
+    return this.http.post(url, data)
+  }
+  edit(url:string, data:any){
+    return this.http.put(url, data)
+  }
+  delete(url:string){
+    return this.http.delete(url);
+  }
+
 }
