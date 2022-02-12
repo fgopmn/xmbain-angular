@@ -1,0 +1,268 @@
+<div #wrapper class="wrapper">
+  <div class="wrapper__child1">
+    <h1>Параметры</h1>
+    <img src="../../../../assets/icons/Vector (3).png" (click)="hideparametrs()">
+  </div>
+  <div class="wrapper__child">
+    <div class="wrapper__child__flex">
+    <p>Тепловая мощность</p>
+      <img src="../../../../assets/icons/Group 408.png" #img1  class="img1" (click)="showPunk1()">
+      <img src="../../../../assets/icons/Group 408 (1).png" #img2 class="img2" (click)="closePunk1()">
+    </div>
+    <div #filterPunt1 class="filter__punt1">
+      <input type="text" placeholder="38">
+      <img src="../../../../assets/icons/Group 408 (1).png">
+      <input type="text" placeholder="10000 кВт">
+    </div>
+  </div>
+
+  <div class="wrapper__child">
+    <div class="wrapper__child__flex">
+        <p>Воздушный поток</p>
+        <img src="../../../../assets/icons/Group 408.png" class="img1" #img3   (click)="showPunk2()">
+        <img src="../../../../assets/icons/Group 408 (1).png" class="img2" #img4  (click)="closePunk2()">
+    </div>
+    <div #filterPunt2 class="filter__punt1">
+      <input type="text" placeholder="300">
+      <img src="../../../../assets/icons/Group 408 (1).png">
+      <input type="text" placeholder="7200 м3/ч">
+    </div>
+  </div>
+
+  <div class="wrapper__child">
+    <div class="wrapper__child__flex">
+        <p>Топливо</p>
+        <img src="../../../../assets/icons/Group 408.png" class="img1" #img5 (click)="showPunk3()">
+        <img src="../../../../assets/icons/Group 408 (1).png" class="img2" #img6 (click)="closePunk3()">
+    </div>
+    <div #filterPunt3 class="filter__punt1">
+      <ul>
+        <li class="dealership-check__li">
+          <input type="checkbox" id="check-one">
+          <label for="check-one">Универсальное</label>
+        </li>
+        <li class="dealership-check__li">
+          <input type="checkbox" id="check-two">
+          <label for="check-two">Газ</label></li>
+        <li class="dealership-check__li">
+          <input type="checkbox" id="check-three">
+          <label for="check-three">Жидкое</label>
+        </li>
+        <li class="dealership-check__li">
+          <input type="checkbox" id="check-four">
+          <label for="check-four">Вода</label>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="wrapper__child">
+    <div class="wrapper__child__flex">
+        <p>Назначение</p>
+        <img src="../../../../assets/icons/Group 408.png" class="img1" #img7 (click)="showPunk4()">
+        <img src="../../../../assets/icons/Group 408 (1).png" class="img2" #img8 (click)="closePunk4()">
+    </div>
+    <div #filterPunt4 class="filter__punt1">
+      <ul>
+        <li class="dealership-check__li"><input type="checkbox" id="check-one1">
+          <label for="check-one1">Отопление</label></li>
+        <li class="dealership-check__li"><input type="checkbox" id="check-two1">
+          <label for="check-two1">Отопление и охлаждение</label></li>
+        <li class="dealership-check__li"><input type="checkbox" id="check-three1">
+          <label for="check-three1">Рекуперация тепла</label></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="wrapper__child">
+    <div class="wrapper__child__flex">
+        <p>Расположение</p>
+        <img src="../../../../assets/icons/Group 408.png" class="img1" #img9 (click)="showPunk5()">
+        <img src="../../../../assets/icons/Group 408 (1).png" class="img2" #img10 (click)="closePunk5()">
+    </div>
+    <div #filterPunt5 class="filter__punt1">
+      <ul>
+        <li class="dealership-check__li"><input type="checkbox" id="check-one2">
+          <label for="check-one2">Внутри помещения</label></li>
+        <li class="dealership-check__li"><input type="checkbox" id="check-two2">
+          <label for="check-two2">Снаружи помещения</label></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="wrapper__child">
+    <div class="wrapper__child__flex">
+        <p>Отраслевые решения</p>
+        <img src="../../../../assets/icons/Group 408.png" class="img1" #img11 (click)="showPunk6()">
+        <img src="../../../../assets/icons/Group 408 (1).png" class="img2" #img12 (click)="closePunk6()">
+    </div>
+    <div #filterPunt6 class="filter__punt1">
+      <ul>
+        <li><input type="checkbox" id="autosalon" class="check"><label for="autosalon">Автосалоны</label></li>
+        <li><input type="checkbox" id="hangar" class="check"><label for="hangar">Ангары</label></li>
+        <li><input type="checkbox" id="outlet" class="check"><label for="outlet">Аутлет-центры</label></li>
+        <li><input type="checkbox" id="depot" class="check"><label for="depot">Депо</label></li>
+        <li><input type="checkbox" id="complex" class="check"><label for="complex">Логистические комплексы</label></li>
+        <li><input type="checkbox" id="office-center" class="check"><label for="office-center">Офисные центры</label></li>
+        <li><input type="checkbox" id="production" class="check"><label for="production">Производство</label></li>
+        <li><input type="checkbox" id="economy" class="check"><label for="economy">Сельское хозяйство</label></li>
+        <li><input type="checkbox" id="sport-center" class="check"><label for="sport-center">Спортивные центры</label></li>
+        <li><input type="checkbox" id="builder" class="check"><label for="builder">Строительство</label></li>
+        <li><input type="checkbox" id="tenis" class="check"><label for="tenis">Теннисные корты</label></li>
+        <li><input type="checkbox" id="shop" class="check"><label for="shop">Торговые центры</label></li>
+        <li><input type="checkbox" id="church" class="check"><label for="church">Церкви</label></li>
+        <li><input type="checkbox" id="mines" class="check"><label for="mines">Шахты</label></li>
+        <li><input type="checkbox" id="schools" class="check"><label for="schools">Школы</label></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrapper__request">
+    <button>Сбросить</button>
+    <button>Показать</button>
+  </div>
+</div>
+
+ <div  #modalListWrapper class="wrapper">
+   <div class="wrapper__child1">
+     <h1>Параметры</h1>
+     <img src="../../../../assets/icons/Vector (3).png" (click)="hideparametrs()">
+   </div>
+   <div  #series class="wrapperTwo">
+
+     <ul class="wrapper__modal__list">
+       <li>A</li>
+       <li (click)="select('AGRI-C')">AGRI-C</li>
+       <li (click)="select('AGRI-DF')">AGRI-DF</li>
+       <li (click)="select('AGRI-P')">AGRI-P</li>
+       <li (click)="select('AQUACIKKI')">AQUACIKKI</li>
+       <li (click)="select('AQUACIGGI')">AQUAPIGGY</li>
+       <li (click)="select('AZN')">AZN</li>
+       <li (click)="select('AZN EC')">AZN EC</li>
+       <li (click)="select('AZN-X')">AZN-X</li>
+     </ul>
+     <ul class="wrapper__modal__list">
+
+       <li>B</li>
+       <li (click)="select('BA PLUS')">BA PLUS</li>
+       <li (click)="select('BOXY')">BOXY</li>
+     </ul>
+     <ul class="wrapper__modal__list">
+       <li>C</li>
+       <li (click)="select('CF-CM/P')">CF-CM/P</li>
+       <li (click)="select('CF-GAS')">CF-GAS</li>
+       <li (click)="select('CF-GAS SP')">CF-GAS SP</li>
+       <li (click)="select('CF-GAS/P')">CF-GAS/P</li>
+       <li (click)="select('CF-XTRIM')">CF-XTRIM</li>
+       <li (click)="select('CMX')">CMX</li>
+     </ul>
+     <ul class="wrapper__modal__list">
+       <li>D</li>
+       <li (click)="select('DAE')">DAE</li>
+       <li (click)="select('DGK')">DGK</li>
+       <li (click)="select('DGP')">DGP</li>
+       <li (click)="select('DGS')">DGS</li>
+       <li (click)="select('DM')">DM</li>
+       <li (click)="select('DM-SE')">DM-SE</li>
+       <li (click)="select('DST')">DST</li>
+       <li (click)="select('DUO-MO')">DUO-MO</li>
+     </ul>
+     <ul class="wrapper__modal__list">
+       <li>E</li>
+       <li (click)="select('EKOCIKKI')">EKOCIKKI</li>
+       <li (click)="select('EKOCIKKI 80')">EKOCIKKI 80</li>
+       <li (click)="select('ENERGY')">ENERGY</li>
+       <li (click)="select('ENERGY-O')">ENERGY-O</li>
+       <li (click)="select('ENERGY-O/K')"> ENERGY-O/K</li>
+       <li (click)="select('ENERGY/K')">ENERGY/K</li>
+     </ul>
+     <ul class="wrapper__modal__list">
+       <li>H</li>
+       <li (click)="select('HB PLUS')">HB PLUS</li>
+     </ul>
+     <ul class="wrapper__modal__list">
+       <li>K</li>
+       <li (click)="select('KLIMAXS')">KLIMAXS</li>
+       <li (click)="select('KUBO-S')">KUBO-S</li>
+     </ul>
+     <ul class="wrapper__modal__list">
+       <li>M</li>
+       <li (click)="select('M-CF')">M-CF</li>
+       <li (click)="select('MB UNIT')">MB UNIT</li>
+       <li (click)="select('MINIJET')">MINIJET</li>
+       <li (click)="select('MIXI 80')">MIXI 80</li>
+       <li (click)="select('MIXIJET')">MIXIJET</li>
+     </ul>
+     <ul class="wrapper__modal__list">
+       <li>N</li>
+       <li (click)="select('NTN')">NTN</li>
+       <li (click)="select('NTPM')">NTPM</li>
+     </ul>
+     <ul class="wrapper__modal__list">
+       <li>P</li>
+       <li (click)="select('PA')">PA</li>
+       <li (click)="select('PCM')">PCM</li>
+       <li (click)="select('PMX')">PMX</li>
+     </ul>
+     <ul class="wrapper__modal__list">
+       <li>R</li>
+       <li (click)="select('RCF')">RCF</li>
+       <li (click)="select('RCU')">RCU</li>
+       <li (click)="select('RCU-HE')">RCU-HE</li>
+     </ul>
+     <ul class="wrapper__modal__list">
+       <li>S</li>
+       <li (click)="select('SMARTBOXY')">SMARTBOXY</li>
+       <li (click)="select('SMX')">SMX</li>
+       <li (click)="select('SR')">SR</li>
+       <li (click)="select('SR-CM÷SR-CM/K')">SR-CM÷SR-CM/K</li>
+       <li (click)="select('SR-UT÷SR-UT/K')">SR-UT÷SR-UT/K</li>
+       <li (click)="select('SR/K')">SR/K</li>
+       <li (click)="select('SUPERBESST')">SUPERBESST</li>
+       <li (click)="select('SUPERCIKKI 80')">SUPERCIKKI 80</li>
+       <li (click)="select('SUPERFRESH')">SUPERFRESH</li>
+     </ul>
+     <ul class="wrapper__modal__list">
+       <li>T</li>
+       <li (click)="select('TANDEM CM')">TANDEM CM</li>
+       <li (click)="select('TC-DF')">TC-DF</li>
+       <li (click)="select('TC-E')">TC-E</li>
+       <li (click)="select('TC-E/K')">TC-E/K</li>
+       <li (click)="select('TC-TEK')">TC-TEK</li>
+       <li (click)="select('TCO-DF')">TCO-DF</li>
+       <li (click)="select('TCO-E')">TCO-E</li>
+       <li (click)="select('TCO-E/K')">TCO-E/K</li>
+       <li (click)="select('TE')">TE</li>
+     </ul>
+     <ul class="wrapper__modal__list">
+       <li>U</li>
+       <li (click)="select('UT')">UT</li>
+       <li (click)="select('UT/K')">UT/K</li>
+       <li (click)="select('UTAK')">UTAK</li>
+       <li (click)="select('UTC')">UTC</li>
+       <li (click)="select('UTC/K')">UTC/K</li>
+     </ul>
+     <ul class="wrapper__modal__list">
+       <li>V</li>
+       <li (click)="select('VX')">VX</li>
+     </ul>
+     <ul class="wrapper__modal__list">
+       <li>W</li>
+       <li (click)="select('WIMBLEDON')">WIMBLEDON</li>
+     </ul>
+   </div>
+
+
+ </div>
+
+
+
+<div #div class="select__type">
+  <a #a (click)="showParametrs()">
+    <img src="../../../assets/icons/Group 402.png" >
+    <a>Уточнить параметры</a>
+  </a>
+  <a (click)="showSeries()">
+    <img src="../../../assets/icons/Group 403.png" >
+    <a>Серии</a>
+  </a>
+</div>
