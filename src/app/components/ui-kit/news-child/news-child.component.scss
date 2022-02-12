@@ -12,8 +12,8 @@
       font-family: Manrope;
       font-style: normal;
       font-weight: normal;
-      font-size: 17px;
       line-height: 160%;
+      font-size: 17px;
       letter-spacing: 0.2px;
       color: #021C27;
       background-color: white;
@@ -44,19 +44,16 @@
         justify-content: space-between;
         background-color: white;
         &__image {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: nowrap;
-          justify-content: space-between;
-          background-color: white;
+
+          @media screen and (max-width:1422px) {
+            width: 48%;
+          }
         }
 
-        &__imageTwo {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: nowrap;
-          justify-content: space-between;
-          background-color: white;
+        &__two {
+          @media screen and (max-width:1422px) {
+            width: 48%;
+          }
         }
       }
 

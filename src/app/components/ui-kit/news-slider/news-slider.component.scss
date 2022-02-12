@@ -1,10 +1,17 @@
 .background{
   display: flex;
   justify-content: flex-start;
+  @media screen and (max-width:1400px) {
+   justify-content: space-evenly;
+  }
   &__images{
     display: flex;
     width: 66.25%;
     justify-content: space-between;
+    @media screen and (max-width:1400px) {
+      width: 450px;
+      justify-content: space-around;
+    }
   }
 }
 .color{
@@ -12,4 +19,7 @@
   display: flex;
   justify-content: flex-end;
   width: 33.75%;
+  @media screen and (max-width:1400px) {
+    display: none;
+  }
 }
