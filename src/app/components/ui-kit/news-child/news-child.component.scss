@@ -6,6 +6,9 @@
       flex-direction: row;
       flex-wrap: nowrap;
       justify-content: space-between;
+      @media screen and (max-width:780px) {
+        padding-top: 30px;
+      }
     }
 
     &__text {
@@ -19,11 +22,32 @@
       background-color: white;
       padding-bottom: 75px;
       width: 570px;
+      @media screen and (max-width:1110px) {
+       width: 500px;
+        font-size: 15px;
+      }
+      @media screen and (max-width:1100px) {
+        background: none;
+      }
+      @media screen and (max-width:790px) {
+        width: 370px;
+        font-size: 14px;
+      }
+      @media screen and (max-width:630px) {
+        width: 98%;
+      }
     }
 
     &__fon {
       background: linear-gradient(90deg, #abd5e840 0%, rgba(255, 255, 255, 0) 100%);
       width: 38%;
+      @media screen and (max-width:1100px) {
+        width: 38.5%;
+        background: none;
+      }
+      //@media screen and (max-width:1900px) {
+      //  width: 38%;
+      //}
       &__text {
         font-family: Manrope;
         font-style: normal;
@@ -34,6 +58,21 @@
         color: #021C27;
         margin-left: 67px;
         width: 385px;
+        @media screen and (max-width:1425px) {
+          width:280px;
+        }
+        @media screen and (max-width:1100px) {
+          font-size: 14px;
+        }
+        @media screen and (max-width:1100px) {
+          width: 203px;
+        }
+        @media screen and (max-width:1000px) {
+          margin-left: 20px;
+        }
+        @media screen and (max-width:630px) {
+          display: none;
+        }
       }
     }
 
@@ -43,11 +82,13 @@
         flex-wrap: nowrap;
         justify-content: space-between;
         background-color: white;
+
         &__image {
 
           @media screen and (max-width:1422px) {
             width: 48%;
           }
+
         }
 
         &__two {
@@ -67,6 +108,14 @@
         width: 570px;
         margin-right: 135px;
         background-color: white;
+        @media screen and (max-width:1355px) {
+          margin-right: 0px;
+          flex-wrap: wrap;
+        }
+        @media screen and (max-width:1100px) {
+          background: none;
+          width: 64%;
+        }
       }
 
       &__file-text {
@@ -80,11 +129,20 @@
         background-color: white;
         padding-top: 75px;
         padding-bottom: 70px;
+        @media screen and (max-width:1100px) {
+          background: none;
+        }
+        @media screen and (max-width:650px) {
+          font-size: 15px;
+        }
       }
 
       &__gradient {
         background: linear-gradient(90deg, #abd5e840 0%, rgba(255, 255, 255, 0) 100%);
         width: 38%;
+        @media screen and (max-width:1100px) {
+          background: none;
+        }
       }
 
     }
