@@ -42,6 +42,10 @@
   margin-top:34px;
   margin-bottom: 20px;
   max-width: 590px;
+  @media screen and (max-width: 490px){
+    width: 100%;
+    font-size: 15px;
+  }
 }
 .app-flex{
   display: flex;
@@ -50,9 +54,21 @@
 }
 .description-img-text{
   width: 32.4%;
+  @media screen and (max-width: 1390px){
+    width: 30%;
+  }
+  @media screen and (max-width: 998px){
+    width: 40%;
+  }
+  @media screen and (max-width: 490px){
+    width: 48%;
+  }
+
 }
 .description-img{
   margin-bottom:24px;
+  width: 100%;
+
 }
 .description-text{
  padding-bottom: 60px;
@@ -63,7 +79,12 @@
   line-height: 160%;
   letter-spacing: 0.2px;
   color: #021C27;
-  width: 344px;
+  @media screen and (max-width: 490px){
+    width: 158px;
+    font-size: 12px;
+  }
+
+
 }
 .air-container{
 width: 83%;
@@ -134,9 +155,7 @@ background:white;
   justify-content: space-between;
   padding-bottom: 99px;
 }
-.air-dry{
-  margin-right:46px;
-}
+
 .green-ellipse{
   width:60px;
   height: 60px;
@@ -185,25 +204,32 @@ background:white;
 }
 .air-dry{
 padding-top:25px;
+  margin-right: 46px;
   img{
-    @media screen and (max-width: 1200px){
-     width: 350px;
+    @media screen and (max-width: 950px){
+     width: 260px;
     }
   }
 }
 .air-heater-greenHouse{
-display: flex;
+  display: flex;
+  justify-content: space-between;
 }
-
+ol{
+  width: 550px;
+  @media screen and (max-width: 1200px){
+    width: 450px;
+  }
+}
 ol li {
-padding-bottom: 15px;
-padding-right: 126px;font-family: Manrope;
-font-style: normal;
-font-weight: normal;
-font-size: 17px;
-line-height: 160%;
-letter-spacing: 0.2px;
-color: #021C27;
+    padding-bottom: 15px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 160%;
+    letter-spacing: 0.2px;
+    color: #021C27;
 }
 .airHeaters-slider-title-container{
 width: 83%;
@@ -224,20 +250,19 @@ color: #021C27;
 background: linear-gradient(180deg, #abd5e836 4.17%, rgba(255, 255, 255, 0) 100%);
 }
 .green-num{
-margin-right:100px;
-padding-right:23px;
 padding-left:24px;
 padding-bottom: 65px;
 }
 .green-description{
-font-family: Manrope;
-font-style: normal;
-font-weight: normal;
-font-size: 15px;
-line-height: 160%;
-letter-spacing: 0.2px;
-color: #021C27;
-opacity: 0.4;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 160%;
+    letter-spacing: 0.2px;
+    color: #021C27;
+    opacity: 0.4;
+     width: 80%;
 }
 .green-ellipse span{
 font-family: Manrope;
@@ -278,6 +303,18 @@ letter-spacing: -0.02em;
 color: #021C27;
 padding: 80px 100px 28px 0;
 margin-right:92px;
+  @media screen and (max-width: 1040px){
+    padding: 80px 0 28px 0;
+    margin: 0;
+  }
+  @media screen and (max-width: 812px){
+    font-size: 33px;
+    text-align: center;
+  }
+  @media screen and (max-width: 490px){
+    font-size: 25px;
+    padding: 30px 0 20px 0px;
+  }
 }
 .heat-little-title{
 font-family: Manrope;
@@ -288,6 +325,9 @@ line-height: 140%;
 letter-spacing: 0.2px;
 color: #021C27;
 opacity: 0.35;
+  @media screen and (max-width: 490px){
+    text-align: center;
+  }
 }
 .heat-flex{
 display: flex;
@@ -295,6 +335,9 @@ margin-top:40px;
 flex-wrap: wrap;
 justify-content: space-between;
 padding-bottom: 80px;
+  @media screen and (max-width: 600px){
+    margin-top: 20px;
+  }
 }
 
 .equipment-series-flex{
@@ -354,4 +397,11 @@ width: 48px;
 height: 48px;
 }
 }
-
+.full-range{
+  @media screen and (max-width: 760px){
+    width: 100%;
+  }
+  @media screen and (max-width: 500px){
+    width: 48%;
+  }
+}
