@@ -22,6 +22,9 @@
     @media screen and (max-width: 1200px){
       text-align: left;
     }
+    @media screen and (max-width: 650px){
+      text-align: center;
+    }
   }
     &_block3 {
       margin-top: 75px;
@@ -38,6 +41,12 @@
       border-right:none;
       border-bottom: 1px solid rgba(192, 198, 201, 1) ;
     }
+    @media screen and (max-width: 650px){
+      padding:30px;
+    }
+    @media screen and (max-width: 450px){
+      padding:20px;
+    }
 
   }
   &__block2 {
@@ -50,6 +59,12 @@
       border-right:none;
       border-bottom: 1px solid rgba(192, 198, 201, 1) ;
     }
+    @media screen and (max-width: 650px){
+      padding:30px;
+    }
+    @media screen and (max-width: 450px){
+      padding:20px;
+    }
   }
   &__block3 {
     width: 33.3%;
@@ -58,6 +73,13 @@
     width: 80%;
     margin:auto;
   }
+    @media screen and (max-width: 650px){
+      padding:30px;
+      text-align: center;
+    }
+    @media screen and (max-width: 450px){
+      padding:20px;
+    }
 
     &-container {
       display: flex;
@@ -98,6 +120,9 @@
       color: #021C27;
       opacity: 0.33;
       margin-top: 8px;
+      @media screen and (max-width: 650px){
+        text-align: center;
+      }
     }
     &-description {
       font-family: Manrope;
@@ -110,6 +135,7 @@
       color: #021C27;
       opacity: 0.33;
       margin-top: 2px;
+
     }
   }
   &__description {
@@ -125,12 +151,18 @@
     @media screen and (max-width: 1200px){
    text-align: left;
     }
+    @media screen and (max-width: 650px){
+      text-align: center;
+    }
 
     &_block3 {
       padding-top: 12px;
       text-align: center;
       @media screen and (max-width: 1200px){
         text-align: left;
+      }
+      @media screen and (max-width: 650px){
+        text-align: center;
       }
     }
   }
