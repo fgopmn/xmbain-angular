@@ -116,6 +116,9 @@
     padding-left: 0;
     text-align: center;
   }
+  @media screen and (max-width: 556px){
+    font-size: 30px;
+  }
 }
 
 .conditioners-global-text{
@@ -143,7 +146,12 @@
     overflow: hidden;
 
   }
-
+  @media screen and (max-width: 556px){
+    padding-left: 40px;
+  }
+  @media screen and (max-width: 556px){
+    font-size: 14px;
+  }
 }
 .show__all{
   display: none;
@@ -157,7 +165,12 @@
   @media screen and (max-width: 737px){
     display: block;
   }
-
+  @media screen and (max-width: 556px){
+    margin-left: 40px;
+  }
+  @media screen and (max-width: 556px){
+    font-size: 16px;
+  }
 }
 
 .dealerships-flex1{
@@ -176,14 +189,20 @@
   }
   @media screen and (max-width: 737px){
     margin-top: 0;
-   display: flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between
+  }
+  @media screen and (max-width: 564px){
+    flex-direction: column
   }
 }
 .dealerships-flex1-child{
   max-width: 285px;
   margin-top: 17px;
+  @media screen and (max-width: 686px) {
+    max-width: 251px;
+  }
 }
 .dealerships-flex1-child img{
   padding: 35px 60px 19px 61px;
