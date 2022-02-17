@@ -123,6 +123,9 @@
       color: #021C27;
       margin-left: 17px;
       cursor: pointer;
+      @media screen and (max-width:450px){
+        font-size: 15px;
+      }
     }
   }
   &__block {
@@ -161,6 +164,9 @@
       letter-spacing: 0.2px;
       color: #021C27;
       margin-left: 15px;
+      @media screen and (max-width:450px){
+      font-size: 12px;
+      }
      span{
        border-bottom: 1px solid rgba(0, 159, 227, 0.29);
      }
