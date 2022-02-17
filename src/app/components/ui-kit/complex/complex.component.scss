@@ -23,13 +23,13 @@ a{
   @media screen and (max-width:1240px){
     width: 260px;
   }
-  @media screen and (max-width:600px){
-    width: 80%;
-    margin: 20px auto;
+  @media screen and (max-width:940px){
+    background:none;
+    box-shadow: none;
+    border-radius: 0;
+     width: 100%;
+    text-align: center;
   }
-
-
-
   &__image {
     //padding-left: 20px;
     //padding-top: 20px;
@@ -45,11 +45,18 @@ a{
     letter-spacing: 0.2px;
     color: #021C27;
     //padding: 9px 20px;
-
+    @media screen and (max-width:940px){
+     display: block;
+      text-align: center;
+    }
+    @media screen and (max-width:800px){
+    font-size: 14px;
+    }
+    @media screen and (max-width:500px){
+      font-size: 12px;
+    }
   }
-  //&:nth-child(odd){
-  //  margin-right: 20px;
-  //}
+
 }
 .child5-flex{
   display: flex;
