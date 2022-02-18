@@ -186,6 +186,12 @@
   color: #FFFFFF;
   margin-left: 20px;
   padding: 11px 12px;
+  &:hover{
+    cursor: pointer;
+    background: #009FE3;
+    border: 1px solid #009FE3;
+    transition-duration: 0.5s;
+  }
   cursor: pointer;
 }
 
