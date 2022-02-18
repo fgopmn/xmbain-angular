@@ -118,9 +118,9 @@ padding-bottom: 34px;
   color: #021C27;
 }
 .tecnoclima-tc{
-  position: relative;
-  padding-bottom: 97px;
-
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 .tech-description-text{
@@ -138,9 +138,6 @@ padding-bottom: 34px;
   line-height: 160%;
   letter-spacing: 0.2px;
   color: #021C27;
- position: absolute;
-  top:0;
-  right:0;
   width: 32.30%;
 }
 .tecnologia{
@@ -398,7 +395,7 @@ height: 48px;
 }
 }
 .full-range{
-  @media screen and (max-width: 760px){
+  @media screen and (max-width: 796px){
     width: 100%;
   }
   @media screen and (max-width: 500px){

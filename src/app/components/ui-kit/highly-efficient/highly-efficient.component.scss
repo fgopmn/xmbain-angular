@@ -132,6 +132,9 @@
     @media screen and (max-width: 780px) {
      margin-left:0;
     }
+    @media screen and (max-width: 650px) {
+      font-size: 14px;
+    }
     &:hover{
       background: #021C27;
       border-radius: 4px;
