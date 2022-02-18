@@ -401,6 +401,11 @@ h2 {
   @media screen and (max-width:921px) {
     font-size:35px ;
   }
+  @media screen and (max-width:720px) {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 30px;
+  }
 }
 
 .cities-block {
@@ -408,6 +413,9 @@ h2 {
   flex-direction: row;
   justify-content: space-between;
   padding-bottom: 102px;
+  @media screen and (max-width:720px) {
+    padding-bottom: 40px;
+  }
   li{
     font-family: Manrope;
     font-style: normal;

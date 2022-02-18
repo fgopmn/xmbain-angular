@@ -12,8 +12,8 @@ import {Router} from "@angular/router";
 
 export class ServicesComponent implements OnInit {
   getList: any[] = [];
-  @ViewChild("p") p: any
-  @ViewChild("button") button: any
+  @ViewChild("p") p: any;
+  @ViewChild("button") button: any;
 
   public isApplicationOpen:boolean = true
   form = this.fb.group({
@@ -40,11 +40,11 @@ export class ServicesComponent implements OnInit {
   public showAll(){
     this.p.nativeElement.style.overflow = `visible`
     this.p.nativeElement.style.height = `auto`
-    this.button.nativeElement.style = `none`
+    this.button.nativeElement.style.display = `none`
   }
   public closeAll(){
     this.p.nativeElement.style.overflow = `hidden`
     this.p.nativeElement.style.height = `70px`
-    this.button.nativeElement.style = `block`
+    this.button.nativeElement.style.display = `block`
   }
 }

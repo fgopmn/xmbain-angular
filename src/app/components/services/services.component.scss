@@ -269,9 +269,6 @@
     transition-duration: 0.5s;
     cursor: pointer;
   }
-
-
-
 }
 .show{
   display: none;
@@ -347,7 +344,6 @@
         border-radius: 5px;
         padding: 10px 10px;
       }
-
     }
     &__tel{
       position: fixed;
@@ -378,7 +374,6 @@
         border-radius: 5px;
         padding: 10px 10px;
       }
-
     }
     &__checkbox{
       cursor: pointer;
@@ -404,7 +399,6 @@
         letter-spacing: 0.2px;
         color: #021C27;
         padding-left: 8px;
-
       }
     }
     &__button{
@@ -431,7 +425,5 @@
         color: #FFFFFF;
       }
     }
-
-
   }
 }
