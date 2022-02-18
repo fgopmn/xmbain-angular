@@ -41,6 +41,7 @@ import { NewsSliderComponent } from './news-slider/news-slider.component';
 //import {CarouselModule} from "ngx-bootstrap/carousel";
 //import {PaginationModule} from "ngx-bootstrap/pagination";
 import { MenuComponent } from './menu/menu.component';
+import { ParametrsComponent } from './parametrs/parametrs.component';
 @NgModule({
   declarations: [
     ComplexComponent,
@@ -79,6 +80,7 @@ import { MenuComponent } from './menu/menu.component';
     AdvantagesComponent,
     NewsSliderComponent,
     MenuComponent,
+    ParametrsComponent,
     // CarouselComponent
   ],
   exports: [
@@ -119,6 +121,7 @@ import { MenuComponent } from './menu/menu.component';
     NewsSliderComponent,
     MenuComponent,
     // CarouselComponent,
+    ParametrsComponent,
   ],
 
   imports: [

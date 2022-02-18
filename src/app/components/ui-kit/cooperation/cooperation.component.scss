@@ -15,14 +15,14 @@
 }
 
 .cooperation {
+  overflow-y: scroll;
   padding-left:112px;
   position: fixed;
   background-color: white;
   z-index: 998;
   min-width: 843px;
   max-width: 1000px;
- // height: 100vh;
-  height: auto;
+  height: 100vh;
   top: 0;
   right: 0;
   transform: translate(0,0);
@@ -45,5 +45,6 @@
 
   &_show {
     display: block;
+
   }
 }

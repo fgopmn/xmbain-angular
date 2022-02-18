@@ -23,6 +23,11 @@ export class PartnersComponent implements OnInit {
     name:["", [Validators.required, Validators.min(8)]],
     number:["", [Validators.required, Validators.min(8)]],
     email: ['',Validators.pattern(/^[a-zA-Z0-9_\.\-]+\@[a-zA-Z0-9\-]+\.+[a-zA-Z0-9]{2,6}/)],
+    position:[],
+    company:[],
+    description:[],
+
+
   })
 
   constructor(public requestService: RequestService,
