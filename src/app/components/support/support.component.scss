@@ -171,6 +171,7 @@
 .choose-block {
   display: flex;
   margin-top: 60px;
+
 }
 
 .choose-block button {
@@ -191,6 +192,7 @@
     border: 1px solid #009FE3;
     transition-duration: 0.5s;
   }
+  cursor: pointer;
 }
 
 .choose-block button span {

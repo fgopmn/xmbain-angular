@@ -34,6 +34,10 @@ product{
   letter-spacing: -0.02em;
   color: #021C27;
   margin-top:44px;
+  @media screen and (max-width: 1120px){
+    margin-top: 28px;
+    font-size: 20px;
+  }
 }
 .solution-global-title{
   font-family: Manrope;
@@ -44,6 +48,10 @@ product{
   letter-spacing: -0.02em;
   color: #021C27;
   margin-top:10px;
+  max-width: 588px;
+  @media screen and (max-width: 1120px){
+  font-size: 50px;
+  }
 }
 .solution-description{
   font-style: normal;
@@ -53,18 +61,27 @@ product{
   letter-spacing: 0.2px;
   color: #021C27;
   margin-top: 66px;
-  width: 590px;
+  max-width: 590px;
+  @media screen and (max-width: 1120px){
+  font-size: 18px;
+  margin-top: 43px;
+  }
 }
 .solution-OAO{
   margin-right: 102px;
 }
 .location{
   background: linear-gradient(90deg, #abd5e829 0%, rgba(255, 255, 255, 0.12) 100%);
-  padding:85px 0 70px 120px
+  padding:85px 0 70px 120px;
+
+  @media screen and (max-width: 1120px){
+    padding: 40px 0 64px 74px;
+}
+
 }
 .location-text{
   margin-top:73px;
-  width: 386px;
+  max-width: 386px;
 }
 .location-text p{
   font-style: normal;
@@ -84,16 +101,17 @@ product{
 .slide-block {
   display: flex;
   position: relative;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .slide-global{
   background: white;
 }
 .slide-block img{
-  margin-right: 20px;
+  width: 48%;
 }
 .container{
   position: relative;
+
 }
 .left-slide{
   width: 48px;
@@ -139,6 +157,10 @@ product{
   letter-spacing: 0.2px;
   color: #021C27;
   padding-bottom: 10px;
+  max-width:530px ;
+  @media screen and (max-width: 1120px){
+    max-width: 250px;
+  }
 }
 .task-flex{
   display: flex;
@@ -156,10 +178,18 @@ product{
   color: #021C27;
   margin-top: 43px;
   padding-left: 120px;
+  @media screen and (max-width: 1120px){
+  font-size: 30px;
+  margin-top: 43px;
+  padding-left: 54px;
+  }
 }
 .task-group{
   width: 530px;
   margin:0 0 20px 20px;
+  @media screen and (max-width: 1120px){
+    margin:0 8px 20px 20px;
+  }
 }
 .advantages-description{
   font-size: 15px;
@@ -172,10 +202,18 @@ product{
 .advantages-group{
   margin-left: 138px;
   margin-top: 30px;
+  max-width: 365px;
+  @media screen and (max-width: 1120px){
+  margin: 40px 0 64px 74px;
+  }
 }
 .advantages{
   background: linear-gradient(90deg, #abd5e829 0%, rgba(255, 255, 255, 0.12) 100%);
   padding-top: 57px;
+  @media screen and (max-width: 1120px){
+    padding-top: 0;
+  }
+
 }
 .solution-text{
   font-size: 17px;
@@ -183,21 +221,32 @@ product{
   letter-spacing: 0.2px;
   color: #021C27;
   margin-bottom: 24px;
- width: 570px;
- margin-right: 120px;
+  max-width: 570px;
+  margin-right: 120px;
+  @media screen and (max-width: 1120px){
+  max-width: 362px;
+  }
 }
 .opinion{
   display: flex;
   padding-left: 120px;
   padding-top:30px;
   padding-bottom: 132px;
+  @media screen and (max-width: 1440px){
+    flex-direction: column;
+  }
+  @media screen and (max-width: 1120px){
+    padding-left: 54px;
+    padding-bottom: 0;
+  }
   img {
     max-width: 285px;
+    @media screen and (max-width: 1120px){
+      transform: scale(0.8);
+    }
   }
 }
-.opinion-img{
-    margin-left: 20px;
-}
+
 .used-flex{
   display: flex;
 }
@@ -248,6 +297,13 @@ product{
   &__flex{
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 1200px){
+      justify-content: center;
+      margin-top: 50px;
+      :last-child{
+        display: none;
+      }
+    }
   }
 }
 .air-click{

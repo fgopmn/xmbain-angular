@@ -1,57 +1,59 @@
-<div class="equipment">
-  <div class="equipment__container">
-  <p class="equipment__tittle">{{title}}<span>{{titleSpan}}</span></p>
-  <div class="general__tabs">
-    <div class="general__tabs__tab"></div>
-    <div class="general__tabs__tab"></div>
-    <div class="general__tabs__tab"></div>
-  </div>
-  <div class="fuel">
-    <div *ngFor="let item of getList" class="fuel__container">
-      <div class="fuel__title">
-        <img src="{{item.icon}}" alt="">
-        <b>{{item.title}}</b>
+<div class="wrapper">
+    <div class="equipment">
+      <div class="equipment__container">
+      <p class="equipment__tittle">{{title}}<span>{{titleSpan}}</span></p>
+      <div class="general__tabs">
+        <div class="general__tabs__tab"></div>
+        <div class="general__tabs__tab"></div>
+        <div class="general__tabs__tab"></div>
       </div>
+      <div class="fuel">
+        <div *ngFor="let item of getList" class="fuel__container">
+          <div class="fuel__title">
+            <img src="{{item.icon}}" alt="">
+            <b>{{item.title}}</b>
+          </div>
 
-      <div class="fuel__block">
-        <app-select-input
-          [type]="selectInput.selected"
-          [text]=item.mainText1
-        >
-        </app-select-input>
-        <div class="fuel__check">
-        <app-select-input
-          [type]="selectInput.selected"
-          [text]=item.mainText2
-        >
-        </app-select-input>
-        <app-select-input
-          [type]="selectInput.default"
-          [text]=item.mainText3
-        >
-        </app-select-input>
-        <app-select-input
-          [type]="selectInput.default"
-          [text]=item.mainText4
-        >
-        </app-select-input>
+          <div class="fuel__block">
+            <app-select-input
+              [type]="selectInput.selected"
+              [text]=item.mainText1
+            >
+            </app-select-input>
+            <div class="fuel__check">
+            <app-select-input
+              [type]="selectInput.selected"
+              [text]=item.mainText2
+            >
+            </app-select-input>
+            <app-select-input
+              [type]="selectInput.default"
+              [text]=item.mainText3
+            >
+            </app-select-input>
+            <app-select-input
+              [type]="selectInput.default"
+              [text]=item.mainText4
+            >
+            </app-select-input>
+            </div>
+          </div>
+
         </div>
       </div>
-
+      <button class="equipment__click">Далее</button>
+      <div class="info">
+        <div class="info__child3">
+          <img src="../../../../assets/icons/Group 178.png" class="info__icon">
+          <p> Вы можете скачать опросный лист в виде <br>файла и отправить его по электронной<br> <span>почте
+            info@tcgroupenergia.ru</span> </p>
+        </div>
+        <div class="info__child3">
+          <img src="../../../../assets/contacts/Group 179.png" class="info__icon">
+          <p> <span>Скачать</span><br> <span>опросный лист</span> </p>
+        </div>
+        <img src="../../../../assets/img/techno.svg" alt="" class="info__img">
+      </div>
     </div>
-  </div>
-  <button class="equipment__click">Далее</button>
-  <div class="info">
-    <div class="info__child3">
-      <img src="../../../../assets/icons/Group 178.png" class="info__icon">
-      <p> Вы можете скачать опросный лист в виде <br>файла и отправить его по электронной<br> <span>почте
-        info@tcgroupenergia.ru</span> </p>
     </div>
-    <div class="info__child3">
-      <img src="../../../../assets/contacts/Group 179.png" class="info__icon">
-      <p> <span>Скачать</span><br> <span>опросный лист</span> </p>
-    </div>
-    <img src="../../../../assets/img/techno.svg" alt="" class="info__img">
-  </div>
-</div>
 </div>

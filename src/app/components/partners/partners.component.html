@@ -83,7 +83,7 @@
 <app-cooperation
   [is-open]="!isCooperationOpen"
   (whenCooperationOpen)="openCooperation($event)"
-  class="application"
+  class="cooperation"
 >
   <p class="cooperation__tittle">Сотрудничество</p>
   <p class="cooperation__text">Оставьте свои контакты и наши специалисты свяжутся <br>
@@ -104,8 +104,20 @@
     <div class="cooperation__form__type">
       <label for="email">Email</label> <br>
       <div>  <input type="email" id="email" name="email" formControlName ="email"></div>
+    </div>
+    <div class="cooperation__form__type">
+      <label for="position">Должность</label> <br>
+      <div>  <input type="text" id="position" name="position" formControlName ="position"></div>
+    </div>
+    <div class="cooperation__form__type">
+      <label for="company">Компания</label> <br>
+      <div>  <input type="text" id="company" name="company" formControlName ="company"></div>
+    </div>
+    <div class="cooperation__form__type">
+      <label for="description">Дополнительная информация</label> <br>
+      <textarea id="description"  formControlName ="description"></textarea>
 
-      </div>
+    </div>
     <div class="cooperation__form__type2">
       <input type="checkbox"  id="check" class="cooperation__form__type2__checkbox">
       <label for="check">Отправляя заявку, даю согласие на хранение <br>
@@ -114,9 +126,7 @@
     <button [disabled]="form.invalid"  class="cooperation__form__button">Отправить</button>
   </form>
 
-  <div >
-    <img src="../../../assets/img/image 125 (2) (1).png" class="cooperation__blue__flag"/>
-  </div>
+
 
 </app-cooperation>
 
