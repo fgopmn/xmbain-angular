@@ -17,8 +17,11 @@
             <p class="telephone-fax">{{item.telephone}}</p>
 
             <div class="numbers">
-              <p class="numbers-text">{{item.number}}</p>
-              <p class="numbers-text">{{item.numberFax}}</p>
+              <ul class="numbers__ul">
+                <li class="numbers-text"><a href="tel:+7 495 104-70-77"> {{item.number}} </a></li>
+                <li class="numbers-text"><a href="tel:+7 495 954-51-99"> {{item.numberFax}} </a></li>
+              </ul>
+
             </div>
 
 
@@ -28,7 +31,7 @@
           </div>
           <div class="email-service" *ngFor="let item2 of getList2 ">
             <p class="email-text">{{item2.email}}</p>
-            <p class="email-addresses">{{item2.address}}</p>
+            <li class="email-addresses"><a href="mailto:info@tcgroupenergia.ru">{{item2.address}}</a></li>
           </div>
 
           <div class="address-service" *ngFor="let item3 of getList3 ">
@@ -41,7 +44,7 @@
         <div class="contact-us">
           <div class="contact-us-block">
           <h3 class="title1">Напишите нам</h3>
-          <p class="main-text">Ответим на вопросы, проконсультируем<br>по вашей задаче. Неформальную заявку<br>тоже удобно отправить.</p>
+          <p class="main-text">Ответим на вопросы, проконсультируем по вашей задаче. Неформальную заявку тоже удобно отправить.</p>
           <button class="message-button">Написать сообщение</button>
           <h3 class="title2">Заказ</h3>
           <button class="information-button">Подбор оборудования</button>

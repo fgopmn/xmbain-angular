@@ -6,7 +6,6 @@
   }
 }
 .menu-list{
-  //opacity: 0.3;
   border-bottom: 1px solid #C0C6C9;
 }
 .menu{
@@ -51,6 +50,9 @@
     font-size: 32px;
     line-height: 100%;
   }
+  @media screen and (max-width:375px) {
+    padding-top: 18px;
+  }
   }
 .services-block p{
   font-family: Manrope;
@@ -85,6 +87,7 @@
     font-size: 15px;
     max-width: 335px;
     line-height: 160%;
+    padding-top: 30px;
   }
 }
 .services-container{
@@ -181,11 +184,6 @@
     font-size: 25px;
   }
 
-  //@media screen and (max-width:600px) {
-  //  font-size: 17px;
-  //}
-
-
 }
 .technical-text{
   font-family: Manrope;
@@ -216,6 +214,8 @@
   }
   @media screen and (max-width:500px) {
     font-size: 15px;
+    height: 70px;
+    overflow: hidden;
   }
 }
 .technical-description{
@@ -224,9 +224,10 @@
   margin-right: 20px;
   @media screen and (max-width:500px) {
     margin-right: 0px;
+    margin-top: 21px;
   }
 }
-.technical-description button{
+.technical-description .openApplication{
   background: #009FE3;
   border: none;
   border-radius: 4px;
@@ -255,11 +256,33 @@
   @media screen and (max-width:600px) {
     margin-bottom: 10px;
   }
+  @media screen and (max-width:500px) {
+    margin-top: 20px;
+  }
+  @media screen and (max-width:375px) {
+    padding: 11px 20px;
+    margin-bottom: 25px;
+  }
   &:hover{
     background: #021C27;
     border-radius: 4px;
     transition-duration: 0.5s;
     cursor: pointer;
+  }
+
+
+
+}
+.show{
+  display: none;
+  background: none;
+  border: none;
+  font-size: 18px;
+  opacity: 0.5;
+  margin-top: 7px;
+  border-bottom: 1px dashed #021C27;
+  @media screen and (max-width:500px) {
+    display: block;
   }
 }
 
