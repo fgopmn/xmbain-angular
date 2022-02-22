@@ -77,15 +77,26 @@ h2 {
 }
 .address-telephone{
   display: flex;
-  flex-direction: column;
   flex-direction: row;
   padding-top: 60px;
   padding-bottom: 42px;
   border-bottom:  1px solid #C0C6C9;
+  flex-wrap: wrap;
+  i{
+    display: none;
+    @media screen and (max-width:700px) {
+      display: inline-block;
+      color: #009FE3;
+    }
+  }
   @media screen and (max-width:1021px) {
     padding-top: 20px;
   }
+  @media screen and (max-width:700px) {
+    align-items: center;
+  }
 }
+
 .telephone-fax {
   font-family: Manrope;
   font-style: normal;
@@ -98,6 +109,9 @@ h2 {
   padding-right: 44px;
   @media screen and (max-width:1056px) {
     padding: 0;
+  }
+  @media screen and (max-width:700px) {
+    display: none;
   }
 }
 .numbers {
@@ -154,6 +168,18 @@ h2 {
     margin-top: 30px;
   }
 }
+.mail{
+  display: none;
+  @media screen and (max-width:700px) {
+    display: block;
+    align-items: center;
+    width: 20px;
+    height:20px;
+  }
+}
+.icons{
+
+}
 .email-text {
   font-family: Manrope;
   font-style: normal;
@@ -167,6 +193,9 @@ h2 {
   @media screen and (max-width:1056px) {
     padding: 0;
   }
+  @media screen and (max-width:700px) {
+    display: none;
+  }
 }
 .email-service {
   display: flex;
@@ -175,6 +204,16 @@ h2 {
   padding-top: 34px;
   padding-bottom: 40px;
   border-bottom:  1px solid #C0C6C9;
+  i{
+    display: none;
+    @media screen and (max-width:700px) {
+    display: inline-block;
+      color: #009FE3;
+  }
+  }
+  @media screen and (max-width:700px) {
+    align-items: center;
+  }
 }
 .email-addresses a{
   font-family: Manrope;
@@ -197,10 +236,29 @@ h2 {
 }
 .address-service {
   display: flex;
-  flex-direction: column;
   flex-direction: row;
   padding-top: 40px;
   padding-bottom: 100px;
+  i{
+    display: none;
+    @media screen and (max-width:700px) {
+      display: inline-block;
+      color: #009FE3;
+    }
+  }
+  @media screen and (max-width:700px) {
+    align-items: center;
+  }
+}
+
+.location{
+  display: none;
+  @media screen and (max-width:700px) {
+    display: block;
+
+    width: 13px;
+    height: 18px;
+  }
 }
 .address-text{
   font-family: Manrope;
@@ -214,6 +272,9 @@ h2 {
   padding-right: 44px;
   @media screen and (max-width:1056px) {
     padding: 0;
+  }
+  @media screen and (max-width:700px) {
+    display: none;
   }
 }
 .addresses-organization {
@@ -249,17 +310,20 @@ h2 {
   }
 }
 .contact-us-block {
-  padding: 201px 102px 107px 120px;
-  @media screen and (max-width:1040px) {
+  padding-top:201px;
+  padding-left:120px;
+
+  @media screen and (max-width:1200px) {
     padding-left: 40px;
   }
+  @media screen and (max-width:1020px) {
+    padding-top: 135px;
+  }
   @media screen and (max-width:880px) {
-     padding-top: 170px;
+    padding-top: 105px;
+
   }
-  @media screen and (max-width:763px) {
-    padding-left: 15px;
-    padding-bottom: 40px;
-  }
+
 }
 .downloads-text {
   display: flex;
@@ -305,8 +369,9 @@ h2 {
   letter-spacing: 0.2px;
   color: #021C27;
   padding-top: 30px;
-  @media screen and (max-width:884px) {
-   width: 225px;
+  width: 387px;
+  @media screen and (max-width:1200px) {
+   width:100%;
     }
 }
 .message-button {
@@ -398,14 +463,11 @@ h2 {
   @media screen and (max-width:1130px) {
     font-size: 40px;
   }
-  @media screen and (max-width:921px) {
-    font-size:35px ;
+
+  @media screen and (max-width:951px) {
+   padding-bottom: 0;
   }
-  @media screen and (max-width:720px) {
-    padding-top: 40px;
-    padding-bottom: 20px;
-    font-size: 30px;
-  }
+
 }
 
 .cities-block {
@@ -413,8 +475,21 @@ h2 {
   flex-direction: row;
   justify-content: space-between;
   padding-bottom: 102px;
+  @media screen and (max-width:950px) {
+    flex-wrap: wrap;
+  }
   @media screen and (max-width:720px) {
     padding-bottom: 40px;
+  }
+  ul{
+    @media screen and (max-width:950px) {
+     width: 30%;
+      margin-top:30px
+    }
+    @media screen and (max-width:500px) {
+      width:50%;
+      margin-top:30px
+    }
   }
   li{
     font-family: Manrope;
@@ -438,17 +513,20 @@ h2 {
       font-size:15px ;
     }
     @media screen and (max-width:1021px) {
-      padding: 25px 0px 0px 1px;
+      padding: 25px 0 0 1px;
     }
-    @media screen and (max-width:921px) {
-      font-size:13px ;
+    @media screen and (max-width:950px) {
+     border:none;
+      padding: 13px 0 0 1px;
+      font-size: 17px;
     }
-    @media screen and (max-width:817px) {
-      line-height: 140%;
-      margin-right: 0;
-    }
-    @media screen and (max-width:730px) {
 
+    @media screen and (max-width:620px) {
+  font-size: 14px;
+    }
+    @media screen and (max-width:500px) {
+      font-size: 15px;
+      font-weight: 600;
     }
   }
 }

@@ -15,6 +15,7 @@
           <h2>Москва</h2><br>
           <div class="address-telephone" *ngFor="let item of getList">
             <p class="telephone-fax">{{item.telephone}}</p>
+            <i class="fa fa-phone" aria-hidden="true" ></i>
 
             <div class="numbers">
               <ul class="numbers__ul">
@@ -31,12 +32,15 @@
           </div>
           <div class="email-service" *ngFor="let item2 of getList2 ">
             <p class="email-text">{{item2.email}}</p>
+            <i class="fa fa-envelope" aria-hidden="true"  ></i>
+
             <li class="email-addresses"><a href="mailto:info@tcgroupenergia.ru">{{item2.address}}</a></li>
           </div>
 
           <div class="address-service" *ngFor="let item3 of getList3 ">
             <p class="address-text">{{item3.address}}</p>
-            <p class="addresses-organization" [innerHTML]="item3.text"></p>
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <p class="addresses-organization" [innerHTML]=" item3.text"></p>
           </div>
 
 

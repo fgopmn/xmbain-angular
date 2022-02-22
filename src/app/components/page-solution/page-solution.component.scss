@@ -398,10 +398,18 @@ product{
     }
   }
 }
-
+//.used-global{
+//  @media screen and (max-width: 624px){
+//    display: none;
+//  }
+//}
 .used-flex{
   display: flex;
+  @media screen and (max-width: 624px){
+    width: 89%;
+  }
 }
+
 .used-title-global{
   background: linear-gradient(180deg, #abd5e824 4.17%, rgba(255, 255, 255, 0.12) 100%);
 }
@@ -412,6 +420,7 @@ product{
   line-height: 120%;
   letter-spacing: -0.02em;
   color: #021C27;
+
 }
 .used-title-group{
   padding-top:80px;
@@ -419,6 +428,9 @@ product{
 .button-flex-group{
   display: flex;
   margin-top: 10px;
+  @media screen and (max-width: 624px){
+    display: none;
+  }
 }
 .air-button{
   background: rgba(0, 159, 227, 0.1);
@@ -443,9 +455,15 @@ product{
 
 .slider-global{
   background: linear-gradient(180deg, #abd5e824 4.17%, rgba(255, 255, 255, 0.12) 100%);
+  @media screen and (max-width: 624px){
+    display: none;
+  }
 }
 .slider{
   padding-bottom: 116px;
+  @media screen and (max-width: 624px){
+    display: none;
+  }
   &__flex{
     display: flex;
     justify-content: space-between;

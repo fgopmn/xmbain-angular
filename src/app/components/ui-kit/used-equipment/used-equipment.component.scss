@@ -2,6 +2,9 @@
   text-align: center;
   padding:35px 40px;
   margin-top:37px;
+  @media screen and (max-width: 624px){
+    width: 50%;
+  }
   &:hover {
     transform: scale(1.1);
     cursor: pointer;
