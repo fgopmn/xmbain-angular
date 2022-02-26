@@ -13,6 +13,7 @@
         <div class="address">
           <h1>Контакты</h1>
           <h2>Москва</h2><br>
+          <div class="address-block">
           <div class="address-telephone" *ngFor="let item of getList">
             <p class="telephone-fax">{{item.telephone}}</p>
             <i class="fa fa-phone" aria-hidden="true" ></i>
@@ -30,6 +31,7 @@
 
 
           </div>
+
           <div class="email-service" *ngFor="let item2 of getList2 ">
             <p class="email-text">{{item2.email}}</p>
             <i class="fa fa-envelope" aria-hidden="true"  ></i>
@@ -43,7 +45,7 @@
             <p class="addresses-organization" [innerHTML]=" item3.text"></p>
           </div>
 
-
+          </div>
         </div>
         <div class="contact-us">
           <div class="contact-us-block">

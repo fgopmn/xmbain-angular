@@ -1,6 +1,10 @@
 .example__accordion {
   display: block;
   min-width: 650px;
+  @media screen and (max-width:790px) {
+    width: 100%;
+    min-width: 0;
+  }
   &__item {
     display: block;
     font-family: Manrope;

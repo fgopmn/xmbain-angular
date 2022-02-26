@@ -30,8 +30,16 @@
   left: 50%;
   transform: translate(-50%, -50%);
   display: none;
-
-
+  @media screen and (max-width:1026px) {
+    width: 701px;
+    height: 558px;
+    padding: 20px 40px;
+  }
+  @media screen and (max-width: 739px) {
+    width: 507px;
+    height: 343px;
+    padding: 11px 40px;
+  }
   &_show {
     display: block;
   }

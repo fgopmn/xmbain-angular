@@ -49,10 +49,17 @@ h1 {
     font-size: 35px;
     margin-bottom: 30px;
   }
+  @media screen and (max-width:375px) {
+    text-align: center;
+    font-size: 30px;
+  }
 }
 .information {
   width: 100%;
   display: flex;
+  @media screen and (max-width:730px) {
+    flex-wrap: wrap;
+  }
 }
 h2 {
   font-family: Manrope;
@@ -68,12 +75,19 @@ h2 {
   @media screen and (max-width:880px) {
     font-size: 30px;
   }
+  @media screen and (max-width:375px) {
+    text-align: center;
+    font-size: 25px;
+  }
 }
 .address {
   width: 50%;
   display: flex;
   align-content: flex-start;
   flex-direction: column;
+  @media screen and (max-width:730px) {
+   width: 100%;
+  }
 }
 .address-telephone{
   display: flex;
@@ -84,15 +98,15 @@ h2 {
   flex-wrap: wrap;
   i{
     display: none;
-    @media screen and (max-width:700px) {
-      display: inline-block;
+    @media screen and (max-width:730px) {
+      display: block;
       color: #009FE3;
     }
   }
   @media screen and (max-width:1021px) {
     padding-top: 20px;
   }
-  @media screen and (max-width:700px) {
+  @media screen and (max-width:730px) {
     align-items: center;
   }
 }
@@ -110,7 +124,7 @@ h2 {
   @media screen and (max-width:1056px) {
     padding: 0;
   }
-  @media screen and (max-width:700px) {
+  @media screen and (max-width:730px) {
     display: none;
   }
 }
@@ -193,7 +207,7 @@ h2 {
   @media screen and (max-width:1056px) {
     padding: 0;
   }
-  @media screen and (max-width:700px) {
+  @media screen and (max-width:730px) {
     display: none;
   }
 }
@@ -206,12 +220,12 @@ h2 {
   border-bottom:  1px solid #C0C6C9;
   i{
     display: none;
-    @media screen and (max-width:700px) {
+    @media screen and (max-width:730px) {
     display: inline-block;
       color: #009FE3;
   }
   }
-  @media screen and (max-width:700px) {
+  @media screen and (max-width:730px) {
     align-items: center;
   }
 }
@@ -234,6 +248,18 @@ h2 {
     margin-left: 18px;
   }
 }
+
+.address-block{
+  @media screen and (max-width:730px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  @media screen and (max-width:375px) {
+    justify-content: center;
+  }
+
+}
 .address-service {
   display: flex;
   flex-direction: row;
@@ -241,25 +267,26 @@ h2 {
   padding-bottom: 100px;
   i{
     display: none;
-    @media screen and (max-width:700px) {
+    @media screen and (max-width:730px) {
       display: inline-block;
       color: #009FE3;
     }
   }
-  @media screen and (max-width:700px) {
+  @media screen and (max-width:730px) {
     align-items: center;
+    padding-bottom: 50px;
   }
 }
 
-.location{
-  display: none;
-  @media screen and (max-width:700px) {
-    display: block;
-
-    width: 13px;
-    height: 18px;
-  }
-}
+//.location{
+//  display: none;
+//  @media screen and (max-width:700px) {
+//    display: block;
+//
+//    width: 13px;
+//    height: 18px;
+//  }
+//}
 .address-text{
   font-family: Manrope;
   font-style: normal;
@@ -273,7 +300,7 @@ h2 {
   @media screen and (max-width:1056px) {
     padding: 0;
   }
-  @media screen and (max-width:700px) {
+  @media screen and (max-width:730px) {
     display: none;
   }
 }
@@ -308,6 +335,12 @@ h2 {
   @media screen and (max-width:761px) {
     margin-left: 30px;
   }
+  @media screen and (max-width:730px) {
+    width: 100%;
+    background: none;
+    margin: 0;
+  }
+
 }
 .contact-us-block {
   padding-top:201px;
@@ -321,9 +354,10 @@ h2 {
   }
   @media screen and (max-width:880px) {
     padding-top: 105px;
-
   }
-
+  @media screen and (max-width:730px) {
+    padding:0 0 30px 0;
+  }
 }
 .downloads-text {
   display: flex;
@@ -342,8 +376,15 @@ h2 {
   @media screen and (max-width:693px) {
     margin-left: 14px;
   }
+  @media screen and (max-width:730px) {
+   margin-left: 0;
+  }
   @media screen and (max-width:702px) {
     font-size: 20px;
+  }
+  @media screen and (max-width:375px) {
+    text-align: center;
+    font-size: 25px;
   }
 }
 .title2 {
@@ -465,9 +506,12 @@ h2 {
   }
 
   @media screen and (max-width:951px) {
-   padding-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 40px;
   }
-
+  @media screen and (max-width:530px) {
+    font-size: 30px;
+  }
 }
 
 .cities-block {
