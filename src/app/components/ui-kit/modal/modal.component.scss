@@ -40,6 +40,11 @@
     height: 343px;
     padding: 11px 40px;
   }
+  @media screen and (max-width: 510px) {
+  width: 333px;
+  height: 321px;
+  padding: 11px 15px;
+  overflow: auto;}
   &_show {
     display: block;
   }

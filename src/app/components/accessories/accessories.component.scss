@@ -109,6 +109,12 @@
   &__flex{
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 1200px){
+      justify-content: center;
+      :last-child{
+        display: none;
+      }
+    }
   }
   &__left{
     position: absolute;
