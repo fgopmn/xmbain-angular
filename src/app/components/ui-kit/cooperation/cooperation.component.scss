@@ -8,12 +8,10 @@
   left: 0;
   width: 100%;
   display: none;
-
   &_show {
     display: block;
   }
 }
-
 .cooperation {
   overflow-y: scroll;
   padding-left:112px;
@@ -42,9 +40,7 @@
       color:#021C27;
     }
   }
-
   &_show {
     display: block;
-
   }
 }

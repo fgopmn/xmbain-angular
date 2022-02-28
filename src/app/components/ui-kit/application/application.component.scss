@@ -8,12 +8,10 @@
   left: 0;
   width: 100%;
   display: none;
-
   &_show {
     display: block;
   }
 }
-
 .application {
   position:fixed;
   background-color: white;
@@ -41,7 +39,6 @@
          transition-duration: 0.5s;
        }
   }
-
   &_show {
     display: block;
   }

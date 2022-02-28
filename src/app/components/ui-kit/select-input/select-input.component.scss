@@ -27,9 +27,6 @@ img{
   }
 }
   &_selected {
-  //  color: #009FE3;
-  //  background: rgba(0, 159, 227, .1);
-
     &:hover{
       background:#d4f3ff;
       cursor: pointer;
@@ -37,7 +34,6 @@ img{
       color: #009FE3;
     }
     }
-
   &_default {
     color: #021C27;
     background: white;
@@ -48,5 +44,4 @@ img{
       color: #009FE3;
     }
   }
-
 }

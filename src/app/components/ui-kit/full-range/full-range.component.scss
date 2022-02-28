@@ -23,15 +23,12 @@
     flex-direction: column-reverse;
     padding: 20px;
   }
-
-
   &:hover{
     background: #d4f3ff;
     border-radius: 20px;
     transition-duration: 0.5s;
     cursor: pointer;
   }
-
   &__generator {
     font-family: Manrope;
     font-style: normal;
@@ -52,9 +49,7 @@
       font-size: 12px;
       max-width:100%;
     }
-
   }
-
   &__number {
     font-family: Manrope;
     font-style: normal;
@@ -75,7 +70,6 @@
       width: 44%;
     }
   }
-
  &__about{
    color: #021C27;
    opacity: 0.3;

@@ -30,7 +30,6 @@
   &__header{
     display: flex;
     justify-content: space-between;
-
   }
   &__flag{
     display: flex;
@@ -69,9 +68,7 @@
     background: none;
     border: none;
   }
-
 }
-
 .type{
   background: linear-gradient(90deg, #FBFEFF 0%, #E8F4FA 100%);
   &__ul{
@@ -87,12 +84,10 @@
         line-height: 120%;
         letter-spacing: 0.2px;
         color: #021C27;
-
       }
     }
   }
 }
-
 .types{
   &__ul{
     padding-top: 10px;
@@ -108,7 +103,6 @@
       line-height: 120%;
       letter-spacing: 0.2px;
       color: #021C27;
-
     }
   }
   button{
@@ -150,8 +144,6 @@
       opacity: 0.5;
     }
   }
-
-
   &__position{
     font-family: Manrope;
     font-style: normal;

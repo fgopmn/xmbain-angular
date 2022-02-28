@@ -13,13 +13,11 @@
   &__section{
     display: flex;
     padding-bottom: 80px;
-
     ul{
       display: flex;
       border: 1px solid #021C27;
       box-sizing: border-box;
       border-radius: 5px;
-
       li{
           list-style-type: none;
           background: #FFFFFF;
@@ -39,14 +37,9 @@
             transition-duration: 0.5s;
             cursor: pointer;
           }
-
       }
     }
-
-
   }
-
-
 }
 .solution-exampels-header__section .countries{
   margin-left: 20px;

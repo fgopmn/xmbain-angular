@@ -1,5 +1,3 @@
-
-
 .home {
   &__complex {
     display: flex;
@@ -25,7 +23,6 @@
     @media screen and (max-width:596px){
       justify-content: space-between;
     }
-
   }
   &__text{
     width: 50%;
@@ -73,8 +70,6 @@
     @media screen and (max-width:596px){
       font-size: 15px;
     }
-
-
     &:hover{
       background: #021C27;
       border-radius: 4px;
@@ -116,7 +111,6 @@
    :last-child{
       width: 100%;
     }
-
     &__one{
       position: absolute;
       right:45px;
@@ -161,16 +155,12 @@
       transform: scale(1.1);
       text-decoration: black;
     }
-
   }
   }
-
 }
 .child1:first-child{
   border-bottom:5px solid #009FE3;
 }
-
-
 .info-block{
   display: flex;
   width: 800px;
@@ -204,7 +194,6 @@
   letter-spacing: 0.2px;
   color: #021C27;
 }
-
 .equipment{
   background-color: #FFFFFF;
 }
@@ -242,7 +231,6 @@
     }
     @media screen and (max-width:500px){
       width: 50%;
-
     }
   }
   &__tecnoclima {
@@ -298,8 +286,6 @@
     cursor: pointer;
   }
 }
-
-
 .italy-img{
   height: 720px;
   background-image: url("../../../assets/img/Mask Group.jpg");
@@ -409,9 +395,7 @@
        font-size: 25px;
         padding-top: 60px;
       }
-
     }
-
     span{
       opacity: 0.15;
     }
@@ -467,7 +451,6 @@
     @media screen and (max-width:420px){
       right: 15%;
     }
-
   }
   &__types{
     width: 50%;
@@ -484,7 +467,6 @@
     }
   }
 }
-
 .application{
   &__blue__flag{
     position: fixed;
@@ -634,8 +616,6 @@
   @media screen and (max-width: 650px){
    flex-wrap: wrap;
   }
-
-
   &__types {
     width: 303px;
     position: relative;
@@ -645,10 +625,8 @@
     }
      @media screen and (max-width: 650px){
        margin-left: 33px;
+   }
   }
-
-  }
-
   &__type {
     padding-bottom: 123px;
     padding-top: 76px;
@@ -656,7 +634,6 @@
       padding-bottom: 25px;
     }
   }
-
   &__text {
     margin-top: 44px;
     font-family: Manrope;
@@ -685,7 +662,6 @@
     @media screen and (max-width: 1200px){
    background: #FFFFFF;
     }
-
     img {
       width: 520px;
       height: 520px;
@@ -704,8 +680,6 @@
         width: 130px;
         height: 150px;
       }
-
-
     }
   }
   &__check {
@@ -725,7 +699,6 @@
     div{
       width: 25%;
     }
-
     &__title{
     font-family: Manrope;
     font-style: normal;
@@ -770,7 +743,7 @@
       @media screen and (max-width: 650px){
         width: 15px;
         height: 15px;
-    }
+     }
     }
     &__click{
         background: #021C27;
@@ -792,7 +765,6 @@
         font-size: 14px;
       margin-top: 135px;
       }
-
       &:hover{
         transition-duration: 0.5s;
         background-color: #009FE3;
@@ -846,7 +818,6 @@
         bottom: 30px;
         font-size: 30px;
       }
-
     }
   }
   .fullRange {
@@ -946,12 +917,6 @@
            font-size: 15px;
             width: 90%;
           }
-          //@media screen and (max-width: 490px){
-          //  width: 80%;
-          //  margin: auto;
-          //}
-
-
         }
       }
     }
@@ -959,7 +924,6 @@
 :host::ng-deep .footer .footer__image {
   display: block;
 }
-
   .recuperative {
     background-color: #FFFFFF;
     &__type {
@@ -1039,23 +1003,19 @@
           width: 100%;
           height: 100%;
         }
-
       }
     }
   }
-
   .technological {
     background-color: #abd5e81a;
     padding: 60px 0;
   }
-
   .clients {
     background-color: white;
     padding-bottom: 80px;
     @media screen and(max-width:700px){
       padding-bottom: 30px;
     }
-
     &__title {
       font-family: Manrope;
       font-style: normal;
@@ -1120,7 +1080,6 @@
       background-position: top center;
       @media screen and(max-width:1200px){
         background: none;
-
       }
     }
   }
@@ -1148,7 +1107,6 @@
       @media screen and (max-width: 900px){
       padding-top: 0;
       }
-
       }
     &__text{
       display: none;
@@ -1162,9 +1120,7 @@
         :last-child{
           text-align: right;
         }
-
       }
-
     }
     &__image {
         width: 204px;
@@ -1182,7 +1138,6 @@
           width: 100%;
         }
       }
-
     }
     &__images-last {
       width: 204px;
@@ -1242,7 +1197,6 @@
     }
   }
 }
-
 .carousel{
   display: none;
   @media screen and (max-width: 900px) {

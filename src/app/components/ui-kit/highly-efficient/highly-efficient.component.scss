@@ -1,17 +1,14 @@
 @import "src/assets/scss/mixins/flex-center-mixin";
-
 .highlyEfficient {
   display: flex;
   @media screen and (max-width: 780px) {
     flex-direction: column;
   }
-
   &__picture {
     width: 50%;
     @media screen and (max-width: 780px) {
       width: 100%;
     }
-
     &__image {
       width: 440px;
       height: 440px;
@@ -19,7 +16,6 @@
       //display: none;
     }
   }
-
   &__description {
     background: linear-gradient(90deg, #abd5e817 0%, rgba(255, 255, 255, 0) 100%);
     width: 50%;
@@ -42,9 +38,7 @@
       flex-direction: column-reverse;
       margin-top:0;
     }
-
   }
-
   &__title {
     font-family: Manrope;
     font-style: normal;
@@ -57,9 +51,8 @@
     padding-bottom: 66px;
      @media screen and (max-width: 780px) {
        padding-bottom: 20px;
+   }
   }
-  }
-
   &__images {
     width: 8.3%;
     padding-top: 71px;
@@ -69,8 +62,6 @@
       justify-content:space-around;
     }
   }
-
-
   &__text {
     font-family: Manrope;
     font-style: normal;
@@ -86,7 +77,6 @@
       padding-top: 35px;
     }
   }
-
   &__types {
     margin-left: 60px;
     margin-top: 50px;
@@ -95,7 +85,6 @@
       margin-left:0;
     }
   }
-
   &__type {
     font-family: Manrope;
     font-style: normal;
@@ -106,17 +95,14 @@
     padding-bottom: 17px;
     padding-top: 13px;
     border-bottom: 1px solid #C0C6C9;
-
     &_value {
       opacity: 1;
       border-bottom: 1px solid #c0c6c94d;
     }
-
     &-wrapper {
       width: 50%;
     }
   }
-
   &__button {
     font-family: Manrope;
     font-style: normal;
@@ -183,15 +169,11 @@
       border-right:none;
       text-align: left;
       padding: 12px 20px;
-
-
     }
     &:hover{
       opacity: 0.2;
       transition-duration: 0.5s;
     }
-
-
     a{
       text-decoration: none;
       cursor: pointer;
@@ -205,9 +187,7 @@
     }
   }
 }
-
 .consultation{
-
   &__blue__flag{
     position: fixed;
     bottom:0;
@@ -241,7 +221,6 @@
       position: fixed;
       top: 270px;
       left: 112px;
-
       label{
         position: fixed;
         top: 270px;
@@ -267,7 +246,6 @@
         border-radius: 5px;
         padding: 10px 10px;
       }
-
     }
     &__tel{
       position: fixed;
@@ -298,7 +276,6 @@
         border-radius: 5px;
         padding: 10px 10px;
       }
-
     }
     &__checkbox{
       cursor: pointer;
@@ -324,7 +301,6 @@
         letter-spacing: 0.2px;
         color: #021C27;
         padding-left: 8px;
-
       }
     }
     &__button{
@@ -352,8 +328,6 @@
         cursor: pointer;
       }
     }
-
-
   }
 }
 

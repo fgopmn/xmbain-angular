@@ -1,21 +1,17 @@
-
- .indoor {
+.indoor {
    padding-right: 20px;
    width: 285px;
    @media screen and (max-width:1260px){
      width: 348px;
    }
-
    &:hover {
      transform: scale(1.1);
      cursor: pointer;
      transition-duration: 0.5s;
    }
-
    &__img {
      padding: 35px 60px 19px 61px;
    }
-
    &__title {
      font-family: Manrope;
      font-style: normal;
@@ -26,7 +22,6 @@
      letter-spacing: 0.2px;
      color: #021C27;
    }
-
    &__about {
      font-family: Manrope;
      font-style: normal;
@@ -40,7 +35,6 @@
      width: 205px;
      height: 54px;
    }
-
    &__description {
      font-family: Manrope;
      font-style: normal;

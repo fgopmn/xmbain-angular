@@ -14,7 +14,6 @@
   @media screen and (max-width:1133px){
     flex-wrap: wrap;
     justify-content: space-around;
-
   }
   &__show{
     display: block;
@@ -22,7 +21,6 @@
   //@media screen and (max-width:800px){
   // flex-wrap: wrap;
   //}
-
   &__logo {
     padding-right: 43px;
     display: flex;
@@ -54,15 +52,12 @@
           @media screen and (max-width:800px){
             display: none;
           }
-
-
         }
         @media screen and (max-width:800px){
           top: 45px;
           position: absolute;
           right: 0;
         }
-
       }
     }
     &-link {
@@ -120,7 +115,6 @@
       margin-top: 7px;
       margin-right: 50px;
     }
-
   }
   &__payment-button {
     background: #FFFFFF;
@@ -156,15 +150,12 @@
       width: 100%;
       margin-top: 20px;
     }
-
     &:hover{
       background: #021C27;;
       border-radius: 4px;
       transition-duration: 0.5s;
       color: #FFFFFF;
     }
-
-
   }
 }
 

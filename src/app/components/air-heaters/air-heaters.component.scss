@@ -1,4 +1,3 @@
-
 .header-ul {
   display: flex;
   border-bottom: 1px solid;
@@ -17,11 +16,9 @@
   color: #C0C6C9;
   margin-right:10px;
 }
-
 .applicationss{
   background:white;
 }
-
 .applicationss-title{
   font-family: Manrope;
   font-style: normal;
@@ -63,12 +60,10 @@
   @media screen and (max-width: 490px){
     width: 48%;
   }
-
 }
 .description-img{
   margin-bottom:24px;
   width: 100%;
-
 }
 .description-text{
  padding-bottom: 60px;
@@ -83,8 +78,6 @@
     width: 158px;
     font-size: 12px;
   }
-
-
 }
 .air-container{
 width: 83%;
@@ -93,7 +86,6 @@ width: 83%;
 .airHeaters-slider{
   position:relative;
 }
-
 .air-title-air{
 padding-bottom: 34px;
 }
@@ -120,9 +112,7 @@ padding-bottom: 34px;
 .tecnoclima-tc{
   position: relative;
   padding-bottom: 97px;
-
 }
-
 .tech-description-text{
   font-family: Manrope;
   font-style: normal;
@@ -155,7 +145,6 @@ background:white;
   justify-content: space-between;
   padding-bottom: 99px;
 }
-
 .green-ellipse{
   width:60px;
   height: 60px;
@@ -179,7 +168,7 @@ background:white;
   @media screen and (max-width: 1200px){
     padding: 35px 22px 35px 22px;
     margin-right: 10px;
-}
+  }
 }
 .dry-system-title{
   font-family: Manrope;
@@ -236,22 +225,22 @@ width: 83%;
 margin: auto;
 }
 .air-title{
-padding-top: 80px;
-padding-bottom: 45px;
-font-family: Manrope;
-font-style: normal;
-font-weight: 800;
-font-size: 46px;
-line-height: 120%;
-letter-spacing: -0.02em;
-color: #021C27;
-}
+    padding-top: 80px;
+    padding-bottom: 45px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #021C27;
+    }
 .airHeaters-slider-title{
-background: linear-gradient(180deg, #abd5e836 4.17%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(180deg, #abd5e836 4.17%, rgba(255, 255, 255, 0) 100%);
 }
 .green-num{
-padding-left:24px;
-padding-bottom: 65px;
+    padding-left:24px;
+    padding-bottom: 65px;
 }
 .green-description{
     font-family: Manrope;
@@ -262,36 +251,34 @@ padding-bottom: 65px;
     letter-spacing: 0.2px;
     color: #021C27;
     opacity: 0.4;
-     width: 80%;
+    width: 80%;
 }
 .green-ellipse span{
-font-family: Manrope;
-font-style: normal;
-font-weight: 800;
-font-size: 10px;
-line-height: 120%;
-text-align: center;
-letter-spacing: -0.03em;
-color: #FFFFFF;
-opacity: 0.6;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 10px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+    opacity: 0.6;
 }
 .technological{
-background-color: #abd5e81a;
-display: inline-block;
-padding: 60px 0;
-width: 100%;
+    background-color: #abd5e81a;
+    display: inline-block;
+    padding: 60px 0;
+    width: 100%;
 }
 :host::ng-deep .footer .footer__image{
-display: block;
-
+    display: block;
 }
 .heat-section{
-background: linear-gradient(90deg, #FBFEFF 0%, #F0F8FC 100%);
-
+    background: linear-gradient(90deg, #FBFEFF 0%, #F0F8FC 100%);
 }
 .heat-container{
-width: 83%;
-margin:auto;
+    width: 83%;
+    margin:auto;
 }
 .heat-title{
 font-family: Manrope;
@@ -339,14 +326,12 @@ padding-bottom: 80px;
     margin-top: 20px;
   }
 }
-
 .equipment-series-flex{
 display: flex;
 justify-content: flex-start;
-@media screen and (max-width:1260px ){
-flex-wrap: wrap;
-}
-
+  @media screen and (max-width:1260px ){
+   flex-wrap: wrap;
+  }
 }
 .equipment-series-title{
 font-family: Manrope;

@@ -19,7 +19,6 @@
 .partners-global{
   background: white;
 }
-
 .partner-group{
   margin-right: 85px;
   @media screen and (max-width:1350px) {
@@ -106,7 +105,6 @@
   padding-bottom: 25px;
   padding-right: 86px;
 }
-
 .proposal{
     background: linear-gradient(90deg, #E6F5FC 0%, #FCE6E8 100%);
     border-radius: 20px;
@@ -249,8 +247,6 @@
   display: block;
 }
 .cooperation{
-
-
   &__tittle{
     font-family: Manrope;
     font-style: normal;
@@ -260,7 +256,6 @@
     letter-spacing: -0.02em;
     color: #021C27;
     margin-top: 80px;
-
   }
   &__text{
     font-family: Manrope;
@@ -271,15 +266,12 @@
     color: #021C27;
     margin-top: 34px;
     margin-bottom: 10px;
-
   }
   &__form{
     padding-bottom: 90px;
     &__type{
-
       margin-top: 30px;
       label{
-
         font-family: Manrope;
         font-style: normal;
         font-weight: 600;
@@ -329,7 +321,6 @@
         color: black;
       }
     }
-
     &__button{
       cursor: pointer;
       background: #009FE3;

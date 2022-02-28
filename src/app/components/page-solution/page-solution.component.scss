@@ -1,7 +1,6 @@
 product{
   background: #FFFFFF;
 }
-
 .menu-list{
   opacity: 0.3;
   border-bottom: 1px solid #C0C6C9;
@@ -21,7 +20,6 @@ product{
   color: #C0C6C9;
   padding-right: 9px;
 }
-
 .solution-flex{
   display:flex;
   @media screen and (max-width: 624px){
@@ -182,7 +180,6 @@ product{
 }
 .container{
   position: relative;
-
 }
 .left-slide{
   width: 48px;
@@ -211,8 +208,6 @@ product{
   background: white;
   position: relative;
 }
-
-
 .task-title1{
   font-weight: 800;
   font-size: 46px;
@@ -290,7 +285,6 @@ product{
     padding-left: 0;
     font-size: 30px;
   }
-
 }
 #advantages-title{
   @media screen and (max-width: 708px){
@@ -409,18 +403,15 @@ product{
     width: 89%;
   }
 }
-
 .used-title-global{
   background: linear-gradient(180deg, #abd5e824 4.17%, rgba(255, 255, 255, 0.12) 100%);
 }
-
 .used-title{
   font-weight: 800;
   font-size: 46px;
   line-height: 120%;
   letter-spacing: -0.02em;
   color: #021C27;
-
 }
 .used-title-group{
   padding-top:80px;
@@ -452,7 +443,6 @@ product{
   padding-bottom:60px;
   padding-top:80px;
 }
-
 .slider-global{
   background: linear-gradient(180deg, #abd5e824 4.17%, rgba(255, 255, 255, 0.12) 100%);
   @media screen and (max-width: 624px){
@@ -496,7 +486,6 @@ product{
   background: #021C27;
   transition-duration: 0.5s;
 }
-
 .used-title-block{
   display: flex;
   justify-content: space-between;
