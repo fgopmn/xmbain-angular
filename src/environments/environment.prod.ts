@@ -132,5 +132,8 @@ export const environment = {
   },
   product:{
     get:'/product'
+  },
+  highlyEfficientImages:{
+    get:'/highlyEfficientImages'
   }
 };

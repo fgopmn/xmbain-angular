@@ -149,7 +149,6 @@
 .text-img-block button{
   cursor: pointer;
 }
-
 .technical-title{
   font-family: Manrope;
   font-style: normal;
@@ -183,7 +182,6 @@
   @media screen and (max-width:500px) {
     font-size: 25px;
   }
-
 }
 .technical-text{
   font-family: Manrope;
@@ -282,9 +280,7 @@
     display: block;
   }
 }
-
 .application{
-
   &__blue__flag{
     position: fixed;
     bottom:0;

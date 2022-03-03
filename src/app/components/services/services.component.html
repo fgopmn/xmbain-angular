@@ -9,7 +9,6 @@
         </ul>
       </div>
     </div>
-
     <div class="container">
          <h6>Услуги</h6>
          <p> Главной задачей ООО ТС Груп Энергия» является повышение качества
@@ -17,7 +16,6 @@
              полный комплекс услуг по поставке, монтажу и сервисному постпродажному обслуживанию оборудования Tecnoclima.</p>
     </div>
 </div>
-
 <div class="technical">
     <div class="container">
         <div class="technical-flex">
@@ -36,23 +34,17 @@
             (whenApplicationOpen)="openApplication($event)"
             class="application"
           >
-
             <p class="application__tittle">Оставить заявку</p>
             <p class="application__text">Оставьте свое имя с номером телефона и наши <br> специалисты свяжутся с вами.</p>
-
-
             <form [formGroup]="form" class="application__form">
-
               <div class="application__form__name">
                 <label for="userName">Ваше имя </label>
                 <div><input formControlName="name" type="text" id="userName"></div>
               </div>
-
               <div class="application__form__tel">
                 <label for="number">Телефон</label>
                 <div><input type="tel" id="number" name="number" formControlName ="number"></div>
               </div>
-
               <div class="application__form__checkbox">
                 <input type="checkbox"  id="check">
                 <label for="check">Отправляя заявку, даю согласие на хранение <br>
@@ -60,14 +52,11 @@
               </div>
               <button [disabled]="form.invalid"  class="application__form__button">Отправить</button>
             </form>
-
             <div >
               <img src="../../../assets/img/image 125 (2) (1).png" class="application__blue__flag"/>
             </div>
-
           </app-application>
         </div>
     </div>
 </div>
-
 <app-footer></app-footer>

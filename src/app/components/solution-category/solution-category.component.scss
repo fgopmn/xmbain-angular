@@ -10,7 +10,6 @@
   &__border{
     border-bottom: 1px solid rgba(192, 198, 201, 0.3);
   }
-
   &__li{
     list-style-type: none;
     font-family: Manrope;
@@ -93,7 +92,6 @@
     justify-content: space-between;
     width: 162px;
     border-bottom: 1px solid rgba(2, 28, 39, 0.15);
-
     div{
      margin: auto;
       cursor: pointer;
@@ -104,7 +102,6 @@
         transition-duration: 0.5s;
         //border-bottom: 1px solid black;
       }
-
       }
       p{
         color: rgba(2, 28, 39, 0.15);

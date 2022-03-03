@@ -2,10 +2,10 @@
   //opacity: 0.3;
   border-bottom: 1px solid #C0C6C9;
 }
-.menu{
-  display: flex;
-  margin-bottom: 16px;
-}
+//.menu{
+//  display: flex;
+//  margin-bottom: 16px;
+//}
 .menu li{
   list-style-type: none;
   font-family: Manrope;
@@ -310,12 +310,17 @@
   background: linear-gradient(180deg, #abd5e838 4.17%, rgba(255, 255, 255, 0.12) 100%);
 }
 
-
 .slider{
   position:relative;
   &__flex{
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 1200px){
+      justify-content: center;
+      :last-child{
+        display: none;
+      }
+    }
   }
   &__left{
     position: absolute;

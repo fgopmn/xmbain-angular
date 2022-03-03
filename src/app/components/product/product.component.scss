@@ -23,12 +23,10 @@
   &__li:nth-child(n+2){
     padding-left: 12px;
   }
-
 }
 .product-header .container{
   border-bottom:  1px solid #C0C6C9;
 }
-
 .dealership {
   display: flex;
 }
@@ -37,8 +35,6 @@
   @media screen and (max-width:737px){
    display: block;
   }
-
-
   h1{
     font-family: Manrope;
     font-style: normal;
@@ -51,7 +47,6 @@
     padding-top: 20px;
   }
 }
-
 .check-click{
   background: #009FE3;;
   border-radius: 5px;
@@ -74,12 +69,10 @@
   }
 }
 .blue-flag{
-
     @media screen and (max-width:1285px){
       display:none;
     }
 }
-
 .product-title{
   font-family: Manrope;
   font-style: normal;
@@ -91,9 +84,7 @@
   padding-top:30px;
   @media screen and (max-width:1010px){
     font-size: 58px;
-
   }
-
 }
 .conditioners-global-title {
   font-family: Manrope;
@@ -120,7 +111,6 @@
     font-size: 30px;
   }
 }
-
 .conditioners-global-text{
   font-family: Manrope;
   font-style: normal;
@@ -144,7 +134,6 @@
     max-width: 538px;
     height: 120px;
     overflow: hidden;
-
   }
   @media screen and (max-width: 556px){
     padding-left: 40px;
@@ -172,7 +161,6 @@
     font-size: 16px;
   }
 }
-
 .dealerships-flex1{
   max-width: 895px;
   margin-top: 33px;
@@ -206,9 +194,7 @@
 }
 .dealerships-flex1-child img{
   padding: 35px 60px 19px 61px;
-
 }
-
 .dealerships-flex1-child-type{
   font-family: Manrope;
   font-style: normal;
@@ -218,7 +204,6 @@
   text-align: center;
   letter-spacing: 0.2px ;
   color: #021C27;
-
 }
 .dealerships-flex1-child-title{
   font-family: Manrope;
@@ -254,7 +239,6 @@
   @media screen and (max-width:1010px) {
     max-width: 87%;
   }
-
   &__right-vector{
     transform: rotateY(180deg);
   }
@@ -264,15 +248,10 @@
     width: 162px;
     border-bottom: 1px solid black;
     opacity: 0.5;
-
     div{
       margin: auto;
       cursor: pointer;
       padding-bottom: 14px;
-
-      //&:hover{
-      //  border-bottom: 1px solid black;
-      //}
     }
     p{
       color: rgba(2, 28, 39, 0.15);
@@ -293,7 +272,6 @@
       transition-duration: 0.5s;
     }
   }
-
 }
 .technological {
   background-color: #abd5e81a;
@@ -302,7 +280,6 @@
 .flag{
   background: linear-gradient(180deg, #abd5e870 0%, rgba(171, 213, 232, 0) 104.43%);
 }
-
 .slider{
   padding-bottom: 116px;
   &__flex{

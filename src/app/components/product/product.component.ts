@@ -18,8 +18,7 @@ export class ProductComponent implements OnInit {
   ngOnInit(): void {
     this.getRequest()
     this.getSlider()
-    this.showAll()
-    this.close()
+
   }
   getRequest(){
     this.requestService.getData(`${environment.url}${environment.product.get}`).subscribe((items:any) => {

@@ -1,8 +1,6 @@
 .solution-header{
   background-color: #FFFFFF;
   position: relative;
-
-
   &__ul{
     display: flex;
     padding-top: 20px;
@@ -22,7 +20,6 @@
   &__li:nth-child(n+2){
     padding-left: 12px;
   }
-
 }
 .solution-header .container{
   border-bottom:  1px solid #C0C6C9;
@@ -35,7 +32,6 @@
 .techno-flex{
   display: flex;
   flex-wrap: wrap;
-
 }
 .techno-flex-title{
   padding-bottom: 60px;

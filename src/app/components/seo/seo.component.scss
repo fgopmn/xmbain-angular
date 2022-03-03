@@ -21,10 +21,7 @@
   &__li:nth-child(n+2){
     padding-left: 12px;
   }
-
 }
-
-
 .seo{
   background: linear-gradient(360deg, rgba(171, 213, 232, 0.12) 0%, rgba(171, 213, 232, 0) 100%), #FFFFFF;
   &__flex {
@@ -32,7 +29,6 @@
     padding-top: 14px;
     position: relative;
   }
-
     &__h1{
       font-family: Manrope;
       font-style: normal;
@@ -137,7 +133,6 @@
     }
   }
 }
-
 .consultation{
   &__blue__flag{
     position: fixed;
@@ -172,7 +167,6 @@
       position: fixed;
       top: 270px;
       left: 112px;
-
       label{
         position: fixed;
         top: 270px;
@@ -228,7 +222,6 @@
         border-radius: 5px;
         padding: 10px 10px;
       }
-
     }
     &__checkbox{
       cursor: pointer;
@@ -392,7 +385,6 @@
   text-align: center;
   letter-spacing: 0.2px ;
   color: #021C27;
-
 }
 .dealerships-flex1-child-title{
   font-family: Manrope;
@@ -509,9 +501,8 @@
   font-size: 19px;
   line-height: 120%;
   text-align: center;
-  letter-spacing: 0.2px ;
+  letter-spacing: 0.2px;
   color: #021C27;
-
 }
 .conditioners-flex1-child-title{
   font-family: Manrope;
@@ -558,7 +549,6 @@
 .flag{
   background: linear-gradient(180deg, #abd5e870 0%, rgba(171, 213, 232, 0) 104.43%);
 }
-
 .slider{
   padding-bottom: 116px;
   &__flex{

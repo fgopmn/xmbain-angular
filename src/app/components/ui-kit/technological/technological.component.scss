@@ -1,6 +1,5 @@
 @import "src/assets/scss/mixins/container";
 @import "src/assets/scss/mixins/flex-center-mixin";
-
 .technical{
   @include container;
   display: flex;
@@ -30,7 +29,6 @@
       margin-top: 75px;
       padding: 0;
     }
-
   &__block1 {
     width: 33.3%;
     border-right: 1px solid rgba(192, 198, 201, 1);
@@ -47,7 +45,6 @@
     @media screen and (max-width: 450px){
       padding:20px;
     }
-
   }
   &__block2 {
     width: 33.3%;
@@ -80,7 +77,6 @@
     @media screen and (max-width: 450px){
       padding:20px;
     }
-
     &-container {
       display: flex;
       padding-top: 22px;
@@ -135,7 +131,6 @@
       color: #021C27;
       opacity: 0.33;
       margin-top: 2px;
-
     }
   }
   &__description {
@@ -154,7 +149,6 @@
     @media screen and (max-width: 650px){
       text-align: center;
     }
-
     &_block3 {
       padding-top: 12px;
       text-align: center;

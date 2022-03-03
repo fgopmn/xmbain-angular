@@ -9,7 +9,6 @@
       display: none;
     }
   }
-
   &__features {
       &__content {
       font-family: Manrope;
@@ -32,7 +31,6 @@
           padding-bottom: 30px;
           width: 90%;
         }
-
         @media screen and (max-width:870px) {
           width: 390px;
         }
@@ -40,7 +38,6 @@
           //display: none;
         }
     }
-
     &__title {
       font-family: Manrope;
       font-style: normal;
@@ -54,7 +51,6 @@
       @media screen and (max-width:1100px) {
         font-size: 30px;
       }
-
       @media screen and (max-width:1000px) {
         font-size: 38px;
       }
@@ -66,7 +62,6 @@
         width: 440px;
       }
     }
-
     &__general {
       font-family: Manrope;
       font-style: normal;
@@ -77,7 +72,6 @@
       color: #021C27;
       padding-top: 34px;
       padding-bottom: 80px;
-
       @media screen and (max-width:870px) {
         font-size: 14px;
         padding-bottom: 40px;
@@ -85,9 +79,7 @@
       @media screen and (max-width:480px) {
        width: 240px;
          }
-
     }
-
   }
   &__gradient {
     background: linear-gradient(90deg, #abd5e840 0%, rgba(255, 255, 255, 0) 100%);
@@ -121,11 +113,9 @@
       @media screen and (max-width: 700px) {
         // display: none;
       }
-
     }
   }
 }
-
 .types{
   @media screen and (max-width:375px) {
     display: none;
@@ -146,7 +136,6 @@
       padding-top: 80px;
       padding-bottom: 60px;
       width: 570px;
-
       @media screen and (max-width:920px) {
         padding: 30px 0;
       }
@@ -165,9 +154,7 @@
       background: none;
     }
   }
-
 }
-
 .opportunity {
   @media screen and (max-width:375px) {
     display: none;
@@ -176,7 +163,6 @@
     display: flex;
     justify-content: space-between;
   }
-
   &__features {
     @media screen and (max-width: 1020px) {
       font-size: 30px;
@@ -197,9 +183,7 @@
       line-height: 120%;
       letter-spacing: -0.02em;
       color: #021C27;
-
     }
-
     &__paragraph {
       font-family: Manrope;
       font-style: normal;
@@ -218,12 +202,10 @@
       @media screen and (max-width: 670px) {
         padding-bottom: 30px;
       }
-
       span {
         font-weight: bold;
       }
     }
-
     &__paragraphName {
       font-family: Manrope;
       font-style: normal;
@@ -232,7 +214,6 @@
       line-height: 140%;
       color: #021C27;
     }
-
     &__paragraphText {
       font-family: Manrope;
       font-style: normal;
@@ -296,7 +277,6 @@
       padding-top: 80px;
     }
     }
-
   &__gradient {
     background: linear-gradient(90deg, #abd5e840 0%, rgba(255, 255, 255, 0) 100%);
     width: 38%;
@@ -314,8 +294,6 @@
     @media screen and (max-width: 600px) {
      display: none;
     }
-
-
     &__about {
       font-family: Manrope;
       font-style: normal;
@@ -328,7 +306,6 @@
       @media screen and (max-width: 1100px) {
         font-size: 13px;
       }
-
     }
  &__title{
    font-family: Manrope;
@@ -338,19 +315,14 @@
    line-height: 120%;
    letter-spacing: -0.02em;
    color: #021C27;
-
  }
     &__image {
       padding-top: 60px;
       @media screen and (max-width: 760px) {
         padding-top: 10px;
       }
-
-
     }
   }
-
-
 }
 
 

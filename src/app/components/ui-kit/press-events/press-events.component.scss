@@ -1,6 +1,5 @@
 .event{
   padding-top:80px;
-
     &__title{
       font-family: Manrope;
       font-style: normal;
@@ -14,7 +13,7 @@
         opacity: 0.7;
         transition-duration: 0.5s;
         cursor: pointer;
-      };
+      }
     }
     &__flex{
        display: flex;
@@ -66,7 +65,7 @@
           color: #021C27;
           opacity: 0.4;
         }
-    }
+     }
     }
   &__day__description{
     font-family: Manrope;

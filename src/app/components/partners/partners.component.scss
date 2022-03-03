@@ -1,15 +1,41 @@
+.menu-list{
+  border-bottom: 1px solid #C0C6C9;
+}
+.menu{
+  display: flex;
+  margin-bottom: 16px;
+}
+.menu li{
+  list-style-type: none;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: #C0C6C9;
+  padding-right: 9px;
+}
 .partners-global{
   background: white;
 }
-
 .partner-group{
   margin-right: 85px;
+  @media screen and (max-width:1350px) {
+    margin-right:0;
+  }
 }
 .partner-title-flex{
   display:flex;
+  @media screen and (max-width:1100px) {
+    flex-direction: column;
+  }
 }
 .title-click{
   padding-bottom: 100px;
+  @media screen and (max-width:1100px) {
+    padding-bottom: 40px;
+  }
 }
 .partners-title{
   font-weight: 800;
@@ -18,6 +44,10 @@
   letter-spacing: -0.02em;
   color: #021C27;
   padding-top:30px;
+  @media screen and (max-width:700px) {
+    text-align: center;
+    font-size: 45px;
+  }
 }
 .partners-description{
   font-weight: 600;
@@ -28,6 +58,12 @@
   width: 530px;
   margin-top:66px;
   margin-bottom: 36px;
+  @media screen and (max-width:1100px) {
+    width: 100%;
+  }
+  @media screen and (max-width:700px) {
+    margin-top:40px;
+  }
 }
 .send{
   background: #009FE3;
@@ -39,6 +75,9 @@
   color: #FFFFFF;
   border:none;
   padding:15px 25px;
+  @media screen and (max-width:1100px) {
+    padding: 10px 20px;
+  }
   &:hover{
     background: black;
     border-radius: 5px;
@@ -52,6 +91,10 @@
   line-height: 140%;
   letter-spacing: -0.02em;
   color: #021C27;
+  @media screen and (max-width:700px) {
+    text-align: center;
+    font-size: 35px;
+  }
 }
 .invite-numbers{
   padding-left: 20px;
@@ -62,7 +105,6 @@
   padding-bottom: 25px;
   padding-right: 86px;
 }
-
 .proposal{
     background: linear-gradient(90deg, #E6F5FC 0%, #FCE6E8 100%);
     border-radius: 20px;
@@ -73,13 +115,20 @@
     color: #021C27;
     padding:40px;
     margin-top:12px;
-   margin-bottom: 80px;
+    margin-bottom: 80px;
+  @media screen and (max-width:700px) {
+    padding: 5px;
+    margin-bottom: 35px;
+  }
 }
 .provide-group{
   margin-top:34px
 }
 .proposal p{
   width: 520px;
+  @media screen and (max-width:1100px) {
+    width: 100%;
+  }
 }
 .provide-numbers{
   padding-left: 20px;
@@ -89,11 +138,23 @@
   padding-right: 120px;
   padding-left:15px;
   padding-bottom: 28px;
+  @media screen and (max-width:1100px) {
+   padding-right: 0;
+  }
 }
 .experience-description{
   width: 590px;
   margin-top: 34px;
   margin-bottom:60px;
+  @media screen and (max-width:1200px) {
+    width: 450px;
+  }
+  @media screen and (max-width:1100px) {
+    width: 100%;
+  }
+  @media screen and (max-width:1100px) {
+    margin-bottom: 0;
+  }
 }
 .experience-text{
   font-size: 17px;
@@ -111,18 +172,34 @@
 }
 .suggestions{
   background: linear-gradient(90deg, #abd5e81a 0%, rgba(255, 255, 255, 0.12) 100%);
+  @media screen and (max-width:1100px) {
+    background: none;
+  }
 }
 .suggestion-text{
   margin-left:121px;
   width: 387px;
   margin-top: 525px;
+  @media screen and (max-width:1439px) {
+    margin-left:50px;
+  }
+  @media screen and (max-width:1250px) {
+    margin-left:0;
+  }
+  @media screen and (max-width:1190px) {
+    width: 280px;
+  }
+  @media screen and (max-width:1100px) {
+    margin-top: 0;
+    width: 100%;
+  }
 }
 .suggestion-types{
   padding-left: 20px;
   margin-top: 24px;
 }
 .suggestion-types li{
-padding-bottom: 14px;
+  padding-bottom: 14px;
   font-size: 15px;
   line-height: 160%;
   letter-spacing: 0.2px;
@@ -134,17 +211,42 @@ padding-bottom: 14px;
   letter-spacing: 0.2px;
   color: #021C27;
   width: 387px;
+  @media screen and (max-width:1190px) {
+    width: 320px;
+  }
+  @media screen and (max-width:1100px) {
+    width: 100%;
+  }
+  @media screen and (max-width:410px) {
+    padding-bottom: 30px;
+  }
 }
 .sketch{
   margin-left: 121px;
   margin-top: 520px;
+  @media screen and (max-width:1439px) {
+    margin-left:60px;
+  }
+  @media screen and (max-width:1190px) {
+    margin-top:280px;
+    margin-left:0;
+  }
+  @media screen and (max-width:1100px) {
+    margin-top: 0;
+  }
+  @media screen and (max-width:410px) {
+    display: none;
+  }
+  img{
+    @media screen and (max-width:1330px) {
+      transform: scale(0.6);
+    }
+  }
 }
 :host::ng-deep .footer .footer__image{
   display: block;
 }
 .cooperation{
-
-
   &__tittle{
     font-family: Manrope;
     font-style: normal;
@@ -154,7 +256,6 @@ padding-bottom: 14px;
     letter-spacing: -0.02em;
     color: #021C27;
     margin-top: 80px;
-
   }
   &__text{
     font-family: Manrope;
@@ -165,15 +266,12 @@ padding-bottom: 14px;
     color: #021C27;
     margin-top: 34px;
     margin-bottom: 10px;
-
   }
   &__form{
     padding-bottom: 90px;
     &__type{
-
       margin-top: 30px;
       label{
-
         font-family: Manrope;
         font-style: normal;
         font-weight: 600;
@@ -208,7 +306,7 @@ padding-bottom: 14px;
       margin-top:23px;
       margin-bottom: 30px;
     &__checkbox{
-    width: 16px;
+      width: 16px;
       height:16px;
       cursor: pointer;
       margin-right: 8px;
@@ -223,7 +321,6 @@ padding-bottom: 14px;
         color: black;
       }
     }
-
     &__button{
       cursor: pointer;
       background: #009FE3;
