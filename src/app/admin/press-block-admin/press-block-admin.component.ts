@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {environment} from "../../../environments/environment.prod";
 import {RequestService} from "../../service/request.service";
 import { FormBuilder, FormControl, FormGroup, } from '@angular/forms';
@@ -8,56 +8,47 @@ import { FormBuilder, FormControl, FormGroup, } from '@angular/forms';
   styleUrls: ['./press-block-admin.component.scss']
 })
 export class PressBlockAdminComponent implements OnInit {
+  @ViewChild("fo") fo:any
   press: any[] = [];
-  contactForm;
-
   type:string="create";
 
-  // form = new FormGroup({
-  //   button:new FormControl(""),
-  //   title:new FormControl(""),
-  //   text:new FormControl(""),
-  //   img:new FormControl(""),
-  //   info:new FormControl("")
-  // })
+  form = new FormGroup({
+    button:new FormControl(""),
+    title:new FormControl(""),
+    text:new FormControl(""),
+    img:new FormControl(""),
+    info:new FormControl("")
+  })
   constructor(public requestService:RequestService,public formBuilder: FormBuilder) {
-    this.contactForm = this.formBuilder.group({
-      butt:[],
-      title: [],
-      text: [],
-      img: [],
-      info: [],
-    })
+
   }
   ngOnInit(): void {
     this.getPress()
   }
-  get getButtonControl():FormControl{
-    return (this.contactForm.get('butt') as FormControl);
+  reset(){
+    this.form.reset()
   }
-  save(item:any){
-    console.log(item)
-    this.editItem(this.contactForm.value)
-    console.log(this.contactForm.value)
-    // if(this.type == "create"){
-    //   this.createItem(this.form.value)
-    // }
-    // else{
-    //   this.editItem(this.form.value)
-    // }
+  add(fo:any) {
+    this.fo.nativeElement.style.display = `block`
+    this.form.reset()
+    this.type = "create"
   }
-  // add(){
-  //  // this.type="create"
-  //   this.form.reset();
-  // }
+  save(fo:any){
+    if(this.type == "create"){
+      this.createItem(this.form.value)
+    }
+    else{
+      this.editItem(this.form.value)
+    }
+    fo.style.display=`none`
+  }
   createItem(value:any){
     this.requestService.create(`${environment.url}/heating`,value).subscribe(()=>{
       this.getPress()
     })
   }
   editItem(value:any){
-    this.requestService.edit(`${environment.url}/heating/`,value).subscribe(()=>{
-     // this.type="create"
+    this.requestService.edit(`${environment.url}/heating/${this.type}`, value).subscribe(()=>{
       this.getPress()
     })
   }
@@ -69,8 +60,17 @@ export class PressBlockAdminComponent implements OnInit {
   deleteItem(id:string){
     this.requestService.delete(`${environment.url}/heating/${id}`).subscribe(()=>{
       this.getPress()
-
     })
   }
-
+  openForm(items:any, fo:any){
+   this.fo.nativeElement.style.display=`block`
+    this.form.patchValue({
+      button: items['button'],
+      title:items['title'],
+      text:items['text'],
+      img:items['img'],
+      info:items['info']
+    })
+    this.type = items.id
+    }
 }

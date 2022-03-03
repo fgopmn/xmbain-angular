@@ -1,0 +1,26 @@
+.admin-header{
+  display:flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 25%;
+  padding-left:40px;
+  margin-top:40px;
+  img{
+    width: 150px;
+  }
+  &__ul{
+    margin-top:10px;
+    display: flex;
+    flex-direction: column;
+
+    li{
+     // margin-right:15px;
+      margin-top:20px;
+      list-style-type: none;
+      a{
+        font-size: 20px;
+      }
+
+    }
+  }
+}

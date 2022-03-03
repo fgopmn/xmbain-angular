@@ -43,4 +43,5 @@ export class AirHeatersComponent implements OnInit {
       this.getSlide = items
     })
   }
+
 }

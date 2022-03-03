@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {environment} from "../../../environments/environment.prod";
 import {RequestService} from "../../service/request.service";
 import {FormBuilder, Validators} from "@angular/forms";
@@ -13,6 +13,9 @@ import {filter} from "rxjs/operators";
 export class SeoComponent implements OnInit {
   getList: any[] = [];
   getSlide: any[] = [];
+  @ViewChild('p') p: any;
+  @ViewChild('button') button: any;
+
 
   public isConsultationOpen:boolean = true;
 
@@ -49,5 +52,15 @@ export class SeoComponent implements OnInit {
     this.requestService.getData(`${environment.url}${environment.slider.get}`).subscribe((items:any) => {
       this.getSlide = items
     })
+  }
+  public showAll() {
+    this.p.nativeElement.style.overflow = `visible`
+    this.p.nativeElement.style.height = `auto`
+    this.button.nativeElement.style.display = `none`
+  }
+  public close() {
+    this.p.nativeElement.style.overflow = `hidden`
+    this.p.nativeElement.style.height = `120px`
+    this.button.nativeElement.style.display = `block`
   }
 }

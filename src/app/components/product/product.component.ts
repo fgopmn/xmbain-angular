@@ -31,12 +31,10 @@ export class ProductComponent implements OnInit {
       this.getSlide = items
     })
   }
-
   public showAll() {
     this.p.nativeElement.style.overflow = `visible`
     this.p.nativeElement.style.height = `auto`
     this.button.nativeElement.style.display = `none`
-
   }
   public close() {
     this.p.nativeElement.style.overflow = `hidden`

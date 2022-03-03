@@ -8,6 +8,10 @@
     line-height: 120%;
     letter-spacing: 0.2px;
     color: #021C27;
+
+    //::ng-deep .equipment {
+    //  background-color: green !important;
+    //}
   }
 
   &__li {
@@ -15,6 +19,7 @@
     align-items: center;
     margin-top: 14px;
     display: flex;
+
   }
   &__li label{
     font-family: Manrope;
