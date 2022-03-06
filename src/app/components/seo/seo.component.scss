@@ -39,6 +39,9 @@
       color: #021C27;
       padding-bottom: 30px;
       padding-top: 44px;
+      @media screen and (max-width:1050px) {
+        font-size: 45px;
+      }
     }
    &__text{
       font-family: Manrope;
@@ -49,6 +52,21 @@
       letter-spacing: 0.2px;
       color: #021C27;
       padding-bottom: 36px;
+      width:530px;
+      @media screen and (max-width:1050px) {
+         width: 56%;
+        padding-right: 5px;
+   }
+     @media screen and (max-width: 940px){
+    font-size: 17px;
+     }
+     @media screen and (max-width: 800px){
+       font-size: 18px;
+       max-width: 538px;
+       height: 120px;
+       overflow: hidden;
+
+     }
     }
     &__button{
       font-family: Manrope;
@@ -64,6 +82,27 @@
       border: none;
       margin-bottom: 88px;
       cursor: pointer;
+      @media screen and (max-width:978px) {
+        padding: 13px 14px;
+        font-size:17px;
+      }
+      &__all{
+        display: none;
+        background: none;
+        border: none;
+        font-size: 18px;
+        opacity: 0.5;
+        margin-left: 75px;
+        margin-top: 5px;
+        border-bottom: 1px dashed #C0C6C9;
+        @media screen and (max-width: 737px){
+          display: block;
+        }
+        @media screen and (max-width: 556px){
+          font-size: 16px;
+        }
+      }
+
       &:hover{
         background: #021C27;
         border-radius: 4px;
@@ -74,6 +113,24 @@
     position: absolute;
     right: 0;
     top: -51px;
+    @media screen and (max-width: 1370px){
+      top:100px
+    }
+    img{
+      @media screen and (max-width: 1370px){
+        width: 430px;
+        height:450px
+      }
+      @media screen and (max-width: 1190px){
+        width: 350px;
+        height:370px
+      }
+      @media screen and (max-width: 940px){
+        width: 300px;
+        height: 320px;
+      }
+
+    }
   }
 }
 .consultation{
@@ -215,6 +272,10 @@
   .dealership {
     display: flex;
     justify-content: space-between;
+    &__check2{
+      padding-left:78px;
+    }
+
   }
  .check-click{
   background: #009FE3;;
@@ -249,7 +310,6 @@
   line-height: 120%;
   letter-spacing: -0.02em;
   color: #021C27;
-  padding-left: 78px;
   padding-top: 80px;
 }
 .dealerships-child2-global-title span{
@@ -263,21 +323,25 @@
   line-height: 160%;
   letter-spacing: 0.2px;
   color: #000000;
-  padding-left: 78px;
   padding-top: 34px;
+  width: 652px;
+  @media screen and (max-width:1100px) {
+    width: 100%;
+  }
 }
 .dealerships-flex1{
-  max-width: 895px;
   margin-top: 33px;
-  margin-left: 38px;
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
   justify-content: space-between;
 }
 .dealerships-flex1-child{
-  max-width: 285px;
+  width: 27%;
   margin-top: 17px;
+  @media screen and (max-width:1100px) {
+   width: 50%;
+  }
   &:hover {
     transform: scale(1.1);
     cursor: pointer;
@@ -285,7 +349,7 @@
   }
 }
 .dealerships-flex1-child img{
-  padding: 35px 60px 19px 61px;
+  padding: 35px 60px 19px 0;
 }
 .dealerships-flex1 button{
   font-family: Manrope;
@@ -304,7 +368,6 @@
   border-radius: 5px;
   padding: 11px 0;
   margin-top: 30px;
-  margin-left: 40px;
   &:hover{
     background: black;
     color: #FFFFFF;
@@ -330,7 +393,10 @@
   font-size: 15px;
   line-height: 120%;
   letter-spacing: 0.2px;
-  padding: 10px 40px 20px 40px;
+  padding: 10px 40px 20px 0;
+  @media screen and (max-width:1100px) {
+    padding: 10px 100px 20px 0;
+  }
 }
 .dealerships-flex1-child-text{
   font-family: Manrope;
@@ -341,7 +407,10 @@
   letter-spacing: 0.2px;
   color: #021C27;
   opacity: 0.4;
-  padding: 0 26px 36px 40px;
+  padding: 0 26px 36px 0;
+  @media screen and (max-width:1100px) {
+    padding: 0 100px 36px 0;
+  }
 }
 .conditioners-global-title{
   font-family: Manrope;
@@ -351,9 +420,11 @@
   line-height: 120%;
   letter-spacing: -0.02em;
   color: #021C27;
-  padding-left: 78px;
   padding-top: 100px;
   width: 652px;
+  @media screen and (max-width:1100px) {
+    width: 100%;
+  }
 }
 .conditioners-global-title span{
   opacity: 0.3;
@@ -366,21 +437,28 @@
   line-height: 160%;
   letter-spacing: 0.2px;
   color: #000000;
-  padding-left: 78px;
   padding-top: 34px;
+  width: 652px;
+  @media screen and (max-width:1100px) {
+    width: 100%;
+  }
 }
 .conditioners-flex1{
   max-width: 895px;
   margin-top: 33px;
-  margin-left: 38px;
+  //margin-left: 38px;
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
   justify-content: space-between;
 }
 .conditioners-flex1-child{
-  max-width: 285px;
+  width: 27%;
   margin-top: 17px;
+  @media screen and (max-width:1100px) {
+    width: 50%;
+  }
+
   &:hover {
     transform: scale(1.1);
     cursor: pointer;
@@ -388,7 +466,7 @@
   }
 }
 .conditioners-flex1-child img{
-  padding: 35px 60px 19px 61px;
+  padding: 35px 60px 19px 0;
 }
 .conditioners-flex1 button{
   font-family: Manrope;
@@ -407,7 +485,6 @@
   border-radius: 5px;
   padding: 11px 0;
   margin-top: 30px;
-  margin-left: 40px;
   margin-bottom: 80px;
   &:hover{
     background: black;
@@ -434,7 +511,10 @@
   font-size: 15px;
   line-height: 120%;
   letter-spacing: 0.2px;
-  padding: 10px 40px 20px 40px;
+  padding: 10px 40px 20px 0;
+  @media screen and (max-width:1100px) {
+    padding: 10px 100px 20px 0;
+  }
 }
 .conditioners-flex1-child-text{
   font-family: Manrope;
@@ -445,11 +525,17 @@
   letter-spacing: 0.2px;
   color: #021C27;
   opacity: 0.4;
-  padding: 0 26px 36px 40px;
+  padding: 0 26px 36px 0;
+  @media screen and (max-width:1100px) {
+    padding: 10px 100px 20px 0;
+  }
 }
 .blue-flag {
   max-width: 1200px;
   margin: auto;
+  @media screen and (max-width:1180px) {
+    display: none;
+  }
 }
 .slider-block p{
   font-family: Manrope;
@@ -468,6 +554,12 @@
   &__flex{
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 1200px){
+      justify-content: center;
+      :last-child{
+        display: none;
+      }
+    }
   }
 }
 .airHeaters-title{
@@ -479,6 +571,10 @@
   line-height: 120%;
   letter-spacing: -0.02em;
   color: #021C27;
+  @media screen and (max-width:1180px) {
+    padding-top: 40px;
+
+  }
 }
 
 

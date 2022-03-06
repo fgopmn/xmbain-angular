@@ -21,9 +21,9 @@
         <div class="technical-flex">
             <div *ngFor ="let item of getList" class="text-img-block">
                 <div class="technical-description">
-                    <p class="technical-title">{{item.title}}</p>
-                    <p  #p (click)="closeAll()" class="technical-text">{{item.text}}</p>
-                  <button  #button (click)="showAll()" class="show">читать далее</button>
+                    <p  class="technical-title">{{item.title}}</p>
+                    <p (click)="closeAll()" class="technical-text">{{item.text}}</p>
+                  <button (click)="showAll($event)" class="show">читать далее</button>
                   <br>
                     <button class="openApplication" (click)="openApplication()">{{item.button}}</button>
                 </div>

@@ -1,27 +1,40 @@
-// import { Component, OnInit,ViewEncapsulation  } from '@angular/core';
-// import { CarouselConfig } from 'ngx-bootstrap/carousel';
-// import { PageChangedEvent } from 'ngx-bootstrap/pagination';
-// @Component({
-//   selector: 'app-carousel',
-//   templateUrl: './carousel.component.html',
-//   styleUrls: ['./carousel.component.scss'],
-//   // providers: [
-//   //   { provide: CarouselConfig, useValue: { noPause: true, showIndicators: true } }
-//   // ]
-//   encapsulation: ViewEncapsulation.None
-// })
-// export class CarouselComponent implements OnInit {
-//   totalItems = 64;
-//   currentPage = 1;
-//   smallnumPages = 0;
-//   pageChanged(event: PageChangedEvent): void {
-//     console.log('Page changed to: ' + event.page);
-//     console.log('Number items per page: ' + event.itemsPerPage);
-//   }
-//   constructor() { }
-//
-//   ngOnInit(): void {
-//   }
-//
-// }
-//
+import { Component, OnInit } from '@angular/core';
+import { OwlOptions } from 'ngx-owl-carousel-o';
+
+@Component({
+  selector: 'app-carousel',
+  templateUrl: './carousel.component.html',
+  styleUrls: ['./carousel.component.scss']
+})
+export class CarouselComponent implements OnInit {
+  // customOptions: OwlOptions = {
+  //   loop: true,
+  //   mouseDrag: false,
+  //   touchDrag: false,
+  //   pullDrag: false,
+  //   dots: false,
+  //   navSpeed: 700,
+  //   navText: ['', ''],
+  //   responsive: {
+  //     0: {
+  //       items: 1
+  //     },
+  //     400: {
+  //       items: 2
+  //     },
+  //     740: {
+  //       items: 3
+  //     },
+  //     940: {
+  //       items: 4
+  //     }
+  //   },
+  //   nav: true
+  // }
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}

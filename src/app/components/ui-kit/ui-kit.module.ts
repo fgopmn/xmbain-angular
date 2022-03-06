@@ -37,11 +37,11 @@ import { SeriesComponent } from './series/series.component';
 import { CooperationComponent } from './cooperation/cooperation.component';
 import { AdvantagesComponent } from './advantages/advantages.component';
 import { NewsSliderComponent } from './news-slider/news-slider.component';
-// import { CarouselComponent } from './carousel/carousel.component';
-//import {CarouselModule} from "ngx-bootstrap/carousel";
-//import {PaginationModule} from "ngx-bootstrap/pagination";
 import { MenuComponent } from './menu/menu.component';
 import { ParametrsComponent } from './parametrs/parametrs.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 @NgModule({
   declarations: [
     ComplexComponent,
@@ -81,7 +81,7 @@ import { ParametrsComponent } from './parametrs/parametrs.component';
     NewsSliderComponent,
     MenuComponent,
     ParametrsComponent,
-    // CarouselComponent
+    CarouselComponent,
   ],
   exports: [
     ComplexComponent,
@@ -120,8 +120,8 @@ import { ParametrsComponent } from './parametrs/parametrs.component';
     AdvantagesComponent,
     NewsSliderComponent,
     MenuComponent,
-    // CarouselComponent,
     ParametrsComponent,
+    CarouselComponent,
   ],
 
   imports: [
@@ -132,9 +132,8 @@ import { ParametrsComponent } from './parametrs/parametrs.component';
     CdkAccordionModule,
     RouterModule,
     ReactiveFormsModule,
-    // CarouselModule,
-    // PaginationModule,
-   // FormsModule
+    CarouselModule,
+
   ]
 })
 export class UiKitModule { }
