@@ -12,7 +12,7 @@ import {Router} from "@angular/router";
 
 export class ServicesComponent implements OnInit {
   getList: any[] = [];
-  //@ViewChild("p") p: any;
+  //@ViewChild("p") el: any;
  // @ViewChild("button") button: any;
 
   public isApplicationOpen:boolean = true
@@ -36,21 +36,16 @@ export class ServicesComponent implements OnInit {
       this.getList = items
     })
   }
-  public showAll(event:any){
-    // this.p.nativeElement.style.overflow = `visible`
-    // this.p.nativeElement.style.height = `auto`
-    // this.button.nativeElement.style.display = `none`
-    // p.nativeElement.style.overflow = `visible`
-    // p.nativeElement.style.height = `auto`
-    // button.nativeElement.style.display = `none`
-    event.path[1].classList.toggle("tog")
-    event.path[1].classList.toggle("tog")
-    console.log(event.path[1])
+  public showAll(el:any, butt:any, read:any){
+    el.classList.add("show")
+    butt.style.display=`none`
+    read.style.display=`block`
+
   }
-  public closeAll(){
-    // this.p.nativeElement.style.overflow = `hidden`
-    // this.p.nativeElement.style.height = `70px`
-    // this.button.nativeElement.style.display = `block`
+  public closeAll(text:any, show:any, read:any){
+    text.classList.remove("show")
+    show.style.display=`block`;
+    read.style.display=`none`
 
   }
 }

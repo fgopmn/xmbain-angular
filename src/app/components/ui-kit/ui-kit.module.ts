@@ -40,7 +40,7 @@ import { NewsSliderComponent } from './news-slider/news-slider.component';
 import { MenuComponent } from './menu/menu.component';
 import { ParametrsComponent } from './parametrs/parametrs.component';
 import { CarouselComponent } from './carousel/carousel.component';
-import { CarouselModule } from 'ngx-owl-carousel-o';
+//import { CarouselModule } from 'ngx-owl-carousel-o';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 @NgModule({
   declarations: [
@@ -132,7 +132,7 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     CdkAccordionModule,
     RouterModule,
     ReactiveFormsModule,
-    CarouselModule,
+   // CarouselModule,
 
   ]
 })
