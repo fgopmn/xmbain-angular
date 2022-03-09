@@ -11,10 +11,7 @@ table{
 td{
   border:1px solid black;
   padding:15px;
-  position: relative;
-  width: 420px;
 }
-
 .admin-flex{
   display: flex;
 }
@@ -23,15 +20,58 @@ form{
   background-color:white;
   box-shadow: 0 40px 80px rgba(2, 26, 36, 0.2);
   width: 60%;
-  height: 80vh;
+  padding:70px;
   z-index: 998;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 50px;
+  div{
+    padding-top: 15px;
+  }
 }
 .wrapper{
   display: none;
+  &__closeButton{
+    background: none;
+    border: none;
+    position: fixed;
+    right: 52px;
+    top:20px;
+    font-size: 30px;
+    cursor: pointer;
+    &:hover{
+      color: #021C27;
+      border-radius: 4px;
+      transition-duration: 0.5s;
+      opacity: 0.5;
+    }
+  }
+  &__save{
+    margin-top: 15px;
+    padding: 5px 10px;
+    background-color: #d4f3ff;
+    margin-right: 50px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    &:hover{
+      transform:scale(1.2);
+      z-index: 997;
+      opacity: 0.7;
+    }
+  }
+  &__reset{
+    margin-top: 15px;
+    padding: 5px 10px;
+    background-color: #d4f3ff;
+    margin-right: 50px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+  }
 }
+
 .block{
   display: block;
   position: fixed;
@@ -44,9 +84,57 @@ form{
 }
 input{
   width:100%;
-  height:50px;
+  padding: 10px;
+  margin-top: 5px;
+  background: #FFFFFF;
+  border: 1px solid rgba(192, 198, 201, 0.6);
+  border-radius: 4px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+
+}
+textarea{
+  width:100%;
+  padding: 10px;
+  margin-top: 5px;
+  background: #FFFFFF;
+  border: 1px solid rgba(192, 198, 201, 0.6);
+  border-radius: 4px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+  resize: none;
+
+}
+textarea::-webkit-scrollbar{
+  width: 5px;
+  height: 8px;
+ background-color: white;
+}
+textarea::-webkit-scrollbar-thumb{
+  background-color: #366f92;
+  cursor: pointer;
 }
 
+label{
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: #021C27;
+
+}
 .create{
   padding:15px;
   background-color:lightskyblue;
@@ -55,6 +143,7 @@ input{
   margin-top:15px;
   font-size: 15px;
   font-weight: 600;
+  cursor: pointer;
 }
 .bord{
   background-color:lightskyblue;
@@ -64,4 +153,49 @@ input{
   padding:8px;
   font-size: 15px;
   font-weight: 600;
+  cursor: pointer;
+}
+.question{
+  position: fixed;
+  height: 100vh;
+  z-index: 997;
+  background-color: rgba(0, 0, 0, .2);
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+}
+.questionClose{
+  z-index: 998;
+  position:absolute;
+  top:10px;
+  right:43%;
+  width: auto;
+  display: block;
+  background-color:white;
+  padding:20px 20px 30px 20px;
+  p{
+    font-size: 19px;
+    font-family: Manrope;
+    font-weight: 600;
+
+  }
+  &__buttons{
+    margin-top:20px;
+    display: flex;
+    justify-content: space-between;
+    button{
+      padding:8px;
+      font-size: 13px;
+      font-family: Manrope;
+      background: #021C27;
+      border:none;
+      color: #009FE3;
+      font-weight: 600;
+
+    }
+  }
+}
+.questionOpen{
+  display: block;
 }

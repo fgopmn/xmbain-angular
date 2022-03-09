@@ -20,10 +20,18 @@ export class PressBlockAdminComponent implements OnInit {
     info:new FormControl("")
   })
   constructor(public requestService:RequestService,public formBuilder: FormBuilder) {
-
   }
   ngOnInit(): void {
     this.getPress()
+  }
+  closeWrapper(){
+    this.fo.nativeElement.style.display = `none`
+  }
+  openQuestion(el:any){
+    el.classList.add("questionOpen")
+  }
+  closeItem(el:any){
+    el.classList.remove("questionOpen")
   }
   reset(){
     this.form.reset()

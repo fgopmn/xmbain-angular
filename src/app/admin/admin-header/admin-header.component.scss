@@ -2,7 +2,6 @@
   display:flex;
   justify-content: space-between;
   flex-direction: column;
-  width: 25%;
   padding-left:40px;
   margin-top:40px;
   img{
@@ -12,6 +11,8 @@
     margin-top:10px;
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
+    height: 100vh;
 
     li{
      // margin-right:15px;
@@ -19,6 +20,7 @@
       list-style-type: none;
       a{
         font-size: 20px;
+        cursor: pointer;
       }
 
     }
