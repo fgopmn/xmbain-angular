@@ -1,8 +1,8 @@
 <app-header></app-header>
 <div class = "services-block">
     <div class="container">
-      <div class="menu-list">
-        <ul class="menu">
+      <div class="services-block__menuList">
+        <ul class="services-block__menu">
           <li>Главная</li>
           <li> ></li>
           <li>Услуги</li>
@@ -18,15 +18,15 @@
 </div>
 <div class="technical">
     <div class="container">
-        <div class="technical-flex">
-            <div *ngFor ="let item of getList" class="text-img-block">
-                <div class="technical-description">
-                    <p  class="technical-title">{{item.title}}</p>
-                    <p #p  class="technical-text">{{item.text}}</p>
+        <div class="technical__flex">
+            <div *ngFor ="let item of getList" class="technical__flex__imgBlock">
+                <div class="technical__flex__imgBlock__description">
+                    <p  class="technical__flex__imgBlock__description__title">{{item.title}}</p>
+                    <p #p  class="technical__flex__imgBlock__description__text">{{item.text}}</p>
                   <button #button (click)="showAll(p, button, read)" class="show">читать далее</button>
                   <button (click)="closeAll(p, button, read)" class="read" #read>читать меньше</button>
                   <br>
-                    <button  class="openApplication" (click)="openApplication()">{{item.button}}</button>
+                    <button  class="technical__flex__imgBlock__description__openApplication" (click)="openApplication()">{{item.button}}</button>
                 </div>
                 <img src="{{item.img}}" alt="">
             </div>

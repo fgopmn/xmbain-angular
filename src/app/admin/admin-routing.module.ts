@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule,ActivatedRoute, Routes } from '@angular/router';
 import {PressBlockAdminComponent} from "./press-block-admin/press-block-admin.component";
 import {AdminComponent} from "./admin/admin.component";
+import {ComplexAdminComponent} from "./complex-admin/complex-admin.component";
+import {EventsAdminComponent} from "./events-admin/events-admin.component";
 const routes: Routes = [
   {
     path:'',
@@ -10,6 +12,14 @@ const routes: Routes = [
       {
         path:'press-block',
         component: PressBlockAdminComponent
+      },
+      {
+        path:'complex',
+        component: ComplexAdminComponent
+      },
+      {
+        path:'events',
+        component: EventsAdminComponent
       }
       ]
   }

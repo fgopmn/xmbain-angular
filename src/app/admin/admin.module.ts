@@ -8,10 +8,18 @@ import { AdminHeaderComponent } from './admin-header/admin-header.component';
 
 import { AdminComponent } from './admin/admin.component';
 import {RouterModule} from "@angular/router";
+import { ComplexAdminComponent } from './complex-admin/complex-admin.component';
+import { EventsAdminComponent } from './events-admin/events-admin.component';
 
 
 @NgModule({
-  declarations: [PressBlockAdminComponent, AdminHeaderComponent, AdminComponent],
+  declarations: [
+    PressBlockAdminComponent,
+    AdminHeaderComponent,
+    AdminComponent,
+    ComplexAdminComponent,
+    EventsAdminComponent
+  ],
   imports: [
     CommonModule,
     AdminRoutingModule,

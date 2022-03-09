@@ -1,0 +1,38 @@
+
+<div class="admin-flex">
+  <div #fo class="wrapper">
+    <form  [formGroup]="form" class="admin-form">
+      <button class="wrapper__closeButton"   (click)="closeWrapper()">X</button>
+      <div>
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" formControlName="title">
+      </div>
+      <div>
+        <label for="icon">Icon</label>
+        <input type="text" id="icon" name="icon" formControlName="icon">
+      </div>
+      <button class="wrapper__save"  (click)="save(fo)">Save</button>
+      <button class="wrapper__reset"  (click)="reset()">Reset</button>
+    </form>
+  </div>
+
+
+  <table>
+    <tr class="titles">
+      <td>Title</td>
+      <td>Icon</td>
+      <td>Action buttons</td>
+    </tr>
+    <tr *ngFor="let item of press">
+      <td>{{item.title}}</td>
+      <td>{{item.icon}}</td>
+      <td>
+        <button (click)="deleteItem(item.id)" class="bord">Delete</button>
+        <button (click)="openForm(item)" class="bord">Edit</button>
+      </td>
+    </tr>
+  </table>
+  <button (click)="add()" class="create">Create a new object</button>
+</div>
+
+
