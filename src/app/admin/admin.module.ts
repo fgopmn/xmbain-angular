@@ -6,12 +6,17 @@ import {PressBlockAdminComponent} from "./press-block-admin/press-block-admin.co
 import {ReactiveFormsModule} from "@angular/forms";
 import { AdminHeaderComponent } from './admin-header/admin-header.component';
 
+import { AdminComponent } from './admin/admin.component';
+import {RouterModule} from "@angular/router";
+
+
 @NgModule({
-  declarations: [PressBlockAdminComponent, AdminHeaderComponent],
+  declarations: [PressBlockAdminComponent, AdminHeaderComponent, AdminComponent],
   imports: [
     CommonModule,
     AdminRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule
   ]
 })
 export class AdminModule { }

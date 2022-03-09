@@ -8,12 +8,17 @@ import {UiKitModule} from "./components/ui-kit/ui-kit.module";
 import { NfComponent } from './components/nf/nf.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {ReactiveFormsModule} from "@angular/forms";
+import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
 
   {
     path:"",
    loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule)
+  },
+  {
+    path:"login",
+    component:LoginComponent
   },
   {
     path:"admin",
@@ -116,6 +121,7 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     NfComponent,
+    LoginComponent,
   ],
     imports: [
         BrowserModule,

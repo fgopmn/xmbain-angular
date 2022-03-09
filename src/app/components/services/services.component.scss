@@ -423,11 +423,20 @@
     }
   }
 }
-.tog {
-  overflow: visible !important;
-  height: auto !important;
-  //:nth-child(3){
-  //  display: none !important;
-  //}
+
+.read{
+  display:none;
+  background: none;
+  border: none;
+  font-size: 18px;
+  opacity: 0.5;
+  margin-top: 7px;
+  border-bottom: 1px dashed #021C27;
+
+}
+
+.show {
+  overflow: visible;
+  height: auto;
 }
 
